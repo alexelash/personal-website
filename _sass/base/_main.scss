@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    #MAIN ELEMENT
+\*------------------------------------*/
+
+/**
+ * Main element
+ */
+[role=main] {
+	display: block;
+	padding: 3rem;
+
+    @media all and (min-width: $bp-xl) {
+        padding-top: 1.5rem;
+    }
+}
