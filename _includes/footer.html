@@ -1,0 +1,12 @@
+<footer class="c-footer">
+  <ul class="c-social-icons">
+  {% for icon in site.data.social-icons %}
+    <li class="c-social-icons__icon c-icon">
+      <a class="c-social-icons__link {{ icon.class }}" href="{{ icon.url }}">
+        {% include {{ icon.class | prepend: 'social-icons/' | append: '.svg' }} %}
+        <span class="c-social-icons__title u-is-vishidden">{{ icon.title }}</span>
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</footer>

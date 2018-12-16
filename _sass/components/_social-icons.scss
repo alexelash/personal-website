@@ -1,0 +1,22 @@
+.c-social-icons {
+  display: flex;
+
+  &__link {
+    fill: $social-icon-fill;
+    transition: fill 0.15s ease-in;
+
+    &::after {
+      display: none;
+    }
+
+    &:hover, 
+    &:focus {
+      fill: $link-color;
+    }
+  }
+
+  &__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}

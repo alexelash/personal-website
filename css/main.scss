@@ -68,17 +68,26 @@
 @import "components/footer-nav";
 @import "components/footer";
 @import "components/header";
-@import "components/headings";
 @import "components/hero";
 @import "components/logo";
 @import "components/icon";
 @import "components/page-header";
 @import "components/primary-nav";
 @import "components/section";
+@import "components/social-icons";
 @import "components/table";
 @import "components/tabs";
 @import "components/text-passage";
 @import "components/tile";
+
+
+
+
+
+/*------------------------------------*\
+   #PAGES
+\*------------------------------------*/
+@import "pages/home";
 
 
 
