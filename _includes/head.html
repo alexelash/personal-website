@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131080629-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-131080629-1');
+  </script>
+  
+  <!-- SEO -->
+  <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.seo_description %}{{ page.seo_description }}{% endif %}">
+  <meta name="Copyright" content="Copyright © Alex Lash 2018. All Rights Reserved.">
+
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="{{ site.baseurl }}/assets/favicon/manifest.json">
+  <link rel="mask-icon" href="{{ site.baseurl }}/assets/favicon/safari-pinned-tab.svg" color="#3174a3">
+  <meta name="theme-color" content="#ffffff">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+  <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6837574/608828/css/fonts.css" />
+</head>

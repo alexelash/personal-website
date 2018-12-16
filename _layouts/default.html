@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+  <body 
+    {% if page.page_class %} 
+      class="{{- page.page_class }} {{ layout.page_class -}}" 
+    {% endif %}>
+
+    <div class="main-container" role="main">
+      <!-- page content -->
+      {{ content }}
+      <!-- page content -->
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
