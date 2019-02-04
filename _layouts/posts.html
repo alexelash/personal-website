@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+  <body 
+    {% if page.page_class %} 
+        class="{{- page.page_class }} {{ layout.page_class -}}" 
+    {% endif %}>
+    {% include nav.html %}
+
+    <div class="main-container" role="main">
+        <div class="intro">
+            <h2 class="intro__heading">
+                {{ page.heading }}
+            </h2>
+            <p class="intro__blurb">
+                {{ page.intro }}
+            </p>
+        </div>
+        
+        <div class="posts">
+            <ul class="posts__list">
+              {% for post in site.posts %}
+                <li class="posts__list-item">
+                    <a class="posts__heading" href="{{ post.url }}">
+                        {{ post.title }}
+                    </a>
+                    <div class="posts__excerpt">
+                        {{ post.excerpt | markdownify }}
+                    </div>
+                </li>
+              {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

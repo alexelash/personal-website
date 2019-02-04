@@ -1,0 +1,49 @@
+.intro {
+
+    &__inner {
+        position: relative;
+
+        @media all and (max-width: $bp-med) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__content {
+        order: 3;
+
+        @media all and (min-width: $bp-med) {
+            order: auto;
+            width: 50%;
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    &__image {
+        order: 2;
+        margin-bottom: $pad-comfortable;
+
+        @media all and (min-width: $bp-med) {
+            order: auto;
+            position: absolute;
+            width: 60%;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    &__heading {
+        order: 1;
+
+        @media all and (min-width: $bp-med) {
+            order: auto;
+            flex: 0 1 100%;
+        }
+    }
+
+    &__blurb {
+        font-size: $font-size-large;
+        font-style: italic;
+    }
+}

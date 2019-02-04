@@ -5,10 +5,27 @@
 /**
  * 1) Global block at the bottom of each page that contains a navigation and other information
  */
-.c-footer {
-	text-align: center;
-	display: flex;
-  border-top: 1px solid $color-gray;
-  padding: 1rem 0 3rem;
-  margin-top: auto;
+.footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid $color-gray;
+    padding: 1rem 0;
+    margin: auto auto 0;
+
+    &__social-block {
+        margin: 0 auto;
+    }
+
+    &__logo {
+
+        &::after {
+            display: none;
+        }
+    }
+
+    &__smallprint {
+        margin-top: $pad-large;
+        color: $color-gray-medium;
+    }
 }

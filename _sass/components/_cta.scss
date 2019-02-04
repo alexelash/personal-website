@@ -1,0 +1,37 @@
+.cta {
+    position: relative;
+    margin-bottom: $pad-comfortable;
+    background: $color-white;
+    padding: $pad-large;
+
+    @media all and (min-width: $bp-med) {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__blurb {
+        font-size: $font-size-med-2;
+        font-style: italic;
+        margin-bottom: 0;
+
+        @media all and (max-width: $bp-med) {
+            max-width: 25rem;
+            margin: 0 auto $pad-normal;
+            text-align: center;
+        }
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        pointer-events: none;
+        z-index: 1;
+        top: 1rem;
+        right: 1rem;
+        bottom: 1rem;
+        left: 1rem;
+        border: 1px solid $color-gray-light;
+    }
+}

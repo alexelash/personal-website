@@ -1,12 +1,20 @@
-<footer class="c-footer">
-  <ul class="c-social-icons">
-  {% for icon in site.data.social-icons %}
-    <li class="c-social-icons__icon c-icon">
-      <a class="c-social-icons__link {{ icon.class }}" href="{{ icon.url }}">
-        {% include {{ icon.class | prepend: 'social-icons/' | append: '.svg' }} %}
-        <span class="c-social-icons__title u-is-vishidden">{{ icon.title }}</span>
-      </a>
-    </li>
-  {% endfor %}
-  </ul>
+<footer class="footer">
+  <a class="footer__logo" href="{{ '/' | prepend: site.baseurl }}" rel="home">
+    Alex Lash
+  </a>
+  <div class="footer__social-block">
+    <ul class="social-icons">
+    {% for icon in site.data.social-icons %}
+      <li class="social-icons__icon c-icon">
+        <a class="social-icons__link {{ icon.class }}" href="{{ icon.url }}">
+          {% include {{ icon.class | prepend: 'social-icons/' | append: '.svg' }} %}
+          <span class="social-icons__title u-is-vishidden">{{ icon.title }}</span>
+        </a>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+  <small class="footer__smallprint">
+    &copy; {{ 'now' | date: "%Y" }} What are copyrights on websites even for in this day-and-age?
+  </small>
 </footer>

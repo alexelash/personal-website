@@ -7,7 +7,7 @@
  * 2) Remove box-shadow that's globally applied to links
  */
 .c-btn {
-	font: 0.85rem/1.5 $secondary-font;
+	font: 0.85rem/1.5 $font-family-secondary;
 	display: inline-block;
 	background: $button-background;
 	border: 2px solid $button-border;
@@ -157,7 +157,7 @@
 /**
  * 1) Button that is text only and doesn't contain a border or fill.
  */
-.c-text-btn {
+.c-btn--text {
 	background: none;
 	border: 0;
 	padding: 0;

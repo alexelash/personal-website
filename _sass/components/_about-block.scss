@@ -1,0 +1,42 @@
+.about-block {
+    padding-top: $pad-normal;
+    text-align: center;
+
+    @media all and (min-width: $bp-med) {
+        border-top: 1px dashed $color-gray;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    &__block {
+        @media all and (min-width: $bp-med) {
+            margin-right: $pad-large;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__intro {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        
+        @media all and (min-width: $bp-med) {
+            margin-right: $pad-large;
+        }
+    }
+
+    &__list {
+        font-family: $font-family-secondary;
+    }
+
+    &__attr,
+    &__desc {
+        font-size: $font-size-sm-2;
+        margin-bottom: $pad-medium;
+    }
+}

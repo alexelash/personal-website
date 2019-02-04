@@ -9,7 +9,14 @@
 	display: block;
 	padding: 3rem;
 
+    @media all and (min-width: $bp-large-2) {
+        padding: 3rem 0 3rem;
+        max-width: $l-max-width;
+        margin: 0 auto;
+        flex: 1 auto;
+    }
+
     @media all and (min-width: $bp-xl) {
-        padding-top: 1.5rem;
+        padding-top: 6rem;
     }
 }

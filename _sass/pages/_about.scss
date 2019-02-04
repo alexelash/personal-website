@@ -1,0 +1,10 @@
+.p-about {
+    [role=main] {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cta {
+        margin-top: auto;
+    }
+}
