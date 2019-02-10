@@ -17,19 +17,14 @@
             </p>
         </div>
         
-        <div class="posts">
-            <ul class="posts__list">
-              {% for post in site.posts %}
-                <li class="posts__list-item">
-                    <a class="posts__heading" href="{{ post.url }}">
-                        {{ post.title }}
-                    </a>
-                    <div class="posts__excerpt">
-                        {{ post.excerpt | markdownify }}
-                    </div>
-                </li>
-              {% endfor %}
-            </ul>
+        <div class="projects-container">
+          {% for project in site.projects %}
+            <article class="project">
+                <a class="project__heading" href="{{ project.url }}">
+                    {{ project.title }}
+                </a>
+            </article>
+          {% endfor %}
         </div>
 
     </div>

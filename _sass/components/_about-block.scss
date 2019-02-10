@@ -1,9 +1,10 @@
 .about-block {
     padding-top: $pad-normal;
     text-align: center;
+    max-width: $l-max-width-mid;
+    margin: 0 auto;
 
     @media all and (min-width: $bp-med) {
-        border-top: 1px dashed $color-gray;
         display: flex;
         justify-content: space-between;
         text-align: left;
@@ -20,18 +21,40 @@
     }
 
     &__intro {
+        font-size: $font-size-large;
+        font-style: italic;
         display: flex;
         text-align: center;
         align-items: center;
-        justify-content: center;
+        justify-content: stretch;
+        padding: $pad-normal $pad-large;
+        position: relative;
+
+        &::after {
+            content: "";
+            background-image: url(../assets/images/texture.svg);
+            background-size: 0.5rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.85;
+        }
         
         @media all and (min-width: $bp-med) {
             margin-right: $pad-large;
         }
     }
 
+    &__title {
+        margin-bottom: $pad-small;
+    }
+
     &__list {
         font-family: $font-family-secondary;
+        margin: 0;
     }
 
     &__attr,

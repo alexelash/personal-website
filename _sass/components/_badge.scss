@@ -1,0 +1,9 @@
+.c-badge {
+    font-family: $font-family-secondary;
+    font-size: $font-size-tiny;
+    padding: 2px $pad-compact;
+    background-color: $color-utility-warning-light;
+    color: $color-utility-warning;
+    margin-right: $pad-small;
+    border-radius: 4px;
+}

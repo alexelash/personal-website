@@ -1,0 +1,23 @@
+.article {
+    &__heading {
+        font-size: $font-size-med-2;
+        margin-bottom: $pad-medium;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    &__date {
+        font-family: $font-family-secondary;
+        font-size: $font-size-sm-2;
+        color: $color-gray-medium;
+    }
+
+    &__footer {
+        display: flex;
+    }
+
+    &__tags-container {
+        display: flex;
+        margin-left: $pad-small;
+    }
+}

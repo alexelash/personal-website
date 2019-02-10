@@ -2,7 +2,7 @@
     #NAVIGATION
 \*------------------------------------*/
 
-.nav {
+.c-nav {
 	width: 100vw;
 	background: $color-white;
 	overflow: auto;
@@ -25,7 +25,7 @@
     &__inner {
     	max-width: $l-max-width;
     	display: flex;
-        padding: $pad-medium 0;
+        padding: $pad-medium $pad-large-2;
 
     	@media all and (min-width: $bp-small) {
             position: relative;
@@ -33,13 +33,36 @@
             align-items: center;
             margin: 0 auto;
     	}
+
+        @media all and (min-width: ( $l-max-width + $pad-large-2*2 ) ) {
+            padding: $pad-medium 0;
+        }
+    }
+
+    &__logo {
+        color: $color-black;
+        font-size: $font-size-large-2;
+        font-style: italic;
+        cursor: pointer;
+
+        &::after {
+            display: none;
+        }
     }
 
     &__turtle {
-        background: $color-gray-dark;
-        width: 3rem;
-        height: 3rem;
+        background-image: url(../assets/images/turtle.svg);
+        background-size: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: $color-utility-info-light;
+        width: 5rem;
+        height: 5rem;
         border-radius: 100%;
+
+        &:hover {
+            background-image: url(../assets/images/turtle-wink.svg);
+        }
     }
 
     /**
@@ -119,7 +142,7 @@
         font-weight: $font-weight-bold;
         color: $color-black;
     	text-transform: uppercase;
-    	font-size: $font-size-sm;
+    	font-size: $font-size-med;
 
         &::after {
             display: none;

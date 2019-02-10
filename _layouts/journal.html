@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+  <body 
+    {% if page.page_class %} 
+        class="{{- page.page_class }} {{ layout.page_class -}}" 
+    {% endif %}>
+    {% include nav.html %}
+        
+    <header class="c-hero c-hero--gradient">
+        <div class="c-hero__inner l-container--narrow">
+            <h2 class="c-hero__heading">
+                {{ page.heading }}
+            </h2>
+            <p class="c-hero__blurb">
+                {{ page.intro }}
+            </p>
+        </div>
+    </header>
+
+    <div class="main-container l-container--narrow" role="main">
+        <div class="p-journal__list-container">
+            {% for post in site.posts %}
+                <article class="article__list-item">
+                    <a class="article__heading" href="{{ post.url }}">
+                        {{ post.title }}
+                    </a>
+                    <div class="article__excerpt">
+                        {{ post.excerpt | markdownify }}
+                    </div>
+                    <div class="article__footer">
+                        <div class="article__date">
+                            Published on {{ post.date  | date: "%b %d, %y" }} • 
+                        </div>
+                        {% if post.categories %}
+                        <ul class="article__tags-container c-badge-container">
+                            {% for category in post.categories %}
+                                <li class="article__tag c-badge">{{ category }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

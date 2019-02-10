@@ -62,13 +62,13 @@ $color-black: #000;
  */
 $color-primary: #1f6135;
 $color-secondary: #f74100;
-$color-utility-info: #0192d0;
+$color-utility-info: #3f87a6;
 $color-utility-info-light: #d3f2ff;
 $color-utility-error: #b12a0b;
 $color-utility-error-light: #fdded8;
 $color-utility-success: #03804d;
-$color-utility-success-light: #d4f3e6;
-$color-utility-warning: #a59b15;
+$color-utility-success-light: #ebf8e1;
+$color-utility-warning: #f69d3c;
 $color-utility-warning-light: #fffecf;
 
 
@@ -94,6 +94,8 @@ $font-size-sm-2: 0.85rem;
 $font-size-med: 1rem;
 $font-size-med-2: 1.2rem;
 $font-size-large: 1.4375rem;
+$font-size-large-2: 2rem;
+$font-size-xl: 2.4375rem;
 
 /**
  * Font Weights
@@ -110,7 +112,8 @@ $font-weight-bold: 700;
 /**
  * Max Width
  */
-$l-max-width: 80rem;
+$l-max-width: 72rem;
+$l-max-width-mid: 55rem;
 $l-max-width-narrow: 36rem;
 
 
@@ -129,11 +132,13 @@ $l-max-width-narrow: 36rem;
 
 $space: 1rem;
 
+$pad-small: 0.25rem;
 $pad-compact: 0.3rem;
 $pad-medium: 0.5rem;
 $pad-normal: 1rem; /* 1 */
 $pad-comfortable: 1.4rem;
 $pad-large: 2rem;
+$pad-large-2: 3rem;
 
 $space-bullet-offset: 1.6rem; /* 2 */
 

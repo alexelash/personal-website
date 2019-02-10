@@ -1,9 +1,9 @@
 ---
-layout: posts
+layout: journal
 title: Journal
 permalink: "/journal"
 page_class: p-journal
 
 heading: Journal
-intro: Like an Xanga, but CSS is less terrible now.
+intro: Topics that bridge people, art and technology that I am very opinionated about. Call ‘em like I see ‘em.
 ---

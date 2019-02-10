@@ -2,57 +2,62 @@
 <html>
 {% include head.html %}
   <body 
-	{% if page.page_class %} 
-		class="{{- page.page_class }} {{ layout.page_class -}}" 
-	{% endif %}>
-	{% include nav.html %}
+    {% if page.page_class %} 
+        class="{{- page.page_class }} {{ layout.page_class -}}" 
+    {% endif %}>
+    {% include nav.html %}
 
-	<div class="main-container" role="main">
-		<div class="intro">
-		    <div class="intro__inner">
-		        <h1 class="intro__heading heading--special-sm">
-		            {{ page.heading }}
-		        </h1>
-		        <div class="intro__content">
-		            <p class="intro__blurb">
-		                {{ page.intro }}
-		            </p>
-		            <div class="intro__text">
-		                {{ page.body | markdownify }}
-		            </div>
-		        </div>
-		        <img class="intro__image" src="{{ page.image }}" alt="{{ page.alt }}">
-		    </div>
-		</div>
+    <div class="main-container" role="main">
+        <div class="intro">
+            <div class="intro__inner">
+                <h1 class="intro__heading heading--special-sm">
+                    {{ page.heading }}
+                </h1>
+                <div class="intro__content">
+                    <p class="intro__blurb">
+                        {{ page.intro }}
+                    </p>
+                    <div class="intro__text">
+                        {{ page.body | markdownify }}
+                    </div>
+                    <div class="cta">
+                        <div class="cta__inner">
+                            <p class="cta__blurb">
+                                {{ page.cta-blurb }}
+                            </p>
+                            <a href="mailto:alexandralash@gmail.com" class="c-btn c-btn--secondary cta__btn">
+                                All the emails!
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="intro__image-container">
+                    <img class="intro__image" src="{{ page.image }}" alt="{{ page.alt }}">
+                </div>
+            </div>
+        </div>
 
-		<div class="cta">
-		    <p class="cta__blurb">
-		        {{ page.cta-blurb }}
-		    </p>
-		    <a href="mailto:alexandralash@gmail.com" class="c-btn c-btn--secondary">All the emails!</a>
-		</div>
-
-		<div class="about-block">
-		    <div class="about-block__intro">
-		        {{ page.about-intro }}
-		    </div>
-		    {% for thing in page.things %}
-		    <div class="about-block__block">
-		        <h3 class="about-block__title heading--sm">{{ thing.heading }}</h3>
-		        <dl id="{{ thing.heading | replace: ' ', '-' | downcase }}" class="about-block__list">
-		            {% for subthing in thing.subthings %}
-		                <dt class="about-block__subtitle">{{ subthing.title }}</dt>
-		                {% if subthing.attr %}
-		                    <dd class="about-block__attr">By {{ subthing.attr }}</dd>
-		                {% else %}
-		                    <dd class="about-block__desc">{{ subthing.desc }}</dd>
-		                {% endif %}
-		            {% endfor %}
-		        </dl>
-		    </div>
-		    {% endfor %}
-		</div>
-	</div>
-	{% include footer.html %}
+        <div class="about-block">
+            <div class="about-block__intro">
+                {{ page.about-intro }}
+            </div>
+            {% for thing in page.things %}
+            <div class="about-block__block">
+                <h3 class="about-block__title heading--sm">{{ thing.heading }}</h3>
+                <dl id="{{ thing.heading | replace: ' ', '-' | downcase }}" class="about-block__list">
+                    {% for subthing in thing.subthings %}
+                        <dt class="about-block__subtitle">{{ subthing.title }}</dt>
+                        {% if subthing.attr %}
+                            <dd class="about-block__attr">By {{ subthing.attr }}</dd>
+                        {% else %}
+                            <dd class="about-block__desc">{{ subthing.desc }}</dd>
+                        {% endif %}
+                    {% endfor %}
+                </dl>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% include footer.html %}
   </body>
 </html>

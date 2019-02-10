@@ -4,6 +4,12 @@
         flex-direction: column;
     }
 
+    .intro__content {
+        @media all and (min-width: $bp-xl) {
+            margin-bottom: $pad-large*4;
+        }
+    }
+
     .cta {
         margin-top: auto;
     }

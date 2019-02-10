@@ -1,20 +1,21 @@
-<nav class="nav" role="navigation">
-  <div class="nav__inner">
-    <a href="{{ '/' | prepend: site.baseurl }}" rel="home">
-      Alex Lash
-    </a>
-    <div class="nav__turtle"></div>
-    <ul class="nav__list">
-      {% for nav in site.data.nav %}
-      <li class="nav__item" role="presentation">
-        <a 
-          class="nav__link{% if page.url == nav.href %} --is-active{% endif %}{% if nav.href == '' %} --is-disabled{% endif %}" 
-          href="{{ nav.href | prepend: site.baseurl }}" 
-          {% if nav.href == '' %}disabled{% endif %}>
-          {{ nav.title }}
+<nav class="c-nav" role="navigation">
+    <div class="c-nav__inner">
+        <a class="c-nav__logo" href="{{ '/' | prepend: site.baseurl }}" rel="home">
+            Alex Lash
         </a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
+        <div class="c-nav__turtle" role="img" aria-label="Illustration of my black cat with his eyes shut">
+        </div>
+        <ul class="c-nav__list">
+            {% for nav in site.data.nav %}
+            <li class="c-nav__item" role="presentation">
+                <a 
+                    class="c-nav__link{% if page.url == nav.href %}c-nav__link--is-active{% endif %}{% if nav.href == '' %}c-nav__link--is-disabled{% endif %}" 
+                    href="{{ nav.href | prepend: site.baseurl }}" 
+                    {% if nav.href == '' %}disabled{% endif %}>
+                    {{ nav.title }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 </nav>

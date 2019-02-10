@@ -1,5 +1,4 @@
 .intro {
-
     &__inner {
         position: relative;
 
@@ -14,29 +13,40 @@
 
         @media all and (min-width: $bp-med) {
             order: auto;
-            width: 50%;
+            width: 60%;
             position: relative;
             z-index: 1;
         }
+
+        @media all and (min-width: $bp-xl) {
+            width: 45%;
+        }
     }
 
-    &__image {
+    &__image-container {
         order: 2;
         margin-bottom: $pad-comfortable;
 
         @media all and (min-width: $bp-med) {
             order: auto;
             position: absolute;
-            width: 60%;
+            width: 50%;
             top: 0;
             right: 0;
         }
+
+        @media all and (min-width: $bp-xl) {
+            width: 65%;
+        }
+    }
+
+    &__image {
     }
 
     &__heading {
         order: 1;
 
-        @media all and (min-width: $bp-med) {
+        @media all and (min-width: $bp-large) {
             order: auto;
             flex: 0 1 100%;
         }
