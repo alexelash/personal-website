@@ -20,16 +20,6 @@
                     <div class="intro__text">
                         {{ page.body | markdownify }}
                     </div>
-                    <div class="cta">
-                        <div class="cta__inner">
-                            <p class="cta__blurb">
-                                {{ page.cta-blurb }}
-                            </p>
-                            <a href="mailto:alexandralash@gmail.com" class="c-btn c-btn--secondary cta__btn">
-                                All the emails!
-                            </a> 
-                        </div>
-                    </div>
                 </div>
                 <div class="intro__image-container">
                     <img class="intro__image" src="{{ page.image }}" alt="{{ page.alt }}">
@@ -46,11 +36,17 @@
                 <h3 class="about-block__title heading--sm">{{ thing.heading }}</h3>
                 <dl id="{{ thing.heading | replace: ' ', '-' | downcase }}" class="about-block__list">
                     {% for subthing in thing.subthings %}
-                        <dt class="about-block__subtitle">{{ subthing.title }}</dt>
+                        <dt class="about-block__subtitle">
+                            {{ subthing.title }}
+                        </dt>
                         {% if subthing.attr %}
-                            <dd class="about-block__attr">By {{ subthing.attr }}</dd>
+                            <dd class="about-block__attr">
+                                {{ subthing.attr | markdownify }}
+                            </dd>
                         {% else %}
-                            <dd class="about-block__desc">{{ subthing.desc }}</dd>
+                            <dd class="about-block__desc">
+                                {{ subthing.desc | markdownify }}
+                            </dd>
                         {% endif %}
                     {% endfor %}
                 </dl>

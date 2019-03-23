@@ -25,7 +25,9 @@
     }
 
     &__smallprint {
+        font-family: $font-family-secondary;
         margin-top: $pad-large;
         color: $color-gray-medium;
+        opacity: 0.5;
     }
 }

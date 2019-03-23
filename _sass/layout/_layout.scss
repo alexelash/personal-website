@@ -12,6 +12,10 @@
 	margin: 0 auto;
 }
 
+.l-container--mid {
+    max-width: $l-max-width-mid;
+}
+
 /**
  * Narrow Layout Container
  * 1) This narrow layout container is for lists, forms,

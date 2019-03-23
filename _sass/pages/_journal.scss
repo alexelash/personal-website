@@ -1,6 +1,12 @@
 .p-journal {
 
     .main-container {
-        padding: $pad-large 0 $pad-large-2;
+        max-width: $l-max-width-mid;
+        margin: 0 auto;
+        padding: $pad-large $pad-normal $pad-large-2;
+
+        @media all and (min-width: $bp-large) {
+            padding: $pad-large 0 $pad-large-2;
+        }
     }
 }

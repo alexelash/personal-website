@@ -14,19 +14,7 @@
 	margin-bottom: 1rem;
 
 	&--gradient {
-        position: relative;
-
-        &::after {
-            content: "";
-            background-image: url(../assets/images/rain.svg);
-            background-size: 0.5rem;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: -1;
-        }
+        @include backgroundPattern($pattern: '../assets/images/rain.svg');
 
         &::before {
             content: "";
@@ -40,6 +28,10 @@
             opacity: 0.85;
         }
 	}
+
+    &--pattern {
+        @include backgroundPattern($pattern: '../assets/images/rain.svg');
+    }
 
 	/**
 	 * Hero Image
@@ -66,14 +58,14 @@
 	 * Hero Title
 	 */
 	&__heading {
-        font-size: $font-size-large;
-        margin-bottom: $pad-normal;
-
-		@media all and (min-width: $bp-med) {
-	        font-size: $font-size-xl;
-			margin: 0 0 2rem auto;
-			font-size: 3rem;
-		}
+        font-family: $font-family-secondary;
+        font-weight: $font-weight-bold;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        margin-bottom: 0.85rem;
+        @include headingUnderline();
 	}
 
 	/**
@@ -84,6 +76,32 @@
 
 		@media all and (min-width: $bp-med) {
 			font-size: 1.25rem;
+		}
+    }
+    
+	&__inner {
+        max-width: $l-max-width-mid;
+        margin: 0 auto;
+        padding: $pad-large $pad-normal $pad-large-2;
+
+        @media all and (min-width: $bp-large) {
+            padding: $pad-large-2 0 $pad-normal;
+        }
+	 }
+
+	/**
+	 * Hero Description
+	 */
+	&__blurb {
+        font-size: $font-size-large-2;
+        font-style: italic;
+		margin-bottom: $pad-normal;
+        max-width: 32rem;
+
+		@media all and (min-width: $bp-med) {
+			p {
+                font-size: inherit;
+            }
 		}
 	}
 }
