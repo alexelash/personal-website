@@ -4,12 +4,13 @@
             Alex Lash
         </a>
         <div class="c-nav__turtle" role="img" aria-label="Illustration of my black cat with his eyes shut">
+            {% include icons/turtle.svg %}
         </div>
         <ul class="c-nav__list">
             {% for nav in site.data.nav %}
             <li class="c-nav__item" role="presentation">
                 <a 
-                    class="c-nav__link{% if page.url == nav.href %}c-nav__link--is-active{% endif %}{% if nav.href == '' %}c-nav__link--is-disabled{% endif %}" 
+                    class="c-nav__link{% if page.url == nav.href %} c-nav__link--is-active{% endif %}{% if nav.href == '' %} c-nav__link--is-disabled{% endif %}" 
                     href="{{ nav.href | prepend: site.baseurl }}" 
                     {% if nav.href == '' %}disabled{% endif %}>
                     {{ nav.title }}

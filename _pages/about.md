@@ -1,6 +1,6 @@
 ---
 layout: profile
-title: About
+title: Profile
 permalink: "/"
 page_class: p-about
 

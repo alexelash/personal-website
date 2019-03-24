@@ -30,7 +30,7 @@
 	}
 
     &--pattern {
-        @include backgroundPattern($pattern: '../assets/images/rain.svg');
+        @include backgroundPattern($pattern: '../assets/images/diagonal-lines.svg');
     }
 
 	/**
@@ -49,10 +49,15 @@
 	/**
 	 * Hero Body
 	 */
-	&__inner {
-        padding: $pad-large-2 0 $pad-normal;
+    &__inner {
+        max-width: $l-max-width;
         margin: 0 auto;
-	 }
+        padding: $pad-large $pad-comfortable $pad-normal;
+
+        @media all and (min-width: $bp-large) {
+            padding: $pad-large-2 $pad-comfortable $pad-normal;
+        }
+    }
 
 	/**
 	 * Hero Title
@@ -72,36 +77,16 @@
 	 * Hero Description
 	 */
 	&__blurb {
-		margin-bottom: $pad-normal;
-
-		@media all and (min-width: $bp-med) {
-			font-size: 1.25rem;
-		}
-    }
-    
-	&__inner {
-        max-width: $l-max-width-mid;
-        margin: 0 auto;
-        padding: $pad-large $pad-normal $pad-large-2;
-
-        @media all and (min-width: $bp-large) {
-            padding: $pad-large-2 0 $pad-normal;
-        }
-	 }
-
-	/**
-	 * Hero Description
-	 */
-	&__blurb {
-        font-size: $font-size-large-2;
+        font-size: $font-size-large;
         font-style: italic;
 		margin-bottom: $pad-normal;
-        max-width: 32rem;
 
-		@media all and (min-width: $bp-med) {
-			p {
-                font-size: inherit;
-            }
-		}
+		p {
+            font-size: inherit;
+        }
+
+        @media all and (min-width: $bp-med) {
+            font-size: $font-size-large-2;
+        }
 	}
 }

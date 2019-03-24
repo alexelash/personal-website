@@ -41,8 +41,11 @@
 
     &__logo {
         color: $color-black;
-        font-size: $font-size-large-2;
-        font-style: italic;
+        font-size: $font-size-med;
+        font-family: $font-family-secondary;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: $font-weight-bold;
         cursor: pointer;
 
         &::after {
@@ -51,17 +54,16 @@
     }
 
     &__turtle {
-        background-image: url(../assets/images/turtle.svg);
-        background-size: 70%;
-        background-position: center;
-        background-repeat: no-repeat;
         background-color: $color-utility-info-light;
         width: 5rem;
         height: 5rem;
         border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        &:hover {
-            background-image: url(../assets/images/turtle-wink.svg);
+        svg {
+            width: 70%;
         }
     }
 

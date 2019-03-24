@@ -49,12 +49,11 @@
     }
     
     &__heading {
-        color: inherit;
-        // font-family: $font-family-secondary;
-        // font-style: italic;
         font-weight: $font-weight-black;
+        font-size: $font-size-med-2;
+        color: inherit;
         line-height: 1.25;
-        margin: $pad-comfortable 0 $pad-medium;
+        margin: $pad-compact 0 $pad-medium;
         display: inline-block;
 
         &::after {
@@ -62,8 +61,8 @@
         }
 
         @media all and (min-width: $bp-med) {
-            font-size: $font-size-med-2;
-            margin:0 0 $pad-comfortable;
+            font-size: $font-size-large-2;
+            margin: 0 0 $pad-normal;
         }
     }
 
@@ -71,6 +70,10 @@
         font-family: $font-family-secondary;
         font-size: $font-size-sm-2;
         color: $color-gray-medium;
+
+        @media all and (max-width: $bp-med) {
+            margin: $pad-comfortable 0 0;
+        }
     }
 
     &__footer {
