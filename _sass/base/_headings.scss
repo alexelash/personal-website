@@ -30,8 +30,36 @@ h2 {
  * Heading 3 base styles
  */
 h3 {
-	font-size: 1.2em;
-	line-height: 1.2;
-	margin-bottom: 0.3rem;
-	word-wrap: break-word;
+    font-size: 1.2em;
+    line-height: 1.2;
+    margin-bottom: 0.3rem;
+    word-wrap: break-word;
+}
+
+/**
+ * Small heading
+ */
+.heading--sm {
+    font-family: $font-family-secondary;
+    font-weight: $font-weight-bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 0.85rem;
+    position: relative;
+}
+
+/**
+ * Small heading with underline
+ */
+.heading--special-sm {
+    font-family: $font-family-secondary;
+    font-weight: $font-weight-bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 0.85rem;
+    @include headingUnderline();
 }

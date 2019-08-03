@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+  <body 
+    {% if page.page_class %} 
+        class="{{- page.page_class }} {{ layout.page_class -}}" 
+    {% endif %}>
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZB33M6"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    {% include nav.html %}
+
+    <div class="main-container" role="main">
+        <div class="intro">
+            <h2 class="intro__heading">
+                {{ page.heading }}
+            </h2>
+            <p class="intro__blurb">
+                {{ page.intro }}
+            </p>
+        </div>
+        
+        <div class="projects-container">
+          {% for project in site.projects %}
+            <article class="project">
+                <a class="project__heading" href="{{ project.url }}">
+                    {{ project.title }}
+                </a>
+            </article>
+          {% endfor %}
+        </div>
+
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

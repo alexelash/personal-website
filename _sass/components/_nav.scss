@@ -3,11 +3,8 @@
 \*------------------------------------*/
 
 .c-nav {
-	display: flex;
-	flex-direction: column;
-	height: calc(100vh - 4.7em);
-	background: $color-gray-lightest;
-	position: absolute;
+	width: 100vw;
+	background: $color-white;
 	overflow: auto;
 	z-index: 1;
 	
@@ -18,7 +15,6 @@
 	&--is-active {
 		top: 4.7em;
 		left: 0;
-		width: 12em;
 
 		@media all and (min-width: $bp-small) {
 			top: 0;
@@ -26,175 +22,137 @@
 		}
 	}
 
-	@media all and (min-width: $bp-small) {
-        border-top: 1px dotted $color-gray-lightest;
-        position: relative;
-		width: 12em;
-		order: 1;
-	}
-}
+    &__inner {
+    	max-width: $l-max-width;
+    	display: flex;
+        padding: $pad-medium $pad-large-2;
+        min-height: 4rem;
 
-/**
- * Navigation Trigger Button
- */
-.c-nav__trigger {
-	display: block;
-	position: absolute;
-    top: 0.85rem;
-    left: 2em;
-    color: $color-gray;
-    border: 1px dotted $color-gray;
-    background: transparent;
-	border-radius: $border-radius;
-	padding: 0.8em 0.5em;
-	text-transform: uppercase;
-    font-weight: bold;
-    transition: all $anim-fast ease;
-    
-    &--is-active {
-	    color: $color-gray-dark;
-    }
-    
-    &:hover, &:focus {
-	    color: $color-gray-dark;
+    	@media all and (min-width: $bp-small) {
+            position: relative;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+    	}
+
+        @media all and (min-width: ( $l-max-width + $pad-large-2*2 ) ) {
+            padding: $pad-medium 0;
+        }
     }
 
-	@media all and (min-width: $bp-small) {
-		display: none;
-	}
-}
+    &__logo {
+        color: $color-black;
+        font-size: $font-size-med;
+        font-family: $font-family-secondary;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: $font-weight-bold;
+        cursor: pointer;
 
-/**
- * Nav List
- * 1) This is the primary navigation list
- */
-.c-nav__list {
-	display: none;
-	background: $color-gray-lightest;
+        &::after {
+            display: none;
+        }
+    }
 
-    /**
-     * Nav list styling when parent nav is active
-     */
-	.c-nav--is-active & {
-		display: block;
-		top: 48px;
-		left: 0;
+    &__turtle {
+        background-color: $color-utility-info-light;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-		@media all and (min-width: $bp-small) {
-			top: 0;
-		}
-	}
-
-	@media all and (min-width: $bp-small) {
-		display: block;
-		padding: 0;
-	}
-}
-
-/**
- * Nav Sublist
- */
- 
-.c-nav__sublist {
-	display: none;
- 
-	&--has-children {
-		display: block;
-		max-height: 0px;
-		overflow: hidden;
-		background: $color-gray-3;
-		box-shadow: 0 22px 11px -22px $color-gray-lightest inset,
-		            0 -22px 11px -22px $color-gray-lightest inset;
-		transition: all $anim-fast ease-out;
-	
-	    /**
-	     * Nav Sublist styling when parent nav item is active
-	     */
-		.c-nav__item--has-children--is-active & {
-			max-height: 800px;
-	        padding: 0.3rem 0;
-	        transition-timing-function: ease-in;
-		}
-		
-	} 
-}
-
-/**
- * Nav list item
- */
-.c-nav__item {
-	border-bottom: 1px dotted $color-gray-lightest;
-	background: $color-gray-lightest;
-	position: relative;
-	
-	&--has-children {
-		
-		&:after {
-		    content: "";
-		    position: absolute;
-		    top: 26px;
-		    right: 10px;
-		    display: block;
-		    width: 0;
-		    height: 0;
-		    margin-left: -4px;
-		    pointer-events: none;
-		    border-top: 7px solid $color-gray-lightest;
-		    border-right: 5px solid transparent;
-		    border-left: 5px solid transparent;
-	    }
-	    
-	    &--is-active {
-		    
-		    &:after {
-			    transform: rotate(180deg);
-			}
-	    }
-	}
-}
-
-/**
- * Nav link
- */
-.c-nav__link {
-	display: flex;
-	padding: 1em;
-	
-	&--is-active {
-		color: $color-brand;
-	}
-
-	.c-nav__sublist__item & {
-		display: block;
-		padding: 0.5em 1em;
-	}
-}
-
-/**
- * Nav link
- * 1) Link that uses JavaScript
- */
-.js-nav__link {
-	position: relative;
-}
-
-/**
- * Secondary Nav
- * 1) The secondary nav is a unordered list that contains secondary
- * links such as "About" and "Updates"
- */
-.c-secondary-nav {
-	margin-top: auto;
-    display: none;
+        svg {
+            width: 70%;
+        }
+    }
 
     /**
-     * Secondary nav styling when parent nav is active
+     * Navigation Trigger Button
      */
-	.c-nav--is-active & {
-		display: block;
-	}
+    &__trigger {
+    	display: block;
+    	position: absolute;
+        top: 0.85rem;
+        left: 2em;
+        color: $color-gray;
+        border: 1px dotted $color-gray;
+        background: transparent;
+    	border-radius: $border-radius;
+    	padding: 0.8em 0.5em;
+    	text-transform: uppercase;
+        font-weight: bold;
+        transition: all $anim-fast ease;
+        
+        &--is-active {
+    	    color: $color-gray-dark;
+        }
+        
+        &:hover, &:focus {
+    	    color: $color-gray-dark;
+        }
 
-	@media all and (min-width: $bp-small) {
-		display: block;
-	}
+    	@media all and (min-width: $bp-small) {
+    		display: none;
+    	}
+    }
+
+    /**
+     * Nav List
+     * 1) This is the primary navigation list
+     */
+    &__list {
+    	display: none;
+
+        /**
+         * Nav list styling when parent nav is active
+         */
+    	.nav--is-active & {
+    		display: block;
+    		top: 48px;
+    		left: 0;
+
+    		@media all and (min-width: $bp-small) {
+    			top: 0;
+    		}
+    	}
+
+    	@media all and (min-width: $bp-small) {
+    		display: block;
+    		padding: 0;
+    	}
+
+    	@media all and (min-width: $bp-med) {
+    		display: flex;
+    	}
+    }
+
+    /**
+     * Nav list item
+     */
+    &__list-item {
+    	position: relative;
+    }
+
+    /**
+     * Nav link
+     */
+    &__link {
+    	display: flex;
+    	padding: 1em;
+    	font-family: $font-family-secondary;
+        font-weight: $font-weight-bold;
+        color: $color-black;
+    	text-transform: uppercase;
+    	font-size: $font-size-med;
+
+        &::after {
+            display: none;
+        }
+    	
+    	&--is-active {
+    		color: $color-secondary;
+    	}
+    }
 }

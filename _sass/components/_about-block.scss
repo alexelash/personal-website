@@ -1,0 +1,59 @@
+.about-block {
+    padding-top: $pad-normal;
+    text-align: center;
+    width: 100%;
+    max-width: $l-max-width;
+    margin: 0 auto;
+
+    @media all and (min-width: $bp-med) {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    &__block {
+        @media all and (min-width: $bp-med) {
+            margin-right: $pad-large;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__intro {
+        font-size: $font-size-large;
+        font-style: italic;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: stretch;
+        padding: $pad-normal $pad-large;
+        @include backgroundPattern();
+        
+        @media all and (min-width: $bp-med) {
+            margin-right: $pad-large;
+        }
+    }
+
+    &__title {
+        margin-bottom: $pad-small;
+        @include headingUnderline();
+    }
+
+    &__subtitle {
+        font-size: $font-size-med-2;
+        font-style: italic;
+    }
+
+    &__list {
+        margin: 0;
+    }
+
+    &__attr,
+    &__desc {
+        font-family: $font-family-secondary;
+        font-size: $font-size-sm-2;
+        margin-bottom: $pad-medium;
+    }
+}

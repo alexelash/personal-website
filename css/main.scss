@@ -61,18 +61,23 @@
 /*------------------------------------*\
    #COMPONENTS
 \*------------------------------------*/
+@import "components/about-block";
+@import "components/article";
+@import "components/badge";
 @import "components/breadcrumbs";
 @import "components/buttons";
 @import "components/button-group";
 @import "components/card";
+@import "components/cta";
 @import "components/footer-nav";
 @import "components/footer";
 @import "components/header";
 @import "components/hero";
 @import "components/logo";
 @import "components/icon";
+@import "components/intro";
 @import "components/page-header";
-@import "components/primary-nav";
+@import "components/nav";
 @import "components/section";
 @import "components/social-icons";
 @import "components/table";
@@ -87,7 +92,9 @@
 /*------------------------------------*\
    #PAGES
 \*------------------------------------*/
-@import "pages/home";
+@import "pages/about";
+@import "pages/construction";
+@import "pages/journal";
 
 
 

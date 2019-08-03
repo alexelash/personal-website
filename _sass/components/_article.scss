@@ -1,0 +1,87 @@
+.article {
+    position: relative;
+
+    &__image-container {
+        line-height: 0;
+        width: 100%;
+        position: relative;
+
+        @media all and (min-width: $bp-med) {
+            position: absolute;
+            width: 22rem;
+            height: auto;
+        }
+    }
+
+    &__image-caption {
+        font-family: $font-family-secondary;
+        font-size: $font-size-tiny;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: $color-black;
+        color: $color-gray-lightest;
+        padding: $pad-normal $pad-medium 0;
+        border-radius: 0 6px 0 0;
+
+        p {
+            font-size: inherit;
+        }
+
+        a {
+            color: $color-gray;
+
+            &::after {
+                border-color: $color-gray-medium;
+            }
+        }
+    }
+
+    &__image {
+        border-radius: $border-radius;
+    }
+
+    &__text {
+
+        @media all and (min-width: $bp-med) {
+            margin-left: 24rem;
+        }
+    }
+    
+    &__heading {
+        font-weight: $font-weight-black;
+        font-size: $font-size-med-2;
+        color: inherit;
+        line-height: 1.25;
+        margin: $pad-compact 0 $pad-medium;
+        display: inline-block;
+
+        &::after {
+            display: none;
+        }
+
+        @media all and (min-width: $bp-med) {
+            font-size: $font-size-large-2;
+            margin: 0 0 $pad-normal;
+        }
+    }
+
+    &__date {
+        font-family: $font-family-secondary;
+        font-size: $font-size-sm-2;
+        color: $color-gray-medium;
+
+        @media all and (max-width: $bp-med) {
+            margin: $pad-comfortable 0 0;
+        }
+    }
+
+    &__footer {
+        display: flex;
+    }
+
+    &__tags-container {
+        display: flex;
+        margin-left: $pad-small;
+    }
+}

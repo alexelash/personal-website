@@ -35,6 +35,11 @@ sass:
   sass_dir: _sass
   style: compressed
 
+# Collections
+collections:
+  projects:
+    output: true
+
 include:
   - _pages
 

@@ -12,3 +12,14 @@
 ol, ul {
 	list-style: none;
 }
+
+/**
+ * 2) Definition list base styles
+ */
+
+ /**
+  * Remove default styling
+  */
+dd {
+    margin-inline-start: 0;
+}

@@ -14,10 +14,11 @@ html {
  */
 body {
 	background: $body-background;
-	font: 100%/1.5 $primary-font;
+	font: 100%/1.5 $font-family-primary;
 	-webkit-text-size-adjust: 100%;
 	color: $body-color;
 	display: flex;
 	flex-direction: column;
 	height: auto;
+    min-height: 100vh;
 }

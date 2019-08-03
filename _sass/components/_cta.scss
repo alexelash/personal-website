@@ -1,0 +1,50 @@
+.cta {
+    position: relative;
+    margin-bottom: $pad-comfortable;
+    padding: $pad-large;
+
+    &::after {
+        content: "";
+        background-image: url(../assets/images/bank-note.svg);
+        background-size: 5rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -2;
+        opacity: 0.65;
+    }
+
+    &__inner {
+        z-index: 2;
+
+        @media all and (min-width: $bp-med) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__blurb {
+        font-size: $font-size-med-2;
+        font-style: italic;
+        margin-bottom: 0;
+
+        @media all and (max-width: $bp-med) {
+            max-width: 25rem;
+            margin: 0 auto $pad-normal;
+            text-align: center;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+
+        @media all and (min-width: $bp-med) {
+            width: auto;
+            flex: 1 0 auto;
+            margin-left: $pad-normal;
+        }
+    }
+}

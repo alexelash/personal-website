@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+  <body 
+    {% if page.page_class %} 
+        class="{{- page.page_class }} {{ layout.page_class -}}" 
+    {% endif %}>
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZB33M6"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    {% include nav.html %}
+        
+    <header class="c-hero c-hero--pattern">
+        <div class="c-hero__inner">
+            <h2 class="c-hero__heading">
+                {{ page.heading }}
+            </h2>
+            <div class="c-hero__blurb">
+                {{ page.intro | markdownify }}
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container" role="main">
+        <div class="p-journal__list-container">
+            {% for post in site.posts %}
+                <article class="article__list-item">
+                    {% if post.image %}
+                    <figure class="article__image-container">
+                        {% if post.image-credit %}
+                            <figcaption class="article__image-caption">
+                                {{ post.image-credit | markdownify }}
+                            </figcaption>
+                        {% endif %}
+                        <img class="article__image" src="{{ post.image }}" alt="{{ post.image-alt }}">
+                    </figure>
+                    {% endif %}
+                    
+                    <div class="article__text">
+                        <div class="article__date">
+                            {{ post.date  | date: "%D" }}
+                        </div>
+                        <a class="article__heading" href="{{ post.url }}">
+                            {{ post.title }}
+                        </a>
+                        <div class="article__excerpt">
+                            {{ post.excerpt | markdownify }}
+                        </div>
+                        <div class="article__footer">
+                            {% if post.categories %}
+                            <ul class="article__tags-container c-badge-container">
+                                {% for category in post.categories %}
+                                    <li class="article__tag c-badge">{{ category }}</li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                        </div>
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
