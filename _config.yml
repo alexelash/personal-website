@@ -40,7 +40,6 @@ collections:
   projects:
     output: true
 
-
 include:
   - _pages
 

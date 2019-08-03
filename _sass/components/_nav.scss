@@ -26,6 +26,7 @@
     	max-width: $l-max-width;
     	display: flex;
         padding: $pad-medium $pad-large-2;
+        min-height: 4rem;
 
     	@media all and (min-width: $bp-small) {
             position: relative;

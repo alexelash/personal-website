@@ -21,6 +21,10 @@ things:
           attr: By Adam Connor
         - title: Earth in Human Hands
           attr: By David Grinspoon
+    - heading: Speaking 
+      subthings:
+        - title: Is it me? Navigating toxic workplaces.
+          attr: For ELA Conf 2017
     - heading: Learning ventures
       subthings:
         - title: Spanish
