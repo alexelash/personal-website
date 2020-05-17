@@ -6,17 +6,29 @@
         <!-- <div class="c-nav__turtle" role="img" aria-label="Illustration of my black cat with his eyes shut">
             {% include icons/turtle.svg %}
         </div> -->
-        <ul class="c-nav__list">
-            {% for nav in site.data.nav %}
-            <li class="c-nav__item" role="presentation">
-                <a 
-                    class="c-nav__link{% if page.url == nav.href %} c-nav__link--is-active{% endif %}{% if nav.href == '' %} c-nav__link--is-disabled{% endif %}" 
-                    href="{{ nav.href | prepend: site.baseurl }}" 
-                    {% if nav.href == '' %}disabled{% endif %}>
-                    {{ nav.title }}
-                </a>
-            </li>
+        <div class="c-nav__list-container">
+            <ul class="c-nav__list">
+                {% for nav in site.data.nav %}
+                <li class="c-nav__item" role="presentation">
+                    <a 
+                        class="c-nav__link{% if page.url == nav.href %} c-nav__link--is-active{% endif %}{% if nav.href == '' %} c-nav__link--is-disabled{% endif %}" 
+                        href="{{ nav.href | prepend: site.baseurl }}" 
+                        {% if nav.href == '' %}disabled{% endif %}>
+                        {{ nav.title }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+            <ul class="social-icons">
+            {% for icon in site.data.social-icons %}
+                <li class="social-icons__icon c-icon">
+                    <a class="social-icons__link {{ icon.class }}" href="{{ icon.url }}">
+                        {% include {{ icon.class | prepend: 'social-icons/' | append: '.svg' }} %}
+                        <span class="social-icons__title u-is-vishidden">{{ icon.title }}</span>
+                    </a>
+                </li>
             {% endfor %}
-        </ul>
+            </ul>
+        </div>
     </div>
 </nav>
