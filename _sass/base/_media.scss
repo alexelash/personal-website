@@ -10,3 +10,9 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+figcaption {
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

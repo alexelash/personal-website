@@ -6,11 +6,39 @@
 
     .intro__content {
         @media all and (min-width: $bp-xl) {
-            margin-bottom: $pad-large*4;
+            margin-bottom: $pad-large;
         }
     }
 
     .cta {
         margin-top: auto;
+    }
+
+    .intro {
+
+        &__image-caption {
+            position: absolute;
+            bottom: $pad-normal;
+            right: $pad-normal;
+            color: $color-white;
+            text-shadow: 0 0 3px $color-black;
+
+            p {
+                margin-bottom: 0;
+            }
+
+            a {
+                color: $color-white;
+                transition: opacity 0.35s;
+                
+                &::after {
+                    border-color: $color-white;
+                }
+
+                &:hover {
+                    opacity: 0.75;
+                }
+            }
+        }
     }
 }

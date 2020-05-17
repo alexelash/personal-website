@@ -13,34 +13,24 @@
 
         @media all and (min-width: $bp-med) {
             order: auto;
-            width: 60%;
+            width: 50%;
             position: relative;
             z-index: 1;
-        }
-
-        @media all and (min-width: $bp-xl) {
-            width: 45%;
         }
     }
 
     &__image-container {
         order: 2;
         margin-bottom: $pad-comfortable;
+        position: relative;
 
         @media all and (min-width: $bp-med) {
             order: auto;
             position: absolute;
-            width: 50%;
+            width: 45%;
             top: 0;
             right: 0;
         }
-
-        @media all and (min-width: $bp-xl) {
-            width: 65%;
-        }
-    }
-
-    &__image {
     }
 
     &__heading {
@@ -53,6 +43,7 @@
     }
 
     &__blurb {
+        font-family: $font-family-primary;
         font-size: $font-size-large;
         font-style: italic;
     }

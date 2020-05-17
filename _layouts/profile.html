@@ -5,6 +5,10 @@
     {% if page.page_class %} 
         class="{{- page.page_class }} {{ layout.page_class -}}" 
     {% endif %}>
+
+    <!-- Facebook Developers -->
+  <!--   <script>window.fbAsyncInit=function(){FB.init({appId:'233560987946486',xfbml:true,version:'v7.0'});FB.AppEvents.logPageView();};(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;} js=d.createElement(s);js.id=id;js.src="https://connect.facebook.net/en_US/sdk.js";fjs.parentNode.insertBefore(js,fjs);}(document,'script','facebook-jssdk'));</script> -->
+    <!-- Facebook Developers -->
     
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZB33M6"
@@ -19,6 +23,7 @@
                 <h1 class="intro__heading heading--special-sm">
                     {{ page.heading }}
                 </h1>
+
                 <div class="intro__content">
                     <p class="intro__blurb">
                         {{ page.intro }}
@@ -27,39 +32,61 @@
                         {{ page.body | markdownify }}
                     </div>
                 </div>
-                <div class="intro__image-container">
+                <figure class="intro__image-container">
                     <img class="intro__image" src="{{ page.image }}" alt="{{ page.alt }}">
-                </div>
+                    <figcaption class="intro__image-caption">{{ page.image-credit | markdownify }}</figcaption>
+                </figure>
             </div>
         </div>
 
         <div class="about-block">
             <div class="about-block__intro">
-                {{ page.about-intro }}
+                {{ page.things-intro }}
             </div>
             {% for thing in page.things %}
             <div class="about-block__block">
                 <h3 class="about-block__title heading--sm">{{ thing.heading }}</h3>
-                <dl id="{{ thing.heading | replace: ' ', '-' | downcase }}" class="about-block__list">
+                {% if thing.type != "doodles" %}
+                <ul id="{{ thing.heading | replace: ' ', '-' | downcase }}" class="about-block__list">
                     {% for subthing in thing.subthings %}
-                        <dt class="about-block__subtitle">
-                            {{ subthing.title }}
-                        </dt>
-                        {% if subthing.attr %}
-                            <dd class="about-block__attr">
-                                {{ subthing.attr | markdownify }}
-                            </dd>
-                        {% else %}
-                            <dd class="about-block__desc">
-                                {{ subthing.desc | markdownify }}
-                            </dd>
-                        {% endif %}
+                        <li class="about-block__list-item">
+                            {% if subthing.attr %}
+                            <a href={{subthing.attr}} class="about-block__attr">
+                            {% endif %}
+                            <h4 class="about-block__subtitle">
+                                {{ subthing.title }}
+                            </h4>
+                            <p class="about-block__desc">
+                                {{ subthing.desc }}
+                            </p>
+                            {% if subthing.attr %}
+                            </a>
+                            {% endif %}
+                        </li>
                     {% endfor %}
-                </dl>
+                </ul>
+
+                {% else %}
+                    <ul id="insta-feed" class="insta-feed">
+                    {% for subthing in thing.subthings %}
+                        <li class="insta-feed__list-item">
+                            <a class="insta-feed__link" href="{{ subthing.post-url }}">
+                                <img class="insta-feed__image" src="{{ subthing.post-image }}" alt="{{ subthing.post-alt }}">
+                            </a>
+                        </li>
+                    {% endfor %}
+                    </ul>
+                {% endif %}
             </div>
             {% endfor %}
         </div>
     </div>
     {% include footer.html %}
+
+    {% if page.js_dependencies %}
+        {% for dependency in page.js_dependencies %}
+        <script src="{{ site.baseurl }}/assets/javascript/{{ dependency }}"></script>
+        {% endfor %}
+    {% endif %}  
   </body>
 </html>
