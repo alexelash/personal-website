@@ -99,6 +99,14 @@
     }
 
     /**
+     * Nav List container
+     */
+    &__list-container {
+        display: flex;
+        align-items: center;
+    }
+
+    /**
      * Nav List
      * 1) This is the primary navigation list
      */

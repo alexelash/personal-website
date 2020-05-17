@@ -14,6 +14,7 @@
     &__block {
         @media all and (min-width: $bp-med) {
             margin-right: $pad-large;
+            flex: 0 0 30%;
 
             &:last-child {
                 margin-right: 0;
@@ -24,7 +25,6 @@
     &__intro {
         font-size: $font-size-large;
         font-style: italic;
-        display: flex;
         text-align: center;
         align-items: center;
         justify-content: stretch;
@@ -33,27 +33,67 @@
         
         @media all and (min-width: $bp-med) {
             margin-right: $pad-large;
+            display: flex;
         }
     }
 
     &__title {
-        margin-bottom: $pad-small;
+        margin-bottom: $pad-normal;
         @include headingUnderline();
+
+        @media all and (max-width: $bp-med) {
+            display: inline-block;
+            margin-top: $pad-comfortable;
+        }
     }
 
     &__subtitle {
         font-size: $font-size-med-2;
         font-style: italic;
+        font-weight: $font-weight-normal;
     }
 
     &__list {
         margin: 0;
     }
 
-    &__attr,
     &__desc {
         font-family: $font-family-secondary;
         font-size: $font-size-sm-2;
         margin-bottom: $pad-medium;
+    }
+
+    .insta-feed {
+        display: flex;
+
+        @media all and (max-width: $bp-med) {
+            max-width: 20rem;
+            margin: 0 auto;
+        }
+        
+        &__list-item {
+            flex: 0 0 48%;
+
+            &:first-child {
+                margin-right: 2%;
+            }
+        }
+
+        &__link {
+            &::after {
+                display: none;
+            }
+        }
+
+        &__image {
+            border-radius: $border-radius;
+            transition: transform 0.35s;
+
+            &:hover {
+                transform: scale(1.025);
+                transition: transform 0.35s;
+                z-index: 1;
+            }
+        }
     }
 }

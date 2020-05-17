@@ -19,5 +19,11 @@
 		<!-- page content -->
 	</div>
 	{% include footer.html %}
+	
+    {% if page.js_dependencies %}
+        {% for dependency in page.js_dependencies %}
+        <script src="{{ site.baseurl }}/assets/javascript/{{ dependency }}"></script>
+        {% endfor %}
+    {% endif %}  
   </body>
 </html>
