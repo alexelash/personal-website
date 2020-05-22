@@ -1,0 +1,85 @@
+.p-resume {
+    [role=main] {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro {
+        &__inner {
+            text-align: center;
+        }
+        
+        &__content {
+            width: 65%;
+            margin: 0 auto;
+            
+            @media all and (min-width: $bp-xl) {
+                margin-bottom: $pad-large;
+            }
+        }
+    }
+
+    .content {
+        max-width: $l-max-width-mid;
+        margin: $pad-comfortable auto 0;
+    }
+
+    .section {
+        position: relative;
+    }
+
+    .section-title {
+        position: absolute;
+        top: calc($pad-large + 4px);
+        left: 0;
+        width: 180px;
+    }
+
+    .example {
+        margin: 0 0 $pad-large 200px;
+
+        &__title-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__title {
+            font-weight: $font-weight-normal;
+            font-size: $font-size-large;
+            font-style: italic;
+            margin-bottom: $pad-small;
+        }
+
+        &__desc-button {
+            font-size: $font-size-large-2;
+        }
+
+        &__metadata {
+            font-family: $font-family-secondary;
+            font-size: $font-size-sm-2;
+            margin: $pad-small 0 $pad-medium;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        &__company,
+        &__dates {
+            display: inline-block;
+            font-weight: $font-weight-semibold;
+            font-size: $font-size-sm-2;
+        }
+
+        &__company {
+            &::after {
+                content: "•";
+                color: $color-gray-medium;
+            }
+        }
+
+        &__desc-container {
+            margin-top: $pad-normal;
+        }
+    }
+}

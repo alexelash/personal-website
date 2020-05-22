@@ -13,6 +13,25 @@ ol, ul {
 	list-style: none;
 }
 
+.content {
+    ul {  
+        font: 100%/1.65 $font-family-secondary;
+        margin-bottom: $space;
+    }
+
+    ul li {
+        margin-left: $pad-normal;
+        text-indent: -($pad-normal);
+        margin-bottom: $pad-small;
+
+        &::before {
+            content: '•';
+            color: $color-gray-medium;
+            padding-right: 0.35rem;
+        }
+    }
+}
+
 /**
  * 2) Definition list base styles
  */
