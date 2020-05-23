@@ -44,9 +44,10 @@ $sidebar-offset: 200px;
 
         @media all and (min-width: $bp-large) {
             position: absolute;
-            top: calc($pad-medium + 4px);
+            top: 6px;
             left: 0;
             width: $sidebar-width;
+            text-align: right;
         }
     }
 
@@ -94,8 +95,8 @@ $sidebar-offset: 200px;
         &__title {
             text-align: left;
             color: $color-gray-dark;
-            font-weight: $font-weight-normal;
-            font-size: $font-size-med-2;
+            font-weight: $font-weight-light;
+            font-size: $font-size-large;
             margin-bottom: $pad-small;
         }
 
@@ -117,7 +118,6 @@ $sidebar-offset: 200px;
 
         &__metadata {
             font-family: $font-family-secondary;
-            font-size: $font-size-sm-2;
             margin: $pad-small 0 $pad-medium;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -126,8 +126,8 @@ $sidebar-offset: 200px;
         &__company,
         &__dates {
             display: inline-block;
-            font-weight: $font-weight-semibold;
-            font-size: $font-size-sm-2;
+            font-weight: $font-weight-medium;
+            font-size: $font-size-sm;
         }
 
         &__company {

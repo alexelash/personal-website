@@ -6,8 +6,8 @@
  * Main element
  */
 [role=main] {
-	display: block;
-	padding: 3rem;
+    display: block;
+    padding: $pad-large-2;
 
     @media all and (min-width: ( $l-max-width + $pad-large-2*2 ) ) {
         padding: $pad-large-2 0 $pad-large-2;
@@ -17,6 +17,6 @@
     }
 
     @media all and (min-width: $bp-xl) {
-        padding-top: 6rem;
+        padding-top: $pad-large-2;
     }
 }
