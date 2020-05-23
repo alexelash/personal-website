@@ -1,5 +1,13 @@
-<footer class="footer">
-    <small class="footer__smallprint">
-        &copy; Copyright {{ 'now' | date: "%Y" }}, Alex Lash.
-    </small>
-</footer>
+    <footer class="footer">
+        <small class="footer__smallprint">
+            &copy; Copyright {{ 'now' | date: "%Y" }}, Alex Lash.
+        </small>
+    </footer>
+    
+    {% if page.js_dependencies %}
+        {% for dependency in page.js_dependencies %}
+        <script src="{{ site.baseurl }}/assets/javascript/{{ dependency }}"></script>
+        {% endfor %}
+    {% endif %}  
+  </body>
+</html>
