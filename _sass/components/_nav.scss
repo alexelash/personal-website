@@ -3,37 +3,38 @@
 \*------------------------------------*/
 
 .c-nav {
-	width: 100vw;
-	background: $color-white;
-	overflow: auto;
-	z-index: 1;
-	
-	/**
-	 * Navigation Active State
-	 * 1) Triggered when Menu Button is clicked
- 	 */
-	&--is-active {
-		top: 4.7em;
-		left: 0;
+    width: 100%;
+    overflow: auto;
+    z-index: 1;
+    
+    padding: $pad-medium $pad-large-2;
+    
+    /**
+     * Navigation Active State
+     * 1) Triggered when Menu Button is clicked
+     */
+    &--is-active {
+        top: 4.7em;
+        left: 0;
 
-		@media all and (min-width: $bp-small) {
-			top: 0;
-			width: initial;
-		}
-	}
+        @media all and (min-width: $bp-small) {
+            top: 0;
+            width: initial;
+        }
+    }
 
     &__inner {
-    	max-width: $l-max-width;
-    	display: flex;
-        padding: $pad-medium $pad-large-2;
+        max-width: $l-max-width;
+        display: flex;
         min-height: 4rem;
+        border-bottom: 1px solid $color-gray;
 
-    	@media all and (min-width: $bp-small) {
+        @media all and (min-width: $bp-small) {
             position: relative;
             justify-content: space-between;
             align-items: center;
             margin: 0 auto;
-    	}
+        }
 
         @media all and (min-width: ( $l-max-width + $pad-large-2*2 ) ) {
             padding: $pad-medium 0;
@@ -72,30 +73,30 @@
      * Navigation Trigger Button
      */
     &__trigger {
-    	display: block;
-    	position: absolute;
+        display: block;
+        position: absolute;
         top: 0.85rem;
         left: 2em;
         color: $color-gray;
         border: 1px dotted $color-gray;
         background: transparent;
-    	border-radius: $border-radius;
-    	padding: 0.8em 0.5em;
-    	text-transform: uppercase;
+        border-radius: $border-radius;
+        padding: 0.8em 0.5em;
+        text-transform: uppercase;
         font-weight: bold;
         transition: all $anim-fast ease;
         
         &--is-active {
-    	    color: $color-gray-dark;
+            color: $color-gray-dark;
         }
         
         &:hover, &:focus {
-    	    color: $color-gray-dark;
+            color: $color-gray-dark;
         }
 
-    	@media all and (min-width: $bp-small) {
-    		display: none;
-    	}
+        @media all and (min-width: $bp-small) {
+            display: none;
+        }
     }
 
     /**
@@ -111,56 +112,56 @@
      * 1) This is the primary navigation list
      */
     &__list {
-    	display: none;
+        display: none;
 
         /**
          * Nav list styling when parent nav is active
          */
-    	.nav--is-active & {
-    		display: block;
-    		top: 48px;
-    		left: 0;
+        .nav--is-active & {
+            display: block;
+            top: 48px;
+            left: 0;
 
-    		@media all and (min-width: $bp-small) {
-    			top: 0;
-    		}
-    	}
+            @media all and (min-width: $bp-small) {
+                top: 0;
+            }
+        }
 
-    	@media all and (min-width: $bp-small) {
-    		display: block;
-    		padding: 0;
-    	}
+        @media all and (min-width: $bp-small) {
+            display: block;
+            padding: 0;
+        }
 
-    	@media all and (min-width: $bp-med) {
-    		display: flex;
-    	}
+        @media all and (min-width: $bp-med) {
+            display: flex;
+        }
     }
 
     /**
      * Nav list item
      */
     &__list-item {
-    	position: relative;
+        position: relative;
     }
 
     /**
      * Nav link
      */
     &__link {
-    	display: flex;
-    	padding: 1em;
-    	font-family: $font-family-secondary;
-        font-weight: $font-weight-bold;
+        display: flex;
+        padding: 1em;
+        font-family: $font-family-secondary;
+        font-weight: $font-weight-medium;
         color: $color-black;
-    	text-transform: uppercase;
-    	font-size: $font-size-med;
+        text-transform: uppercase;
+        font-size: $font-size-sm-2;
 
         &::after {
             display: none;
         }
-    	
-    	&--is-active {
-    		color: $color-secondary;
-    	}
+        
+        &--is-active {
+            color: $color-secondary;
+        }
     }
 }

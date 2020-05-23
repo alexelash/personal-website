@@ -45,6 +45,8 @@
     &__blurb {
         font-family: $font-family-primary;
         font-size: $font-size-large;
+        font-weight: $font-weight-light;
         font-style: italic;
+        line-height: 1.5;
     }
 }
