@@ -7,7 +7,11 @@
  */
 [role=main] {
     display: block;
-    padding: $pad-large-2;
+    padding: $pad-normal;
+
+    @media all and (min-width: $bp-med) {
+        padding: $pad-large-2;
+    }
 
     @media all and (min-width: ( $l-max-width + $pad-large-2*2 ) ) {
         padding: $pad-large-2 0 $pad-large-2;

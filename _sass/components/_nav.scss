@@ -4,10 +4,14 @@
 
 .c-nav {
     width: 100%;
-    overflow: auto;
+    overflow: hidden;
     z-index: 1;
-    
-    padding: $pad-medium $pad-large-2;
+    padding: $pad-medium $pad-normal;
+
+
+    @media all and (min-width: $bp-med) {
+        padding: $pad-medium $pad-large-2;
+    }
     
     /**
      * Navigation Active State
