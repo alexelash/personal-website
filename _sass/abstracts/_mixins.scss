@@ -35,6 +35,5 @@
 }
 
 @mixin focus-outline() {
-    outline: 3px solid rgba(blue, 0.3);
-    outline-offset: 2px;
+    box-shadow: 0 0 0 2px rgba(blue, 0.3);
 }

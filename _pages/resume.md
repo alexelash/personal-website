@@ -36,12 +36,12 @@ sections:
 
             My responsibilities included: 
 
-            - Constant communication with POs, SMEs, developers, QA engineers, and scrummasters in an Agile environment to produce wireframes and high-fidelity designs
-            - Evangelizing the importance of a unified design system and presenting business reasons for developing a dynamic pattern library with our frontend development team
-            - Fulfilling a Business Analyst role by writing user-centric tickets in Jira
-            - UX on the graph-based portion of our new cybersecurity software which required directly interfacing with UK-based colleagues, designing wireframes and high-fidelities alongside developers, and documenting features in Confluence for QA and those outside of the scrum team
-            - Improving the UI/UX of a pre-existing e-Discovery web application
-            - Providing visual quality assurance throughout sprints where needed
+            - Constant communication with POs, SMEs, developers, QA engineers, and scrummasters in an Agile environment to produce wireframes and high-fidelity designs.
+            - Evangelizing the importance of a unified design system and presenting business reasons for developing a dynamic pattern library with our frontend development team.
+            - Fulfilling a Business Analyst role by writing user-centric tickets in Jira.
+            - UX on the graph-based portion of our new cybersecurity software which required directly interfacing with UK-based colleagues, designing wireframes and high-fidelities alongside developers, and documenting features in Confluence for QA and those outside of the scrum team.
+            - Improving the UI/UX of a pre-existing e-Discovery web application.
+            - Providing visual quality assurance throughout sprints where needed.
         - title: Designer and Web Developer
           company: Dyad Communications
           dates: Sept 2013 - Jan 2016

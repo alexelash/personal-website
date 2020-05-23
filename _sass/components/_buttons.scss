@@ -162,12 +162,10 @@
 	border-radius: $border-radius;
 	transition: background $fade-quick $anim-ease;
 	position: relative;
-
-	&:hover {
-		color: $color-black;
-	}
+	outline: none;
 
 	&:focus {
+		outline: none;
 		@include focus-outline();
 	}
 }

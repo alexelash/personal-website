@@ -43,10 +43,15 @@
                                     {{ example.title }}
                                 </h3>
                                 {% if example.desc %}
-                                    <div class="example__desc-button">+</div>
+                                <div class="example__desc-button">
+                                    <svg class="example__plus-icon" viewBox="0 0 11 11" aria-hidden="true" focusable="false">
+                                        <rect class="vert" height="11" width="1" y="0" x="5" />
+                                        <rect height="1" width="11" y="5" x="0" />
+                                    </svg>
+                                </div>
                                 {% endif %}
                             {% if example.desc %}</button>{% endif %}  
-
+                            
                             <span class="example__metadata">
                                 {% if example.company %}
                                 <h4 class="example__company">
@@ -68,7 +73,7 @@
                             {{ example.desc | markdownify }}
                         </div>
                         {% elsif example.excerpt %}
-                        <div class="example__desc-container">
+                        <div class="example__excerpt-container">
                             {{ example.excerpt | markdownify }}
                         </div>
                         {% endif %}
