@@ -52,14 +52,10 @@ $sidebar-offset: 200px;
     }
 
     .example {
+        margin: 0 0 $pad-comfortable 0;
+
         @media all and (min-width: $bp-large) {
             margin: 0 0 $pad-large $sidebar-offset;
-        }
-
-        &__header {
-            @media all and (max-width: $bp-large) {
-                margin-bottom: $pad-normal;
-            }
         }
 
         &__title-container {

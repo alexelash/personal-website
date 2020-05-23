@@ -52,7 +52,7 @@
                                 {% endif %}
                             {% if example.desc %}</button>{% endif %}  
                             
-                            <span class="example__metadata">
+                            {% if example.company or example.dates %}<span class="example__metadata">{% endif %}
                                 {% if example.company %}
                                 <h4 class="example__company">
                                     {{ example.company }}
@@ -65,7 +65,7 @@
                                     {{ example.dates }}
                                 </h5>
                                 {% endif %}
-                            </span>
+                            {% if example.company or example.dates %}</span>{% endif %}
                         </header>
 
                         {% if example.desc %}
