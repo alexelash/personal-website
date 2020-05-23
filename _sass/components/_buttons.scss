@@ -147,9 +147,6 @@
 }
 
 
-
-
-
 /*------------------------------------*\
     #TEXT BUTTON
 \*------------------------------------*/
@@ -164,8 +161,11 @@
 	cursor: pointer;
 	border-radius: $border-radius;
 	transition: background $fade-quick $anim-ease;
+	position: relative;
+	outline: none;
 
-	&:hover, &:focus {
-		color: $color-gray;
+	&:focus {
+		outline: none;
+		@include focus-outline();
 	}
 }

@@ -57,6 +57,10 @@
         margin: 0;
     }
 
+    &__attr {
+        color: inherit;
+    }
+
     &__desc {
         font-family: $font-family-secondary;
         font-size: $font-size-sm-2;

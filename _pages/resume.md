@@ -1,40 +1,99 @@
 ---
-layout: default
+layout: resume
 title: Résumé
 permalink: "/resume"
 page_class: p-resume
+js_dependencies: hide-show.js
+
+heading: Résumé
+intro: Self-motivated designer with seven years of professional experience and demonstrated proficiency as a frontend web developer and software designer.
+sections:
+    - title: Experience
+      examples:
+        - title: User Experience & Marketing Designer
+          company: Azavea
+          dates: June 2017 - Present
+          desc: | 
+            Azavea is a B Corporation that creates civic geospatial software and data analytics for the web. Our mission is to advance the state of the art in geospatial technology and apply it for civic, social, and environmental impact. 
+
+            At Azavea, my responsibilities include:
+            
+            - Working with my team, developers, and project managers to design websites and web applications from a user-centric point of view. I work on a project from conception all the way through production.
+            - Producing sitemaps, wireframes, coded prototypes, and pixel-perfect designs.
+            - Conducting user research, frequently in the form of usability tests and user interviews.
+            - Developing and/or tweaking production-ready code, primarily using HTML, CSS, and Javascript with an eye on accessibility and semantic markup.
+            - Working with internal teams and stakeholders to develop branding for existing or new products.
+            - Assisting our social media manager in developing visual assets.
+            - Collaborating with team members and VPs to design marketing and internal collateral.
+        - title: Adjunct Professor
+          company: Temple University, Tyler School of Art
+          dates: Aug 2018 - Dec 2018
+        - title: User Experience & User Interface Designer
+          company: Nuix
+          dates: Jan 2016 - May 2017
+          desc: |
+            Nuix develops software and solutions for investigation and cybersecurity incident response.
+
+            My responsibilities included: 
+
+            - Constant communication with POs, SMEs, developers, QA engineers, and scrummasters in an Agile environment to produce wireframes and high-fidelity designs.
+            - Evangelizing the importance of a unified design system and presenting business reasons for developing a dynamic pattern library with our frontend development team.
+            - Fulfilling a Business Analyst role by writing user-centric tickets in Jira.
+            - UX on the graph-based portion of our new cybersecurity software which required directly interfacing with UK-based colleagues, designing wireframes and high-fidelities alongside developers, and documenting features in Confluence for QA and those outside of the scrum team.
+            - Improving the UI/UX of a pre-existing e-Discovery web application.
+            - Providing visual quality assurance throughout sprints where needed.
+        - title: Designer and Web Developer
+          company: Dyad Communications
+          dates: Sept 2013 - Jan 2016
+          desc: |
+            Dyad Communications is a boutique agency specializing in the delivery of web experiences for high-end architects and interior designers. My role included a significant amount of direct client interaction throughout the design, development and delivery process as well as the mentoring of Dyad’s more junior developers. 
+
+            On a daily basis, I was responsible for programming and maintaining responsive websites using HTML5, CSS3, jQuery, the Sencha Touch framework, PHP and PHP-based content management systems. Beyond my day-to-day duties, I championed and managed Dyad’s migration from SVN to Git version control and was integral in Dyad’s transition from using the ExpressionEngine content management system to WordPress.
+        - title: Graphic Design Intern
+          company: Bluecadet Interactive
+          dates: Dec 2012 - Aug 2013
+          visibility: hidden
+        - title: Graphic Design Intern
+          company: Universal Companies
+          dates: June 2012 - Aug 2012
+          visibility: hidden
+        - title: Graphic Design Intern
+          company: Temple University PRowl
+          dates: Sept 2011 - May 2012
+          visibility: hidden
+    - title: Education
+      examples: 
+        - title: Temple University, Tyler School of Art
+          company: BFA Graphic and Interactive Design, Honors Program
+          dates: Graduated May 2013
+    - title: Capabilities
+      examples:
+        - title: Design
+          excerpt: |
+            Branding • Web Design • Illustration • Social Media • Usability testing • User Interviews • Wireframing • Photoshop • Illustrator • InDesign •  AfterEffects • Sketch
+        - title: Software Development
+          excerpt: |
+            HTML • SASS • React
+    - title: Community
+      examples:
+        - title: Philly Tech Sistas
+          excerpt: |
+            Philly Tech Sistas provides programming workshops and professional development events for women of color. I joined the initial organizing team for their first year of classes in 2019, and co-wrote the first part of the Intro to HTML and CSS course, as well as co-taught the first iteration of the class.
+        - title: ProjectMEOW
+          excerpt: | 
+            Project MEOW is an all-volunteer, animal welfare group that helps West Philadelphia residents humanely reduce their feral and stray cat populations through Trap, Neuter, and Return (TNR) of stray and feral cats. I worked with the organization in a volunteer capacity as their Twitter manager from 2016 until 2017. Most recently, I worked with their Executive Director on two new posters.
+        - title: LadyHacks
+          excerpt: |
+            Hackathon co-organizer. Responsible for designing and developing the hackathon’s identity and website in 2015 and 2016. Also worked with co-organizers on planning and executing the event.
+        - title: Girl Develop It
+          excerpt: |
+            Teacher for “Intro to HTML/CSS” • TA for “Intro to User Experience” and “Intro to Writing SVG”
+        - title: ELA Conf
+          excerpt: |
+            2017 Talk “Is it me?” • 2016 Conference Sketchnotes • 2015 Lightning Talk “Teaching with Illustrations”
+        - title: West Chester University
+          excerpt: |
+            Judge for the 2015 Graphic Design Packaging Show
+
 ---
 
-# Résumé
-Self-motivated designer with four years professional experience across various business sectors. Demonstrated proficiency as a frontend web developer and software designer with an interest in creating and maintaining smart design systems that empower designers and improve interface pattern visibility.
-
-## User Experience Designer
-### Azavea
-June 2017 - Present
-Azavea is a B Corporation that creates civic geospatial software and data analytics for the web. Our mission is to advance the state of the art in geospatial technology and apply it for civic, social, and environmental impact. At Azavea, my responsibilities include:
-- Working with my team, developers and project managers to design websites and web applications from a user-centric point of view, from conception all the way through production.
-- Producing sitemaps, wireframes, Marvel prototypes, coded prototypes and high fidelity designs.
-- Conducting or supporting usability testing and user interviews.
-- Developing and/or tweaking production-ready code, primarily using HTML, CSS and jQuery with an eye on accessibility.
-- Collaborating with team members and VPs to design marketing and internal collateral.
-
-## Adjunct Professor
-### Temple University
-August 2018 - December 2018
-
-## Adjunct Professor
-### Nuix
-January 2016 - May 2017
-Nuix develops software and solutions for investigation and cybersecurity incident response. At Nuix, I was a UI/UX designer. My responsibilities included: 
-- Constant communication with POs, SMEs, developers, QA engineers, and scrummasters in an Agile environment to produce wireframes and high-fidelity designs
-- Evangelizing the importance of a unified design system and presenting business reasons for developing a dynamic pattern library with our frontend development team
-- Fulfilling a Business Analyst role by writing user-centric tickets in Jira
-- UX on the graph-based portion of our new cybersecurity software which required directly interfacing with UK-based colleagues, designing wireframes and high-fidelities alongside developers, and documenting features in Confluence for QA and those outside of the scrum team
-- Improving the UI/UX of a pre-existing e-Discovery web application
-- Providing visual quality assurance throughout sprints where needed
-
-## Designer and Web Developer
-### Dyad Communications
-Dyad Communications is a boutique agency specializing in the delivery of web experiences for high-end architects and interior designers. My role included a significant amount of direct client interaction throughout the design, development and delivery process as well as the mentoring of Dyad’s more junior developers. 
-
-On a daily basis, I was responsible for programming and maintaining responsive websites using HTML5, CSS3, jQuery, the Sencha Touch framework, PHP and PHP-based content management systems. Beyond my day-to-day duties, I championed and managed Dyad’s migration from SVN to Git version control and was integral in Dyad’s transition from using the ExpressionEngine content management system to WordPress.
