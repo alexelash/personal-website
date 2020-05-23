@@ -15,13 +15,13 @@ ol, ul {
 
 .content {
     ul {  
-        font: 100%/1.65 $font-family-secondary;
+        font: $body-font;
         margin-bottom: $space;
     }
 
     ul li {
-        margin-left: $pad-normal;
-        text-indent: -($pad-normal);
+        margin-left: 1rem;
+        text-indent: -0.85rem;
         margin-bottom: $pad-small;
 
         &::before {
