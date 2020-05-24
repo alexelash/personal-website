@@ -126,11 +126,9 @@ $sidebar-offset: 200px;
             font-size: $font-size-sm;
         }
 
-        &__company {
-            &::after {
-                content: "•";
-                color: $color-gray-medium;
-            }
+        &__metadata-divider {
+            font-size: $font-size-sm;
+            color: $color-gray-medium;
         }
 
         &__desc-container {

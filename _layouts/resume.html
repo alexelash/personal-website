@@ -37,10 +37,11 @@
                     {% if example.visibility != "hidden" %}
                     <article class="example">
                         <header class="example__header">
-
                             {% if example.desc %}<button class="example__title-container c-btn--text -js-toggle" aria-expanded="false">{% endif %}    
                                 <h3 class="example__title">
+                                    {% if example.title-url %}<a href="{{ example.title-url }}">{% endif %}
                                     {{ example.title }}
+                                    {% if example.title-url %}</a>{% endif %}
                                 </h3>
                                 {% if example.desc %}
                                 <div class="example__desc-button">
@@ -52,20 +53,24 @@
                                 {% endif %}
                             {% if example.desc %}</button>{% endif %}  
                             
-                            {% if example.company or example.dates %}<span class="example__metadata">{% endif %}
+                            {% if example.company or example.dates %}
+                                <span class="example__metadata">
                                 {% if example.company %}
                                 <h4 class="example__company">
+                                    {% if example.url %}<a href="{{ example.url }}">{% endif %}
                                     {{ example.company }}
+                                    {% if example.url %}</a>{% endif %}
                                 </h4>
                                 {% endif %}
 
+                                <span class="example__metadata-divider">•</span>
 
                                 {% if example.dates %}
                                 <h5 class="example__dates">
                                     {{ example.dates }}
                                 </h5>
                                 {% endif %}
-                            {% if example.company or example.dates %}</span>{% endif %}
+                            </span>{% endif %}
                         </header>
 
                         {% if example.desc %}

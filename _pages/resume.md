@@ -12,6 +12,7 @@ sections:
       examples:
         - title: User Experience & Marketing Designer
           company: Azavea
+          url: https://www.azavea.com/
           dates: June 2017 - Present
           desc: | 
             Azavea is a B Corporation that creates civic geospatial software and data analytics for the web. Our mission is to advance the state of the art in geospatial technology and apply it for civic, social, and environmental impact. 
@@ -27,9 +28,11 @@ sections:
             - Collaborating with team members and VPs to design marketing and internal collateral.
         - title: Adjunct Professor
           company: Temple University, Tyler School of Art
+          url: https://tyler.temple.edu/
           dates: Aug 2018 - Dec 2018
         - title: User Experience & User Interface Designer
           company: Nuix
+          url: https://www.nuix.com/
           dates: Jan 2016 - May 2017
           desc: |
             Nuix develops software and solutions for investigation and cybersecurity incident response.
@@ -44,6 +47,7 @@ sections:
             - Providing visual quality assurance throughout sprints where needed.
         - title: Designer and Web Developer
           company: Dyad Communications
+          url: http://www.dyadcom.com/
           dates: Sept 2013 - Jan 2016
           desc: |
             Dyad Communications is a boutique agency specializing in the delivery of web experiences for high-end architects and interior designers. My role included a significant amount of direct client interaction throughout the design, development and delivery process as well as the mentoring of Dyad’s more junior developers. 
@@ -73,13 +77,15 @@ sections:
             Branding • Web Design • Illustration • Social Media • Usability testing • User Interviews • Wireframing • Photoshop • Illustrator • InDesign •  AfterEffects • Sketch
         - title: Software Development
           excerpt: |
-            HTML • SASS • React
+            HTML • SASS • Jekyll • Javascript • React
     - title: Community
       examples:
         - title: Philly Tech Sistas
+          title-url: https://www.phillytechsistas.org/
           excerpt: |
             Philly Tech Sistas provides programming workshops and professional development events for women of color. I joined the initial organizing team for their first year of classes in 2019, and co-wrote the first part of the Intro to HTML and CSS course, as well as co-taught the first iteration of the class.
         - title: ProjectMEOW
+          title-url: https://www.projectmeow.org/
           excerpt: | 
             Project MEOW is an all-volunteer, animal welfare group that helps West Philadelphia residents humanely reduce their feral and stray cat populations through Trap, Neuter, and Return (TNR) of stray and feral cats. I worked with the organization in a volunteer capacity as their Twitter manager from 2016 until 2017. Most recently, I worked with their Executive Director on two new posters.
         - title: LadyHacks
