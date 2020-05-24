@@ -1,6 +1,7 @@
 /*------------------------------------*\
     #NAVIGATION
 \*------------------------------------*/
+$nav-height: 4rem;
 
 .c-nav {
     width: 100%;
@@ -9,7 +10,7 @@
     padding: $pad-medium $pad-normal;
 
     @media all and (min-width: $bp-med) {
-        padding: $pad-medium $pad-large-2;
+        padding: 0 $pad-large-2;
     }
 
     &__inner {
@@ -24,14 +25,10 @@
 
         @media all and (min-width: $bp-med) {
             position: relative;
-            min-height: 4rem;
+            min-height: $nav-height;
             align-items: center;
             justify-content: space-between;
             margin: 0 auto;
-        }
-
-        @media all and (min-width: ( $l-max-width + $pad-large-2*2 ) ) {
-            padding: $pad-medium 0;
         }
     }
 
@@ -138,6 +135,8 @@
 
         @media all and (min-width: $bp-med) {
             display: flex;
+            height: $nav-height;
+            margin-right: $pad-comfortable;
         }
 
         @media all and (max-width: $bp-med) {
@@ -163,17 +162,33 @@
         text-transform: uppercase;
         font-size: $font-size-sm-2;
         display: block;
+        border-radius: $border-radius;
 
         &::after {
             display: none;
         }
         
         &--is-active {
-            color: $color-secondary;
+            color: $color-primary;
+            background: $color-white;
         }
 
         @media all and (min-width: $bp-med) {
             display: flex;
+            height: 100%;
+            align-items: center;
+        
+            &--is-active {
+
+                &:after {
+                    content: "";
+                    display: block;
+                    height: 2px;
+                    width: 100%;
+                    z-index: 1;
+                    bottom: 0;
+                }
+            }
         }
     }
 }
