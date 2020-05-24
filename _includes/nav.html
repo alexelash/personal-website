@@ -3,9 +3,15 @@
         <a class="c-nav__logo" href="{{ '/' | prepend: site.baseurl }}" rel="home">
             Alex Lash
         </a>
-        <!-- <div class="c-nav__turtle" role="img" aria-label="Illustration of my black cat with his eyes shut">
-            {% include icons/turtle.svg %}
-        </div> -->
+        <div class="c-nav__trigger-container">
+            <button class="c-nav__trigger c-btn--text" aria-expanded="false">
+                <svg class="c-nav__menu-icon" viewBox="0 0 11 11" aria-hidden="true" focusable="false">
+                    <rect class="menu-top" height="1" width="11" y="0" x="0" />
+                    <rect class="menu-middle" height="1" width="11" y="4" x="0" />
+                    <rect class="menu-bottom" height="1" width="11" y="8" x="0" />
+                </svg>
+            </button>
+        </div>
         <div class="c-nav__list-container">
             <ul class="c-nav__list">
                 {% for nav in site.data.nav %}

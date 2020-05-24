@@ -8,35 +8,25 @@
     z-index: 1;
     padding: $pad-medium $pad-normal;
 
-
     @media all and (min-width: $bp-med) {
         padding: $pad-medium $pad-large-2;
-    }
-    
-    /**
-     * Navigation Active State
-     * 1) Triggered when Menu Button is clicked
-     */
-    &--is-active {
-        top: 4.7em;
-        left: 0;
-
-        @media all and (min-width: $bp-small) {
-            top: 0;
-            width: initial;
-        }
     }
 
     &__inner {
         max-width: $l-max-width;
         display: flex;
-        min-height: 4rem;
         border-bottom: 1px solid $color-gray;
+        
+        @media all and (max-width: $bp-med) {
+            flex-wrap: wrap;
+            padding: 0.25rem 0;
+        }
 
-        @media all and (min-width: $bp-small) {
+        @media all and (min-width: $bp-med) {
             position: relative;
-            justify-content: space-between;
+            min-height: 4rem;
             align-items: center;
+            justify-content: space-between;
             margin: 0 auto;
         }
 
@@ -57,37 +47,28 @@
         &::after {
             display: none;
         }
-    }
 
-    &__turtle {
-        background-color: $color-utility-info-light;
-        width: 5rem;
-        height: 5rem;
-        border-radius: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        svg {
-            width: 70%;
+        @media all and (max-width: $bp-med) {            
+            flex: 1 0 50%;
+            padding: 0.25rem 0;
         }
     }
 
     /**
      * Navigation Trigger Button
      */
-    &__trigger {
+
+    &__trigger-container {
         display: block;
-        position: absolute;
-        top: 0.85rem;
-        left: 2em;
-        color: $color-gray;
-        border: 1px dotted $color-gray;
+        text-align: right;
+        flex: 1 0 50%;
+    }
+
+    &__trigger {
         background: transparent;
         border-radius: $border-radius;
-        padding: 0.8em 0.5em;
-        text-transform: uppercase;
-        font-weight: bold;
+        padding: 0.25rem;
+        line-height: 0;
         transition: all $anim-fast ease;
         
         &--is-active {
@@ -98,17 +79,67 @@
             color: $color-gray-dark;
         }
 
-        @media all and (min-width: $bp-small) {
+        @media all and (min-width: $bp-med) {
             display: none;
         }
+
+        /* example 5 */
+        .example5 span {
+            -webkit-transition-duration: 0s; transition-duration: 0s;
+            -webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+        }
+        .example5:hover span {
+            background-color: rgba(0,0,0,0.0);
+            -webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+        }
+        .example5 span:before {
+            -webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+            -webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+            -webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+        }
+        .example5:hover span:before {
+            margin-top: 0;
+            -webkit-transform: rotate(45deg); transform: rotate(45deg);
+            -webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+        }
+        .example5 span:after {
+            -webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+            -webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+            -webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+        }
+        .example5:hover span:after {
+            margin-top: 0;
+            -webkit-transform: rotate(-45deg); transform: rotate(-45deg);
+            -webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+        }
+    }
+
+    &__menu-icon {
+        width: 20px;
+        height: auto;
     }
 
     /**
      * Nav List container
      */
     &__list-container {
-        display: flex;
-        align-items: center;
+        display: none;
+    
+        /**
+         * Navigation Active State
+         * 1) Triggered when Menu Button is clicked
+         */
+        &.-js-mobile-nav-visible {
+            @media all and (max-width: $bp-med) {
+                display: block;
+                flex: 1 0 100%;
+            }
+        }
+
+        @media all and (min-width: $bp-med) {
+            display: flex;
+            align-items: center;
+        }
     }
 
     /**
@@ -116,7 +147,6 @@
      * 1) This is the primary navigation list
      */
     &__list {
-        display: none;
 
         /**
          * Nav list styling when parent nav is active
@@ -139,6 +169,10 @@
         @media all and (min-width: $bp-med) {
             display: flex;
         }
+
+        @media all and (max-width: $bp-med) {
+            text-align: center;
+        }
     }
 
     /**
@@ -152,13 +186,13 @@
      * Nav link
      */
     &__link {
-        display: flex;
         padding: 1em;
         font-family: $font-family-secondary;
         font-weight: $font-weight-medium;
         color: $color-black;
         text-transform: uppercase;
         font-size: $font-size-sm-2;
+        display: block;
 
         &::after {
             display: none;
@@ -166,6 +200,10 @@
         
         &--is-active {
             color: $color-secondary;
+        }
+
+        @media all and (min-width: $bp-med) {
+            display: flex;
         }
     }
 }
