@@ -16,37 +16,6 @@
         margin: 0 auto;
     }
 
-    &__logo {
-        position: relative;
-
-        &::before {
-            content: "";
-            display: block;
-            position: absolute;
-            width: 100%;
-            height: 1px;
-            background: $color-gray-light;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: -1;
-        }
-
-        &::after {
-            display: none;
-        }
-
-        svg {
-            fill: $color-gray-dark;
-            width: 4rem;
-            margin-bottom: $pad-compact;
-            background: $color-gray-lightest;
-            padding: 0.15rem;
-            border: 1px solid $color-gray-light;
-            border-radius: 100%;
-            pointer-events: none;
-        }
-    }
-
     &__smallprint {
         font-family: $font-family-secondary;
         margin-top: $pad-comfortable;
