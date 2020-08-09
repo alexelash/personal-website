@@ -50,9 +50,9 @@ sections:
           url: http://www.dyadcom.com/
           dates: Sept 2013 - Jan 2016
           desc: |
-            Dyad Communications is a boutique agency specializing in the delivery of web experiences for high-end architects and interior designers. My role included a significant amount of direct client interaction throughout the design, development and delivery process as well as the mentoring of Dyad’s more junior developers. 
-
-            On a daily basis, I was responsible for programming and maintaining responsive websites using HTML5, CSS3, jQuery, the Sencha Touch framework, PHP and PHP-based content management systems. Beyond my day-to-day duties, I championed and managed Dyad’s migration from SVN to Git version control and was integral in Dyad’s transition from using the ExpressionEngine content management system to WordPress.
+            Dyad Communications is a boutique agency specializing in the delivery of web experiences for high-end architects and interior designers. My role included a significant amount of direct client interaction throughout the design, development and delivery process as well as the mentoring of Dyad’s more junior developers.
+            
+            I was responsible for programming and maintaining responsive websites using HTML5, CSS3, jQuery, the Sencha Touch framework, PHP and PHP-based content management systems. Beyond my day-to-day duties, I championed and managed Dyad’s migration from SVN to Git version control and the company’s transition from the ExpressionEngine content management system to WordPress.
         - title: Graphic Design Intern
           company: Bluecadet Interactive
           dates: Dec 2012 - Aug 2013
@@ -68,35 +68,35 @@ sections:
     - title: Education
       examples: 
         - title: Temple University, Tyler School of Art
-          company: BFA Graphic and Interactive Design, Honors Program
+          company: BFA Graphic and Interactive Design
           dates: Graduated May 2013
     - title: Capabilities
       examples:
         - title: Design
           excerpt: |
-            Branding • Web Design • Illustration • Social Media • Usability testing • User Interviews • Wireframing • Photoshop • Illustrator • InDesign •  AfterEffects • Sketch
+            Branding • Web design • Illustration • Social media • Graphic design • Usability testing • User interviews • Wireframing • Pixel-perfect interface design • Photoshop • Illustrator • InDesign • AfterEffects • Sketch
         - title: Software Development
           excerpt: |
-            HTML • SASS • Jekyll • Javascript • React
+            HTML • CSS/SASS • Jekyll • Jquery • Javascript • PHP • React • GIT
     - title: Community
       examples:
         - title: Philly Tech Sistas
           title-url: https://www.phillytechsistas.org/
           excerpt: |
-            Philly Tech Sistas provides programming workshops and professional development events for women of color. I joined the initial organizing team for their first year of classes in 2019, and co-wrote the first part of the Intro to HTML and CSS course, as well as co-taught the first iteration of the class.
+            Philly Tech Sistas provides programming workshops and professional development events for Black women. I joined the curriculum team for their first year of classes in 2019. On that team, provided input and feedback on courses created by other team-members, co-wrote the first part of the HTML and CSS course and co-taught the first iteration of the class.
         - title: ProjectMEOW
           title-url: https://www.projectmeow.org/
           excerpt: | 
-            Project MEOW is an all-volunteer, animal welfare group that helps West Philadelphia residents humanely reduce their feral and stray cat populations through Trap, Neuter, and Return (TNR) of stray and feral cats. I worked with the organization in a volunteer capacity as their Twitter manager from 2016 until 2017. Most recently, I worked with their Executive Director on two new posters.
+            Project MEOW is an all-volunteer, animal welfare group that helps residents humanely reduce their feral and stray cat populations. I worked with the organization as their Twitter Manager in 2016 and 2017 and worked with their Executive Director on a poster campaign.
         - title: LadyHacks
           excerpt: |
-            Hackathon co-organizer. Responsible for designing and developing the hackathon’s identity and website in 2015 and 2016. Also worked with co-organizers on planning and executing the event.
+            LadyHacks started in 2012 as Philadelphia's first hackathon for women. I was a co-organizer in 2016 and 2017. In addition to working with the rest of the team on planning and executing the event, I was responsible for designing and developing its identity and website.
         - title: Girl Develop It
           excerpt: |
             Teacher for “Intro to HTML/CSS” • TA for “Intro to User Experience” and “Intro to Writing SVG”
         - title: ELA Conf
           excerpt: |
-            2017 Talk “Is it me?” • 2016 Conference Sketchnotes • 2015 Lightning Talk “Teaching with Illustrations”
+            ELA Conf was a safe, inclusive tech leadership conference and community for adult womxn, trans men, and genderqueer people to connect. I volunteered at the conference in 2015 and 2016, and also gave two talks, one about toxic workplaces at the 2017 conference and another called “Teaching with Illustrations” in 2015.
         - title: West Chester University
           excerpt: |
             Judge for the 2015 Graphic Design Packaging Show
