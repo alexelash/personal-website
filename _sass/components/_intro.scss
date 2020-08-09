@@ -13,9 +13,13 @@
 
         @media all and (min-width: $bp-med) {
             order: auto;
-            width: 50%;
+            width: 80%;
             position: relative;
             z-index: 1;
+        }
+
+        @media all and (min-width: $bp-large) {
+            width: 50%;
         }
     }
 
