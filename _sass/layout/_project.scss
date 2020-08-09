@@ -1,0 +1,47 @@
+.p-project {
+    [role=main] {
+        display: flex;
+        width: 100%;
+        padding: 0;
+        max-width: none;
+    }
+
+    .c-nav {
+        padding: 0;
+        border-bottom: 1px solid $color-gray;
+
+        &__inner {
+            border-bottom: 0;
+        }
+    }
+
+    .project-sidebar {
+        flex: 1 0 50%;
+        padding: $pad-large;
+        display: flex;
+        flex-direction: column;
+
+        &__caption-container {
+            margin-top: auto;
+        }
+    }
+
+    .glide {
+        flex: 1 0 50%;
+        background: $color-gray;
+        
+    }
+
+    .project-slideshow {
+        max-width: 50%;
+
+        &__slide {
+            background-position: center;
+            background-repeat: no-repeat;
+            height: calc(100vh - 65px);
+            width: 100%;
+            display: block;
+            flex: 1;
+        }
+    }
+}

@@ -1,8 +1,10 @@
+    {% if layout.layout_type != "project" %}
     <footer class="footer">
         <small class="footer__smallprint">
             &copy; Copyright {{ 'now' | date: "%Y" }}, Alex Lash.
         </small>
     </footer>
+    {% endif %}  
     
     {% if page.js_dependencies %}
         {% for dependency in page.js_dependencies %}
@@ -10,5 +12,9 @@
         {% endfor %}
     {% endif %}  
     <script src="{{ site.baseurl }}/assets/javascript/mobile-menu.js"></script>
+    {% if layout.layout_type == "project" %}
+    <script src="{{ site.baseurl }}/assets/javascript/glide.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/javascript/custom-glide.js"></script>
+    {% endif %}  
   </body>
 </html>

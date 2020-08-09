@@ -23,11 +23,15 @@
             </p>
         </div>
         
-        <div class="projects-container">
+        <div class="project-container">
           {% for project in site.projects %}
             <article class="project">
-                <a class="project__heading" href="{{ project.url }}">
-                    {{ project.title }}
+                <a class="project__link" href="{{ project.url }}">
+                    <img src="{{ site.baseurl }}/assets/images/projects/{{ project.featured-img }}" alt="{{ project.featured-alt }}" class="project__featured-image">
+                    <div class="project__text-container">
+                        <h2 class="project__title">{{ project.title }}</h2>
+                        <p class="project__excerpt">{{ project.excerpt }}</p>
+                    </div>
                 </a>
             </article>
           {% endfor %}
