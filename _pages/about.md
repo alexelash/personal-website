@@ -19,12 +19,12 @@ things-intro: What I’m up to lately
 things: 
     - heading: Off the bookshelf
       subthings:
-        - title: Crossing the Chasm
-          desc: Geoffrey A. Moore
-          attr: https://www.goodreads.com/book/show/61329.Crossing_the_Chasm
-        - title: Bury My Heart at Wounded Knee
-          desc: Dee Brown
-          attr: https://www.goodreads.com/book/show/76401.Bury_My_Heart_at_Wounded_Knee?from_search=true&from_srp=true&qid=cFsMciAYuw&rank=1
+        - title: "This is Marketing"
+          desc: "Seth Godin"
+          attr: "https://www.goodreads.com/book/show/40549476-this-is-marketing"
+        - title: "The Norman Conquest: The Battle of Hastings and the Fall of Anglo-Saxon England"
+          desc: "Marc Morris"
+          attr: "https://www.goodreads.com/book/show/18896453-the-norman-conquest"
     - heading: On the ’gram
       type: doodles
       subthings: 
