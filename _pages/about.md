@@ -28,10 +28,10 @@ things:
     - heading: On the ’gram
       type: doodles
       subthings: 
-        - post-url: https://www.instagram.com/p/B-4uVbPjTdY/
-          post-image: https://www.instagram.com/p/CAJRvqMD3IA/media/?size=m
-          post-alt: A mischevious kitten drawing on the wall.
-        - post-url: https://www.instagram.com/p/B-t_hUMDzKc/
-          post-image: https://www.instagram.com/p/B-t_hUMDzKc/media/?size=m
-          post-alt: A loose illustration of little white flowers on a pink background.
+        - post-url: https://www.instagram.com/p/CGDvRd4DLQ9/
+          post-image: https://scontent-lga3-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/120994821_190050752620432_2764182617897303824_n.jpg?_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_cat=104&_nc_ohc=lFyrqY3LQ8QAX-9o3Q3&_nc_tp=24&oh=0a0d7c739980c46f1fda13c3c5041bdf&oe=5FDB1335
+          post-alt: A woman centaur, drawn for Inktober's "fancy" prompt.
+        - post-url: https://www.instagram.com/p/CF7-59JDeb8/
+          post-image: https://scontent-lga3-2.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/120598680_1051333758668580_5009067853572461741_n.jpg?_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_cat=100&_nc_ohc=pPcSUpCFFA0AX_7Z5fw&tp=15&oh=0ef40a47f9b188b39a2aa52b89ef9889&oe=5FDA33F8
+          post-alt: Two vampires sitting in front of a radio, drawn for Intober's "radio" prompt.
 ---
