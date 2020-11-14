@@ -1,7 +1,7 @@
 ---
 layout: profile
 title: Profile
-permalink: "/"
+permalink: "/about"
 page_class: p-about
 
 heading: Hey there!

@@ -37,3 +37,12 @@
 @mixin focus-outline() {
     box-shadow: 0 0 0 2px rgba(blue, 0.3);
 }
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}

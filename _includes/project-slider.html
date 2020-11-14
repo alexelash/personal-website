@@ -1,0 +1,29 @@
+<div class="glide project-slider">
+    <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+        {% for slide in include.slides %}
+            <li class="glide__slide project-slideshow__slide">
+                <picture>
+                    <source media="(max-width: 799px)" srcset="{{ site.baseurl }}/assets/images/projects/{{ slide.image.sm }}">
+                    <source media="(min-width: 800px)" srcset="{{ site.baseurl }}/assets/images/projects/{{ slide.image.med }}">
+                    <img src="{{ site.baseurl }}/assets/images/projects/{{ slide.image.lg }}" alt="{{ slide.image-alt }}">
+                </picture>
+             </li>
+        {% endfor %}
+    </div>
+    <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            ⬸        
+        </button>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+            {% assign i = -1 %}
+            {% for slide in include.slides %}
+                {% assign i = i | plus:1 %}
+                <button class="glide__bullet" data-glide-dir="={{ i }}"></button>
+            {% endfor %}
+        </div>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            ⤑
+        </button>
+    </div>
+</div>

@@ -1,36 +1,34 @@
 /*------------------------------------*\
     #NAVIGATION
 \*------------------------------------*/
-$nav-height: 4rem;
+$nav-height: 5rem;
 
 .c-nav {
     width: 100%;
     z-index: 1;
-    padding: $pad-medium $pad-normal;
+    padding: 0 $pad-normal;
 
     @media all and (min-width: $bp-med) {
-        padding: 0 $pad-large-2;
+        padding: $pad-normal $pad-large-2;
     }
 
     &__inner {
-        max-width: $l-max-width;
         display: flex;
         border-bottom: 1px solid $color-gray;
+        min-height: $nav-height;
+        align-items: center;
         
-        @media screen and (max-width: $bp-small) { 
-            align-items: flex-start;
-        }
-        
-        @media screen and (min-width: $bp-small) and (max-width: $bp-med) {
+        @media screen and (max-width: $bp-med) {
             flex-wrap: wrap;
             padding: 0.25rem 0;
-            align-items: center;
+        }
+        
+        @media screen and (max-width: $bp-small) { 
+            padding: 1.25rem 0; 
         }
 
         @media screen and (min-width: $bp-med) {
             position: relative;
-            min-height: $nav-height;
-            align-items: center;
             justify-content: space-between;
             margin: 0 auto;
         }
@@ -38,7 +36,6 @@ $nav-height: 4rem;
 
     &__logo {
         cursor: pointer;
-        padding: $pad-medium 0;
         display: flex;
         align-items: center;
 
@@ -46,78 +43,78 @@ $nav-height: 4rem;
             display: none;
         }
 
-        @media screen and (max-width: $bp-small) { 
-            top: 0.25rem;
+        @media screen and (max-width: $bp-med) {            
+            flex: 0 0 87%;
         }
 
-        @media screen and (max-width: $bp-med) {            
-            flex: 1 0 90%;
-            padding: 0.25rem 0;
+        @media screen and (min-width: $bp-med) {
+            padding: $pad-normal 0;
         }
     }
 
     &__mark-container {
         display: block;
         border-radius: 100%;
-        margin-top: $pad-normal;
+        margin-bottom: 3rem;
 
         .logo-background {
             fill: $color-secondary;
         }
 
-        &::before {
-            @media screen and (min-width: $bp-small) {
-                display: block;
-                content: "";
-                z-index: 1;
-                background: $body-background;
-                height: calc(3.5rem + 6px);
-                width: calc(3.5rem + 6px);
-                position: absolute;
-                top: calc(-26% - 3px);
-                left: -3px;
-                pointer-events: none;
+        @media screen and (min-width: $bp-med) {
+
+            &::before {
+                @media screen and (min-width: $bp-small) {
+                    display: block;
+                    content: "";
+                    z-index: 1;
+                    background: $body-background;
+                    height: calc(3.5rem + 6px);
+                    width: calc(3.5rem + 6px);
+                    position: absolute;
+                    top: calc(-26% - 3px);
+                    left: -3px;
+                    pointer-events: none;
+                }
+
+                @media screen and (min-width: $bp-med) {
+                    top: calc(-35% - 3px);
+                    height: calc(6.5rem + 6px);
+                    width: calc(5rem + 6px);
+                }
             }
 
-            @media screen and (min-width: $bp-med) {
-                top: calc(-35% - 3px);
-                height: calc(5rem + 6px);
-                width: calc(5rem + 6px);
-            }
-        }
+            &::after {
+                @media screen and (min-width: $bp-small) {
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    height: calc(3.5rem + 4px);
+                    width: calc(3.5rem + 4px);
+                    background: $body-background;
+                    z-index: 0;
+                    top: -5px;
+                    right: 0;
+                    bottom: 0;
+                    left: -2px;
+                    border-radius: 100%;
+                    box-shadow: 0 0 0 1px $color-gray;
+                    pointer-events: none;
+                }
 
-        &::after {
-
-            @media screen and (min-width: $bp-small) {
-                display: block;
-                content: "";
-                position: absolute;
-                height: calc(3.5rem + 4px);
-                width: calc(3.5rem + 4px);
-                background: $body-background;
-                z-index: 0;
-                top: -5px;
-                right: 0;
-                bottom: 0;
-                left: -2px;
-                border-radius: 100%;
-                box-shadow: 0 0 0 1px $color-gray;
-                pointer-events: none;
-            }
-
-            @media screen and (min-width: $bp-med) {
-                top: 2px;
-                height: calc(5rem + 4px);
-                width: calc(5rem + 4px);
+                @media screen and (min-width: $bp-med) {
+                    top: 2px;
+                    height: calc(5rem + 4px);
+                    width: calc(5rem + 4px);
+                }
             }
         }
 
         > svg {
-            height: 2rem;
-            width: 2rem;
+            height: 2.75rem;
+            width: 2.75rem;
             z-index: 1;
             position: absolute;
-            top: -0.5rem;
 
             @media screen and (min-width: $bp-small) {
                 height: 3.5rem;
@@ -134,7 +131,7 @@ $nav-height: 4rem;
     }
 
     &__info-container {
-        margin-left: calc(0.75rem + 2rem);
+        margin-left: calc(1.5rem + 2rem);
 
         @media screen and (min-width: $bp-small) {
             margin-left: calc(1rem + 3.5rem);
@@ -142,27 +139,51 @@ $nav-height: 4rem;
 
         @media screen and (min-width: $bp-med) {
             margin-left: calc(1rem + 5rem); 
-            margin-top: $pad-medium;
+        }
+
+        @media screen and (min-width: $bp-xl) {
+            display: flex;
+            align-items: baseline;
+            flex: 1;
         }
     }
 
     &__name,
     &__role {
-        color: $color-gray-darkest;
         font-family: $font-family-secondary;
-        text-transform: uppercase;
-        letter-spacing: 1px;
     }
 
     &__name {
-        font-size: $font-size-med;
+        color: $color-gray-darkest;
+        font-size: $font-size-large;
+        font-weight: $font-weight-light;
+
+        @media screen and (max-width: $bp-xl) {
+            margin-bottom: $pad-small;
+        }
     }
 
     &__role {
-        font-size: $font-size-sm-2;
+        font-size: $font-size-med;
+        color: $color-gray-dark;
+        text-transform: uppercase;
+        letter-spacing: 1px;
 
-        @media screen and (max-width: $bp-small) {
+        @media screen and (max-width: $bp-large) {
             display: none;
+            font-size: $font-size-med;
+        }
+
+        @media screen and (max-width: $bp-large-2) {
+            font-size: $font-size-sm-2;
+        }
+
+        @media screen and (min-width: $bp-xl) {
+            &::before {
+                content: "•";
+                padding: 0 $pad-compact;
+                color: $color-gray-medium;
+            }
         }
     }
 
@@ -171,18 +192,17 @@ $nav-height: 4rem;
      */
 
     &__trigger-container {
-
         @media screen and (max-width: $bp-med) {
             display: block;
             text-align: right;
-            flex: 1 0 10%;
+            flex: 0 0 10%;
         }
     }
 
     &__trigger {
         background: transparent;
-        border-radius: $border-radius;
-        padding: $pad-small;
+        border-radius: 100%;
+        padding: $pad-medium;
         line-height: 0;
         transition: all $anim-fast ease;
         
@@ -218,6 +238,7 @@ $nav-height: 4rem;
             @media screen and (max-width: $bp-med) {
                 display: block;
                 flex: 1 0 100%;
+                padding-top: $pad-normal;
             }
         }
 
@@ -232,6 +253,8 @@ $nav-height: 4rem;
      * 1) This is the primary navigation list
      */
     &__list {
+            display: block;
+            padding: 0;
 
         /**
          * Nav list styling when parent nav is active
@@ -244,11 +267,6 @@ $nav-height: 4rem;
             @media all and (min-width: $bp-small) {
                 top: 0;
             }
-        }
-
-        @media all and (min-width: $bp-small) {
-            display: block;
-            padding: 0;
         }
 
         @media all and (min-width: $bp-med) {
@@ -288,7 +306,6 @@ $nav-height: 4rem;
         
         &--is-active {
             color: $color-primary;
-            background: $color-white;
         }
 
         @media all and (min-width: $bp-med) {

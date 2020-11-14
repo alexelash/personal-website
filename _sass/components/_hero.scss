@@ -5,88 +5,170 @@
 /**
  * 1) Block containing headline, description text, that serves as a primary content area
  */
-.c-hero {
-	display: block;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100% 100%;
+.hero {
+	display: flex;
+    min-height: 60vh;
+    border-bottom: 1px solid $color-gray-light;
+    margin-top: -1px;
+    background: $color-white;
     position: relative;
-	margin-bottom: 1rem;
 
-	&--gradient {
-        @include backgroundPattern($pattern: '../assets/images/rain.svg');
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 1rem;
+        background: linear-gradient($color-gray-lightest, rgba($color-gray-lightest, 0));
+    }
+
+    &__inner {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        @media screen and (min-width: $bp-med) {
+            flex-direction: row;
+        }
+
+        &::after {
+            content: "\2911";
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            bottom: -21px;
+            left: 50%;
+            transform: translateX(-50%) rotate(90deg);
+            background-color: $color-gray-lightest;
+            border-radius: 40px 0 0 40px;
+            height: 60px;
+            width: 40px;
+        }
 
         &::before {
             content: "";
-            background-image: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
             position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: -1;
-            opacity: 0.85;
-        }
-	}
-
-    &--pattern {
-        @include backgroundPattern($pattern: '../assets/images/diagonal-lines.svg');
-    }
-
-	/**
-	 * Hero Image
-	 */
-	&__image {
-		display: block;
-	    width: 100%;
-		margin-bottom: 1rem;
-
-		@media all and (min-width: $bp-small-2) {
-			margin: 0;
-		}
-	}
-
-	/**
-	 * Hero Body
-	 */
-    &__inner {
-        max-width: $l-max-width;
-        margin: 0 auto;
-        padding: $pad-large $pad-comfortable $pad-normal;
-
-        @media all and (min-width: $bp-large) {
-            padding: $pad-large-2 $pad-comfortable $pad-normal;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            bottom: -1px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $color-gray-light;
+            border-radius: 40px 40px 0 0;
+            height: 31px;
+            width: 62px;
         }
     }
 
-	/**
-	 * Hero Title
-	 */
-	&__heading {
+    &__text-block,
+    &__image {
+        @media screen and (min-width: $bp-med) {
+            flex: 0 0 50%;
+        }
+    }
+
+    &__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__image picture {
+        display: block;
+        width: 80%;
+        line-height: 0;
+
+        @media all and (min-width: $bp-small-2) {
+            margin: 0;
+        }
+    }
+
+    &__text-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: $pad-large-2*2 $pad-large-2;
+    }
+
+    &__text {
+        max-width: 35rem;
+    }
+
+	&__title {
+        font-style: italic;
+        font-weight: $font-weight-thin;
+        font-size: $font-size-xl;
+        margin-bottom: 0.75rem;
+	}
+
+    &__subtitle {
         font-family: $font-family-secondary;
-        font-weight: $font-weight-bold;
+        font-weight: $font-weight-medium;
         font-size: 0.9rem;
         text-transform: uppercase;
         letter-spacing: 1px;
         line-height: 1.5;
-        margin-bottom: 0.85rem;
-        @include headingUnderline();
-	}
+        margin-bottom: $pad-medium;
+        opacity: 0.65;
+        margin-bottom: $pad-comfortable;
+    }
 
-	/**
-	 * Hero Description
-	 */
 	&__blurb {
-        font-size: $font-size-large;
-        font-style: italic;
+        font-weight: $font-weight-thin;
+        font-size: $font-size-med-2;
 		margin-bottom: $pad-normal;
 
 		p {
             font-size: inherit;
         }
-
-        @media all and (min-width: $bp-med) {
-            font-size: $font-size-large-2;
-        }
 	}
+
+    &__metadata {
+        margin-top: $pad-comfortable;
+        font-family: $font-family-secondary; 
+        font-size: $font-size-sm-2;
+
+        > div:first-child {
+            margin-bottom: $pad-comfortable;
+        }
+    }
+
+    &__roles-title,
+    &__organization-title {
+        font-weight: $font-weight-thin;
+        font-size: $font-size-med-2;
+    }
+
+    &__roles-title {
+        margin-bottom: $pad-small;
+    }
+
+    &__roles-list-item {
+        margin-bottom: $pad-medium;
+        font-weight: $font-weight-thin;
+        font-size: $font-size-med-2;
+
+        &::before {
+            content: "\2911";
+            color: $color-gray-medium;
+        }
+    }
+
+    &__organization-title {
+        margin-right: 0.2rem;
+    }
+
+    &__organization-name {
+        font-weight: $font-weight-thin;
+        font-size: $font-size-med-2;
+    }
+
+    &__organization {
+        display: flex;
+        align-items: baseline;
+    }
 }

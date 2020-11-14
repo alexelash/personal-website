@@ -1,47 +1,55 @@
+$section-highlight-color: $color-white;
+
 .p-project {
-    [role=main] {
+    .section {
         display: flex;
-        width: 100%;
-        padding: 0;
-        max-width: none;
-    }
+        padding: $pad-large-2 $pad-comfortable;
+        margin-bottom: 2rem;
 
-    .c-nav {
-        padding: 0;
-        border-bottom: 1px solid $color-gray;
+        @media screen and (min-width: $bp-med) {
+            padding: 6rem 0;
+        }
 
-        &__inner {
-            border-bottom: 0;
+        &:nth-child(even) {
+            background-color: $section-highlight-color;
+            position: relative;
+
+            &::after {
+                content: "";
+                background-color: $section-highlight-color;
+                position: absolute;
+                display: block;
+                top: 0;
+                bottom: 0;
+                left: 50%;
+                width: 100vw;
+                transform: translateX(-50%);
+                z-index: -1;
+            }
         }
     }
 
-    .project-sidebar {
-        flex: 1 0 50%;
-        padding: $pad-large;
-        display: flex;
-        flex-direction: column;
+    .caption-container {
+        margin-top: auto;
+        max-width: 25rem;
 
-        &__caption-container {
-            margin-top: auto;
+       @media screen and (max-width: 700px) {
+           display: none;
+       }
+    }
+
+    .caption {
+        &__title {
+            font-family: $font-family-secondary;
+            font-size: $font-size-sm-2;
+            font-weight: $font-weight-medium;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
-    }
-
-    .glide {
-        flex: 1 0 50%;
-        background: $color-gray;
-        
-    }
-
-    .project-slideshow {
-        max-width: 50%;
-
-        &__slide {
-            background-position: center;
-            background-repeat: no-repeat;
-            height: calc(100vh - 65px);
-            width: 100%;
-            display: block;
-            flex: 1;
+  
+        &__text {
+            font-family: $font-family-secondary;
+            font-size: $font-size-sm;
         }
     }
 }

@@ -2,36 +2,40 @@
 layout: project
 page_class: p-project
 title: "Azavea Employee Gifts"
-featured-img: "/azavea-employee-gifts/featured-image.png"
-featured-alt: 
+featured-image: 
+  sm: "azavea-employee-gifts/2018-tshirt/azavea-tshirt-2018@0.5x.png"
+  med: "azavea-employee-gifts/2018-tshirt/azavea-tshirt-2018@0.75x.png"
+  lg: "azavea-employee-gifts/2018-tshirt/azavea-tshirt-2018.png"
+featured-alt: "T-shirt designed for Azavea"
+featured-bg: "#bed3da"
+featured-style: box
 image-folder: "azavea-employee-gifts"
 excerpt: Graphic design for my colleagues at Azavea.
 desc: |
-    Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum. Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper.
-
-    Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum.
+    While my primary focus at Azavea is to improve the usability of our products and client projects, I occassionally work with People Operations and our CEO to design swag for employees. 
 slides: 
     - image: "2018-tshirt/azavea-tshirt-2018_large.png"
-      image-alt: 0
-      image-bg: "#00ffff"
-      image-h: "90%"
+      image-alt: Azavea bones logo stylized using a topographic map.
+      image-bg: "#9dcaea"
+      image-h: "50%"
       image-w: "auto"
-      title: Pellentesque Cras Sollicitudin
+      title: "Company T-shirts"
       caption: |
-        Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur.
+        The CEO’s vision for these shirts was to design something distinctive, and stylish enough that Azaveans would _want_ to represent the company in this way. I applied a topographic map motif to our distinctive, gear-like logo and sourced new, more sustainable t-shirts for the design to be printed on.
     - image: "2018-challenge-coins/azavea-challenge-coins_large.png"
-      image-alt: 1
-      image-bg: "#3f87a6"
+      image-alt: Three zinc challenge coins, one flipped over showing the Azavea logo and the other two show the Hot Streak and First Time Blogger designs.
+      image-bg: "#1f6155"
       image-h: "auto"
-      image-w: "80%"
-      title: Vestibulum Parturient
+      image-w: "60%"
+      title: Blog Award Challenge Coins
       caption: |
-        Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+        Azavea takes great pride in the robust, well-researched posts on our blog and has long encouraged and rewarded employees for their contributions. I ideated and designed three custom coins that could be awarded on a monthly basis to: first time blog-writers, writers whose blogs brought high traffic to our website, and writers whose blogs have been on a “hot streak”. 
     - image: "2019-onesies/azavea-baby-onesie-2019_large.png"
-      image-alt: 2
-      image-cover: yes
-      image-bg: "#b12a0b"
-      title: Tristique Aenean Cras
+      image-alt: A baby sitting on a washing machine with an illustrated onesie on.
+      image-bg: "#e8a630"
+      image-h: "auto"
+      image-w: "50%"
+      title: Azavea Baby Onesies
       caption: |
-        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+        In 2018 and 2019, quite a few Azaveans had additions to their families! As a gift to the growing number of new parents at the company, we designed a fun, Philadelphia-themed onesie.
 ---

@@ -15,25 +15,56 @@
 
     <div class="main-container" role="main">
         <div class="intro">
+            {% if page.heading %}
             <h2 class="intro__heading">
                 {{ page.heading }}
             </h2>
+            {% endif %}
+            {% if page.intro %}
             <p class="intro__blurb">
                 {{ page.intro }}
             </p>
+            {% endif %}
+            <a class="intro__link" href="{{ page.link-url }}">{{ page.link-text }}</a>
         </div>
         
         <div class="project-container">
           {% for project in site.projects %}
+
+          {% if project.draft != true %}
             <article class="project">
-                <a class="project__link" href="{{ project.url }}">
-                    <img src="{{ site.baseurl }}/assets/images/projects/{{ project.featured-img }}" alt="{{ project.featured-alt }}" class="project__featured-image">
-                    <div class="project__text-container">
-                        <h2 class="project__title">{{ project.title }}</h2>
-                        <p class="project__excerpt">{{ project.excerpt }}</p>
+                {% if project.casestudy %}
+                <a href="{{ project.url }}">
+                {% endif %}
+                    <div class="project__featured-image-container" style="background-color: {{ project.featured-bg }};">
+                        <picture class="project__featured-image
+                            {% if project.featured-size == 'cropped' %}
+                                project__featured-image--cropped
+                            {% endif %}
+                        ">
+                            <source media="(max-width: 799px)" srcset="{{ site.baseurl }}/assets/images/projects/{{ project.featured-image.sm }}">
+                            <source media="(min-width: 800px)" srcset="{{ site.baseurl }}/assets/images/projects/{{ project.featured-image.med }}">
+                            <img src="{{ site.baseurl }}/assets/images/projects/{{ project.featured-image.lg }}" alt="{{ project.featured-alt }}">
+                        </picture>
                     </div>
+                {% if project.casestudy %}
                 </a>
+                {% endif %}
+                <div class="project__text-container">
+                    <h2 class="project__title">{{ project.title }}</h2>
+                    <p class="project__excerpt">{{ project.excerpt }}</p>
+
+                    <footer class="project__links">
+                        {% if project.casestudy %}
+                        <a class="project__link" href="{{ project.url }}">See casestudy</a>
+                        {% endif %}
+                        {% if project.project-url %}
+                        <a class="project__link" href="{{ project.project-url }}">See project</a>
+                        {% endif %}
+                    </footer>
+                </div>
             </article>
+            {% endif %}
           {% endfor %}
         </div>
 
