@@ -5,38 +5,131 @@
 /**
  * Section block that helps chunk related items together
  */
-.c-section {
-	margin-bottom: 2rem;
+.section {
+
+    /**
+     * Stacked content
+     */
+    &--stacked {
+        flex-direction: column;
+        align-items: center;
+
+        &:first-child {
+            margin-bottom: $pad-normal;
+        }
+    }
+
+    /**
+     * Side-by-side content
+     */
+    &--default {
+        align-items: center;
+        justify-content: space-between;
+        max-width: 100%;
+
+        @media screen and (max-width: $bp-med) {
+            flex-direction: column;
+        }
+    }
+
+    /**
+     * Text-only sections
+     */
+    &--text-only & {
+        &__text-container {
+            margin: 0 auto;
+        }
+    }
+
+    /**
+     * Text first, then the visual
+     */
+    &--text-visual & {
+
+        &__text-container {
+            margin-bottom: $pad-normal;
+            
+            @media screen and (min-width: $bp-med) {
+                margin-right: $pad-large-2;
+            }
+        }
+    }
+
+    /**
+     * Visual first, then the text
+     */
+    &--visual-text & {
+        &__visual-container {
+            margin-bottom: $pad-normal;
+            
+            @media screen and (min-width: $bp-med) {
+                margin-right: $pad-large-2;
+            }
+        }
+    }
+
+    &__text-container {
+        p,
+        ul,
+        ol,
+        li {
+            font-weight: $font-weight-normal;
+            font-size: $font-size-sm-2;
+        }
+
+        li {
+            margin-bottom: $pad-medium;
+        }
+
+        ul {
+            list-style-type: circle;
+            list-style-position: outside;
+            padding-left: 20px;
+        }
+    }
+
+    &__title {
+        font-size: $font-size-large-2;
+        font-style: italic;
+        font-weight: $font-weight-thin;
+        margin-bottom: $pad-medium;
+
+        @media screen and (max-width: $bp-med) {
+            font-weight: $font-weight-light;
+            font-size: $font-size-large;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &__title,
+    &__text {
+        max-width: $l-max-width-mid;
+    }
+
+    &__visual-container {
+        width: 100%;
+        @media screen and (min-width: $bp-med) {
+            flex: 0 0 49%;
+            width: 49%;
+        }
+    }
 }
-
-
-
-
 
 /*------------------------------------*\
     #SECTION HEADER
 \*------------------------------------*/
 
-/**
- * 1) Block containing section title and description to distinguish section
- */
-.c-section-header {
+.section-header {
 	margin-bottom: 1rem;
 	padding-bottom: 0.5rem;
 	border-bottom: 1px solid $color-gray-lightest;
 }
 
-/**
- * Section header title
- */
-.c-section-header__title {
+.section-header__title {
 	font-size: $font-size-large;
 }
 
-/**
- * Section description
- */
-.c-section-header__desc {
+.section-header__desc {
 	font-size: $font-size-med;
 	margin-bottom: 0;
 }

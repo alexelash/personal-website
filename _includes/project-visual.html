@@ -1,0 +1,7 @@
+<div class="project-visual" style="background-color: {{ include.bg }};">
+    <picture>
+        <source media="(max-width: 799px)" srcset="{{ site.baseurl }}/assets/images/projects/{{ include.image-sm }}">
+        <source media="(min-width: 800px)" srcset="{{ site.baseurl }}/assets/images/projects/{{ include.image-med }}">
+        <img src="{{ site.baseurl }}/assets/images/projects/{{ page.image-lg }}" alt="{{ include.image-alt }}">
+    </picture>
+</div>

@@ -53,6 +53,7 @@
    #LAYOUT
 \*------------------------------------*/
 @import "layout/layout";
+@import "layout/project";
 
 
 
@@ -77,6 +78,8 @@
 @import "components/icon";
 @import "components/intro";
 @import "components/page-header";
+@import "components/project-slider";
+@import "components/project-visual";
 @import "components/nav";
 @import "components/section";
 @import "components/social-icons";
@@ -94,6 +97,7 @@
 \*------------------------------------*/
 @import "pages/about";
 @import "pages/resume";
+@import "pages/work";
 
 
 

@@ -1,0 +1,59 @@
+<div class="hero">
+    <div class="hero__inner">
+        <div class="hero__text-block">
+            <div class="hero__text">
+                <div class="hero__intro">
+                    <h1 class="hero__title">
+                        {{ page.hero.title }}
+                    </h1>
+                    <h2 class="hero__subtitle">
+                        {{ page.hero.tagline }}
+                    </h2>
+                    <p class="hero__blurb">
+                        {{ page.hero.desc }}
+                    </p>
+                </div>
+                {% if page.hero.roles or page.hero.organization %}
+                <div class="hero__metadata">
+                    <div class="hero__metadata-inner">
+                        {% if page.hero.roles %}
+                        <div class="hero__roles">
+                            <h3 class="hero__roles-title">
+                                Contributions
+                            </h3>
+                            <div class="hero__roles-list">
+                            {% if page.hero.roles %}
+                                {{ page.hero.roles }}
+                            {% endif %}
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        {% if page.hero.organization %}
+                        <div class="hero__organization">
+                            <h3 class="hero__organization-title">
+                                Organization
+                            </h3>
+                            <a href="{{ page.hero.organization.url }}" class="hero__organization-name">
+                                {{ page.hero.organization.name }}
+                            </a>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="hero__image-container" style="background-color: {{ page.featured-bg }};">
+            <picture class="hero__image
+                {% if page.hero.image-size == 'cropped' %}
+                    hero__image--cropped
+                {% endif %}
+            ">
+                <source media="(max-width: 799px)" srcset="{{ site.baseurl }}/assets/images/projects/{{ page.hero.image.sm }}">
+                <source media="(min-width: 800px)" srcset="{{ site.baseurl }}/assets/images/projects/{{ page.hero.image.med }}">
+                <img src="{{ page.image.lg }}" alt="{{ site.baseurl }}/assets/images/projects/{{ page.hero.image-alt }}">
+            </picture>
+        </div>
+    </div>
+</div>

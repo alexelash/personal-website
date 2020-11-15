@@ -70,7 +70,7 @@ sections:
         - title: Temple University, Tyler School of Art
           company: BFA Graphic and Interactive Design
           dates: Graduated May 2013
-    - title: Capabilities
+    - title: Skills
       examples:
         - title: Design
           excerpt: |
@@ -80,26 +80,36 @@ sections:
             HTML • CSS/SASS • Jekyll • Jquery • Javascript • PHP • React • GIT
     - title: Community
       examples:
-        - title: Philly Tech Sistas
-          title-url: https://www.phillytechsistas.org/
-          excerpt: |
+        - title: "Curriculum Teammember"
+          company: "Philly Tech Sistas"
+          dates: "2019"
+          url: "https://www.phillytechsistas.org/"
+          desc: |
             Philly Tech Sistas provides programming workshops and professional development events for Black women. I joined the curriculum team for their first year of classes in 2019. On that team, provided input and feedback on courses created by other team-members, co-wrote the first part of the HTML and CSS course and co-taught the first iteration of the class.
-        - title: ProjectMEOW
-          title-url: https://www.projectmeow.org/
-          excerpt: | 
+        - title: "Twitter Manager"
+          company: "ProjectMEOW"
+          dates: "2016 – 2017"
+          url: "https://www.projectmeow.org/"
+          desc: | 
             Project MEOW is an all-volunteer, animal welfare group that helps residents humanely reduce their feral and stray cat populations. I worked with the organization as their Twitter Manager in 2016 and 2017 and worked with their Executive Director on a poster campaign.
-        - title: LadyHacks
-          excerpt: |
+        - title: "Co-organizer and Designer"
+          company: "LadyHacks"
+          dates: "2016 – 2017"
+          desc: |
             LadyHacks started in 2012 as Philadelphia's first hackathon for women. I was a co-organizer in 2016 and 2017. In addition to working with the rest of the team on planning and executing the event, I was responsible for designing and developing its identity and website.
-        - title: Girl Develop It
-          excerpt: |
+        - title: "Teacher, TA, Volunteer"
+          company: "Girl Develop It"
+          dates: "2015 – 2017"
+          desc: |
             Teacher for “Intro to HTML/CSS” • TA for “Intro to User Experience” and “Intro to Writing SVG”
-        - title: ELA Conf
-          excerpt: |
+        - title: "Volunteer and Speaker"
+          company: "ELA Conf"
+          dates: "2015 – 2017"
+          desc: |
             ELA Conf was a safe, inclusive tech leadership conference and community for adult womxn, trans men, and genderqueer people to connect. I volunteered at the conference in 2015 and 2016, and also gave two talks, one about toxic workplaces at the 2017 conference and another called “Teaching with Illustrations” in 2015.
-        - title: West Chester University
-          excerpt: |
-            Judge for the 2015 Graphic Design Packaging Show
+        - title: "2015 Graphic Design Packaging Show Judge"
+          company: "West Chester University"
+          dates: "2015"
 
 ---
 

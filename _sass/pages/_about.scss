@@ -16,6 +16,11 @@
 
     .intro {
 
+        &__blurb {
+            font-size: $font-size-large;
+            font-weight: $font-weight-light;
+        }
+
         &__image-caption {
             position: absolute;
             bottom: $pad-normal;

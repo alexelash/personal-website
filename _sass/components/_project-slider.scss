@@ -1,0 +1,34 @@
+/*------------------------------------*\
+    #PROJECT SLIDER
+\*------------------------------------*/
+
+.project-slider {
+    line-height: 0;
+    border-radius: $border-radius-big;
+    overflow: hidden;
+}
+
+.glide {
+    background: $color-gray;
+    
+    &__arrows {
+       font-family: $font-family-secondary;
+       font-size: $font-size-sm;
+    }
+}
+
+.project-slideshow {
+    border-radius: $border-radius-big;
+    overflow: hidden;
+
+   .glide__slides {
+        @media screen and (max-width: 700px) {
+            display: block;
+        }
+   }
+
+    &__slide {
+        width: 100%;
+        display: block;
+    }
+}

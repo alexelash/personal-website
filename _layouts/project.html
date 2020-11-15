@@ -1,10 +1,11 @@
+---
+layout_type: project
+---
+
 <!DOCTYPE html>
 <html>
 {% include head.html %}
-  <body 
-	{% if page.page_class %} 
-		class="{{- page.page_class }} {{ layout.page_class -}}" 
-	{% endif %}>
+  <body class="p-project">
     
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZB33M6"
@@ -12,31 +13,116 @@
     <!-- End Google Tag Manager (noscript) -->
 
 	{% include nav.html %}
-	
-	<header class="c-hero">
-        <div class="c-hero__inner l-container--narrow">
-            <h2 class="c-hero__heading">
-                {{ page.title }}
-            </h2>
-            <p class="c-hero__blurb">
-                {{ page.intro }}
-            </p>
-        </div>
-    </header>
 
-	<div class="main-container l-container--narrow" role="main">
-		<!-- page content -->
-		{{ content }}
-		<!-- page content -->
-        <div class="cta">
-            <div class="cta__inner">
-                <p class="cta__blurb">
-                    Let me know if you’re interested in working together.
-                </p>
-                <a href="mailto:alexandralash@gmail.com" class="c-btn c-btn--secondary cta__btn">
-                    All the emails!
-                </a> 
-            </div>
-        </div>
-	</div>
+    {% if page.hero %}
+        {% include hero.html %} 
+    {% endif %}
+    
+    <div class="project-container">
+    	<div class="main-container" role="main">
+            {% for section in page.sections %}
+            <section class="section 
+                {% if section.type %}
+                    section--{{ section.type }}
+                {% endif %}
+                {% if section.layout %}
+                    section--{{ section.layout }}
+                {% endif %}
+                ">
+
+                <!-- Text only layout -->
+                {% if section.layout == "text-only" %}
+                    <div class="section__text-container">
+                        <h4 class="section__title">
+                            {{ section.title }}
+                        </h4>
+                        <div class="section__text">
+                            {{ section.desc | markdownify }}
+                        </div> 
+                    </div>              
+                {% endif %}
+
+                <!-- Visual only layout -->
+                {% if section.layout == "visual-only" %}
+                    <div class="section__visual-container" 
+                        style="background-color: {{ section.visual.bg }};">
+                        {% if section.visual.type == "image" %}
+                            {% include project-visual.html
+                                type=section.visual.type
+                                image-sm=section.visual.image.sm
+                                image-med=section.visual.image.med
+                                image-lg=section.visual.image.lg
+                                image-alt=section.visual.image-alt
+                                caption=section.visual.caption %}
+                        {% elsif section.visual.type == "slider" %}
+                            {% include project-slider.html
+                                slides=section.visual.slides %}
+                        {% endif %}
+                    </div>        
+                {% endif %}
+
+                <!-- Text and image layout -->
+                {% if section.layout == "text-visual" %}
+                    <div class="section__text-container">
+                        {% if section.title %}
+                        <h4 class="section__title">
+                            {{ section.title }}
+                        </h4>
+                        {% endif %}
+
+                        <div class="section__text">
+                            {{ section.desc | markdownify }}
+                        </div>
+                    </div> 
+                    <div class="section__visual-container" 
+                        style="background-color: {{ section.visual.bg }};">
+                        {% if section.visual.type == "image" %}
+                            {% include project-visual.html
+                                type=section.visual.type
+                                image-sm=section.visual.image.sm
+                                image-med=section.visual.image.med
+                                image-lg=section.visual.image.lg
+                                image-alt=section.visual.image-alt
+                                caption=section.visual.caption %}
+                        {% elsif section.visual.type == "slider" %}
+                            {% include project-slider.html
+                                slides=section.slides %}
+                        {% endif %}
+                    </div>        
+                {% endif %}
+
+                <!-- Image and text layout -->
+                {% if section.layout == "visual-text" %}
+                    <div class="section__visual-container" 
+                        style="background-color: {{ section.visual.bg }};">
+                        {% if section.visual.type == "image" %}
+                            {% include project-visual.html
+                                type=section.visual.type
+                                image-sm=section.visual.image.sm
+                                image-med=section.visual.image.med
+                                image-lg=section.visual.image.lg
+                                image-alt=section.visual.image-alt
+                                caption=section.visual.caption %}
+                        {% elsif section.visual.type == "slider" %}
+                            {% include project-slider.html
+                                slides=section.visual.slides %}
+                        {% endif %}
+                    </div>  
+                    <div class="section__text-container">
+                        {% if section.title %}
+                        <h4 class="section__title">
+                            {{ section.title }}
+                        </h4>    
+                        {% endif %}
+
+                        <div class="section__text">
+                            {{ section.desc | markdownify }}
+                        </div>
+                    </div>       
+                {% endif %}
+
+            </section>
+            {% endfor %}
+    	</div>
+    </div>
 {% include footer.html %}

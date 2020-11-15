@@ -82,8 +82,8 @@ $color-utility-warning-light: #fffecf;
 /**
  * Font Family
  */
-$font-family-primary: "Sentinel SSm A", "Sentinel SSm B", "Georgia", serif;
-$font-family-secondary: "Gotham SSm A", "Gotham SSm B", "Arial", sans-serif;
+$font-family-primary: "Operator SSm A", "Operator SSm B", "Georgia", serif;
+$font-family-secondary: "Operator SSm A", "Operator SSm B", "Arial", sans-serif;
 
 /**
  * Font Sizing
@@ -100,6 +100,7 @@ $font-size-xl: 2.4375rem;
 /**
  * Font Weights
  */
+$font-weight-thin: 200;
 $font-weight-light: 300;
 $font-weight-normal: 400;
 $font-weight-medium: 500;
@@ -158,6 +159,7 @@ $space-bullet-offset: 1.6rem; /* 2 */
  * Border variables
  */
 $border-radius: 2px;
+$border-radius-big: 4px;
 
 
 
@@ -202,6 +204,7 @@ $bp-xl: 62em;
 /*------------------------------------*\
     #COMPONENTS
 \*------------------------------------*/
+$nav-height: 65px;
 $body-background: $color-gray-lightest;
 $body-color: $color-gray-dark;
 $body-outline-color: $color-gray;

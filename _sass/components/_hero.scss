@@ -5,88 +5,172 @@
 /**
  * 1) Block containing headline, description text, that serves as a primary content area
  */
-.c-hero {
-	display: block;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100% 100%;
-    position: relative;
-	margin-bottom: 1rem;
+.hero {
+    border-top: 1px solid $color-gray;
+    background: $color-white;
+    margin-top: -1px;
 
-	&--gradient {
-        @include backgroundPattern($pattern: '../assets/images/rain.svg');
-
-        &::before {
-            content: "";
-            background-image: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: -1;
-            opacity: 0.85;
-        }
-	}
-
-    &--pattern {
-        @include backgroundPattern($pattern: '../assets/images/diagonal-lines.svg');
+    @media screen and (min-width: $bp-med) {
+        margin-top: -17px;
     }
 
-	/**
-	 * Hero Image
-	 */
-	&__image {
-		display: block;
-	    width: 100%;
-		margin-bottom: 1rem;
-
-		@media all and (min-width: $bp-small-2) {
-			margin: 0;
-		}
-	}
-
-	/**
-	 * Hero Body
-	 */
     &__inner {
-        max-width: $l-max-width;
-        margin: 0 auto;
-        padding: $pad-large $pad-comfortable $pad-normal;
+        display: flex;
+        flex-direction: column;
+        position: relative;
 
-        @media all and (min-width: $bp-large) {
-            padding: $pad-large-2 $pad-comfortable $pad-normal;
+        @media screen and (min-width: $bp-med) {
+            flex-direction: row;
+            flex-wrap: wrap;
         }
     }
 
-	/**
-	 * Hero Title
-	 */
-	&__heading {
+    &__text-block,
+    &__image-container {
+        @media screen and (min-width: $bp-med) {
+            flex: 0 0 50%;
+        }
+    }
+
+    &__image-container {
+        flex: 1;
+        width: 100%;
+        min-height: 100%;
+        position: relative;
+        overflow: hidden;
+
+        @media screen and (max-width: $bp-med) {
+            order: 1;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+
+            &:after {
+                content: "";
+                display: block;
+                padding-bottom: 55%;
+            }
+        }
+    }
+
+    &__image {
+        display: block;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+
+        @media all and (min-width: $bp-small-2) {
+            margin: 0;
+        }
+    }
+
+    &__image--cropped {
+        width: 100%;
+        left: 60%;
+        bottom: -20%;
+    }
+
+    &__text-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: $pad-large-2*2 $pad-large-2;
+
+        @media screen and (max-width: $bp-med) {
+            order: 2;
+            padding: $pad-large $pad-comfortable;
+        }
+    }
+
+    &__text {
+        max-width: 35rem;
+    }
+
+	&__title {
+        font-style: italic;
+        font-weight: $font-weight-thin;
+        font-size: $font-size-xl;
+        margin-bottom: 0.75rem;
+
+        @media screen and (max-width: $bp-med) {
+            font-weight: $font-weight-light;
+            font-size: $font-size-large;
+            margin-bottom: 0.5rem;
+        }
+	}
+
+    &__subtitle {
         font-family: $font-family-secondary;
-        font-weight: $font-weight-bold;
-        font-size: 0.9rem;
+        font-weight: $font-weight-light;
+        font-size: $font-size-med-2;
         text-transform: uppercase;
         letter-spacing: 1px;
         line-height: 1.5;
-        margin-bottom: 0.85rem;
-        @include headingUnderline();
-	}
+        margin-bottom: $pad-medium;
+        color: $color-gray-medium;
+        margin-bottom: $pad-comfortable;
 
-	/**
-	 * Hero Description
-	 */
+        @media screen and (max-width: $bp-med) {
+            font-weight: $font-weight-normal;
+            font-size: $font-size-sm-2;
+        }
+    }
+
 	&__blurb {
-        font-size: $font-size-large;
-        font-style: italic;
+        font-weight: $font-weight-normal;
+        font-size: $font-size-med;
 		margin-bottom: $pad-normal;
 
 		p {
             font-size: inherit;
         }
-
-        @media all and (min-width: $bp-med) {
-            font-size: $font-size-large-2;
-        }
 	}
+
+    &__metadata {
+        position: relative;
+        color: $color-gray-medium;
+
+        > div:first-child {
+            margin-bottom: $pad-comfortable;
+        }
+    }
+
+    &__metadata-inner {
+        margin: 0 auto;
+    }
+
+    &__roles {
+        margin-bottom: $pad-normal;
+    }
+
+    &__roles-title,
+    &__organization-title {
+        font-weight: $font-weight-normal;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: $font-size-sm-2;
+
+        &:after {
+            content: "—"
+        }
+    }
+
+    &__roles-list {
+        display: inline;
+    }
+
+    &__roles-title {
+        display: inline;
+    }
+
+    &__organization-title {
+        margin-right: 0.2rem;
+    }
+
+    &__organization {
+        display: flex;
+        align-items: baseline;
+    }
 }
