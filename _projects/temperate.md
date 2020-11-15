@@ -8,9 +8,7 @@ featured-image:
 featured-alt: "Screenshot of Temperate dashboard."
 featured-bg: "#85c005"
 featured-size: "cropped"
-featured-style: box
 project-url: "https://temperate.io/"
-casestudy: true
 excerpt: Branding, UX/UI, front-end development.
 hero:
     title: "Temperate"
@@ -23,11 +21,8 @@ hero:
         lg: azavea-temperate/temperate_hero.png
     image-alt: "Screenshot of Temperate dashboard."
     image-bg: "#85c005"
-    roles:
-        - Branding
-        - UX/UI design
-        - Front-end development
-        - Marketing website
+    image-size: "cropped"
+    roles: "Branding, UX/UI design, Front-end development, Marketing website"
     organization: 
         name: Azavea
         url: "https://www.azavea.com/"
@@ -37,7 +32,7 @@ sections:
       style: "highlight"
       title: "Background"
       desc: |
-        When I started at Azavea, the company was already a year into the two-year SBIR, and had created both a Climate API and the [Climate Lab.](https://climate.azavea.com/) The latter was developed to make the API more accessible to the team’s target users: climate adaptation planners. However, even with this shift to the Climate Lab, the team was hearing that there was not enough guidance in our software, especially since there were so many other tools offering climate data.
+        When I started at Azavea, the company was a year into the two-year SBIR, and had created both a Climate API and the [Climate Lab.](https://climate.azavea.com/) The latter was developed to make the API more accessible to the team’s target users: climate adaptation planners. However, the team was hearing that there was not enough guidance in our software, especially since there were so many other tools offering climate data.
 
         Partnering with ICLEI USA, our team conducted 27 interviews with people in their network. At this stage, we were asking fairly open-ended questions in order to better understand the needs of our potential users. The insights gleaned from these interviews led us down the path of developing a tool that would do more than just present data to our end-users. 
     - type: "default"
@@ -84,7 +79,7 @@ sections:
                 lg: "azavea-temperate/temperate_branding_03.jpg"
               image-alt: "The Temperate color palette and custom names."
     - type: "default"
-      layout: "text-visual"
+      layout: "visual-text"
       title: "Developing the interface"
       desc: |
         To match the brand’s energy, I designed the application to have a friendly and colorful UI.

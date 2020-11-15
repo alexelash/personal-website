@@ -6,85 +6,70 @@
  * 1) Block containing headline, description text, that serves as a primary content area
  */
 .hero {
-	display: flex;
-    min-height: 60vh;
-    border-bottom: 1px solid $color-gray-light;
-    margin-top: -1px;
+    border-top: 1px solid $color-gray;
     background: $color-white;
-    position: relative;
+    margin-top: -1px;
 
-    &:after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        height: 1rem;
-        background: linear-gradient($color-gray-lightest, rgba($color-gray-lightest, 0));
+    @media screen and (min-width: $bp-med) {
+        margin-top: -17px;
     }
 
     &__inner {
-        flex: 1;
         display: flex;
         flex-direction: column;
         position: relative;
 
         @media screen and (min-width: $bp-med) {
             flex-direction: row;
-        }
-
-        &::after {
-            content: "\2911";
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            bottom: -21px;
-            left: 50%;
-            transform: translateX(-50%) rotate(90deg);
-            background-color: $color-gray-lightest;
-            border-radius: 40px 0 0 40px;
-            height: 60px;
-            width: 40px;
-        }
-
-        &::before {
-            content: "";
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            bottom: -1px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: $color-gray-light;
-            border-radius: 40px 40px 0 0;
-            height: 31px;
-            width: 62px;
+            flex-wrap: wrap;
         }
     }
 
     &__text-block,
-    &__image {
+    &__image-container {
         @media screen and (min-width: $bp-med) {
             flex: 0 0 50%;
         }
     }
 
-    &__image {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    &__image-container {
+        flex: 1;
+        width: 100%;
+        min-height: 100%;
+        position: relative;
+        overflow: hidden;
+
+        @media screen and (max-width: $bp-med) {
+            order: 1;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+
+            &:after {
+                content: "";
+                display: block;
+                padding-bottom: 55%;
+            }
+        }
     }
 
-    &__image picture {
+    &__image {
         display: block;
-        width: 80%;
-        line-height: 0;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
 
         @media all and (min-width: $bp-small-2) {
             margin: 0;
         }
+    }
+
+    &__image--cropped {
+        width: 100%;
+        left: 60%;
+        bottom: -20%;
     }
 
     &__text-block {
@@ -92,6 +77,11 @@
         flex-direction: column;
         align-items: center;
         padding: $pad-large-2*2 $pad-large-2;
+
+        @media screen and (max-width: $bp-med) {
+            order: 2;
+            padding: $pad-large $pad-comfortable;
+        }
     }
 
     &__text {
@@ -103,23 +93,34 @@
         font-weight: $font-weight-thin;
         font-size: $font-size-xl;
         margin-bottom: 0.75rem;
+
+        @media screen and (max-width: $bp-med) {
+            font-weight: $font-weight-light;
+            font-size: $font-size-large;
+            margin-bottom: 0.5rem;
+        }
 	}
 
     &__subtitle {
         font-family: $font-family-secondary;
-        font-weight: $font-weight-medium;
-        font-size: 0.9rem;
+        font-weight: $font-weight-light;
+        font-size: $font-size-med-2;
         text-transform: uppercase;
         letter-spacing: 1px;
         line-height: 1.5;
         margin-bottom: $pad-medium;
-        opacity: 0.65;
+        color: $color-gray-medium;
         margin-bottom: $pad-comfortable;
+
+        @media screen and (max-width: $bp-med) {
+            font-weight: $font-weight-normal;
+            font-size: $font-size-sm-2;
+        }
     }
 
 	&__blurb {
-        font-weight: $font-weight-thin;
-        font-size: $font-size-med-2;
+        font-weight: $font-weight-normal;
+        font-size: $font-size-med;
 		margin-bottom: $pad-normal;
 
 		p {
@@ -128,43 +129,44 @@
 	}
 
     &__metadata {
-        margin-top: $pad-comfortable;
-        font-family: $font-family-secondary; 
-        font-size: $font-size-sm-2;
+        position: relative;
+        color: $color-gray-medium;
 
         > div:first-child {
             margin-bottom: $pad-comfortable;
         }
     }
 
+    &__metadata-inner {
+        margin: 0 auto;
+    }
+
+    &__roles {
+        margin-bottom: $pad-normal;
+    }
+
     &__roles-title,
     &__organization-title {
-        font-weight: $font-weight-thin;
-        font-size: $font-size-med-2;
+        font-weight: $font-weight-normal;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: $font-size-sm-2;
+
+        &:after {
+            content: "—"
+        }
+    }
+
+    &__roles-list {
+        display: inline;
     }
 
     &__roles-title {
-        margin-bottom: $pad-small;
-    }
-
-    &__roles-list-item {
-        margin-bottom: $pad-medium;
-        font-weight: $font-weight-thin;
-        font-size: $font-size-med-2;
-
-        &::before {
-            content: "\2911";
-            color: $color-gray-medium;
-        }
+        display: inline;
     }
 
     &__organization-title {
         margin-right: 0.2rem;
-    }
-
-    &__organization-name {
-        font-weight: $font-weight-thin;
-        font-size: $font-size-med-2;
     }
 
     &__organization {

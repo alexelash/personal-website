@@ -1,10 +1,12 @@
 ---
 layout: project
 title:  "GroundWork"
-featured-img: /azavea-groundwork/featured-image.gif
-featured-alt: 
-featured-size: small
-featured-style: box
-draft: true
+featured-image: 
+  sm: azavea-groundwork/featured-image.gif
+  med: azavea-groundwork/featured-image.gif
+  lg: azavea-groundwork/featured-image.gif
+featured-alt: "Hot air balloon logo floating up in the clouds."
+featured-bg: "#fbfbfb"
+project-url: "https://groundwork.azavea.com/"
 excerpt: Branding and website design for a machine learning product.
 ---

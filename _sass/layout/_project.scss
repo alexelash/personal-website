@@ -3,7 +3,7 @@ $section-highlight-color: $color-white;
 .p-project {
     .section {
         display: flex;
-        padding: $pad-large-2 $pad-comfortable;
+        padding: $pad-normal 0.7rem;
         margin-bottom: 2rem;
 
         @media screen and (min-width: $bp-med) {
@@ -40,7 +40,6 @@ $section-highlight-color: $color-white;
 
     .caption {
         &__title {
-            font-family: $font-family-secondary;
             font-size: $font-size-sm-2;
             font-weight: $font-weight-medium;
             text-transform: uppercase;
@@ -48,7 +47,6 @@ $section-highlight-color: $color-white;
         }
   
         &__text {
-            font-family: $font-family-secondary;
             font-size: $font-size-sm;
         }
     }
