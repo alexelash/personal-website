@@ -10,7 +10,7 @@
 
         &__blurb {
             margin: 0 auto;
-            background: linear-gradient(to right, #007991, #78ffd6, #007991);
+            background: linear-gradient(to right, #8E5572, #F2BEFC, #8E5572, #F2BEFC);
             background-size: 300%;
             background-repeat: repeat;
             -webkit-background-clip: text;
@@ -20,7 +20,17 @@
 
         &__link {
             display: inline-block;
+            padding: $pad-small;
             margin-top: $pad-comfortable;
+            border-radius: $border-radius-big;
+
+            &:focus {
+                @include focus-outline();
+            }
+        }
+
+        &__link-icon {
+            color: $color-gray-medium;
         }
     }
 
@@ -83,6 +93,8 @@
 
         &__link {
             display: inline-block;
+            padding: $pad-small;
+            border-radius: $border-radius-big;
 
             &:after {
                 border: none;
@@ -95,6 +107,14 @@
                     padding: 0 $pad-small;
                 }
             }
+
+            &:focus {
+                @include focus-outline();
+            }
+        }
+
+        &__link-icon {
+            color: $color-gray-medium;
         }
 
         &__text-container {

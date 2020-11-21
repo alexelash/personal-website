@@ -21,6 +21,10 @@
 		&:hover, &:focus {
 			color: $color-gray-darkest;
 		}
+
+		&:focus {
+			@include focus-outline();
+		}
 	}
 
 	/**

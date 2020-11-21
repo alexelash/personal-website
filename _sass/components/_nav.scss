@@ -20,7 +20,7 @@ $nav-height: 5rem;
         
         @media screen and (max-width: $bp-med) {
             flex-wrap: wrap;
-            padding: 0.25rem 0;
+            padding: 1rem 0;
         }
         
         @media screen and (max-width: $bp-small) { 
@@ -38,6 +38,21 @@ $nav-height: 5rem;
         cursor: pointer;
         display: flex;
         align-items: center;
+        
+        circle {
+            transition: fill 0.15s;
+        }
+
+        &:hover, &:focus {
+            circle {
+                fill: darken($color-secondary, 10%);
+            }
+        }
+
+        &:focus .c-nav__info-container {
+            box-shadow: 0 0 0 2px rgba(blue, 0.3);
+            border-radius: $border-radius-big;
+        }
 
         &::after {
             display: none;
@@ -214,6 +229,10 @@ $nav-height: 5rem;
             color: $color-gray-dark;
         }
 
+        &:focus {
+            @include focus-outline();
+        }
+
         @media screen and (min-width: $bp-med) {
             display: none;
         }
@@ -302,6 +321,14 @@ $nav-height: 5rem;
 
         &::after {
             display: none;
+        }
+
+        &:hover {
+            color: $color-primary;
+        }
+
+        &:focus {
+            @include focus-outline();
         }
         
         &--is-active {

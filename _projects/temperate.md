@@ -8,6 +8,7 @@ featured-image:
 featured-alt: "Screenshot of Temperate dashboard."
 featured-bg: "#85c005"
 featured-size: "cropped"
+casestudy: true
 project-url: "https://temperate.io/"
 excerpt: Branding, UX/UI, front-end development.
 hero:

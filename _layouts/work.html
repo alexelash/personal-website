@@ -25,7 +25,10 @@
                 {{ page.intro }}
             </p>
             {% endif %}
-            <a class="intro__link" href="{{ page.link-url }}">{{ page.link-text }}</a>
+            <a class="intro__link" href="{{ page.link.url }}">
+                {{ page.link.text }}
+                <i class="intro__link-icon fas {{ page.link.icon }}"></i>
+            </a>
         </div>
         
         <div class="project-container">

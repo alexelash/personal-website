@@ -6,7 +6,7 @@ page_class: p-resume
 js_dependencies: hide-show.js
 
 heading: Résumé
-intro: Self-motivated designer with seven years of professional experience and demonstrated proficiency as a frontend web developer and software designer.
+intro: Multidisciplinary designer with seven years of professional experience and demonstrated proficiency as a frontend web developer and software designer.
 sections:
     - title: Experience
       examples:
@@ -107,7 +107,7 @@ sections:
           dates: "2015 – 2017"
           desc: |
             ELA Conf was a safe, inclusive tech leadership conference and community for adult womxn, trans men, and genderqueer people to connect. I volunteered at the conference in 2015 and 2016, and also gave two talks, one about toxic workplaces at the 2017 conference and another called “Teaching with Illustrations” in 2015.
-        - title: "2015 Graphic Design Packaging Show Judge"
+        - title: "Graphic Design Packaging Show Judge"
           company: "West Chester University"
           dates: "2015"
 

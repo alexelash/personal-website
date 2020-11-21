@@ -34,9 +34,8 @@
             <ul class="social-icons">
             {% for icon in site.data.social-icons %}
                 <li class="social-icons__icon c-icon">
-                    <a class="social-icons__link {{ icon.class }}" href="{{ icon.url }}">
-                        {% include {{ icon.class | prepend: 'social-icons/' | append: '.svg' }} %}
-                        <span class="social-icons__title u-is-vishidden">{{ icon.title }}</span>
+                    <a class="social-icons__link" href="{{ icon.url }}" aria-label="Link to {{ icon.title }}">
+                        <i aria-hidden="true" class="fab fa-{{ icon.class}}"></i>
                     </a>
                 </li>
             {% endfor %}

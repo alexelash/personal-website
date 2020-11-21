@@ -58,6 +58,10 @@
 		}
 	}
 
+	&:focus {
+		@include focus-outline();
+	}
+
 	/**
 	 * Button within button group
 	 */
@@ -165,7 +169,6 @@
 	outline: none;
 
 	&:focus {
-		outline: none;
 		@include focus-outline();
 	}
 }
