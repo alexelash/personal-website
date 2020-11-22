@@ -41,6 +41,9 @@
  * 1) Main identifiable colors involved in creating the UI
  *    Feel free to add your brand's color palette here.
  */
+$color-primary: #1f6135;
+$color-secondary: #f74100;
+$color-peach: #FFDAB9;
 
 /**
  * Neutral Colors
@@ -60,8 +63,6 @@ $color-black: #000;
  * 1) Utility colors are colors used to provide feedback, such as alert messages,
  * form validation, etc.
  */
-$color-primary: #1f6135;
-$color-secondary: #f74100;
 $color-utility-info: #3f87a6;
 $color-utility-info-light: #d3f2ff;
 $color-utility-error: #b12a0b;

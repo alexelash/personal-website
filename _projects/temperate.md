@@ -33,7 +33,7 @@ sections:
       style: "highlight"
       title: "Background"
       desc: |
-        When I started at Azavea, the company was a year into the two-year SBIR, and had created both a Climate API and the [Climate Lab.](https://climate.azavea.com/) The latter was developed to make the API more accessible to the team’s target users: climate adaptation planners. However, the team was hearing that there was not enough guidance in our software, especially since there were so many other tools offering climate data.
+        When I started at Azavea, the company was a year into the two-year SBIR, and had created both a Climate API and the [Climate Lab.](https://climate.azavea.com/) The latter was aimed at making the API more accessible to the team’s target users: climate adaptation planners. 
 
         Partnering with ICLEI USA, our team conducted 27 interviews with people in their network. At this stage, we were asking fairly open-ended questions in order to better understand the needs of our potential users. The insights gleaned from these interviews led us down the path of developing a tool that would do more than just present data to our end-users. 
     - type: "default"
@@ -45,13 +45,6 @@ sections:
         - Unsurprisingly, color is dominated by blue and green.
         - Frequently the names of tools are fairly literal.  
         - Marketing efforts in the space tend to focus on data as opposed to user goals.
-      visual: 
-        type: "image"
-        image: 
-            sm: "azavea-temperate/pencil_notebook@0.5x.jpg"
-            med: "azavea-temperate/pencil_notebook@0.75x.jpg"
-            lg: "azavea-temperate/pencil_notebook.jpg"
-        image-alt: "Pencil lying on top of a sketchbook."
     - type: "default"
       layout: "text-only"
       style: "highlight"

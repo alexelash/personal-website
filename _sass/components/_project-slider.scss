@@ -10,10 +10,86 @@
 
 .glide {
     background: $color-gray;
+
+    &__arrow-icon {
+        font-size: $font-size-large-2;
+        color: $color-gray-medium;
+        transition: color .15s;
+    }
     
-    &__arrows {
-       font-family: $font-family-secondary;
-       font-size: $font-size-sm;
+    &__arrow {
+        border: none;
+        box-shadow: none;
+
+        &:hover,
+        &:focus {
+            .glide__arrow-icon {
+                color: $color-primary;
+            }
+        }
+
+        &:focus {
+            @include focus-outline();
+        }
+    }
+
+    &__bullet {
+        background: $color-gray;
+        box-shadow: none;
+        transition: background 0.15s;
+        width: 0.65rem;
+        height: 0.65rem;
+        position: relative;
+        margin: 0 1.5rem;
+
+        &::before {
+            content: "";
+            display: block;
+            top: -120%;
+            right: -120%;
+            bottom: -120%;
+            left: -120%;
+        }
+            
+        &::after {
+            content: "";
+            display: block;
+            border-radius: 100%;
+            border: 1px solid transparent;
+            pointer-events: none;
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transition: border-color 0.25s, top 0.25s, right 0.25s, bottom 0.25s, left 0.25s;
+            transform-origin: center;
+            pointer-events: none;
+        }
+
+        &:hover,
+        &:focus {
+            background: $color-secondary;
+            border: 2px solid transparent;
+        }
+
+        &--active {
+            background: $color-peach;
+            border: 2px solid transparent;
+            
+            &:focus {
+                @include focus-outline();
+            }
+            
+            &::after {
+                border-color: $color-peach;
+                top: -110%;
+                right: -110%;
+                bottom: -110%;
+                left: -110%;
+            }
+        }
     }
 }
 
