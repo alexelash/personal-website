@@ -4,29 +4,6 @@ $section-highlight-color: $color-white;
     .section {
         display: flex;
         padding: $pad-normal 0.7rem;
-        margin-bottom: 2rem;
-
-        @media screen and (min-width: $bp-med) {
-            padding: 6rem 0;
-        }
-
-        &:nth-child(even) {
-            background-color: $section-highlight-color;
-            position: relative;
-
-            &::after {
-                content: "";
-                background-color: $section-highlight-color;
-                position: absolute;
-                display: block;
-                top: 0;
-                bottom: 0;
-                left: 50%;
-                width: 100vw;
-                transform: translateX(-50%);
-                z-index: -1;
-            }
-        }
     }
 
     .caption-container {
