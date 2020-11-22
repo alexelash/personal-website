@@ -32,38 +32,48 @@
         </div>
         
         <div class="project-container">
-          {% assign projects = site.projects | sort: 'order' | reverse %}
+          {% assign projects = site.projects | sort: 'order' %}
           {% for project in projects %}
 
           {% if project.draft != true %}
-            <article class="project">
+            <article class="project 
                 {% if project.casestudy %}
-                <a href="{{ project.url }}">
+                    project--has-casestudy
                 {% endif %}
-                    <div class="project__featured-image-container" style="background-color: {{ project.featured-bg }};">
-                        <picture class="project__featured-image
-                            {% if project.featured-size == 'cropped' %}
-                                project__featured-image--cropped
-                            {% endif %}
-                        ">
-                            <source media="(max-width: 799px)" srcset="{{ site.baseurl }}/assets/images/projects/{{ project.featured-image.sm }}">
-                            <source media="(min-width: 800px)" srcset="{{ site.baseurl }}/assets/images/projects/{{ project.featured-image.med }}">
-                            <img src="{{ site.baseurl }}/assets/images/projects/{{ project.featured-image.lg }}" alt="{{ project.featured-alt }}">
-                        </picture>
-                    </div>
-                {% if project.casestudy %}
-                </a>
-                {% endif %}
+                ">
+                <div class="project__featured-image-container" style="background-color: {{ project.featured-bg }};">
+                    <picture class="project__featured-image
+                        {% if project.featured-size == 'cropped' %}
+                            project__featured-image--cropped
+                        {% endif %}
+                    ">
+                        <source media="(max-width: 799px)" srcset="{{ site.baseurl }}/assets/images/projects/{{ project.featured-image.sm }}">
+                        <source media="(min-width: 800px)" srcset="{{ site.baseurl }}/assets/images/projects/{{ project.featured-image.med }}">
+                        <img src="{{ site.baseurl }}/assets/images/projects/{{ project.featured-image.lg }}" alt="{{ project.featured-alt }}">
+                    </picture>
+                </div>
+
                 <div class="project__text-container">
                     <h2 class="project__title">{{ project.title }}</h2>
                     <p class="project__excerpt">{{ project.excerpt }}</p>
 
                     <footer class="project__links">
                         {% if project.casestudy %}
-                        <a class="project__link" href="{{ project.url }}">See casestudy</a>
+                        <a class="project__link project__link--casestudy" href="{{ project.url }}">
+                            See casestudy
+                            <i class="project__link-icon fas fa-file-image" aria-hidden="true"></i>
+                        </a>
                         {% endif %}
+
+                        {% if project.casestudy && project.project-url %}
+                        <span class="project__link-divider">•</span>
+                        {% endif %}
+
                         {% if project.project-url %}
-                        <a class="project__link" href="{{ project.project-url }}">Website</a>
+                        <a class="project__link" href="{{ project.project-url }}">
+                            Website
+                            <i class="project__link-icon fas fa-link" aria-hidden="true"></i>
+                        </a>
                         {% endif %}
                     </footer>
                 </div>

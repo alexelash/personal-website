@@ -45,7 +45,6 @@ collections:
       - azavea-careers.md
       - azavea-challenge-coins.md
       - fishway.md
-      - vote-tshirt.md
     output: true
 
 include:
