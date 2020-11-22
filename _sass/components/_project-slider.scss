@@ -5,7 +5,7 @@
 .project-slider {
     line-height: 0;
     border-radius: $border-radius-big;
-    overflow: hidden;
+    margin-bottom: 4rem;
 }
 
 .glide {
@@ -31,6 +31,10 @@
         &:focus {
             @include focus-outline();
         }
+    }
+
+    &__bullets {
+        bottom: -2rem;
     }
 
     &__bullet {
@@ -95,7 +99,6 @@
 
 .project-slideshow {
     border-radius: $border-radius-big;
-    overflow: hidden;
 
    .glide__slides {
         @media screen and (max-width: 700px) {

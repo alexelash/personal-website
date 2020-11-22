@@ -33,14 +33,14 @@ sections:
       style: "highlight"
       title: "Background"
       desc: |
-        When I started at Azavea, the company was a year into the two-year SBIR, and had created both a Climate API and the [Climate Lab.](https://climate.azavea.com/) The latter was aimed at making the API more accessible to the team’s target users: climate adaptation planners. 
+        When I started at Azavea, the company was a year into the two-year SBIR, and had created both a Climate API and the [Climate Lab.](https://climate.azavea.com/) The latter was aimed at making the API more accessible to the project’s target users: climate adaptation planners. 
 
-        Partnering with ICLEI USA, our team conducted 27 interviews with people in their network. At this stage, we were asking fairly open-ended questions in order to better understand the needs of our potential users. The insights gleaned from these interviews led us down the path of developing a tool that would do more than just present data to our end-users. 
+        Our team conducted interviews with 27 practicioners. At this stage, we were asking open-ended questions in order to better understand the daily duties of our potential users, as well as any frustrations in their current workflows. Insights gleaned from these discussions led us to develop a tool that would do more than just present charts and data.
     - type: "default"
       layout: "text-visual"
       title: "Starting the branding process"
       desc: |
-        Before touching a pencil, I researched tools already in the climate space. This allowed me to get a better sense of what would make Temperate stand apart from the already fairly crowded landscape. I discovered a few key things: 
+        Before touching a pencil, I researched tools already in the climate space. This allowed me to get a better sense of what would make Temperate stand apart from the already fairly crowded landscape of tools. I discovered a few key things: 
 
         - Unsurprisingly, color is dominated by blue and green.
         - Frequently the names of tools are fairly literal.  
@@ -53,7 +53,7 @@ sections:
     - type: "default"
       layout: "visual-text"
       desc: |
-        Once we had our name, I designed a mascot (internally coined “Tempy”). The mark is a reference to the collie dog breed. The collie (most notably the border collie) was bred as a herding dog. Like the collie, Temperate is an adaptation planner's best friend, as it herds information, data, and climate data into one place.
+        Once we had our name, I designed a mascot (internally coined “Tempy”). The mark references the collie dog breed (most notably the border collie), which was bred as a herding dog. The concept was that Temperate acts as an adaptation planner’s best friend, as it herds information, data, and climate data all into one place. Visually, I played with making the mascot reference its name by using a thermometer for the nose.
       visual:
         type: "slider"
         slides:
@@ -76,7 +76,7 @@ sections:
       layout: "visual-text"
       title: "Developing the interface"
       desc: |
-        To match the brand’s energy, I designed the application to have a friendly and colorful UI.
+        To match the brand’s energy, I designed the application to have a friendly and colorful interface. We hoped to make Temperate continue to stand out in this space by giving it a sleek but unintimidating look. The typeface being used throughout the application is Klim Foundry’s National.
       visual:
         type: "slider"
         slides:
@@ -104,7 +104,7 @@ sections:
       layout: "visual-text"
       style: "highlight"
       desc: |
-        To assist with quick recognition of frequently dense terminology, I developed iconography to represent hazards, community systems, and types of policies.
+        Finally, to assist with quick recognition of frequently dense terminology, I developed iconography to represent the various hazards, community systems, and types of policies that could appear in Temperate. 
       visual: 
         type: "image"
         image: 
