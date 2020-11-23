@@ -55,7 +55,7 @@
 
                 <div class="project__text-container">
                     <h2 class="project__title">{{ project.title }}</h2>
-                    <p class="project__excerpt">{{ project.excerpt }}</p>
+                    <div class="project__excerpt">{{ project.excerpt | markdownify }}</div>
 
                     <footer class="project__links">
                         {% if project.casestudy %}
@@ -65,7 +65,7 @@
                         </a>
                         {% endif %}
 
-                        {% if project.casestudy && project.project-url %}
+                        {% if project.casestudy and project.project-url %}
                         <span class="project__link-divider">•</span>
                         {% endif %}
 
