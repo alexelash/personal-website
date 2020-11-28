@@ -2,10 +2,7 @@
 layout: project
 page_class: p-project
 title: "Azavea Employee Gifts"
-featured-image: 
-  sm: "azavea-employee-gifts/2018-tshirt/azavea-tshirt-2018@0.5x.png"
-  med: "azavea-employee-gifts/2018-tshirt/azavea-tshirt-2018@0.75x.png"
-  lg: "azavea-employee-gifts/2018-tshirt/azavea-tshirt-2018.png"
+featured-image: "azavea-employee-gifts/2018-tshirt/azavea-tshirt-2018.png"
 featured-alt: "T-shirt designed for Azavea"
 featured-bg: "#bed3da"
 featured-style: box

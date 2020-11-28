@@ -1,7 +1,11 @@
+{% assign baseimage = include.image %}
+{% assign imageending = baseimage | split: '.' | last %}
+{% assign size = baseimage | size | minus: 4 %}
+
 <div class="project-visual" style="background-color: {{ include.bg }};">
     <picture class="project-visual__image">
-        <source media="(max-width: 799px)" srcset="{{ site.baseurl }}/assets/images/projects/{{ include.image-sm }}">
-        <source media="(min-width: 800px)" srcset="{{ site.baseurl }}/assets/images/projects/{{ include.image-med }}">
-        <img src="{{ site.baseurl }}/assets/images/projects/{{ page.image-lg }}" alt="{{ include.image-alt }}">
+        <source media="(max-width: 799px)" data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.5x.{{ imageending }}">
+        <source media="(min-width: 800px)" data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.75x.{{ imageending }}">
+        <img data-src="{{ site.baseurl }}/assets/images/projects/{{ baseimage }}" src="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}_tiny.{{ imageending }}" alt="{{ slide.image-alt }}" class="lazy">
     </picture>
 </div>

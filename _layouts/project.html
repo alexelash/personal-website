@@ -49,9 +49,7 @@ layout_type: project
                         {% if section.visual.type == "image" %}
                             {% include project-visual.html
                                 type=section.visual.type
-                                image-sm=section.visual.image.sm
-                                image-med=section.visual.image.med
-                                image-lg=section.visual.image.lg
+                                image=section.visual.image
                                 image-alt=section.visual.image-alt
                                 caption=section.visual.caption %}
                         {% elsif section.visual.type == "slider" %}
@@ -79,9 +77,7 @@ layout_type: project
                         {% if section.visual.type == "image" %}
                             {% include project-visual.html
                                 type=section.visual.type
-                                image-sm=section.visual.image.sm
-                                image-med=section.visual.image.med
-                                image-lg=section.visual.image.lg
+                                image=section.visual.image
                                 image-alt=section.visual.image-alt
                                 caption=section.visual.caption %}
                         {% elsif section.visual.type == "slider" %}
@@ -98,9 +94,7 @@ layout_type: project
                         {% if section.visual.type == "image" %}
                             {% include project-visual.html
                                 type=section.visual.type
-                                image-sm=section.visual.image.sm
-                                image-med=section.visual.image.med
-                                image-lg=section.visual.image.lg
+                                image=section.visual.image
                                 image-alt=section.visual.image-alt
                                 caption=section.visual.caption %}
                         {% elsif section.visual.type == "slider" %}

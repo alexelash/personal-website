@@ -1,7 +1,7 @@
 ---
 layout: project
 title:  "Fishway"
-featured-img: /fishway/featured-image.jpg
+featured-image: "/fishway/featured-image.jpg"
 featured-alt: 
 featured-size: small
 featured-style: box

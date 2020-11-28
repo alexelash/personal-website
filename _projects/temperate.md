@@ -1,10 +1,7 @@
 ---
 layout: project
 title:  "Temperate"
-featured-image: 
-  sm: azavea-temperate/temperate_hero@0.5x.png
-  med: azavea-temperate/temperate_hero@0.75x.png
-  lg: azavea-temperate/temperate_hero.png
+featured-image: "azavea-temperate/temperate_hero.png"
 featured-alt: "Screenshot of Temperate dashboard."
 featured-bg: "#85c005"
 featured-size: "cropped"
@@ -16,10 +13,7 @@ hero:
     tagline: "A climate change companion"
     desc: |
         Temperate is a climate change decision-support tool developed as a part of an Small Business Innovation and Research (SBIR) grant with the Department of Energy.
-    image: 
-        sm: azavea-temperate/temperate_hero@0.5x.png
-        med: azavea-temperate/temperate_hero@0.75x.png
-        lg: azavea-temperate/temperate_hero.png
+    image: "azavea-temperate/temperate_hero.png"
     image-alt: "Screenshot of Temperate dashboard."
     image-bg: "#85c005"
     image-size: "cropped"
@@ -57,20 +51,11 @@ sections:
       visual:
         type: "slider"
         slides:
-            - image: 
-                sm: "azavea-temperate/temperate_branding_01@0.5x.jpg"
-                med: "azavea-temperate/temperate_branding_01@0.75x.jpg"
-                lg: "azavea-temperate/temperate_branding_01.jpg"
+            - image: "azavea-temperate/temperate_branding_01.jpg"
               image-alt: "Full color Temperate logo and tagline."
-            - image: 
-                sm: "azavea-temperate/temperate_branding_02@0.5x.jpg"
-                med: "azavea-temperate/temperate_branding_02@0.75x.jpg"
-                lg: "azavea-temperate/temperate_branding_02.jpg"
+            - image: "azavea-temperate/temperate_branding_02.jpg"
               image-alt: "Black and white versions of the logo."
-            - image: 
-                sm: "azavea-temperate/temperate_branding_03@0.5x.jpg"
-                med: "azavea-temperate/temperate_branding_03@0.75x.jpg"
-                lg: "azavea-temperate/temperate_branding_03.jpg"
+            - image: "azavea-temperate/temperate_branding_03.jpg"
               image-alt: "The Temperate color palette and custom names."
     - type: "default"
       layout: "visual-text"
@@ -80,25 +65,13 @@ sections:
       visual:
         type: "slider"
         slides:
-            - image: 
-                sm: "azavea-temperate/temperate_uielements_01@0.5x.jpg"
-                med: "azavea-temperate/temperate_uielements_01@0.75x.jpg"
-                lg: "azavea-temperate/temperate_uielements_01.jpg"
+            - image: "azavea-temperate/temperate_uielements_01.jpg"
               image-alt: ""
-            - image: 
-                sm: "azavea-temperate/temperate_uielements_02@0.5x.jpg"
-                med: "azavea-temperate/temperate_uielements_02@0.75x.jpg"
-                lg: "azavea-temperate/temperate_uielements_02.jpg"
+            - image: "azavea-temperate/temperate_uielements_02.jpg"
               image-alt: ""
-            - image: 
-                sm: "azavea-temperate/temperate_uielements_03@0.5x.jpg"
-                med: "azavea-temperate/temperate_uielements_03@0.75x.jpg"
-                lg: "azavea-temperate/temperate_uielements_03.jpg"
+            - image: "azavea-temperate/temperate_uielements_03.jpg"
               image-alt: ""
-            - image: 
-                sm: "azavea-temperate/temperate_uielements_04@0.5x.jpg"
-                med: "azavea-temperate/temperate_uielements_04@0.75x.jpg"
-                lg: "azavea-temperate/temperate_uielements_04.jpg"
+            - image: "azavea-temperate/temperate_uielements_04.jpg"
               image-alt: ""
     - type: "stacked"
       layout: "visual-text"
@@ -107,10 +80,7 @@ sections:
         Finally, to assist with quick recognition of frequently dense terminology, I developed iconography to represent the various hazards, community systems, and types of policies that could appear in Temperate. 
       visual: 
         type: "image"
-        image: 
-            sm: "azavea-temperate/temperate_icons@0.5x.jpg"
-            med: "azavea-temperate/temperate_icons@0.75x.jpg"
-            lg: "azavea-temperate/temperate_icons.jpg"
+        image: "azavea-temperate/temperate_icons.jpg"
         image-alt: "Temperate custom iconography."
         caption: "Custom iconography throughout the application largely designed by extending the fantastic [Font Awesome](https://fontawesome.com/) icons."
 ---

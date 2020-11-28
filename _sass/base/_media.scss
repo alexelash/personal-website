@@ -16,3 +16,12 @@ figcaption {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
+.lazy {
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.lazy.loaded {
+    opacity: 1;
+}

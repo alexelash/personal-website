@@ -32,9 +32,11 @@
                         {{ page.body | markdownify }}
                     </div>
                 </div>
-                <figure class="intro__image-container">
-                    <img class="intro__image" src="{{ page.image }}" alt="{{ page.alt }}">
-                    <figcaption class="intro__image-caption">{{ page.image-credit | markdownify }}</figcaption>
+                <figure class="intro__figure-container">
+                    <div class="intro__image-container">
+                        <img class="intro__image lazy" data-src="{{ page.image }}" alt="{{ page.image-alt }}">
+                        <figcaption class="intro__image-caption">{{ page.image-credit | markdownify }}</figcaption>
+                    </div>
                 </figure>
             </div>
         </div>

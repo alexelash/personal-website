@@ -44,15 +44,19 @@
                 {% endif %}
             </div>
         </div>
+
+        {% assign baseimage = page.hero.image %}
+        {% assign imageending = baseimage | split: '.' | last %}
+        {% assign size = baseimage | size | minus: 4 %}
         <div class="hero__image-container" style="background-color: {{ page.featured-bg }};">
             <picture class="hero__image
                 {% if page.hero.image-size == 'cropped' %}
                     hero__image--cropped
                 {% endif %}
             ">
-                <source media="(max-width: 799px)" srcset="{{ site.baseurl }}/assets/images/projects/{{ page.hero.image.sm }}">
-                <source media="(min-width: 800px)" srcset="{{ site.baseurl }}/assets/images/projects/{{ page.hero.image.med }}">
-                <img src="{{ page.image.lg }}" alt="{{ site.baseurl }}/assets/images/projects/{{ page.hero.image-alt }}">
+                <source media="(max-width: 799px)" data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.5x.{{ imageending }}">
+                <source media="(min-width: 800px)" data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.75x.{{ imageending }}">
+                <img data-src="{{ site.baseurl }}/assets/images/projects/{{ baseimage }}" src="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}_tiny.{{ imageending }}" alt="{{ page.hero.image-alt }}" class="lazy">
             </picture>
         </div>
     </div>
