@@ -10,4 +10,12 @@
     &__image > img {
         width: 100%;
     }
+
+    &__image-caption {
+        font-size: $font-size-sm;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-top: $pad-small;
+    }
 }

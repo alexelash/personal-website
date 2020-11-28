@@ -47,11 +47,13 @@ layout_type: project
                     <div class="section__visual-container" 
                         style="background-color: {{ section.visual.bg }};">
                         {% if section.visual.type == "image" %}
-                            {% include project-visual.html
-                                type=section.visual.type
-                                image=section.visual.image
-                                image-alt=section.visual.image-alt
-                                caption=section.visual.caption %}
+                            {% for image in include.visual %}
+                                {% include project-visual.html
+                                    type=section.visual.type
+                                    image=section.visual.image
+                                    image-alt=section.visual.image-alt
+                                    caption=section.visual.caption %}
+                            {% endfor %}
                         {% elsif section.visual.type == "slider" %}
                             {% include project-slider.html
                                 slides=section.visual.slides %}
@@ -84,6 +86,17 @@ layout_type: project
                             {% include project-slider.html
                                 slides=section.slides %}
                         {% endif %}
+                    </div>        
+                {% endif %}
+
+                <!-- Image grid -->
+                {% if section.type == "grid" %}
+                    <div class="section__visual-container section__visual-container--{{ section.layout }}" 
+                        style="background-color: {{ section.visual.bg }};">
+                        {% include project-grid.html 
+                            images=section.visual
+                            caption=section.caption
+                         %}
                     </div>        
                 {% endif %}
 

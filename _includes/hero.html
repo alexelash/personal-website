@@ -48,7 +48,7 @@
         {% assign baseimage = page.hero.image %}
         {% assign imageending = baseimage | split: '.' | last %}
         {% assign size = baseimage | size | minus: 4 %}
-        <div class="hero__image-container" style="background-color: {{ page.featured-bg }};">
+        <div class="hero__image-container" style="background-color: {{ page.hero.image-bg }};">
             <picture class="hero__image
                 {% if page.hero.image-size == 'cropped' %}
                     hero__image--cropped

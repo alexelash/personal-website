@@ -13,8 +13,9 @@
                     <source media="(min-width: 800px)" data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.75x.{{ imageending }}">
                     <img data-src="{{ site.baseurl }}/assets/images/projects/{{ baseimage }}" src="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}_tiny.{{ imageending }}" alt="{{ slide.image-alt }}" class="lazy">
                 </picture>
-             </li>
+            </li>
         {% endfor %}
+        </ul>
     </div>
     <div class="glide__arrows" data-glide-el="controls">
         <button class="glide__arrow glide__arrow--left" data-glide-dir="<">

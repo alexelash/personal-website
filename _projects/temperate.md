@@ -1,18 +1,18 @@
 ---
 layout: project
 title:  "Temperate"
+casestudy: true
 featured-image: "azavea-temperate/temperate_hero.png"
 featured-alt: "Screenshot of Temperate dashboard."
 featured-bg: "#85c005"
 featured-size: "cropped"
-casestudy: true
 project-url: "https://temperate.io/"
 excerpt: Branding, UX/UI, front-end, marketing.
 hero:
     title: "Temperate"
     tagline: "A climate change companion"
     desc: |
-        Temperate is a climate change decision-support tool developed as a part of an Small Business Innovation and Research (SBIR) grant with the Department of Energy.
+        Temperate is a climate change decision-support tool developed as a part of an Small Business Innovation Research (SBIR) grant with the Department of Energy.
     image: "azavea-temperate/temperate_hero.png"
     image-alt: "Screenshot of Temperate dashboard."
     image-bg: "#85c005"
