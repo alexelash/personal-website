@@ -1,6 +1,7 @@
 ---
 layout: profile
 title: Profile
+seo_description: "Design, front-end development, and marketing strategy for mission-driven organizations."
 permalink: "/about"
 page_class: p-about
 

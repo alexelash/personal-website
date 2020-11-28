@@ -1,12 +1,13 @@
 ---
 layout: project
 title:  "GroundWork"
+seo_description: "Branding and website design for a satellite imagery annotation tool."
 casestudy: true
 featured-image: "azavea-groundwork/groundwork_logo.png"
 featured-alt: "GroundWork logo"
 featured-bg: "#fbfbfb"
 project-url: "https://groundwork.azavea.com/"
-excerpt: Branding and website design for a machine learning product.
+excerpt: "Branding and website design for a machine learning product."
 hero:
     title: "GroundWork"
     tagline: "Labeling software for satellite imagery."

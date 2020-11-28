@@ -1,6 +1,7 @@
 ---
 layout: work
 title: Work
+seo_description: "I do user experience and brand strategy and design for mission-driven organizations. Check out my work!"
 permalink: "/"
 page_class: p-work
 js_dependencies: card-click.js

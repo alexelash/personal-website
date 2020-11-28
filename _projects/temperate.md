@@ -1,6 +1,7 @@
 ---
 layout: project
 title:  "Temperate"
+seo_description: "Branding, UX/UI design, front-end development, and marketing design for a climate change decision-support SaaS product."
 casestudy: true
 featured-image: "azavea-temperate/temperate_hero.png"
 featured-alt: "Screenshot of Temperate dashboard."
