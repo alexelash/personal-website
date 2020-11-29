@@ -57,6 +57,10 @@ layout_type: project
                         {% elsif section.visual.type == "slider" %}
                             {% include project-slider.html
                                 slides=section.visual.slides %}
+                        {% elsif section.visual.type == "video" %}
+                            {% include project-video.html
+                                path=section.visual.path
+                                caption=section.visual.caption %}
                         {% endif %}
                     </div>        
                 {% endif %}
@@ -85,6 +89,10 @@ layout_type: project
                         {% elsif section.visual.type == "slider" %}
                             {% include project-slider.html
                                 slides=section.slides %}
+                        {% elsif section.visual.type == "video" %}
+                            {% include project-video.html
+                                path=section.visual.path
+                                caption=section.visual.caption %}
                         {% endif %}
                     </div>        
                 {% endif %}
@@ -113,6 +121,10 @@ layout_type: project
                         {% elsif section.visual.type == "slider" %}
                             {% include project-slider.html
                                 slides=section.visual.slides %}
+                        {% elsif section.visual.type == "video" %}
+                            {% include project-video.html
+                                path=section.visual.path
+                                caption=section.visual.caption %}
                         {% endif %}
                     </div>  
                     <div class="section__text-container">

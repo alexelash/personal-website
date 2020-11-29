@@ -1,0 +1,25 @@
+/*------------------------------------*\
+    #PROJECT VIDEOS
+\*------------------------------------*/
+
+.project-video {
+    line-height: 0;
+    border-radius: $border-radius-big;
+    overflow: hidden;
+
+    > video {
+        width: 100%;
+
+        &:focus {
+            
+        }
+    }
+
+    &__caption {
+        font-size: $font-size-sm;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-top: $pad-small;
+    }
+}
