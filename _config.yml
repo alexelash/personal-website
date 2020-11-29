@@ -41,12 +41,12 @@ collections:
     order:
       - temperate.md
       - azavea-groundwork.md
+      - fishway.md
       - districtbuilder.md
       - azavea-employee-gifts.md
       - azavea-careers.md
-      - azavea-challenge-coins.md
-      - fishway.md
       - vote-tshirt.md
+      - azavea-challenge-coins.md
     output: true
 
 include:
