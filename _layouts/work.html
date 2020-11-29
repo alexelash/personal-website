@@ -64,14 +64,9 @@
 
                     <footer class="project__links">
                         {% if project.casestudy %}
-                        <a class="project__link project__link--casestudy" href="{{ project.url }}">
+                        <a class="c-btn project__button project__button--casestudy" href="{{ project.url }}">
                             See casestudy
-                            <i class="project__link-icon fas fa-file-image" aria-hidden="true"></i>
                         </a>
-                        {% endif %}
-
-                        {% if project.casestudy and project.project-url %}
-                        <span class="project__link-divider">•</span>
                         {% endif %}
 
                         {% if project.project-url %}

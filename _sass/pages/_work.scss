@@ -95,16 +95,26 @@
         }
 
         &__links {
-            display: flex;
-            align-items: flex-start;
-            font-size: $font-size-sm-2;
-            margin-left: -$pad-small;
+
+            @media screen and (min-width: $bp-med) {
+                display: flex;
+                align-items: baseline;
+            }
+        }
+
+        &__button {
+            margin-right: $pad-normal;
         }
 
         &__link {
             display: inline-block;
             padding: $pad-small;
             border-radius: $border-radius-big;
+            font-size: $font-size-sm-2;
+
+            @media screen and (max-width: $bp-med) {
+                margin-top: $pad-normal;
+            }
 
             &::after {
                 border: none;
