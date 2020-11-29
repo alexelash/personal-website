@@ -272,8 +272,8 @@ $nav-height: 5rem;
      * 1) This is the primary navigation list
      */
     &__list {
-            display: block;
-            padding: 0;
+        display: block;
+        padding: 0;
 
         /**
          * Nav list styling when parent nav is active
@@ -302,8 +302,15 @@ $nav-height: 5rem;
     /**
      * Nav list item
      */
-    &__list-item {
+    &__item {
         position: relative;
+        margin-left: 0;
+        text-indent: initial;
+        margin-bottom: 0;
+        
+        &::before {
+            display: none!important;
+        }
     }
 
     /**

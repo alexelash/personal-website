@@ -57,6 +57,16 @@
         margin: 0;
     }
 
+    &__list-item {
+        margin-left: 0;
+        text-indent: initial;
+        margin-bottom: 0;
+        
+        &::before {
+            display: none!important;
+        }
+    }
+
     &__attr {
         color: inherit;
     }
@@ -77,6 +87,13 @@
         
         &__list-item {
             flex: 0 0 48%;
+            margin-left: 0;
+            text-indent: initial;
+            margin-bottom: 0;
+            
+            &::before {
+                display: none!important;
+            }
 
             &:first-child {
                 margin-right: 2%;

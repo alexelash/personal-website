@@ -13,23 +13,33 @@ ol, ul {
 	list-style: none;
 }
 
-.content {
-    ul {  
-        font: $body-font;
-        margin-bottom: $space;
-    }
+ul {  
+    font: $body-font;
+    margin-bottom: $space;
+}
 
-    ul li {
-        margin-left: 1rem;
-        text-indent: -0.85rem;
-        margin-bottom: $pad-small;
+ul li {
+    margin-left: 1rem;
+    text-indent: -0.85rem;
+    margin-bottom: $pad-small;
 
-        &::before {
-            content: '•';
-            color: $color-gray-medium;
-            padding-right: 0.35rem;
-        }
+    &::before {
+        content: '•' ' ';
+        color: $color-gray-medium;
     }
+}
+
+ol {  
+  counter-reset: custom-counter;
+}
+
+ol li {
+  counter-increment: custom-counter;
+}
+
+ol li::before {
+  content: counter(custom-counter) '. ';
+  color: $color-gray-medium;
 }
 
 /**
