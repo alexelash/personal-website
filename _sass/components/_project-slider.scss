@@ -109,6 +109,14 @@
     &__slide {
         width: 100%;
         display: block;
+        margin-left: 0;
+        text-indent: initial;
+        margin-bottom: 0;
+        line-height: 0;
+        
+        &::before {
+            display: none!important;
+        }
 
         img {
             width: 100%;

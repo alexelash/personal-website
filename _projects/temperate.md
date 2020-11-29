@@ -25,7 +25,6 @@ hero:
 sections: 
     - type: "default"
       layout: "text-only"
-      style: "highlight"
       title: "Background"
       desc: |
         When I started at Azavea, the company was a year into the two-year SBIR, and had created both a Climate API and the [Climate Lab.](https://climate.azavea.com/) The latter was aimed at making the API more accessible to the project’s target users: climate adaptation planners. 
@@ -59,26 +58,25 @@ sections:
             - image: "azavea-temperate/temperate_branding_03.jpg"
               image-alt: "The Temperate color palette and custom names."
     - type: "default"
-      layout: "visual-text"
+      layout: "text-only"
       title: "Developing the interface"
       desc: |
         To match the brand’s energy, I designed the application to have a friendly and colorful interface. We hoped to make Temperate continue to stand out in this space by giving it a sleek but unintimidating look. The typeface being used throughout the application is Klim Foundry’s National.
-      visual:
-        type: "slider"
-        slides:
-            - image: "azavea-temperate/temperate_uielements_01.jpg"
-              image-alt: ""
-            - image: "azavea-temperate/temperate_uielements_02.jpg"
-              image-alt: ""
-            - image: "azavea-temperate/temperate_uielements_03.jpg"
-              image-alt: ""
-            - image: "azavea-temperate/temperate_uielements_04.jpg"
-              image-alt: ""
+    - type: "grid"
+      layout: "small-small-big"
+      caption: "The brand applied to various screens in the application."
+      visual: 
+        - image: "azavea-temperate/temperate_uielements_01.jpg"
+          image-alt: "Several button styles and card styles within the application."
+        - image: "azavea-temperate/temperate_uielements_02.jpg"
+          image-alt: "The application dashboard, with the user hovering over the ”adaptive needs” chart."
+        - image: "azavea-temperate/temperate_uielements_03.jpg"
+          image-alt: "Screenshots of the Action Steps page and Add Hazard popover."
     - type: "stacked"
       layout: "visual-text"
       style: "highlight"
       desc: |
-        Finally, to assist with quick recognition of frequently dense terminology, I developed iconography to represent the various hazards, community systems, and types of policies that could appear in Temperate. 
+        Finally, to assist with quick recognition of frequently dense terminology, I developed custom iconography to represent the various hazards, community systems, and types of policies that could appear in Temperate. While users would be unlikely to recognize these oftentimes complex concepts by the iconography alone, they assist with quicker recognition and add an element of polish.
       visual: 
         type: "image"
         image: "azavea-temperate/temperate_icons.jpg"

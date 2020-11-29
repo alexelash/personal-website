@@ -10,6 +10,14 @@
     &__image-container {
         border-radius: $border-radius-big;
         overflow: hidden;
+        margin-left: 0;
+        text-indent: initial;
+        margin-bottom: 0;
+        line-height: 0;
+        
+        &::before {
+            display: none!important;
+        }
     }
 
     &__image > img {
