@@ -32,7 +32,7 @@ sections:
       layout: "visual-text"
       title: "Creating the brand"
       desc: |
-        I primarily worked on developing a logo with a strong tie to the name and explored ways to incorporate ”raster” pixels into an eye icon. Eventually I landed on creating an iris and pupil out of pixels.
+        I primarily worked on developing a logo with a strong tie to the name and explored ways to incorporate “raster” pixels into an eye icon. Eventually I landed on creating an iris and pupil out of pixels.
       visual: 
         type: "image"
         caption: "Early logo explorations."
