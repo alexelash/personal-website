@@ -72,6 +72,8 @@ sections:
           image-alt: "The application dashboard, with the user hovering over the ”adaptive needs” chart."
         - image: "azavea-temperate/temperate_uielements_03.jpg"
           image-alt: "Screenshots of the Action Steps page and Add Hazard popover."
+        - image: "azavea-temperate/temperate_uielements_04.jpg"
+          image-alt: "Screenshot of the Assessment wizard."
     - type: "stacked"
       layout: "visual-text"
       style: "highlight"
