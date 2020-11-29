@@ -16,7 +16,7 @@
 title: Alex Lash Design
 email: alex@lash.design
 description: >- # this means to ignore newlines until "baseurl:"
-  Designer and developer, currently a User Experience Designer at Azavea ✌🏼
+  Designer and developer, currently a User Experience and Marketing Designer at Azavea ✌🏼
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: alexandralash
@@ -40,11 +40,13 @@ collections:
   projects:
     order:
       - temperate.md
+      - azavea-groundwork.md
       - districtbuilder.md
       - azavea-employee-gifts.md
       - azavea-careers.md
       - azavea-challenge-coins.md
       - fishway.md
+      - vote-tshirt.md
     output: true
 
 include:
