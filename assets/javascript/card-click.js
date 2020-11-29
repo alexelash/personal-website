@@ -7,7 +7,7 @@
     const cards = document.querySelectorAll('.project--has-casestudy');
     if (cards) {
         cards.forEach.call(cards, card => {
-            let down, up, link = card.querySelector('.project__link--casestudy');
+            let down, up, link = card.querySelector('.project__button--casestudy');
             card.style.cursor = 'pointer';
             card.onmousedown = (e) => down = +new Date();
             card.onmouseup = (e) => {
