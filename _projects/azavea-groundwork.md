@@ -10,9 +10,9 @@ project-url: "https://groundwork.azavea.com/"
 excerpt: "Branding and website design for a machine learning product."
 hero:
     title: "GroundWork"
-    tagline: "Labeling software for satellite imagery."
+    tagline: "Labeling for satellite imagery"
     desc: |
-        GroundWork is the first annotation tool built specifically with applying machine learning to satellite imagery.
+        GroundWork is the first annotation tool built specifically with satellite imagery in mind. The free SaaS product enables labeling teams to easily and efficiently label large amounts of images to prep for machine learning projects.
     image: "azavea-groundwork/groundwork_hero.png"
     image-alt: "Screenshot of GroundWork homepage."
     image-bg: "#385149"
@@ -53,6 +53,29 @@ sections:
         image-alt: "GroundWork logo."
         caption: "The final logo."
     - type: "default"
+      layout: "text-only"
+      desc: |
+        I paired the mark with the approachable geometric typeface Urbane and developed a color scheme for UI and collateral applications.
+    - type: "grid"
+      layout: "side-by-side"
+      visual: 
+        - image: "azavea-groundwork/groundwork_brand_01.jpg"
+          image-alt: "Six circle-crops of aerial imagery that is colored orange, deep green, bright blue, light yellow, light gray, and dark brown."
+        - image: "azavea-groundwork/groundwork_brand_02.jpg"
+          image-alt: "Urbane typeface in various weights."
+    - type: "default"
+      layout: "text-only"
+      title: "Marketing website"
+      desc: |
+        All of this was applied to the GroundWork marketing website, for which I completed the initial wireframes and design. My fantastic colleague, [Matt Williams](https://mattwilliams.design/) developed the website and added additional illustrations, all keeping in line with the new brand.
+    - type: "grid"
+      layout: "stacked"
+      visual: 
+        - image: "azavea-groundwork/groundwork_website_01.jpg"
+          image-alt: "Desktop view of GroundWork webpage."
+        - image: "azavea-groundwork/groundwork_website_02.jpg"
+          image-alt: "Mobile view of GroundWork webpage."
+    - type: "default"
       layout: "text-visual"
       title: "Applied brand"
       desc: |
@@ -67,16 +90,4 @@ sections:
           image-alt: "Brown t-shirt with GroundWork logomark in the top right."
         - image: "azavea-groundwork/groundwork_applied_02.jpg"
           image-alt: "Laptop opened on desk surrounded with plants with GroundWork sticker."
-    - type: "default"
-      layout: "text-only"
-      title: "Marketing website"
-      desc: |
-        All of this was applied to the GroundWork marketing website, for which I completed the initial wireframes and design. My fantastic colleague, [Matt Williams](https://mattwilliams.design/) developed the website and added additional illustrations, all keeping in line with the new brand.
-    - type: "grid"
-      layout: "side-by-side"
-      visual: 
-        - image: "azavea-groundwork/groundwork_website_01.jpg"
-          image-alt: "Desktop view of GroundWork webpage."
-        - image: "azavea-groundwork/groundwork_website_02.jpg"
-          image-alt: "Mobile view of GroundWork webpage."
 ---

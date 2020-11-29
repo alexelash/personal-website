@@ -9,8 +9,18 @@
                     <h2 class="hero__subtitle">
                         {{ page.hero.tagline }}
                     </h2>
+                    
                     <p class="hero__blurb">
                         {{ page.hero.desc }}
+
+                        {% if page.project-url %}
+                        <span class="hero__project-url-container">
+                            <a href="{{ page.page.project-url }}" class="hero__project-link">
+                                Website
+                                <i class="project__link-icon fas fa-link" aria-hidden="true"></i>
+                            </a>
+                        </span>
+                        {% endif %}
                     </p>
                 </div>
                 {% if page.hero.roles or page.hero.organization %}

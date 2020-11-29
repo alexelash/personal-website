@@ -38,6 +38,17 @@
         }
     }
     
+    &--stacked {
+        .project-grid {
+
+            @media screen and (min-width: $bp-small-3) {
+                &__image-container {
+                    flex: 0 0 100%;
+                }
+            }
+        }
+    }
+    
     &--side-by-side {
         .project-grid {
 
