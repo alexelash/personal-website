@@ -45,10 +45,10 @@ sections:
       visual: 
         - image: "fishway/fishway_research_04.jpg"
           image-alt: "Photograph of the original Fishway application, and hand pinching on the screen."
+        - image: "fishway/fishway_research_02.jpg"
+          image-alt: "Photo from below of the original Fishway application."
         - image: "fishway/fishway_research_01.jpg"
           image-alt: "Two people standing in front of the original Fishway application."
-        - image: "fishway/fishway_research_03.jpg"
-          image-alt: "Photo from below of the original Fishway application."
     - type: "default"
       layout: "text-visual"
       desc: |
