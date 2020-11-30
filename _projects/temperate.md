@@ -13,7 +13,7 @@ hero:
     title: "Temperate"
     tagline: "A climate change companion"
     desc: |
-        Temperate is a climate change decision-support tool developed as a part of an Small Business Innovation Research (SBIR) grant with the Department of Energy.
+        Temperate is a climate change decision-support tool. It was developed as part of an Small Business Innovation Research (SBIR) grant with the Department of Energy.
     image: "azavea-temperate/temperate_hero.png"
     image-alt: "Screenshot of Temperate dashboard."
     image-bg: "#85c005"
@@ -29,7 +29,12 @@ sections:
       desc: |
         When I started at Azavea, the company was a year into the two-year SBIR, and had created both a Climate API and the [Climate Lab.](https://climate.azavea.com/) The latter was aimed at making the API more accessible to the project’s target users: climate adaptation planners. 
 
-        Our team conducted interviews with 27 practicioners. At this stage, we were asking open-ended questions in order to better understand the daily duties of our potential users, as well as any frustrations in their current workflows. Insights gleaned from these discussions led us to develop a tool that would do more than just present charts and data.
+        Our team conducted interviews with 27 practicioners. At this stage, we were asking open-ended questions in order to better understand the daily duties of our potential users, as well as any frustrations in their current workflows. It was through these discussions that we learned some key frustrations across the industry: tool fatigue, a lack of guidance, complicated data without clear next steps, and plans to upkeep in order to adhere to promises made to organizations like the Global Covenant of Mayors. 
+
+        Insights gleaned from these discussions led us to develop a tool that would do more than just present charts and data. We embarked on developing a product that would:
+        - Actually *guide* practicioners through intepreting climate data.
+        - Help users develop called an “vulnerability assessment”.
+        - Offer suggested actions to take based on a user’s location and particular community needs.
     - type: "grid"
       layout: "side-by-side"
       caption: "Our initial research led us to develop a decision-support tool."
@@ -49,14 +54,14 @@ sections:
         - Imagery typically includes environmental symbols, like leaves, sun or water.
         - Marketing efforts in the space tend to focus on data as opposed to user goals.
 
-        This research was crucial in allowing me to establish a benchmark against which to develop and evaluate our product’s brand against.
+        This research was crucial in allowing me to establish a benchmark against which to develop and evaluate our product’s brand.
     - type: "default"
       layout: "text-visual"
       title: "Naming our product"
       desc: |
-        Once I better understood what was already out there, I felt that we could make the new product stand out with a unique, conceptual name and logomark. Using dependable blues and greens could ground the brand identity, and make it feel like it belongs alongside other tools and organizations. The team worked on developing a new name, soliciting ideas from all corners of the office. 
+        Once I better understood what was already out there, I felt that we could make the new product stand out with a unique, conceptual name and logomark. Using dependable blues and greens would ground the brand identity, and make it feel like it belongs alongside other tools and organizations. The team worked on developing a name and solicited ideas from all corners of the office. 
 
-        Ultimately, we were attracted to our reflecting climate adaptation planning’s loftiest aspirational goal: to keep our world’s climate liveable for all of Earth’s creatures.
+        Ultimately, we chose to reflect climate adaptation planning’s loftiest aspirational goal: to keep our world’s climate liveable for all of Earth’s creatures.
       visual: 
         type: "image"
         caption: "Temperate climates lack extremes of temperate and precipitation."
@@ -65,12 +70,12 @@ sections:
     - type: "default"
       layout: "text-only"
       desc: |
-        We went with the name Temperate, inspired by geographically temperate climates. Temperate climates are those without extremes of temperature and precipitation (rain and snow), which made it a perfect, immediately understandable analogy.
+        We went with the name Temperate, inspired by geographically temperate climates. Temperate climates are those without extremes of temperature and precipitation (rain and snow), which made it a perfect analogy for the goal.
     - type: "default"
       layout: "text-visual"
       title: "Creating Temperate’s brand identity"
       desc: |
-        Once we had our name, I sketched out many directions for the logomark. The name gave me a lot to stew on, but I was still looking for a way to have a visual representation of our SaaS product that wouldn’t get lost in a sea of other climate tool logos. Early designs were all over the map – nothing I drew felt quite right for making our tool stand out.
+        Once we had our name, I sketched out many directions for the logomark. The name gave me a lot to stew on, but I was looking for a way to have a visual representation of our SaaS product that wouldn’t get lost in a sea of other climate tool logos. Early designs were all over the map – nothing I drew felt quite right for making our tool stand out.
       visual: 
         type: "image"
         caption: "Early sketches for Temperate’s logo."
@@ -79,7 +84,7 @@ sections:
     - type: "default"
       layout: "text-visual"
       desc: |
-        The winning direction was that which created a mascot. The mark references the collie dog breed (most notably the border collie). Known as a herding dog, the concept was that Temperate acts as an adaptation planner’s best friend, because it herds information, data, and climate data all into one place. Tying it together with the name, a thermometer makes up the nose of our mascot.
+        The winning direction was that which created a mascot. The mark references the collie dog breed (most notably the border collie). Known as a herding dog, the concept was that Temperate herds information and climate data all into one place. Our hope was that Temperate would become adaptation planners’ best friend in planning for climate change. Tying it together with the name, a thermometer makes up the nose of our mascot.
       visual: 
         type: "image"
         image: "azavea-temperate/temperate_branding_02.jpg"

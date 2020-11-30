@@ -31,7 +31,7 @@ sections:
       layout: "text-visual"
       title: "Starting the branding process"
       desc: |
-        The team had chosen the name based on the idea that labeling data sets the ”groundwork” for every machine learning project. With this concept in mind, I began exploring potential images that could highlight GroundWork’s important role in machine learning projects. 
+        The team had chosen the name based on the idea that labeling data sets the “groundwork” for every machine learning project. With this concept in mind, I began exploring potential images that could highlight GroundWork’s important role. 
 
         I began sketching monograms for the logomark:
       visual:
@@ -42,7 +42,7 @@ sections:
     - type: "default"
       layout: "text-only"
       desc: |
-        Initially, I was most drawn to three visual concepts: a lightbulb, map marker, and hot air balloon. Each pointed out a different key differentiator for GroundWork. The first referenced the fact that ground is the reference point in an electrical current through which voltages are measured, which related to how GroundWork helps organizations establish “ground truth” in machine learning projects. The second was more simple, simply referencing that GroundWork is made for labeling map data, as that presents unique challenges to practicioners.
+        Initially, I was most drawn to three visual concepts: a lightbulb, map marker, and hot air balloon. Each pointed out a key differentiator for GroundWork. The first referenced the fact that ground is the reference point in an electrical current through which voltages are measured, which related to how GroundWork helps organizations establish “ground truth” in machine learning projects. The second was more simple, simply referencing that GroundWork is made for labeling map data, as that presents unique challenges to practicioners.
     - type: "default"
       layout: "text-visual"
       desc: |
@@ -67,7 +67,7 @@ sections:
       layout: "text-only"
       title: "Marketing website"
       desc: |
-        All of this was applied to the GroundWork marketing website, for which I completed the initial wireframes and design. My fantastic colleague, [Matt Williams](https://mattwilliams.design/) developed the website and added additional illustrations, all keeping in line with the new brand.
+        All of this was applied to the GroundWork marketing website, for which I completed the initial wireframes and design. My fantastic colleague, [Matt Williams](https://mattwilliams.design/) developed the website and added additional illustrations.
     - type: "grid"
       layout: "stacked"
       visual: 

@@ -1,7 +1,7 @@
 ---
 layout: project
 title:  "Raster Vision"
-seo_description: "Branding and marketing design for an open source machine learning library for satellite and aerial imagery."
+seo_description: "Branding and marketing design for an open source deep learning library for satellite and aerial imagery."
 casestudy: true
 featured-image: "azavea-rastervision/rastervision_RGB_darkbg.png"
 featured-alt: "Raster Vision logo."
@@ -10,9 +10,9 @@ project-url: "https://rastervision.io/"
 excerpt: "Branding and marketing design."
 hero:
     title: "Raster Vision"
-    tagline: "A climate change companion"
+    tagline: "Deep learning for satellite imagery"
     desc: |
-        Branding and marketing design for an open source machine learning library for satellite and aerial imagery.
+        Branding and marketing design for an open source deep learning library for satellite and aerial imagery.
     image: "azavea-rastervision/rastervision_RGB_darkbg.png"
     image-alt: "Raster Vision logo."
     image-bg: "#292f35"

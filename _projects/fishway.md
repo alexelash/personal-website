@@ -33,7 +33,7 @@ sections:
       layout: "text-only"
       title: "Design research"
       desc: |
-        The application already existed and was used by employees and visitors of the museum. As a result, we already knew the audience for the application was necessarily broad.  Our first step was to make a visit to the site, notebooks and camera-phones in hand. To get the best data, we went during a high-traffic time and intended to conduct guerilla interviews. My aim was to: 
+        The application already existed and was used by employees and visitors of the museum. As a result, we already knew the audience for the application was necessarily broad. Our first step was to make a visit to the site, notebooks and camera-phones in hand. To get the best data, we went during a high-traffic time and intended to conduct guerilla interviews. My aim was to: 
 
         1. Better understand the context in which the application is being used.
         2. Observe actual users and ask them questions about their experience.
@@ -68,9 +68,9 @@ sections:
       layout: "text-visual"
       title: "Visual design"
       desc: |
-        Once we had established a new structure, I began working on a new visual style. Fortunately, we were able to use some excellent, realistic illustrations that had already been embedded into the application. I wanted to ensure that the application design would act as a semi-neutral frame. 
+        Once we had established a new structure, I began working on a new visual style. Fortunately, we were able to use illustrations that had already been embedded into the application. I wanted to ensure that the application design would act as a semi-neutral frame for the illustrations to act as the star. 
 
-        To this end, I established early on that the concept for the application's structure would be going to different depths of the fishway. As the user navigates to different sections, the screen behind the content changes color to indicate depth, with the entrance and the game being partially above the waves.
+        To this end, I established early on that the concept for the application’s structure would be going to different depths of the fishway. As the user navigates to different sections, the screen behind the content changes color to indicate depth, with the entrance and the game being partially above the waves.
     - type: "grid"
       layout: "small-small-big"
       caption: "Final visual designs."
