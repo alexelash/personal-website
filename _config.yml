@@ -38,16 +38,17 @@ sass:
 # Collections
 collections:
   projects:
+    output: true
     order:
       - temperate.md
       - azavea-groundwork.md
       - fishway.md
+      - rastervision.md
       - districtbuilder.md
       - azavea-employee-gifts.md
       - azavea-careers.md
       - vote-tshirt.md
       - azavea-challenge-coins.md
-    output: true
 
 include:
   - _pages

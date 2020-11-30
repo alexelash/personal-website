@@ -32,7 +32,7 @@
         </div>
         
         <div class="project-container">
-          {% assign projects = site.projects | reverse %}
+          {% assign projects = site.projects %}
           {% for project in projects %}
 
           {% if project.draft != true %}
