@@ -33,8 +33,14 @@ a {
         }
     }
 
+    &:focus {
+        @include focus-outline();
+        border-radius: $border-radius-big;
+    }
+
     &:focus:not(:focus-visible) {
         color: $link-color;
+        box-shadow: none;
 
         &::after {
           border-color: transparent;
@@ -43,6 +49,8 @@ a {
 
     &:focus-visible {
         color: $color-black;
+        border-radius: $border-radius-big;
+        @include focus-outline();
 
         &::after {
           border-color: $link-underline-color-hover;
