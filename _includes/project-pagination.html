@@ -1,0 +1,103 @@
+{% comment %} 
+  Previous / Next functions
+  Assign variables from the entire projects collection
+{% endcomment %}
+{% assign items_raw = site.projects | where: 'type', page.type %}
+{% assign available_casestudies = items_raw | where: 'casestudy', true %}
+{% assign items = available_casestudies | sort: 'order' %}
+
+{% if items.size > 1 %}
+  {% comment %}
+    Store the index position of the matching items
+  {% endcomment %}
+  {% for item in items %}
+    {% if item.title == page.title %}
+      {% assign item_index = forloop.index %}
+    {% endif %}
+  {% endfor %}
+  
+  {% assign prev_index = item_index | plus: 1 %}
+  {% assign next_index = item_index | minus: 1 %}
+  
+  {% for item in items %}
+    {% if forloop.index == prev_index %}
+      {% assign prev = item %}
+    {% endif %}
+    {% if forloop.index == next_index %}
+      {% assign next = item %}
+    {% endif %}
+  {% endfor %}
+
+  <div class="c-pagination {% if prev and next %}c-pagination--both{% endif %}">
+    {% if prev %}
+      <a href="{{ prev.url }}" class="c-pagination__button c-pagination__button--previous" title="{{ prev.title }}">
+
+        {% if prev.featured-bg %}
+          {% assign baseimage = prev.featured-image %}
+          {% assign imageending = baseimage | split: '.' | last %}
+          {% assign size = baseimage | size | minus: 4 %}
+
+          <div class="c-pagination__image-container" style="background-color: {{ prev.featured-bg }};">
+            <picture class="c-pagination__image
+                {% if prev.featured-size == 'cropped' %}
+                    c-pagination__image--cropped
+                {% endif %}
+            ">
+                <source media="(max-width: 799px)" data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.5x.{{ imageending }}">
+                <source media="(min-width: 800px)" data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.75x.{{ imageending }}">
+                <img data-src="{{ site.baseurl }}/assets/images/projects/{{ baseimage }}" src="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}_tiny.{{ imageending }}" alt="{{ prev.featured-alt }}" class="lazy">
+            </picture>
+        </div>
+        {% endif %}
+
+        <div class="c-pagination__button-text">
+          <div class="c-pagination__title">
+            {{ prev.title }}
+          </div>
+          <p class="c-pagination__excerpt">
+            {{ prev.excerpt }}
+          </p>
+          <div>
+            <i class="c-pagination__button-icon fas fa-arrow-left" aria-hidden="true"></i>
+            Previous
+          </div>
+        </div>
+      </a>
+    {% endif %}
+
+    {% if next %}
+      <a href="{{ next.url }}" class="c-pagination__button c-pagination__button--next" title="{{ next.title }}">
+        <div class="c-pagination__button-text">
+          <div class="c-pagination__title">
+            {{ next.title }}
+          </div>
+          <p class="c-pagination__excerpt">
+            {{ next.excerpt }}
+          </p>
+          <div>
+            Next
+            <i class="c-pagination__button-icon  fas fa-arrow-right" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        {% if next.featured-bg %}
+          {% assign baseimage = next.featured-image %}
+          {% assign imageending = baseimage | split: '.' | last %}
+          {% assign size = baseimage | size | minus: 4 %}
+
+          <div class="c-pagination__image-container" style="background-color: {{ next.featured-bg }};">
+            <picture class="c-pagination__image
+                {% if next.featured-size == 'cropped' %}
+                    c-pagination__image--cropped
+                {% endif %}
+            ">
+                <source media="(max-width: 799px)" data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.5x.{{ imageending }}">
+                <source media="(min-width: 800px)" data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.75x.{{ imageending }}">
+                <img data-src="{{ site.baseurl }}/assets/images/projects/{{ baseimage }}" src="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}_tiny.{{ imageending }}" alt="{{ next.featured-alt }}" class="lazy">
+            </picture>
+        </div>
+        {% endif %}
+      </a>
+    {% endif %}
+  </div>
+{% endif %}

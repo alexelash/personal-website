@@ -1,0 +1,99 @@
+/*------------------------------------*\
+    #PAGINATION
+\*------------------------------------*/
+/**
+ * 1) Container that consists of of a page header title and description
+ */
+
+/**
+ * Page header title
+ */
+.c-pagination {
+    border-top: 1px solid $color-gray;
+    border-bottom: 1px solid $color-gray;
+    margin-top: $pad-comfortable;
+
+    &--both {
+        @media screen and (max-width: $bp-large) {
+            > .c-pagination__button:first-child {
+                border-bottom: 1px solid $color-gray;
+            }
+        }
+
+        @media screen and (min-width: $bp-large) {
+            display: flex;
+            align-items: center;
+
+            > .c-pagination__button {
+                flex: 0 0 50%;
+            }
+
+            > .c-pagination__button:first-child {
+                border-right: 1px solid $color-gray;
+            }
+        }
+    }
+
+    &__button {
+        color: $color-gray-medium;
+        padding: $pad-comfortable;
+        display: flex;
+
+        &::after {
+            display: none;
+        }
+
+        &--previous {
+            .c-pagination__image-container {
+                margin-right: $pad-comfortable;
+            }
+        }
+
+        &--next {
+            .c-pagination__image-container {
+                margin-left: $pad-comfortable;
+            }
+        }
+
+        &:hover {
+            background: $color-white;
+        }
+    }
+
+    &__button-text {
+        max-width: 25rem;
+    }
+
+    &__button-icon {
+        color: $color-gray;
+    }
+
+    &__image-container {
+        border-radius: $border-radius-big;
+        border: 1px solid $color-gray-light;
+        width: 10rem;
+        height: 7rem;
+        position: relative;
+        overflow: hidden;
+        flex: 0 0 auto;
+    }
+
+    &__image {
+        display: block;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
+
+    &__image--cropped {
+        width: 100%;
+        left: 60%;
+        bottom: -20%;
+    }
+
+    &__title {
+        font-size: $font-size-large;
+        font-weight: $font-weight-light;
+    }
+}
