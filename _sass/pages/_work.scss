@@ -27,6 +27,14 @@
             &:focus {
                 @include focus-outline();
             }
+
+            &:focus:not(:focus-visible) {
+                box-shadow: none;
+            }
+
+            &:focus-visible {
+                @include focus-outline();
+            }
         }
 
         &__link-icon {
@@ -121,6 +129,14 @@
             }
 
             &:focus {
+                @include focus-outline();
+            }
+            
+            &:focus:not(:focus-visible) {
+                box-shadow: none;
+            }
+
+            &:focus-visible {
                 @include focus-outline();
             }
         }

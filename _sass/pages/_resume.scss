@@ -77,7 +77,7 @@ $sidebar-offset: 200px;
                 box-shadow: none;
             }
 
-            &:hover {
+            &:hover, &:focus {
                 .example__desc-button {
                     background: $color-gray-light;
                 }
@@ -85,7 +85,18 @@ $sidebar-offset: 200px;
 
             &:focus {
                 .example__desc-button {
-                    background: $color-gray-light;
+                    @include focus-outline();
+                }
+            }
+
+            &:focus:not(:focus-visible) {
+                .example__desc-button {
+                    box-shadow: none;
+                }
+            }
+
+            &:focus-visible {
+                .example__desc-button {
                     @include focus-outline();
                 }
             }

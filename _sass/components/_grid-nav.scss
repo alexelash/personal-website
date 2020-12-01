@@ -3,8 +3,8 @@
 \*------------------------------------*/
 
 .c-grid-nav {
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     overflow: hidden;
     box-shadow: inset 1px 1px 5px white;
     position: relative;
@@ -36,7 +36,7 @@
  */
 .c-grid-nav__item {
     display: flex;
-	width: 50%;
+    width: 50%;
     border-bottom: 1px dotted $color-gray-dark;
     border-right: 1px dotted $color-gray-dark;
 
@@ -53,16 +53,24 @@
  * Grid Navigation Link
  */
 .c-grid-nav__link {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-size: 1.4rem;
-	padding: 3rem 1.5rem;
+    padding: 3rem 1.5rem;
     font-weight: bold;
     width: 100%;
 
-	&:hover, &:focus {
-		transform: scale(1.1);
-	}
+    &:hover, &:focus {
+        transform: scale(1.1);
+    }
+
+    &:focus:not(:focus-visible) {
+        transform: scale(1);
+    }
+
+    &:focus-visible {
+        transform: scale(1.1);
+    }
 }

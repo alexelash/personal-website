@@ -31,6 +31,22 @@
         &:focus {
             @include focus-outline();
         }
+
+        &:focus:not(:focus-visible) {
+            box-shadow: none;
+
+            .glide__arrow-icon {
+                color: $color-gray-medium;
+            }
+        }
+
+        &:focus-visible {
+            .glide__arrow-icon {
+                color: $color-primary;
+            }
+
+            @include focus-outline();
+        }
     }
 
     &__bullets {
@@ -74,7 +90,17 @@
 
         &:hover,
         &:focus {
+            background: $color-gray;
+            border: 2px solid transparent;
+        }
+
+        &:focus:not(:focus-visible) {
             background: $color-secondary;
+            border: none;
+        }
+
+        &:focus-visible {
+            background: $color-gray;
             border: 2px solid transparent;
         }
 
@@ -83,6 +109,14 @@
             border: 2px solid transparent;
             
             &:focus {
+                @include focus-outline();
+            }
+
+            &:focus:not(:focus-visible) {
+                box-shadow: none;
+            }
+
+            &:focus-visible {
                 @include focus-outline();
             }
             

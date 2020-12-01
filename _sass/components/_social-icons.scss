@@ -24,6 +24,15 @@
         &:focus {
             @include focus-outline();
         }
+
+        &:focus:not(:focus-visible) {
+            color: $social-icon-fill;
+            box-shadow: none;
+        }
+
+        &:focus-visible {
+            @include focus-outline();
+        }
     }
 
     &__icon {

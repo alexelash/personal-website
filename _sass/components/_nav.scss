@@ -54,6 +54,27 @@ $nav-height: 5rem;
             border-radius: $border-radius-big;
         }
 
+        &:focus:not(:focus-visible) {
+            circle {
+                fill: $color-secondary;
+            }
+
+            .c-nav__info-container {
+                box-shadow: none;
+            }
+        }
+
+        &:focus-visible {
+            circle {
+                fill: darken($color-secondary, 10%);
+            }
+
+            .c-nav__info-container {
+                box-shadow: 0 0 0 2px rgba(blue, 0.3);
+                border-radius: $border-radius-big;
+            }
+        }
+
         &::after {
             display: none;
         }
@@ -233,6 +254,16 @@ $nav-height: 5rem;
             @include focus-outline();
         }
 
+        &:focus:not(:focus-visible) {
+            color: $color-gray-dark;
+            box-shadow: none;
+        }
+
+        &:focus-visible {
+            color: inherit;
+            @include focus-outline();
+        }
+
         @media screen and (min-width: $bp-med) {
             display: none;
         }
@@ -335,6 +366,14 @@ $nav-height: 5rem;
         }
 
         &:focus {
+            @include focus-outline();
+        }
+
+        &:focus:not(:focus-visible) {
+            box-shadow: none;
+        }
+
+        &:focus-visible {
             @include focus-outline();
         }
         

@@ -6,30 +6,46 @@
  * Link base styles
  */
 a {
-	color: $link-color;
-	text-decoration: none;
-	outline: 0;
-	transition: color $fade-quick ease-out, box-shadow $fade-quick ease-out;
-  position: relative;
+    color: $link-color;
+    text-decoration: none;
+    outline: 0;
+    transition: color $fade-quick ease-out, box-shadow $fade-quick ease-out;
+    position: relative;
   
-  &::after {
-    content: "";
-    height: 1px;
-    border-bottom: 1px dotted $link-underline-color;
-    border-color: $link-underline-color;
-    position: absolute;
-    right: 0;
-    bottom: -0.15rem;
-    left: 0;
-    transition: border-color 0.25s ease-in,
-                color 0.15s ease-in;
-  }
-
-	&:hover, &:focus {
-		color: $color-black;
-
     &::after {
-      border-color: $link-underline-color-hover;
+        content: "";
+        height: 1px;
+        border-bottom: 1px dotted $link-underline-color;
+        border-color: $link-underline-color;
+        position: absolute;
+        right: 0;
+        bottom: -0.15rem;
+        left: 0;
+        transition: border-color 0.25s ease-in,
+                    color 0.15s ease-in;
     }
-	}
+
+    &:hover, &:focus {
+        color: $color-black;
+
+        &::after {
+          border-color: $link-underline-color-hover;
+        }
+    }
+
+    &:focus:not(:focus-visible) {
+        color: $link-color;
+
+        &::after {
+          border-color: transparent;
+        }
+    }
+
+    &:focus-visible {
+        color: $color-black;
+
+        &::after {
+          border-color: $link-underline-color-hover;
+        }
+    }
 }
