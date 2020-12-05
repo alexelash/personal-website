@@ -26,7 +26,7 @@
 
         <div class="content">
             {% for section in page.sections %}
-            <section class="section">
+            <section class="section section--{{ section.title | downcase | replace: ' ', '-'}}">
                 <h2 class="section-title heading--sm">
                     {{ section.title }}
                 </h2>

@@ -1,6 +1,6 @@
 ---
 layout: work
-title: Work
+title: "User experience and brand design"
 seo_description: "I do user experience and brand strategy and design for mission-driven organizations. Check out my work!"
 permalink: "/"
 page_class: p-work

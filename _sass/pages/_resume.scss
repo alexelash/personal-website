@@ -14,17 +14,20 @@ $sidebar-offset: 200px;
 
         &__blurb {
             margin: 0 auto;
-            background: linear-gradient(to right, #8A2387, #f7797d, #F27121, #F27121, #8A2387, #f7797d, #F27121);
-            background-size: 300%;
-            background-repeat: repeat;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent; 
-            animation: gradientAnimation 4s linear infinite;
+
+            @media screen {
+                background: linear-gradient(to right, #8A2387, #f7797d, #F27121, #F27121, #8A2387, #f7797d, #F27121);
+                background-size: 300%;
+                background-repeat: repeat;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent; 
+                animation: gradientAnimation 4s linear infinite;
+            }
         }
         
         &__content {
 
-            @media all and (min-width: $bp-large) {
+            @media screen and (min-width: $bp-large) {
                 width: 100%;
             }
             
@@ -37,7 +40,7 @@ $sidebar-offset: 200px;
     .content {
         max-width: $l-max-width-mid;
 
-        @media all and (min-width: $bp-large) {
+        @media screen and (min-width: $bp-large) {
             margin: $pad-large auto 0;
         }
     }
@@ -47,11 +50,11 @@ $sidebar-offset: 200px;
     }
 
     .section-title {
-        @media all and (max-width: $bp-large) {
+        @media screen and (max-width: $bp-large) {
             margin-top: $pad-large-2;
         }
 
-        @media all and (min-width: $bp-large) {
+        @media screen and (min-width: $bp-large) {
             position: absolute;
             top: 6px;
             left: 0;
@@ -63,7 +66,7 @@ $sidebar-offset: 200px;
     .example {
         margin: 0 0 $pad-comfortable 0;
 
-        @media all and (min-width: $bp-large) {
+        @media screen and (min-width: $bp-large) {
             margin: 0 0 $pad-large $sidebar-offset;
         }
 
@@ -154,6 +157,114 @@ $sidebar-offset: 200px;
 
         &__desc-container {
             margin-top: $pad-normal;
+        }
+    }
+}
+
+@media print {
+    p {
+      orphans: 2;
+      widows: 2;
+    }
+
+    body.p-resume {
+        color: #000;
+        background: #fff;
+    
+        .c-nav {
+            &__trigger-container,
+            &__list-container {
+                display: none;
+            }
+        }
+
+        .intro {
+            &__inner {
+                text-align: center;
+            }
+
+            &__blurb {
+                font-size: 14px;
+                margin: 0 auto;
+                color: $color-black;
+            }
+
+            &__content {
+                margin-bottom: 20px;
+            }
+        }
+
+        .section-title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: $sidebar-width;
+            text-align: right;
+            font-size: 11px;
+            letter-spacing: 0;
+            line-height: 1.9;
+        }
+
+        .example {
+            margin: 0 0 20px $sidebar-offset;
+
+            &__title {
+                font-size: 16px;
+                margin-bottom: 0;
+            }
+
+            &__metadata,
+            &__company,
+            &__dates,
+            &__excerpt-container {
+                font-size: 11px;
+                letter-spacing: 0;
+                margin: 0 0 10px;
+            }
+
+            &__desc-button {
+                display: none;
+            }
+
+            &__desc-button {
+                display: none;
+            }
+
+            &__desc-container {
+                display: block !important;
+                visibility: visible !important;
+                margin-top: 5px;
+                font-size: 11px;
+                
+                p, ul, ol {
+                    line-height: 1.65;
+                    margin-bottom: 8px;
+                }
+
+                ul {
+                    list-style-type: disc;
+                    list-style-position: outside;
+                }
+
+                ul li {
+                    text-indent: 0;
+                    margin-bottom: 8px;
+                    
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .section--community {
+            .example {
+                break-inside: avoid;
+            }
+        }
+
+        .footer {
+            display: none;
         }
     }
 }
