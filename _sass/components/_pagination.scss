@@ -22,7 +22,7 @@
 
         @media screen and (min-width: $bp-large) {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
 
             > .c-pagination__button {
                 flex: 0 0 50%;
@@ -39,19 +39,37 @@
         padding: $pad-comfortable;
         display: flex;
 
+        @media screen and (min-width: $bp-large) {
+            width: 50%;
+            flex: 1;
+            align-self: stretch;
+        }
+
         &::after {
             display: none;
         }
 
         &--previous {
-            .c-pagination__image-container {
-                margin-right: $pad-comfortable;
+            @media screen and (min-width: $bp-large) {
+                margin-right: auto;
+            }
+
+            .c-pagination__button-text {
+                margin-left: $pad-comfortable;
             }
         }
 
         &--next {
+            @media screen and (min-width: $bp-large) {
+                margin-left: auto;
+            }
+
+            .c-pagination__button-text {
+                margin-right: $pad-comfortable;
+            }
+
             .c-pagination__image-container {
-                margin-left: $pad-comfortable;
+                margin-left: auto;
             }
         }
 
