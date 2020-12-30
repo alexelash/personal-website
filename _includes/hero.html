@@ -1,26 +1,20 @@
-{% if page.project-url %}
-{% capture link %}
-    <span class="hero__project-url-container">
-        <a href="{{ page.page.project-url }}" class="hero__project-link">
-            Website
-            <i class="project__link-icon fas fa-link" aria-hidden="true"></i>
-        </a>
-    </span>
-{% endcapture %}
-{% endif %}
+{% if page.project-url %} {% capture link %}
+<span class="hero__project-url-container">
+    <a href="{{ page.project-url }}" class="hero__project-link">
+        Website
+        <i class="project__link-icon fas fa-link" aria-hidden="true"></i>
+    </a>
+</span>
+{% endcapture %} {% endif %}
 
 <div class="hero">
     <div class="hero__inner">
         <div class="hero__text-block">
             <div class="hero__text">
                 <div class="hero__intro">
-                    <h1 class="hero__title">
-                        {{ page.hero.title }}
-                    </h1>
-                    <h2 class="hero__subtitle">
-                        {{ page.hero.tagline }}
-                    </h2>
-                    
+                    <h1 class="hero__title">{{ page.hero.title }}</h1>
+                    <h2 class="hero__subtitle">{{ page.hero.tagline }}</h2>
+
                     <div class="hero__blurb">
                         {{ page.hero.desc | markdownify | append: link }}
                     </div>
@@ -30,23 +24,21 @@
                     <div class="hero__metadata-inner">
                         {% if page.hero.roles %}
                         <div class="hero__roles">
-                            <h3 class="hero__roles-title">
-                                Contributions
-                            </h3>
+                            <h3 class="hero__roles-title">Contributions</h3>
                             <div class="hero__roles-list">
-                            {% if page.hero.roles %}
-                                {{ page.hero.roles }}
-                            {% endif %}
+                                {% if page.hero.roles %} {{ page.hero.roles }}
+                                {% endif %}
                             </div>
                         </div>
-                        {% endif %}
-
-                        {% if page.hero.organization %}
+                        {% endif %} {% if page.hero.organization %}
                         <div class="hero__organization">
                             <h3 class="hero__organization-title">
                                 Organization
                             </h3>
-                            <a href="{{ page.hero.organization.url }}" class="hero__organization-name">
+                            <a
+                                href="{{ page.hero.organization.url }}"
+                                class="hero__organization-name"
+                            >
                                 {{ page.hero.organization.name }}
                             </a>
                         </div>
@@ -57,18 +49,30 @@
             </div>
         </div>
 
-        {% assign baseimage = page.hero.image %}
-        {% assign imageending = baseimage | split: '.' | last %}
-        {% assign size = baseimage | size | minus: 4 %}
-        <div class="hero__image-container" style="background-color: {{ page.hero.image-bg }};">
-            <picture class="hero__image
-                {% if page.hero.image-size == 'cropped' %}
-                    hero__image--cropped
-                {% endif %}
-            ">
-                <source media="(max-width: 799px)" data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.5x.{{ imageending }}">
-                <source media="(min-width: 800px)" data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.75x.{{ imageending }}">
-                <img data-src="{{ site.baseurl }}/assets/images/projects/{{ baseimage }}" src="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}_tiny.{{ imageending }}" alt="{{ page.hero.image-alt }}" class="lazy">
+        {% assign baseimage = page.hero.image %} {% assign imageending =
+        baseimage | split: '.' | last %} {% assign size = baseimage | size |
+        minus: 4 %}
+        <div
+            class="hero__image-container"
+            style="background-color: {{ page.hero.image-bg }};"
+        >
+            <picture
+                class="hero__image {% if page.hero.image-size == 'cropped' %} hero__image--cropped {% endif %}"
+            >
+                <source
+                    media="(max-width: 799px)"
+                    data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.5x.{{ imageending }}"
+                />
+                <source
+                    media="(min-width: 800px)"
+                    data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.75x.{{ imageending }}"
+                />
+                <img
+                    data-src="{{ site.baseurl }}/assets/images/projects/{{ baseimage }}"
+                    src="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}_tiny.{{ imageending }}"
+                    alt="{{ page.hero.image-alt }}"
+                    class="lazy"
+                />
             </picture>
         </div>
     </div>
