@@ -7,7 +7,7 @@ seo_description:
 casestudy: true
 featured-image: 'azavea-temperate/temperate_hero.png'
 featured-alt: 'Screenshot of Temperate dashboard.'
-featured-bg: '#85c005'
+featured-bg: '#283D3B'
 featured-size: 'cropped'
 project-url: 'https://temperate.io/'
 excerpt: Branding, UX/UI, front-end, marketing

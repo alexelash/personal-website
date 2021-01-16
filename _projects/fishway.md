@@ -4,7 +4,7 @@ title:  "Fishway"
 seo_description: "UX/UI, front-end development, and animation for a Fairmount Waterworks educational application."
 featured-image: "fishway/fishway_hero.png"
 featured-alt: "Screenshot of winning screen for the Fishway game."
-featured-bg: "#c5eafb"
+featured-bg: "#D8DBE2"
 featured-size: "cropped"
 casestudy: true
 excerpt: "UX/UI design, front-end, animation"
