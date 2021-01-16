@@ -25,6 +25,11 @@
                 {{ page.intro }}
             </p>
             {% endif %}
+            {% if page.description %}
+            <p class="intro__descriptioon">
+                {{ page.description }}
+            </p>
+            {% endif %}
             <a class="intro__link" href="{{ page.link.url }}">
                 {{ page.link.text }}
                 <i class="intro__link-icon fas {{ page.link.icon }}"></i>
@@ -81,6 +86,13 @@
             {% endif %}
           {% endfor %}
         </div>
+
+        {% if page.cta %}
+            {% include cta.html 
+                title=page.cta.title
+                body=page.cta.body
+                button-text=page.cta.button-text %}
+        {% endif %}
 
     </div>
 {% include footer.html %}

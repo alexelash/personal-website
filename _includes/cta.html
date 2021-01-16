@@ -1,10 +1,23 @@
 <div class="cta">
     <div class="cta__inner">
-        <p class="cta__blurb">
-            Let me know if you’re interested in working together.
-        </p>
+        <div class="cta__text-container">
+            {% if include.title %}
+            <h2 class="cta__title">
+                {{ include.title }}
+            </h2>
+            {% endif %}
+            {% if include.body %}
+            <p class="cta__blurb">
+                {{ include.body }}
+            </p>
+            {% endif %}
+        </div>
         <a href="mailto:alexandralash@gmail.com" class="c-btn c-btn--secondary cta__btn">
-            All the emails!
+            {% if include.button-text %}
+                {{ include.button-text }}
+            {% else %}
+                Contact me
+            {% endif %}
         </a> 
     </div>
 </div>

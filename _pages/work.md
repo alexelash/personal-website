@@ -7,6 +7,9 @@ page_class: p-work
 js_dependencies: card-click.js
 
 intro: "User experience and brand design for organizations working to improve our world."
+cta: 
+    body: "This website contains a limited collection of projects I have designed and often contributed code to over the years. Let me know if you’re interested in learning more about my work."
+    button-text: "Shoot me an email"
 link:
     text: "More about me"
     url: "/about"

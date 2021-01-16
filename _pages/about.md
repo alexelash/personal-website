@@ -9,32 +9,17 @@ heading: Hey there!
 intro: I’m Alex Lash — a designer who has made a career of splitting her time between semantic markup and user-focused interface design.
 image: ./assets/images/headshot_2020.jpg
 image-alt: Alex Lash in an olive sweater smiling in front of a graffitied wall.
+cta: 
+    title: "Let’s chat"
+    body: "I’m always happy to meet new folks, whether it’s about getting a job in tech or how to manage being a digital nomad in a 9-5 job. Feel free to drop me a line!"
+    button-text: "Shoot me an email"
 image-credit: Photo taken by [Reverie Films](https://reveriefilms.co.uk/)
 body: |
-    I believe that technology has an outsized impact on people’s daily lives, and am motivated to use it as a tool for good. Since graduating from Tyler School of Art with a Bachelor’s degree in Graphic and Interactive Design, I have had the opportunity to work on many projects with this goal in mind.
+    Technology has a huge impact on people’s daily lives, and I am motivated to use it as a tool for good. Since graduating from Tyler School of Art with a Bachelor’s degree in Graphic and Interactive Design, I have had the opportunity to work on many projects with this goal in mind.
 
     As a user experience designer with a broad range of skills, I have real-world experience with many aspects of product development. From user research, brand design, wireframing workflows, front-end polish, and product marketing, I’ve had the opportunity to contribute to many aspects of a product launch. 
 
     Currently I work remotely with some incredible folks at [Azavea](https://azavea.com) as a UX and Marketing Designer. In my free time, I have co-organized and co-taught low-cost classes for women of color in tech; taught an Interactive class at my alma mater; helped organize the Philly-based LadyHacks hackathon in 2015 and 2016; and made posters for local non-profit [ProjectMEOW](http://projectmeow.org/). 
 
     When I’m not working, I am a nomad living on the road, currently based in Tbilisi, Georgia. In my spare time I love to draw, play ultimate, cook, and tell my cat what a good boy he is.
-things-intro: What I’m up to lately
-things: 
-    - heading: Off the bookshelf
-      subthings:
-        - title: "This is Marketing"
-          desc: "Seth Godin"
-          attr: "https://www.goodreads.com/book/show/40549476-this-is-marketing"
-        - title: "The Norman Conquest: The Battle of Hastings and the Fall of Anglo-Saxon England"
-          desc: "Marc Morris"
-          attr: "https://www.goodreads.com/book/show/18896453-the-norman-conquest"
-    - heading: On the ’gram
-      type: doodles
-      subthings: 
-        - post-url: https://www.instagram.com/p/CGDvRd4DLQ9/
-          post-image: https://scontent-lga3-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/120994821_190050752620432_2764182617897303824_n.jpg?_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_cat=104&_nc_ohc=lFyrqY3LQ8QAX-9o3Q3&_nc_tp=24&oh=0a0d7c739980c46f1fda13c3c5041bdf&oe=5FDB1335
-          post-alt: A woman centaur, drawn for Inktober's "fancy" prompt.
-        - post-url: https://www.instagram.com/p/CF7-59JDeb8/
-          post-image: https://scontent-lga3-2.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/120598680_1051333758668580_5009067853572461741_n.jpg?_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_cat=100&_nc_ohc=pPcSUpCFFA0AX_7Z5fw&tp=15&oh=0ef40a47f9b188b39a2aa52b89ef9889&oe=5FDA33F8
-          post-alt: Two vampires sitting in front of a radio, drawn for Intober's "radio" prompt.
 ---

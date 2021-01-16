@@ -42,14 +42,14 @@ collections:
     output: true
     order:
       - temperate.md
-      - azavea-groundwork.md
       - fishway.md
+      - azavea-groundwork.md
+      - districtbuilder.md
       - cicero.md
       - rastervision.md
-      - districtbuilder.md
+      - azavea-careers.md
       - azavea-employee-gifts.md
       - azavea-baby-onesies.md
-      - azavea-careers.md
       - vote-tshirt.md
       - azavea-challenge-coins.md
 

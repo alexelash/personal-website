@@ -41,6 +41,13 @@
             </div>
         </div>
 
+        {% if page.cta %}
+            {% include cta.html 
+                title=page.cta.title
+                body=page.cta.body
+                button-text=page.cta.button-text %}
+        {% endif %}
+
         <div class="about-block">
             <div class="about-block__intro">
                 {{ page.things-intro }}

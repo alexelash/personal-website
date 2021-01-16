@@ -1,13 +1,14 @@
 ---
 layout: resume
 title: Résumé
-seo_description: "Multidisciplinary designer with seven years of professional experience and demonstrated proficiency as a frontend web developer and software designer."
+seo_description: "Multidisciplinary designer with seven years of professional experience and demonstrated proficiency as a frontend web developer and product designer."
 permalink: "/resume"
 page_class: p-resume
 js_dependencies: hide-show.js
 
 heading: Résumé
-intro: Multidisciplinary designer with seven years of professional experience and demonstrated proficiency as a frontend web developer and software designer.
+intro: Multidisciplinary designer with seven years of professional experience and demonstrated proficiency as a frontend web developer and product designer.
+cta: true
 sections:
     - title: Experience
       examples:

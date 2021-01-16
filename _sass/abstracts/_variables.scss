@@ -50,7 +50,7 @@ $color-peach: #FFDAB9;
  * 1) Neutral colors are grayscale values used throughout the application
  */
 $color-white: #fff;
-$color-gray-lightest: #f9f9f9;
+$color-gray-lightest: #f3f3f3;
 $color-gray-light: #e5e5e5;
 $color-gray: #d2d2d2;
 $color-gray-medium: #8a8a8a;
@@ -219,7 +219,7 @@ $button-background: transparent;
 $button-color: $color-gray-dark;
 $button-border: $color-gray-dark;
 $button-offset-color: $color-gray;
-$button-offset-hover-color: $color-primary;
+$button-offset-hover-color: $color-gray-dark;
 
 $h1-border-color: $color-gray;
 

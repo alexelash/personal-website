@@ -19,20 +19,32 @@
     &__inner {
         z-index: 2;
 
-        @media all and (min-width: $bp-med) {
+        @media screen and (min-width: $bp-med) {
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
     }
 
-    &__blurb {
-        font-size: $font-size-med-2;
+    &__title {
+        font-size: $font-size-large;
+        font-weight: $font-weight-normal;
         font-style: italic;
+        margin-bottom: $pad-compact;
+
+        @media screen and (max-width: $bp-med) {
+            max-width: 25rem;
+            margin: 0 auto $pad-compact;
+            text-align: center;
+        }
+    }
+
+    &__blurb {
+        font-size: $font-size-med;
         margin-bottom: 0;
 
-        @media all and (max-width: $bp-med) {
-            max-width: 25rem;
+        @media screen and (max-width: $bp-med) {
+            max-width: 20rem;
             margin: 0 auto $pad-normal;
             text-align: center;
         }
@@ -41,9 +53,9 @@
     &__btn {
         width: 100%;
 
-        @media all and (min-width: $bp-med) {
+        @media screen and (min-width: $bp-med) {
             width: auto;
-            flex: 1 0 auto;
+            flex: 1 0 200px;
             margin-left: $pad-normal;
         }
     }
