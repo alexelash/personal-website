@@ -7,9 +7,12 @@
  */
 a {
     color: $link-color;
+    font-weight: $font-weight-semibold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     text-decoration: none;
     outline: 0;
-    transition: color $fade-quick ease-out, box-shadow $fade-quick ease-out;
+    transition: color $fade-med ease-out, box-shadow $fade-quick ease-out;
     position: relative;
   
     &::after {
@@ -19,14 +22,14 @@ a {
         border-color: $link-underline-color;
         position: absolute;
         right: 0;
-        bottom: -0.15rem;
+        bottom: -0.05rem;
         left: 0;
-        transition: border-color 0.25s ease-in,
-                    color 0.15s ease-in;
+        transition: border-color $fade-med ease-in,
+                    color $fade-med ease-in;
     }
 
     &:hover, &:focus {
-        color: $color-black;
+        color: $link-color-hover;
 
         &::after {
           border-color: $link-underline-color-hover;

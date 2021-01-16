@@ -38,6 +38,7 @@ $nav-height: 5rem;
         cursor: pointer;
         display: flex;
         align-items: center;
+        font-weight: $font-weight-normal;
         
         circle {
             transition: fill 0.15s;

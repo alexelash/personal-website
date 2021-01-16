@@ -10,7 +10,7 @@
 
         &__blurb {
             margin: 0 auto;
-            background: linear-gradient(to right, #8E5572, #F2BEFC, #8E5572, #F2BEFC);
+            background: linear-gradient(to right, #f74201, #B59DA4, #f74201, #B59DA4);
             background-size: 300%;
             background-repeat: repeat;
             -webkit-background-clip: text;
@@ -20,7 +20,7 @@
 
         &__link {
             display: inline-block;
-            padding: $pad-small;
+            font-size: $font-size-sm-2;
             margin-top: $pad-comfortable;
             border-radius: $border-radius-big;
 
@@ -38,7 +38,8 @@
         }
 
         &__link-icon {
-            color: $color-gray-medium;
+            color: $link-color;
+            opacity: 0.65;
         }
     }
 
@@ -69,18 +70,10 @@
                     box-shadow: 0 0 10px 4px rgba( $color-gray-medium, 0.2 );
                 }
 
+                // Hover styles
                 .project__button {
                     color: $color-white;
-
-                    &::after {
-                        left: 0;
-                        bottom: 0;
-                        border-color: $button-offset-hover-color;
-                        background: $button-offset-hover-color;
-                        transition: left 0.05s ease-in,
-                                                bottom 0.05s ease-in,
-                                                background 0.05s ease-in;
-                    }
+                    background: $button-background-hover;
                 }
             }
         }
@@ -129,6 +122,7 @@
         }
 
         &__button {
+            margin-top: $pad-medium;
             margin-right: $pad-normal;
         }
 
