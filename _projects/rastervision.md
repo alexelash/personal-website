@@ -7,7 +7,7 @@ featured-image: "azavea-rastervision/rastervision_RGB_darkbg.png"
 featured-alt: "Raster Vision logo."
 featured-bg: "#292f35"
 project-url: "https://rastervision.io/"
-excerpt: "Branding and marketing design."
+excerpt: "Branding and marketing design"
 hero:
     title: "Raster Vision"
     tagline: "Deep learning for satellite imagery"

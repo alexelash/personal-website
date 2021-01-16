@@ -6,5 +6,5 @@ featured-alt: "Screenshot of Careers website homepage."
 featured-bg: "#112f4c"
 featured-size: "cropped"
 project-url: "https://careers.azavea.com/"
-excerpt: Website design and photoshoot art direction for a revamped careers site.
+excerpt: Website design and photoshoot art direction for a revamped careers site
 ---

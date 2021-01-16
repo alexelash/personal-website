@@ -10,7 +10,7 @@ featured-alt: 'Screenshot of Temperate dashboard.'
 featured-bg: '#85c005'
 featured-size: 'cropped'
 project-url: 'https://temperate.io/'
-excerpt: Branding, UX/UI, front-end, marketing.
+excerpt: Branding, UX/UI, front-end, marketing
 hero:
   title: 'Temperate'
   tagline: 'A climate change companion'

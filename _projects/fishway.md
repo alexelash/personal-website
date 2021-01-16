@@ -7,7 +7,7 @@ featured-alt: "Screenshot of winning screen for the Fishway game."
 featured-bg: "#c5eafb"
 featured-size: "cropped"
 casestudy: true
-excerpt: "UX/UI design, front-end, animation."
+excerpt: "UX/UI design, front-end, animation"
 hero:
     title: "Fishway touchscreen"
     tagline: "An educational game"
