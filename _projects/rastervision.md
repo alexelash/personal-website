@@ -15,7 +15,6 @@ hero:
         Branding and marketing design for an open source deep learning library for satellite and aerial imagery.
     image: "azavea-rastervision/rastervision_RGB_darkbg.png"
     image-alt: "Raster Vision logo."
-    image-bg: "#292f35"
     roles: "Branding and marketing website"
     organization: 
         name: Azavea

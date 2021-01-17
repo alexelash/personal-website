@@ -52,28 +52,36 @@
         {% assign baseimage = page.hero.image %} {% assign imageending =
         baseimage | split: '.' | last %} {% assign size = baseimage | size |
         minus: 4 %}
-        <div
-            class="hero__image-container"
-            style="background-color: {{ page.hero.image-bg }};"
-        >
-            <picture
-                class="hero__image {% if page.hero.image-size == 'cropped' %} hero__image--cropped {% endif %}"
+        <div class="hero__image-block">
+            <div
+                class="hero__image-container"
+                style="background-color: 
+                    {% if page.hero.image-bg %}
+                        {{ page.hero.image-bg }}
+                    {% else %}
+                        {{ page.featured-bg }}
+                    {% endif %};"
             >
-                <source
-                    media="(max-width: 799px)"
-                    data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.5x.{{ imageending }}"
-                />
-                <source
-                    media="(min-width: 800px)"
-                    data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.75x.{{ imageending }}"
-                />
-                <img
-                    data-src="{{ site.baseurl }}/assets/images/projects/{{ baseimage }}"
-                    src="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}_tiny.{{ imageending }}"
-                    alt="{{ page.hero.image-alt }}"
-                    class="lazy"
-                />
-            </picture>
+                <picture
+                    class="hero__image {% if page.hero.image-size == 'cropped' %} hero__image--cropped {% endif %}"
+                >
+                    <source
+                        media="(max-width: 799px)"
+                        data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.5x.{{ imageending }}"
+                    />
+                    <source
+                        media="(min-width: 800px)"
+                        data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.75x.{{ imageending }}"
+                    />
+                    <img
+                        data-src="{{ site.baseurl }}/assets/images/projects/{{ baseimage }}"
+                        src="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}_tiny.{{ imageending }}"
+                        alt="{{ page.hero.image-alt }}"
+                        class="lazy"
+                    />
+                </picture>
+            </div>
+            <div class="hero__image-bg"></div>
         </div>
     </div>
 </div>

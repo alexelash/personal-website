@@ -18,7 +18,6 @@ hero:
     Temperate is a climate change decision-support tool. It was developed as part of an Small Business Innovation Research (SBIR) grant with the Department of Energy.
   image: 'azavea-temperate/temperate_hero.png'
   image-alt: 'Screenshot of Temperate dashboard.'
-  image-bg: '#85c005'
   image-size: 'cropped'
   roles: 'Branding, UX/UI design, Front-end development, Marketing website'
   organization:

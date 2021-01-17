@@ -17,30 +17,6 @@
             -webkit-text-fill-color: transparent; 
             animation: gradientAnimation 4s linear infinite;
         }
-
-        &__link {
-            display: inline-block;
-            font-size: $font-size-sm-2;
-            margin-top: $pad-comfortable;
-            border-radius: $border-radius-big;
-
-            &:focus {
-                @include focus-outline();
-            }
-
-            &:focus:not(:focus-visible) {
-                box-shadow: none;
-            }
-
-            &:focus-visible {
-                @include focus-outline();
-            }
-        }
-
-        &__link-icon {
-            color: $link-color;
-            opacity: 0.65;
-        }
     }
 
     .content {
@@ -114,7 +90,6 @@
         }
 
         &__links {
-
             @media screen and (min-width: $bp-med) {
                 display: flex;
                 align-items: baseline;
@@ -131,6 +106,8 @@
             padding: $pad-small;
             border-radius: $border-radius-big;
             font-size: $font-size-sm-2;
+            letter-spacing: 1px;
+            text-transform: uppercase;
 
             @media screen and (max-width: $bp-med) {
                 margin-top: $pad-normal;
@@ -154,12 +131,12 @@
         }
 
         &__link-divider {
-            color: $color-gray;
+            color: $link-icon-color;
             padding: $pad-small;
         }
 
         &__link-icon {
-            color: $color-gray;
+            color: $link-icon-color;
             font-size: $font-size-sm;
         }
 

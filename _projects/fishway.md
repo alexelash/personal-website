@@ -17,7 +17,6 @@ hero:
         Developed under the creative direction of Victoria Prizzia from [Habithèque](https://www.habitheque.com/)
     image: "fishway/fishway_hero.png"
     image-alt: "Screenshot of winning screen for the Fishway game."
-    image-bg: "#c5eafb"
     image-size: "cropped"
     roles: "UX/UI design, front-end, animation"
     organization:

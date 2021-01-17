@@ -62,4 +62,20 @@
             font-weight: $font-weight-thin;   
         }
     }
+
+    &__link {
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        display: inline-block;
+        font-size: $font-size-sm-2;
+        margin-top: $pad-comfortable;
+        
+        &::after {
+            border: none;
+        }
+    }
+
+    &__link-icon {
+        color: $link-icon-color;
+    }
 }

@@ -48,6 +48,7 @@
                 button-text=page.cta.button-text %}
         {% endif %}
 
+        {% if page.things-intro %}
         <div class="about-block">
             <div class="about-block__intro">
                 {{ page.things-intro }}
@@ -89,5 +90,6 @@
             </div>
             {% endfor %}
         </div>
+        {% endif %}
     </div>
 {% include footer.html %}
