@@ -7,9 +7,9 @@
             </h2>
             {% endif %}
             {% if include.body %}
-            <p class="cta__blurb">
-                {{ include.body }}
-            </p>
+            <div class="cta__blurb">
+                {{ include.body | markdownify }}
+            </div>
             {% endif %}
         </div>
         <a href="mailto:alexandralash@gmail.com" class="c-btn c-btn--secondary cta__btn">

@@ -6,12 +6,12 @@ permalink: "/about"
 page_class: p-about
 
 heading: Hey there!
-intro: I’m Alex Lash — a designer who has made a career of splitting her time between semantic markup and user-focused interface design.
+intro: I’m Alex Lash — a designer who has made a career of splitting her time between semantic markup and user-centered design.
 image: ./assets/images/headshot_2020.jpg
 image-alt: Alex Lash in an olive sweater smiling in front of a graffitied wall.
 cta: 
     title: "Let’s chat"
-    body: "I’m always happy to meet new folks, whether it’s about getting a job in tech or how to manage being a digital nomad in a 9-5 job. Feel free to drop me a line!"
+    body: "I’m always happy to meet new folks, whether it’s about getting a job in tech or [how to manage being a digital nomad in a 9-5 job.](https://technical.ly/philly/2020/12/21/digital-nomad-remote-work/) Feel free to drop me a line!"
     button-text: "Shoot me an email"
 image-credit: Photo taken by [Reverie Films](https://reveriefilms.co.uk/)
 body: |
