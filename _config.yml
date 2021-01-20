@@ -42,6 +42,7 @@ collections:
     output: true
     order:
       - temperate.md
+      - nonprofit-webapp.md
       - fishway.md
       - azavea-groundwork.md
       - districtbuilder.md

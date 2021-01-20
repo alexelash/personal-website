@@ -13,7 +13,13 @@
             <div class="hero__text">
                 <div class="hero__intro">
                     <h1 class="hero__title">{{ page.hero.title }}</h1>
-                    <h2 class="hero__subtitle">{{ page.hero.tagline }}</h2>
+                    <h2 class="hero__subtitle">
+                        {% if page.nda == true %}
+                            This work is confidential <i aria-hidden="true" class="fas fa-lock"></i>
+                        {% else %}
+                            {{ page.hero.tagline }}
+                        {% endif %}
+                    </h2>
 
                     <div class="hero__blurb">
                         {{ page.hero.desc | markdownify | append: link }}
