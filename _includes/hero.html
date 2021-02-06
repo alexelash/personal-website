@@ -14,9 +14,7 @@
                 <div class="hero__intro">
                     <h1 class="hero__title">{{ page.hero.title }}</h1>
                     <h2 class="hero__subtitle">
-                        {% if page.nda == true %}
-                            This work is confidential <i aria-hidden="true" class="fas fa-lock"></i>
-                        {% else %}
+                        {% if page.nda != true %}
                             {{ page.hero.tagline }}
                         {% endif %}
                     </h2>

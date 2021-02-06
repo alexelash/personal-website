@@ -35,6 +35,8 @@ ol {
 
 ol li {
   counter-increment: custom-counter;
+  margin-left: 1.25rem;
+  text-indent: -1.25rem;
 }
 
 ol li::before {
