@@ -12,7 +12,7 @@ cta: true
 sections:
     - title: Experience
       examples:
-        - title: User Experience & Marketing Designer
+        - title: User Experience Designer & Marketing Lead
           company: Azavea
           url: https://www.azavea.com/
           dates: June 2017 - Present
@@ -87,7 +87,7 @@ sections:
           dates: "2019"
           url: "https://www.phillytechsistas.org/"
           desc: |
-            Philly Tech Sistas provides programming workshops and professional development events for Black women. I joined the curriculum team for their first year of classes in 2019. On that team, provided input and feedback on courses created by other team-members, co-wrote the first part of the HTML and CSS course and co-taught the first iteration of the class.
+            Philly Tech Sistas provides programming workshops and professional development events for women of color. I joined the curriculum team for their first year of classes in 2019. On that team, provided input and feedback on courses created by other team-members, co-wrote the first part of the HTML and CSS course and co-taught the first iteration of the class.
         - title: "Twitter Manager"
           company: "ProjectMEOW"
           dates: "2016 – 2017"
