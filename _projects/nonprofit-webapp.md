@@ -9,7 +9,7 @@ featured-image: 'nda-webapp/nda-web-app_hero.png'
 featured-alt: 'Mock-up of a anonymized page of the application.'
 featured-bg: '#8a8a8a'
 featured-size: 'cropped'
-excerpt: Design audit, UX research, UX/UI design, front-end
+excerpt: Design audit, UX/UI design, front-end
 hero:
   title: 'App design for a non-profit'
   desc: |
