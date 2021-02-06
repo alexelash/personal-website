@@ -76,10 +76,13 @@ sections:
       examples:
         - title: Design
           excerpt: |
-            Branding • Web design • Illustration • Social media • Graphic design • Usability testing • User interviews • Wireframing • Pixel-perfect interface design • Photoshop • Illustrator • InDesign • AfterEffects • Sketch
+            Branding • Web design • Illustration • Social media • Graphic design • Usability testing • User interviews • Wireframing • Adobe Photoshop CC • Adobe Illustrator CC • Adobe InDesign CC • Adobe AfterEffects CC • Adobe Premiere CC • Adobe Spark • Sketch • Marvel
         - title: Software Development
           excerpt: |
-            HTML • CSS/SASS • Jekyll • Jquery • Javascript • PHP • React • GIT
+            HTML • CSS/SASS • Jekyll • Jquery • Javascript • Styled Components • PHP • React • Git • GitHub • Jira • Confluence
+        - title: Professional
+          excerpt: |
+            Microsoft Word • Microsoft Excel • G Suite
     - title: Community
       examples:
         - title: "Curriculum Teammember"
