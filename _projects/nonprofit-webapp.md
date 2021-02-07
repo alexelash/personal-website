@@ -13,7 +13,7 @@ excerpt: Design audit, UX/UI design, front-end
 hero:
   title: 'App design for a non-profit'
   desc: |
-    I worked as the sole UX/UI designer, and had the opportunity to work on many aspects of the final application. I can’t share any visuals or specifics about the work itself, but will describe the process and my role in the project.
+    I worked as the sole UX/UI designer, and had the opportunity to work on many aspects of the final application. Though I can’t share visuals or specifics about the work itself, I will describe the process and my role.
   image: 'nda-webapp/nda-web-app_hero.png'
   image-alt: 'Mock-up of a anonymized page of the application.'
   image-size: 'cropped'
@@ -23,12 +23,12 @@ sections:
     layout: 'text-only'
     title: 'Background'
     desc: |
-      I was tasked with improving the usability of the client’s existing MVP. Though it was already in the hands of target clients, it hadn’t been built with a UX designer guiding the process. As a result, there were many documented usability issues. The client brought us on to redesign core workflows, navigation, and the visual design of the application.
+      Though an MVP was already in the hands of target users, it hadn’t been built with a UX designer guiding the process. As a result, there were many documented usability issues. The client brought us on to redesign core workflows, navigation, and the visual design of the application.
   - type: 'default'
     layout: 'text-only'
     title: 'Process'
     desc: |
-      Communication would be key to keeping our team aligned with the client’s goals. We worked with the product team for nearly a year, and took a user-centered approach. Below I detail some of the ways we ensured that we understood the 
+      We worked with the product team for nearly a year, and took a user-centered approach. Communication would be key to keeping our team aligned with the client’s goals. Below I detail some of the ways we ensured that our adjustments were aligned with user goals as well. 
 
       ### 1. Discovery session with the product team.
       We met with the client’s team for a day to go over the application, their organizational goals, and the product’s userbase. Fortunately, the client had been gathering feedback for some time and we were able to review the information they had gathered.
