@@ -35,10 +35,13 @@ hr {
  * Selection styles
  */
 ::-moz-selection {
-  background: $color-gray-light; /* Gecko Browsers */
+    color: black;
+    background: $color-gray-light; /* Gecko Browsers */
 }
 ::selection {
-  background: $color-gray-light; /* WebKit/Blink Browsers */
+    color: black;
+    -webkit-text-fill-color: black;
+    background: $color-gray-light; /* WebKit/Blink Browsers */
 }
 
 /**
