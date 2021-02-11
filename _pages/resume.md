@@ -21,13 +21,13 @@ sections:
 
             At Azavea, my responsibilities include:
             
-            - Working with my team, developers, and project managers to design websites and web applications from a user-centric point of view. I work on a project from conception all the way through production.
-            - Producing sitemaps, wireframes, coded prototypes, and pixel-perfect designs.
-            - Conducting user research, frequently in the form of usability tests and user interviews.
-            - Developing and/or tweaking production-ready code, primarily using HTML, CSS, and Javascript with an eye on accessibility and semantic markup.
-            - Working with internal teams and stakeholders to develop branding for existing or new products.
-            - Assisting our social media manager in developing visual assets.
-            - Collaborating with team members and VPs to design marketing and internal collateral.
+            - Work with my team, developers, and project managers to design websites and web applications from a user-centric point of view. I work on a project from conception all the way through production.
+            - Produce sitemaps, wireframes, coded prototypes, and pixel-perfect designs.
+            - Conduct user research, frequently in the form of usability tests and user interviews.
+            - Develop and/or tweak production-ready code. Primarily using HTML, CSS/SASS, and Javascript or React with an eye on accessibility and semantic markup.
+            - Maintain and design marketing websites for products and company microsites.
+            - Lead logo design and branding for existing and new products.
+            - Lead the design of marketing and internal collateral.
         - title: Adjunct Professor
           company: Temple University, Tyler School of Art
           url: https://tyler.temple.edu/
