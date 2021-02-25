@@ -224,4 +224,9 @@
             }
         }
     }
+
+    .cta {
+        max-width: $l-max-width;
+        margin: $pad-large auto 0;
+    }
 }
