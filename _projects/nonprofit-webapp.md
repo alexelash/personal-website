@@ -15,7 +15,7 @@ excerpt: UX/UI design, front-end
 hero:
   title: 'App design for a non-profit'
   desc: |
-    I worked as the sole UX/UI designer, and had the opportunity to work on many aspects of the final application. Though I can’t share visuals or specifics about the work itself, I will describe the process and my role.
+    I worked as the sole UX/UI designer, and had the opportunity to work on many aspects of the final application.
   image: 'nda-webapp/nda-web-app_hero.png'
   image-alt: 'Mock-up of a anonymized page of the application.'
   image-size: 'cropped'
