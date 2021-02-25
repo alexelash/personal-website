@@ -5,12 +5,13 @@ seo_description:
   'Branding, UX/UI design, front-end development, and marketing design for a
   climate change decision-support SaaS product.'
 casestudy: true
+years: 2018
 featured-image: 'azavea-temperate/temperate_hero.png'
 featured-alt: 'Screenshot of Temperate dashboard.'
 featured-bg: '#283D3B'
 featured-size: 'cropped'
 project-url: 'https://temperate.io/'
-excerpt: Branding, UX/UI, front-end, marketing
+excerpt: Identity, UX/UI design, front-end
 hero:
   title: 'Temperate'
   tagline: 'A climate change companion'

@@ -1,5 +1,5 @@
 .p-work {
-    [role=main] {
+    [role='main'] {
         display: flex;
         flex-direction: column;
         max-width: none;
@@ -17,11 +17,17 @@
 
         &__blurb {
             margin: 0 auto;
-            background: linear-gradient(to right, #f74201, #B59DA4, #f74201, #B59DA4);
+            background: linear-gradient(
+                to right,
+                #f74201,
+                #b59da4,
+                #f74201,
+                #b59da4
+            );
             background-size: 300%;
             background-repeat: repeat;
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent; 
+            -webkit-text-fill-color: transparent;
             animation: gradientAnimation 4s linear infinite;
         }
     }
@@ -42,15 +48,28 @@
 
     .project {
         max-width: $l-max-width;
-        margin-bottom: $pad-comfortable;
         flex: 0 0 100%;
         border-radius: $border-radius-big;
+        background: $color-white;
+        border-radius: $border-radius-big;
+        border: 1px solid $color-gray-light;
+        padding: $pad-normal;
+        margin: 0 auto $pad-normal;
 
-        &--has-casestudy {
-            &:hover, &:focus {
-                .project__featured-image-container {
+        @media screen and (min-width: $bp-large) {
+            display: flex;
+            align-items: center;
+
+            .project__featured-image-container {
+                margin-right: $pad-large;
+                flex: 0 0 50%;
+            }
+
+            .project--has-casestudy {
+                &:hover,
+                &:focus {
                     transform: scale(1.02);
-                    box-shadow: 0 0 10px 4px rgba( $color-gray-medium, 0.2 );
+                    box-shadow: 0 0 10px 4px rgba($color-gray-medium, 0.2);
                 }
 
                 // Hover styles
@@ -59,16 +78,21 @@
                     background: $button-background-hover;
                 }
             }
+
+            .project__header {
+                margin-bottom: $pad-normal;
+            }
         }
 
-        @media screen and (min-width: $bp-med) {
-            flex: 0 0 49%;
-            margin-bottom: $pad-comfortable;
-        }
-
-        @media screen and (min-width: $bp-xl) {
-            flex: 0 0 32%;
-            margin-bottom: $pad-comfortable;
+        &--has-casestudy {
+            &:hover,
+            &:focus {
+                // Hover styles
+                .project__button {
+                    color: $color-white;
+                    background: $button-background-hover;
+                }
+            }
         }
 
         &__featured-image-container {
@@ -81,7 +105,7 @@
             transition: transform 0.2s ease-in;
 
             &:after {
-                content: "";
+                content: '';
                 display: block;
                 padding-bottom: 65%;
             }
@@ -132,7 +156,7 @@
             &:focus {
                 @include focus-outline();
             }
-            
+
             &:focus:not(:focus-visible) {
                 box-shadow: none;
             }
@@ -158,23 +182,40 @@
             display: block;
         }
 
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: $pad-compact;
+            align-items: center;
+        }
+
         &__title {
             font-size: $font-size-large;
             font-weight: $font-weight-light;
+            margin: 0;
             font-style: italic;
-            margin-bottom: $pad-compact;
-            
+
             @media screen and (min-width: $bp-med) {
                 font-size: $font-size-large-2;
                 font-weight: $font-weight-thin;
             }
         }
 
+        &__years {
+            background: $color-utility-success-light;
+            border-radius: $border-radius;
+            color: $color-utility-success;
+            padding: $pad-small $pad-medium;
+            font-size: $font-size-sm;
+            font-weight: $font-weight-semibold;
+            margin: 0;
+        }
+
         &__excerpt p {
             font-weight: $font-weight-normal;
             font-size: $font-size-sm-2;
             margin-bottom: $pad-small;
-            
+
             @media screen and (min-width: $bp-med) {
                 font-weight: $font-weight-light;
                 font-size: $font-size-med-2;
