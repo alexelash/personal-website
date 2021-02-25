@@ -170,5 +170,5 @@ sections:
   - type: 'default'
     layout: 'text-only'
     desc: |
-      Temperate did not win another phase SBIR grant in 2016, but the product has won additional grants and partnerships since its launch. It is one of the projects I’m most proud of having had the chance to work on at Azavea. Check out the final product by creating a [free account.](https://temperate.io/)
+      The product has won additional grants and partnerships since its launch. It is one of the projects I’m most proud of having had the chance to work on at Azavea. Check out the final product by creating a [free account.](https://temperate.io/)
 ---
