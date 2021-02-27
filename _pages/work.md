@@ -10,7 +10,7 @@ js_dependencies: card-click.js
 
 intro:
     'User experience design for organizations who are working to improve our
-    world.'
+    world'
 cta:
     body:
         'This website contains a limited collection of projects I have designed

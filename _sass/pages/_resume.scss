@@ -2,7 +2,7 @@ $sidebar-width: 180px;
 $sidebar-offset: 200px;
 
 .p-resume {
-    [role=main] {
+    [role='main'] {
         display: flex;
         flex-direction: column;
     }
@@ -16,21 +16,29 @@ $sidebar-offset: 200px;
             margin: 0 auto;
 
             @media screen {
-                background: linear-gradient(to right, #8A2387, #f7797d, #F27121, #F27121, #8A2387, #f7797d, #F27121);
+                background: linear-gradient(
+                    to right,
+                    #8a2387,
+                    #f7797d,
+                    #f27121,
+                    #f27121,
+                    #8a2387,
+                    #f7797d,
+                    #f27121
+                );
                 background-size: 300%;
                 background-repeat: repeat;
                 -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent; 
+                -webkit-text-fill-color: transparent;
                 animation: gradientAnimation 4s linear infinite;
             }
         }
-        
-        &__content {
 
+        &__content {
             @media screen and (min-width: $bp-large) {
                 width: 100%;
             }
-            
+
             @media screen and (min-width: $bp-xl) {
                 margin-bottom: $pad-large;
             }
@@ -56,7 +64,7 @@ $sidebar-offset: 200px;
 
         @media screen and (min-width: $bp-large) {
             position: absolute;
-            top: 6px;
+            top: 18px;
             left: 0;
             width: $sidebar-width;
             text-align: right;
@@ -80,7 +88,8 @@ $sidebar-offset: 200px;
                 box-shadow: none;
             }
 
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
                 .example__desc-button {
                     background: $color-gray-light;
                 }
@@ -104,7 +113,7 @@ $sidebar-offset: 200px;
                 }
             }
 
-            &[aria-expanded="true"] {
+            &[aria-expanded='true'] {
                 svg rect:first-child {
                     transform: rotate(90deg);
                 }
@@ -115,9 +124,8 @@ $sidebar-offset: 200px;
             text-align: left;
             color: $color-gray-dark;
             font-weight: $font-weight-light;
-            font-style: italic;
-            font-size: $font-size-large;
-            margin-bottom: $pad-small;
+            font-size: $font-size-large-2;
+            margin-bottom: 0;
         }
 
         &__desc-button {
@@ -146,8 +154,13 @@ $sidebar-offset: 200px;
         &__company,
         &__dates {
             display: inline-block;
-            font-weight: $font-weight-medium;
+            font-weight: $font-weight-normal;
             font-size: $font-size-sm;
+        }
+
+        &__excerpt-container {
+            font-weight: $font-weight-normal;
+            font-size: $font-size-sm-2;
         }
 
         &__metadata-divider {
@@ -156,6 +169,8 @@ $sidebar-offset: 200px;
         }
 
         &__desc-container {
+            font-weight: $font-weight-normal;
+            font-size: $font-size-sm-2;
             margin-top: $pad-normal;
         }
     }
@@ -163,14 +178,14 @@ $sidebar-offset: 200px;
 
 @media print {
     p {
-      orphans: 2;
-      widows: 2;
+        orphans: 2;
+        widows: 2;
     }
 
     body.p-resume {
         color: #000;
         background: #fff;
-    
+
         .c-nav {
             &__trigger-container,
             &__list-container {
@@ -235,8 +250,10 @@ $sidebar-offset: 200px;
                 visibility: visible !important;
                 margin-top: 5px;
                 font-size: 11px;
-                
-                p, ul, ol {
+
+                p,
+                ul,
+                ol {
                     line-height: 1.65;
                     margin-bottom: 8px;
                 }
@@ -249,7 +266,7 @@ $sidebar-offset: 200px;
                 ul li {
                     text-indent: 0;
                     margin-bottom: 8px;
-                    
+
                     &::before {
                         display: none;
                     }

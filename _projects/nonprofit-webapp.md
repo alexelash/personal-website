@@ -13,7 +13,7 @@ featured-bg: '#8a8a8a'
 featured-size: 'cropped'
 excerpt: UX/UI design, front-end
 hero:
-  title: 'App design for a non-profit'
+  title: 'Redesign of a SaaS product'
   desc: |
     I worked as the sole UX/UI designer, and had the opportunity to work on many aspects of the final application.
   image: 'nda-webapp/nda-web-app_hero.png'

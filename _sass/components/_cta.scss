@@ -4,7 +4,7 @@
     padding: $pad-large;
 
     &::after {
-        content: "";
+        content: '';
         background-image: url(../assets/images/bank-note.svg);
         background-size: 5rem;
         position: absolute;
@@ -27,26 +27,32 @@
     }
 
     &__title {
+        font-family: $font-family-primary;
         font-size: $font-size-large;
         font-weight: $font-weight-normal;
-        font-style: italic;
         margin-bottom: $pad-compact;
 
         @media screen and (max-width: $bp-med) {
             max-width: 25rem;
-            margin: 0 auto $pad-compact;
+            margin: 0 auto $pad-small;
             text-align: center;
         }
     }
 
     &__blurb {
-        font-size: $font-size-med;
         margin-bottom: 0;
 
         @media screen and (max-width: $bp-med) {
             max-width: 20rem;
             margin: 0 auto $pad-normal;
             text-align: center;
+        }
+
+        p {
+            font-family: $font-family-primary;
+            line-height: 1.65;
+            font-size: $font-size-med-2;
+            margin-bottom: 0;
         }
     }
 

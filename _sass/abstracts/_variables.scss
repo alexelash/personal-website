@@ -32,7 +32,7 @@
  * Breakpoints................Global breakpoint definitions
  */
 
- /*------------------------------------*\
+/*------------------------------------*\
      #COLORS
  \*-----------------------------------*/
 
@@ -43,7 +43,7 @@
  */
 $color-primary: #1f6135;
 $color-secondary: #f74100;
-$color-peach: #FFDAB9;
+$color-peach: #ffdab9;
 
 /**
  * Neutral Colors
@@ -72,10 +72,6 @@ $color-utility-success-light: #ebf8e1;
 $color-utility-warning: #f69d3c;
 $color-utility-warning-light: #fffecf;
 
-
-
-
-
 /*------------------------------------*\
     #TYPOGRAPHY
 \*------------------------------------*/
@@ -83,20 +79,23 @@ $color-utility-warning-light: #fffecf;
 /**
  * Font Family
  */
-$font-family-primary: "Operator SSm A", "Operator SSm B", "Georgia", serif;
-$font-family-secondary: "Operator SSm A", "Operator SSm B", "Arial", sans-serif;
+$font-family-primary: 'Ringside Compressed SSm A', 'Ringside Compressed SSm B',
+    sans-serif;
+$font-family-secondary: 'Ringside Regular SSm A', 'Ringside Regular SSm B',
+    'Arial', sans-serif;
 
 /**
  * Font Sizing
  */
 $font-size-tiny: 0.65rem;
-$font-size-sm: 0.75rem;
-$font-size-sm-2: 0.85rem;
+$font-size-sm: 0.85rem;
+$font-size-sm-2: 0.95rem;
 $font-size-med: 1rem;
 $font-size-med-2: 1.2rem;
 $font-size-large: 1.4375rem;
 $font-size-large-2: 2rem;
 $font-size-xl: 2.4375rem;
+$font-size-xxl: 3.2rem;
 
 /**
  * Font Weights
@@ -109,8 +108,6 @@ $font-weight-semibold: 600;
 $font-weight-bold: 700;
 $font-weight-black: 800;
 
-
-
 /*------------------------------------*\
     #LAYOUT
 \*------------------------------------*/
@@ -121,10 +118,6 @@ $font-weight-black: 800;
 $l-max-width: 72rem;
 $l-max-width-mid: 55rem;
 $l-max-width-narrow: 36rem;
-
-
-
-
 
 /*------------------------------------*\
     #SPACING
@@ -148,10 +141,6 @@ $pad-large-2: 3rem;
 
 $space-bullet-offset: 1.6rem; /* 2 */
 
-
-
-
-
 /*------------------------------------*\
     #BORDERS
 \*------------------------------------*/
@@ -161,10 +150,6 @@ $space-bullet-offset: 1.6rem; /* 2 */
  */
 $border-radius: 2px;
 $border-radius-big: 4px;
-
-
-
-
 
 /*------------------------------------*\
     #ANIMATION
@@ -178,10 +163,6 @@ $fade-med: 0.2s;
 $fade-long: 0.4s;
 $anim-ease: ease-in-out;
 $anim-fast: 0.25s;
-
-
-
-
 
 /*------------------------------------*\
     #BREAKPOINTS
@@ -198,10 +179,6 @@ $bp-med-2: 48em;
 $bp-large: 50em;
 $bp-large-2: 56em;
 $bp-xl: 62em;
-
-
-
-
 
 /*------------------------------------*\
     #COMPONENTS

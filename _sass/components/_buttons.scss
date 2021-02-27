@@ -7,7 +7,7 @@
  * 2) Remove box-shadow that's globally applied to links
  */
 .c-btn {
-    font: 0.85rem/1.5 $font-family-secondary;
+    font: 0.85rem/1.5 $font-family-primary;
     display: inline-block;
     background: $button-background;
     border: 2px solid transparent;
@@ -32,7 +32,8 @@
         display: none !important;
     }
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         color: $color-white;
         background: $button-background-hover;
     }
@@ -99,7 +100,7 @@
  * Small button
  */
 .c-btn--small {
-    padding: .375rem .75rem;
+    padding: 0.375rem 0.75rem;
 }
 
 /*
@@ -125,7 +126,8 @@
     /*
      * Button icon within button hover
      */
-    .c-btn:hover &, .c-btn:focus & {
+    .c-btn:hover &,
+    .c-btn:focus & {
         fill: $color-gray-darkest;
     }
 
@@ -144,7 +146,6 @@
         fill: $color-black;
     }
 }
-
 
 /*------------------------------------*\
     #TEXT BUTTON

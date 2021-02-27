@@ -55,6 +55,7 @@
         border: 1px solid $color-gray-light;
         padding: $pad-normal;
         margin: 0 auto $pad-normal;
+        position: relative;
 
         @media screen and (min-width: $bp-large) {
             display: flex;
@@ -78,10 +79,6 @@
                     background: $button-background-hover;
                 }
             }
-
-            .project__header {
-                margin-bottom: $pad-normal;
-            }
         }
 
         &--has-casestudy {
@@ -103,6 +100,10 @@
             overflow: hidden;
             transform: scale(1);
             transition: transform 0.2s ease-in;
+
+            @media screen and (min-width: $bp-med) {
+                height: 100%;
+            }
 
             &:after {
                 content: '';
@@ -129,6 +130,7 @@
             @media screen and (min-width: $bp-med) {
                 display: flex;
                 align-items: baseline;
+                margin-top: auto;
             }
         }
 
@@ -185,7 +187,7 @@
         &__header {
             display: flex;
             justify-content: space-between;
-            margin-bottom: $pad-compact;
+            margin-bottom: $pad-small;
             align-items: center;
         }
 
@@ -193,7 +195,6 @@
             font-size: $font-size-large;
             font-weight: $font-weight-light;
             margin: 0;
-            font-style: italic;
 
             @media screen and (min-width: $bp-med) {
                 font-size: $font-size-large-2;
@@ -202,6 +203,9 @@
         }
 
         &__years {
+            position: absolute;
+            top: 0;
+            right: 0;
             background: $color-utility-success-light;
             border-radius: $border-radius;
             color: $color-utility-success;
@@ -212,16 +216,22 @@
         }
 
         &__excerpt p {
+            color: $color-gray-medium;
+            font-family: $font-family-primary;
             font-weight: $font-weight-normal;
-            font-size: $font-size-sm-2;
+            font-size: $font-size-med;
             margin-bottom: $pad-small;
 
             @media screen and (min-width: $bp-med) {
-                font-weight: $font-weight-light;
                 font-size: $font-size-med-2;
                 line-height: 1.65;
-                margin-bottom: $pad-compact;
+                margin-bottom: $pad-normal;
             }
+        }
+
+        &__desc p {
+            font-size: $font-size-sm-2;
+            margin-bottom: $pad-normal;
         }
     }
 

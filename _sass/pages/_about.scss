@@ -1,5 +1,5 @@
 .p-about {
-    [role=main] {
+    [role='main'] {
         display: flex;
         flex-direction: column;
     }
@@ -15,9 +15,8 @@
     }
 
     .intro {
-
         &__blurb {
-            font-size: $font-size-large;
+            font-size: $font-size-large-2;
             font-weight: $font-weight-light;
         }
 
@@ -55,7 +54,7 @@
             a {
                 color: $color-white;
                 transition: opacity 0.35s;
-                
+
                 &::after {
                     border-color: $color-white;
                 }

@@ -1,8 +1,7 @@
 {% if page.project-url %} {% capture link %}
 <span class="hero__project-url-container">
     <a href="{{ page.project-url }}" class="hero__project-link">
-        Website
-        <i class="project__link-icon fas fa-link" aria-hidden="true"></i>
+        <i class="project__link-icon fas fa-link" title="Go to website"></i>
     </a>
 </span>
 {% endcapture %} {% endif %}
@@ -12,15 +11,17 @@
         <div class="hero__text-block">
             <div class="hero__text">
                 <div class="hero__intro">
-                    <h1 class="hero__title">{{ page.hero.title }}</h1>
+                    <header class="hero__title-container">
+                        <h1 class="hero__title">{{ page.hero.title }}</h1>
+                        {{ link }}
+                    </header>
                     <h2 class="hero__subtitle">
-                        {% if page.nda != true %}
-                            {{ page.hero.tagline }}
-                        {% endif %}
+                        {% if page.nda != true %} {{ page.hero.tagline }} {%
+                        endif %}
                     </h2>
 
                     <div class="hero__blurb">
-                        {{ page.hero.desc | markdownify | append: link }}
+                        {{ page.hero.desc | markdownify }}
                     </div>
                 </div>
                 {% if page.hero.roles or page.hero.organization %}

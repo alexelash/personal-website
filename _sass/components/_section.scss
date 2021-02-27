@@ -6,7 +6,6 @@
  * Section block that helps chunk related items together
  */
 .section {
-
     /**
      * Stacked content
      */
@@ -42,7 +41,6 @@
      * Text first, then the visual
      */
     &--text-visual & {
-
         &__text-container {
             margin-bottom: $pad-normal;
         }
@@ -73,7 +71,6 @@
 
     &__title {
         font-size: $font-size-large-2;
-        font-style: italic;
         font-weight: $font-weight-thin;
         margin-bottom: $pad-medium;
 
