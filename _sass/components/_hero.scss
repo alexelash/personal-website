@@ -178,9 +178,9 @@
     }
 
     &__subtitle {
-        font-family: $font-family-secondary;
+        font-family: $font-family-primary;
         font-weight: $font-weight-normal;
-        font-size: $font-size-sm-2;
+        font-size: $font-size-large;
         text-transform: uppercase;
         letter-spacing: 1px;
         line-height: 1.5;
@@ -223,18 +223,16 @@
 
     &__roles-title,
     &__organization-title {
+        font-size: $font-size-sm-2;
         font-weight: $font-weight-normal;
         text-transform: uppercase;
         letter-spacing: 1px;
-        font-size: $font-size-sm-2;
-
-        &::after {
-            content: '—';
-        }
     }
 
     &__roles-list {
-        display: inline;
+        font-family: $font-family-secondary;
+        font-size: $font-size-sm;
+        display: block;
     }
 
     &__roles-title {
@@ -243,10 +241,11 @@
 
     &__organization-title {
         margin-right: 0.2rem;
+        margin-bottom: 0 !important;
     }
 
-    &__organization {
-        display: flex;
-        align-items: baseline;
+    &__organization-name {
+        font-family: $font-family-secondary;
+        font-size: $font-size-sm;
     }
 }

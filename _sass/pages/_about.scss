@@ -21,7 +21,11 @@
         }
 
         &__figure-container {
-            position: absolute;
+            position: relative;
+
+            @media screen and (min-width: $bp-med) {
+                position: absolute;
+            }
         }
 
         &__image-container {
@@ -48,6 +52,7 @@
             text-shadow: 0 0 3px $color-black;
 
             p {
+                font-size: $font-size-tiny;
                 margin-bottom: 0;
             }
 
