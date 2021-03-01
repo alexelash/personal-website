@@ -42,9 +42,11 @@ collections:
     output: true
     order:
       - nonprofit-webapp.md
-      - azavea-groundwork.md
-      - fishway.md
       - temperate.md
+      - fishway.md
+      - azavea-groundwork.md
+      - districtbuilder.md
+      - azavea-careers.md
 
 include:
   - _pages
