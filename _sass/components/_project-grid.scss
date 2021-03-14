@@ -23,6 +23,7 @@
 
     &__image > img {
         width: 100%;
+        border-radius: $border-radius-big;
     }
 
     &__image-caption {
@@ -83,6 +84,22 @@
         }
     }
 
+    &--big-small {
+        .project-grid {
+            @media screen and (min-width: $bp-small-3) {
+                &__image-container {
+                    flex: 0 0 27.75%;
+                    margin-bottom: 0;
+                }
+
+                &__image-container:first-child {
+                    flex: 0 0 71%;
+                    margin-bottom: $pad-normal;
+                }
+            }
+        }
+    }
+
     &--small-small-big {
         .project-grid {
             @media screen and (min-width: $bp-small-3) {
@@ -93,6 +110,22 @@
                 &__image-container:last-child {
                     flex: 0 0 100%;
                     margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    &--small-big {
+        .project-grid {
+            @media screen and (min-width: $bp-small-3) {
+                &__image-container {
+                    flex: 0 0 27.75%;
+                    margin-bottom: 0;
+                }
+
+                &__image-container:last-child {
+                    flex: 0 0 71%;
+                    margin-bottom: $pad-normal;
                 }
             }
         }

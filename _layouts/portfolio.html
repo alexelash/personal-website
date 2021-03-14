@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <body
+        {%
+        if
+        page.page_class
+        %}
+        class="{{- page.page_class }} {{ layout.page_class -}}"
+        {%
+        endif
+        %}
+    >
+        <!-- Google Tag Manager (noscript) -->
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-5ZB33M6"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+            ></iframe
+        ></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        {% include nav.html %}
+
+        <div class="main-container" role="main">
+            <div class="intro">
+                {% if page.heading %}
+                <h2 class="intro__heading">{{ page.heading }}</h2>
+                {% endif %} {% if page.intro %}
+                <p class="intro__blurb">{{ page.intro }}</p>
+                {% endif %} {% if page.description %}
+                <p class="intro__desc">{{ page.description }}</p>
+                {% endif %} {% if page.link %}
+                <a class="intro__link" href="{{ page.link.url }}">
+                    {{ page.link.text }}
+                    <i class="intro__link-icon fas {{ page.link.icon }}"></i>
+                </a>
+                {% endif %}
+            </div>
+
+            {% include project-loop.html category=page.category %} {% if
+            page.cta %} {% include cta.html title=page.cta.title
+            body=page.cta.body button-text=page.cta.button-text %} {% endif %}
+        </div>
+        {% include footer.html %}
+    </body>
+</html>

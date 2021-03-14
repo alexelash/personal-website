@@ -1,16 +1,18 @@
 ---
 layout: project
+category: product
+casestudy: true
+years: '2019'
+
 title: 'Fishway'
-seo_description:
-  'UX/UI, front-end development, and animation for a Fairmount Waterworks
-  educational application.'
+seo_description: 'UX/UI, front-end development, and animation for a Fairmount Waterworks educational application.'
+
 featured-image: 'fishway/fishway_hero.png'
 featured-alt: 'Screenshot of winning screen for the Fishway game.'
 featured-bg: '#D8DBE2'
 featured-size: 'cropped'
-casestudy: true
-years: '2019'
 excerpt: 'UX/UI design, front-end, animation'
+
 hero:
   title: 'Fishway touchscreen'
   tagline: 'An educational game'
@@ -25,6 +27,7 @@ hero:
   organization:
     name: Azavea
     url: 'https://www.azavea.com/'
+
 sections:
   - type: 'default'
     layout: 'text-only'

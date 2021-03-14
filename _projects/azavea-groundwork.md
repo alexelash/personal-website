@@ -1,15 +1,17 @@
 ---
 layout: project
+casestudy: true
+category: marketing
+
 title: 'GroundWork'
 seo_description:
   'Branding and website design for a satellite imagery annotation tool.'
-casestudy: true
 years: 2020
 featured-image: 'azavea-groundwork/groundwork_logo.png'
 featured-alt: 'GroundWork logo'
 featured-bg: '#fbfbfb'
 project-url: 'https://groundwork.azavea.com/'
-excerpt: 'Identity, web design'
+excerpt: 'Identity, website'
 hero:
   title: 'GroundWork'
   tagline: 'Labeling for satellite imagery'
