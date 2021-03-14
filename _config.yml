@@ -41,12 +41,15 @@ collections:
   projects:
     output: true
     order:
+      - azavea.md
+      - azavea-groundwork.md
+      - cicero.md
+      - districtbuilder.md
+      - temperate-branding.md
+      - raster-vision.md
       - nonprofit-webapp.md
       - temperate.md
       - fishway.md
-      - azavea-groundwork.md
-      - districtbuilder.md
-      - azavea-careers.md
 
 include:
   - _pages

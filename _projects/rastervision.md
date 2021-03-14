@@ -1,16 +1,19 @@
 ---
 layout: project
+category: marketing
+casestudy: true
+years: 2018
+
 title: 'Raster Vision'
 seo_description:
-  'Branding and marketing design for an open source deep learning library for
-  satellite and aerial imagery.'
-casestudy: true
+  'Branding and marketing design for an open source deep learning library for satellite and aerial imagery.'
+
 featured-image: 'azavea-rastervision/rastervision_RGB_darkbg.png'
 featured-alt: 'Raster Vision logo.'
 featured-bg: '#292f35'
 project-url: 'https://rastervision.io/'
-excerpt: 'Branding and marketing design'
-draft: true
+excerpt: 'Identity, website'
+
 hero:
   title: 'Raster Vision'
   tagline: 'Deep learning for satellite imagery'
@@ -22,6 +25,7 @@ hero:
   organization:
     name: Azavea
     url: 'https://www.azavea.com/'
+
 sections:
   - type: 'default'
     layout: 'text-only'

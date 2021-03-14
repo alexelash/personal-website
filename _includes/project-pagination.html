@@ -4,6 +4,8 @@
 {% endcomment %}
 {% assign items_raw = site.projects | where: 'type', page.type %}
 {% assign available_casestudies = items_raw | where: 'casestudy', true %}
+{% assign available_casestudies = available_casestudies | where: 'draft', false %}
+{% assign available_casestudies = available_casestudies | where: 'category', page.category %}
 {% assign items = available_casestudies | sort: 'order' %}
 
 {% if items.size > 1 %}

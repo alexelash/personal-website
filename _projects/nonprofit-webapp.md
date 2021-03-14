@@ -1,17 +1,20 @@
 ---
 layout: project
+category: 'product'
+casestudy: true
+
 title: 'Redesign of a SaaS product'
 seo_description:
   'Design audit, UX research, UX/UI design, and front-end development for a web
   application.'
-casestudy: true
 nda: true
+
 years: 2020
 featured-image: 'nda-webapp/nda-web-app_hero.png'
 featured-alt: 'Mock-up of a anonymized page of the application.'
 featured-bg: '#8a8a8a'
 featured-size: 'cropped'
-excerpt: UX/UI design, front-end
+excerpt: Product design, front-end
 hero:
   title: 'Redesign of a SaaS product'
   desc: |

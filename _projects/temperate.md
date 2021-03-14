@@ -1,17 +1,22 @@
 ---
 layout: project
+casestudy: true
+years: 2018
+category: product
+
 title: 'Temperate'
 seo_description:
   'Branding, UX/UI design, front-end development, and marketing design for a
   climate change decision-support SaaS product.'
-casestudy: true
-years: 2018
+
 featured-image: 'azavea-temperate/temperate_hero.png'
 featured-alt: 'Screenshot of Temperate dashboard.'
 featured-bg: '#283D3B'
 featured-size: 'cropped'
+
 project-url: 'https://temperate.io/'
-excerpt: Identity, UX/UI design, front-end
+excerpt: Product design and front-end
+
 hero:
   title: 'Temperate'
   tagline: 'A climate change companion'
@@ -20,7 +25,7 @@ hero:
   image: 'azavea-temperate/temperate_hero.png'
   image-alt: 'Screenshot of Temperate dashboard.'
   image-size: 'cropped'
-  roles: 'Branding, UX/UI design, Front-end development, Marketing website'
+  roles: 'UX/UI design, visual design, Front-end development'
   organization:
     name: Azavea
     url: 'https://www.azavea.com/'
@@ -74,62 +79,9 @@ sections:
           Several simplified illustrations of a user walking through Temperate.
   - type: 'default'
     layout: 'text-only'
+    title: 'Visual design'
     desc: |
-      Once the product team and our external partner were all on the same page, we could begin building the product. I turned my attention to market and brand considerations.
-  - type: 'default'
-    layout: 'text-only'
-    title: 'Branding research'
-    desc: |
-      Before touching a pencil, I researched tools already in the climate space. This allowed me to get a better sense of what would make Temperate stand apart from the already fairly crowded landscape of tools. I discovered several patterns: 
-
-      - Unsurprisingly, color is dominated by blue and green.
-      - Frequently the names of tools are fairly literal.  
-      - Imagery typically includes environmental symbols, like leaves, sun or water.
-      - Marketing efforts in the space tend to focus on data as opposed to user goals.
-
-      This research was crucial in allowing me to establish a benchmark against which to develop and evaluate our product’s brand.
-  - type: 'default'
-    layout: 'text-visual'
-    title: 'Naming our product'
-    desc: |
-      Once I better understood what was already out there, I felt that we could make the new product stand out with a unique, conceptual name and logomark. Using dependable blues and greens would ground the brand identity, and make it feel like it belongs alongside other tools and organizations. The team worked on developing a name and solicited ideas from all corners of the office. 
-
-      Ultimately, we chose to reflect climate adaptation planning’s loftiest aspirational goal: to keep our world’s climate liveable for all of Earth’s creatures.
-    visual:
-      type: 'image'
-      caption:
-        'Temperate climates lack extremes of temperate and precipitation.'
-      image: 'azavea-temperate/temperate_branding_04.jpg'
-      image-alt: "The word 'temperate' cutting out an image of coral reef."
-  - type: 'default'
-    layout: 'text-only'
-    desc: |
-      We went with the name Temperate, inspired by geographically temperate climates. Temperate climates are those without extremes of temperature and precipitation (rain and snow), which made it a perfect analogy for the goal.
-  - type: 'default'
-    layout: 'text-visual'
-    title: 'Creating Temperate’s brand identity'
-    desc: |
-      Once we had our name, I sketched out many directions for the logomark. The name gave me a lot to stew on, but I was looking for a way to have a visual representation of our SaaS product that wouldn’t get lost in a sea of other climate tool logos. Early designs were all over the map – nothing I drew felt quite right for making our tool stand out.
-    visual:
-      type: 'image'
-      caption: 'Early sketches for Temperate’s logo.'
-      image: 'azavea-temperate/temperate_branding_05.jpg'
-      image-alt:
-        'Image containing several logo sketches that made it to the digital
-        transformation stage.'
-  - type: 'default'
-    layout: 'text-visual'
-    desc: |
-      The winning direction was that which created a mascot. The mark references the collie dog breed (most notably the border collie). Known as a herding dog, the concept was that Temperate herds information and climate data all into one place. Our hope was that Temperate would become adaptation planners’ best friend in planning for climate change. Tying it together with the name, a thermometer makes up the nose of our mascot.
-    visual:
-      type: 'image'
-      image: 'azavea-temperate/temperate_branding_02.jpg'
-      image-alt: 'Black and white versions of the logo.'
-  - type: 'default'
-    layout: 'text-only'
-    title: 'Applying the brand'
-    desc: |
-      I developed a bright color palette and set the wordmark in Ideal Sans. We hoped to make Temperate continue to stand out by giving it a sleek but unintimidating, human look. The typeface being used throughout the application is Klim Foundry’s National.
+      Once the product team and our external partner were all on the same page, we could begin building the product. I turned my attention to market and brand considerations. For more information about this process, please refer to [the Branding case study of this project.](/projects/temperate-branding/)
   - type: 'grid'
     layout: 'side-by-side'
     visual:
@@ -140,7 +92,7 @@ sections:
   - type: 'default'
     layout: 'text-only'
     desc: |
-      The application itself retains the bright energy of the brand. As our target users were folks tasked with planning for climate change, but likely without a background in interpreting climate data, I wanted to ensure that the interface was inviting, friendly, and unintimidating.
+      The application itself applies the bright energy of the brand. As our target users were folks tasked with planning for climate change, but likely without a background in interpreting climate data, I wanted to ensure that the interface was inviting, friendly, and unintimidating.
   - type: 'grid'
     layout: 'small-small-big'
     caption: 'The brand applied to various screens in the application.'
@@ -158,6 +110,7 @@ sections:
   - type: 'stacked'
     layout: 'text-visual'
     style: 'highlight'
+    title: 'Custom iconography'
     desc: |
       To assist with quick recognition of frequently dense terminology, I developed custom iconography to represent the various hazards, community systems, and types of policies that could appear in Temperate. While users would be unlikely to recognize these oftentimes complex concepts by the iconography alone, they assist with quicker recognition and add an element of polish.
     visual:
@@ -170,5 +123,7 @@ sections:
   - type: 'default'
     layout: 'text-only'
     desc: |
-      The product has won additional grants and partnerships since its launch. It is one of the projects I’m most proud of having had the chance to work on at Azavea. Check out the final product by creating a [free account.](https://temperate.io/)
+      The product has won additional grants and partnerships since its launch. It is one of the projects I’m most proud of having had the chance to work on at Azavea. Check out the final product by creating a [free account.](https://temperate.io/) You can also learn more about the process of designing the product in [the 1st part of a 2-part blog post](https://www.azavea.com/blog/2018/12/07/problem-solving-by-asking-questions/) I wrote for Azavea.
+
+      Or, check out [the Branding case study](/projects/temperate-branding/) for this project.
 ---
