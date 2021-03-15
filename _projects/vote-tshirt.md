@@ -11,5 +11,9 @@ featured-alt: "Photo of Register to Vote T-shirt."
 featured-bg: "#a4c3be"
 
 project-url: "https://www.registertovotethenvote.us/"
-excerpt: Pro bono t-shirt design encouraging folks to vote, art direction by [Scott Lederer](https://scottlederer.com/)
+excerpt: Apparel
+
+hero:
+  desc: |
+    Pro bono t-shirt design encouraging folks to vote, art direction by [Scott Lederer](https://scottlederer.com/)
 ---

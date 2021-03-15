@@ -18,7 +18,7 @@ hero:
   title: 'DistrictBuilder'
   tagline: 'Giving power back to the people'
   desc: |
-    DistrictBuilder is a free, open source redistricting tool that recently underwent a significant rebuild and brand refresh. I created the brand identity and worked with my team on marketing the product launch.
+    Brand and website redesign for a free, open source redistricting tool that recently underwent a significant rebuild and product launch.
   image: 'districtbuilder/districtbuilder_featured.png'
   image-alt: 'Screenshot of DistrictBuilder marketing website.'
   image-size: 'cropped'

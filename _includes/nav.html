@@ -22,8 +22,9 @@
             <ul class="c-nav__list">
                 {% for nav in site.data.nav %}
                 <li class="c-nav__item" role="presentation">
+                    {% assign title = nav.title | downcase %}
                     <a 
-                        class="c-nav__link{% if page.url == nav.href %} c-nav__link--is-active{% endif %}{% if nav.href == '' %} c-nav__link--is-disabled{% endif %}" 
+                        class="c-nav__link{% if page.url == nav.href or page.category == title %} c-nav__link--is-active{% endif %}{% if nav.href == '' %} c-nav__link--is-disabled{% endif %}" 
                         href="{{ nav.href | prepend: site.baseurl }}" 
                         {% if nav.href == '' %}disabled{% endif %}>
                         {{ nav.title }}

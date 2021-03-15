@@ -16,7 +16,7 @@ hero:
   title: 'GroundWork'
   tagline: 'Labeling for satellite imagery'
   desc: |
-    GroundWork is the first annotation tool built specifically with satellite imagery in mind. The free SaaS product enables labeling teams to easily and efficiently label large amounts of images to prep for machine learning projects.
+    Brand identity and website design for the first annotation tool built specifically with satellite imagery in mind. 
   image: 'azavea-groundwork/groundwork_hero.png'
   image-alt: 'Screenshot of GroundWork homepage.'
   image-bg: '#385149'
@@ -30,7 +30,7 @@ sections:
     layout: 'text-only'
     title: 'Background'
     desc: |
-      Early in 2019, I was tasked with developing a brand identity for Azavea’s newest innovation: a SaaS product for labeling imagery – specifically satellite imagery. There are many excellent labeling tools, but there none developed with geospatial data as the star, and that’s where GroundWork came in.
+      Early in 2019, I was tasked with developing a brand identity for Azavea’s newest innovation: a SaaS product for labeling imagery – specifically satellite imagery. There are many excellent labeling tools, but there none developed with geospatial data as the star, and that’s where GroundWork came in. The free SaaS product enables labeling teams to easily and efficiently label large amounts of images to prep for machine learning projects.
   - type: 'default'
     layout: 'text-visual'
     title: 'Starting the branding process'

@@ -16,7 +16,7 @@ hero:
   title: 'Cicero'
   tagline: 'Democracy’s Database'
   desc: |
-    Cicero is a SaaS product that provides accurate and up-to-date legislative data. The product team recently to rebrand, and asked that I refresh their logo and branding materials.
+    Logo redesign and brand refresh for a SaaS product that provides accurate and up-to-date legislative data.
   featured-image: 'cicero/cicero_RGB_tagline_light.png'
   featured-alt: 'Cicero: Democracy’s Database logo.'
   roles: 'Logo, identity, marketing strategy, website design and development'
