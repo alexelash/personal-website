@@ -31,7 +31,7 @@ sections:
     layout: 'text-only'
     title: 'Background'
     desc: |
-      Temperate is a decision-support tool for climate adaptation planners. The application guides practicioners through intepreting climate data and is aimed at users who may lack a climate background and need help understanding the process. Temperate help users develop a “vulnerability assessment” for their community and offers suggestions for how to take action based on a user’s location and particular community needs.
+      Temperate is a decision-support tool for climate adaptation planners. The application guides practitioners through interpreting climate data and is aimed at users who may lack a climate background and need help understanding the process. Temperate help users develop a “vulnerability assessment” for their community and offers suggestions for how to take action based on a user’s location and particular community needs.
 
       Given our target userbase, I wanted to ensure that Temperate’s brand felt friendly and unintimidating.
   - type: 'default'

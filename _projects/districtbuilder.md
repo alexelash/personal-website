@@ -66,11 +66,11 @@ sections:
     desc: |
       All told, I made several key changes to the logo:
       ## Introduced blue and red into the mark
-      Though political gerrymandering is a huge concern in redistricting, it is not the only consideration. Additionally, while DistrictBuilder is currently only usable for the United States, there is a hope to expand its use to other countries that also undergo the redistricting process. As a result, the original design team appears to shied away from using politically charged colors in the logomark. 
+      Though political gerrymandering is a huge concern in redistricting, it is not the only consideration. Additionally, DistrictBuilder is currently only built for use in the United States but it is possible to expand its use to other countries that undergo the redistricting process. As a result, the original design team appears to decided against using U.S. flag colors in the logomark. 
 
       However, I felt strongly that this decision appears to hurt the brand more than it helps, as the colors lacked meaning. People tend to associate politics with redistricting and the census, and though DistrictBuilder is not politically aligned with either party, I felt that we could get this across through our messaging rather than the logo itself. 
 
-      I also made the argument that if DistrictBuilder expands to other countries, then we could change out the colors and create a sub-brand:
+      I also made the argument that if DistrictBuilder expands to other countries, we could change out the colors and create a sub-brand:
     visual:
       type: 'image'
       image: 'districtbuilder/districtbuilder_brand_01.jpg'
@@ -80,7 +80,7 @@ sections:
     layout: 'text-visual'
     desc: |
       ## Mark refinements
-      I retained the “builder” brick reference, and simply refined the shape by recreating it overtop of a grid. I also rounded the corners slightly to make it look more modern and less sharp on screens. Both of these changes also ensured that the mark looked consistant and legible at smaller sizes, which was not true of the previous mark.
+      I retained the “builder” brick reference, and simply refined the shape by recreating it overtop of a grid. I also rounded the corners slightly to make it look more modern and less sharp on screens. Both of these changes also ensured that the mark looked consistent and legible at smaller sizes, which was not true of the previous mark.
     visual:
       type: 'image'
       image: 'districtbuilder/districtbuilder_final_logo_02.jpg'
@@ -104,7 +104,7 @@ sections:
     layout: 'text-only'
     title: 'Marketing website'
     desc: |
-      All of this was applied to the application and DistrictBuilder marketing website, the latter of which required a full overhaul. Working with my marketing colleagues, I focused on ensuring that this new web page would appeal to our target audience. Knowing that this is a pretty niche application, we also needed to explain how DistrictBuilder helps combat gerrymandering.
+      All of this was applied to the application and DistrictBuilder marketing website, the latter of which required a full overhaul. Working with my marketing colleagues, I focused on ensuring that this new web page would appeal to our target audience. Knowing that this is a niche web application, we also needed to explain how DistrictBuilder helps combat gerrymandering.
   - type: 'grid'
     layout: 'stacked'
     visual:
