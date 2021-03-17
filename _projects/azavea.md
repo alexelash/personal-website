@@ -33,9 +33,9 @@ sections:
     layout: 'text-visual'
     title: 'Opportunities'
     desc: |
-        Azavea is a primarily engineering-focused company and had not developed a strong visual brand identity over its 20 years in business. Assets were scattered across drives and out-of-date wikis, branded microsites and landing pages all varied wildly in treatment. Employees also frequently didn’t know where to locate assets or mission statements. 
+        Azavea is a primarily engineering-focused company and had not developed a strong visual brand identity over its 20 years in business. Assets were scattered across drives and out-of-date wikis while branded microsites and landing pages all varied wildly in treatment. Employees also frequently didn’t know where to locate assets or mission statements. 
 
-        Even Azavea didn’t have a strong _visual_ identity, the brand was clear: Azavea does brilliant, cutting edge work in geospatial, and has strong convictions that permeate every aspect of the business, from how it chooses projects to the compost buckets in the kitchen.  
+        Even though Azavea didn’t have a strong _visual_ brand identity, the overall brand has always been crystal clear: Azavea does brilliant, cutting edge work in geospatial, and has strong values that affect every aspect of the business, from how it chooses projects to the compost buckets in the kitchen.  
     visual:
       type: 'image'
       image: 'azavea/azavea_intro_01.jpg'
@@ -44,9 +44,9 @@ sections:
     layout: 'text-visual'
     title: 'Branding guide and toolkit'
     desc: |
-      When I started, the company had a simple guide for use of its core brand identity. However, the existing guide only covered logo usage guidelines. It had the additional issue of being hidden away in a PDF in the company’s shared drive. 
+      When I started, the company had a simple guide detailing use of its logo. However, it only covered logo usage guidelines and was in a PDF in the company’s shared drive. 
 
-      I took on the mantle of creating a [digital branding guide and digital toolkit](https://branding.azavea.com/) in order to establish and maintain shareable brand assets and visuals. I chose to create a digital version rather than update the PDF so that I could expand the existing guidelines, allow the guide to be more easily accessible/shareable to people in and outside of the company, and more easily collaborate cross-functionally on updates.
+      I took on the mantle of creating a [digital branding guide and digital toolkit](https://branding.azavea.com/) in order to establish and maintain shareable brand assets and visuals. I created a digital version rather than update the PDF so that I could expand the existing guidelines, allow the guide to be more easily accessible/shareable to people in and outside of the company, and more easily collaborate cross-functionally on updates.
     visual:
       type: 'image'
       image: 'azavea/azavea_brand_03.jpg'
@@ -54,11 +54,11 @@ sections:
   - type: 'default'
     layout: 'text-only'
     desc: |
-      Ultimately, I planned to solve several issues with the new, online guide:
+      Ultimately, I planned to solve several issues with the new digital guide:
       - **Collate company information.** The company’s mission statement, history, voice and tone, and other information were buried in various wikis and documents, most in various states of disuse. I gathered all the information and organized it in the new guide.
-      - **Make it easier to access up-to-date assets.** Azavea’s color and knockout logos were all in different locations. There had been many designers over the years creating the company’s sub-brands and logo files and formats were inconsistently created or non-existent.
-      - **Introduce internal clarity for Azavea’s libraries and products.** Azavea is unique in that the company maintains several open source libraries and SaaS products. Similarly to the main brand, there was no one place in which someone could access high-level information or logo downloads for each of these identities. This was particularly problematic for new employees, who often voiced confusion over the many products.
-      - **Establish color and typography guidelines.** Other than the colors in the logo, no designer had established a palette for the company. There were also many different typefaces in use across Azavea’s print collateral and websites. 
+      - **Introduce internal clarity for Azavea’s libraries and products.** Azavea is unique in that the company maintains several open source libraries and SaaS products. Similarly to the main brand, there was no one place in which someone could access high-level, differentiating information or logo downloads for each of these identities. This was particularly problematic for new employees, who often voiced confusion.
+      - **Make it easier to access up-to-date assets.** Azavea’s color and knockout logos were all in different locations. Many designers over the years had created the company’s sub-brands. Relevant logo files and formats were inconsistently created or non-existent.
+      - **Establish color and typography guidelines.** Other than the colors in the logo, there was no established color palette for the company. There were also many different typefaces in use across Azavea’s print collateral and websites. 
   - type: 'grid'
     layout: 'side-by-side'
     visual:
@@ -100,7 +100,7 @@ sections:
         ## Typography
         Prior to my involvement, websites and print materials all used different typefaces. I audited our web and print materials to identity fonts currently in use, and researched potential alternative options for our typeface. Ultimately, I landed on [New Hero.](https://newlyn.com/fonts/new-hero/)
 
-        New Hero boasts a large font family, which I knew would give us a lot of flexibility over the ensuing years. It has a geometric style that feels modern and also a bit of quirky personality that keeps our content from looking too corporate. The foundry’s description that New Hero is “dedicated to civic duty” is also a particularly relevant tie-in to our mission statement, which is to create software for “positive civic, social, and environmental impact. 
+        New Hero boasts a large font family, which I knew would give us a lot of flexibility over the ensuing years. It has a geometric style that feels modern and also a bit of quirky personality that keeps our content from looking too corporate. The foundry’s description that New Hero is “dedicated to civic duty” is also a particularly relevant tie-in to our mission statement, which is to create software for “positive civic, social, and environmental impact”. 
     visual:
       type: image
       image: 'azavea/azavea_vis_lang_04.jpg'
@@ -127,9 +127,7 @@ sections:
   - type: 'default'
     layout: 'text-only'
     desc: |
-      I addressed several key issues with the previous site, but most notably re-branded the microsite to align it with Azavea’s brand. 
-
-      I was particularly concerned with how unclear the connection between Azavea and this Redistricting effort was. To resolve this, I set the primary domain name to be a subdomain of Azavea’s website: `redistricting.azavea.com`. I also made this site more clearly a microsite in color, typography, and style, even replacing the old logo with a sub-brand logotype.
+      I addressed several key issues with the previous site, but most notably re-branded the it to more clearly align it with Azavea’s brand. Setting the primary domain name to be a subdomain of Azavea’s website: `redistricting.azavea.com`, I also designed the microsite to more clearly reference Azavea’s brand in color, typography, and style. This included replaced the previous custom logo (Redistricting the Nation) with a sub-brand called: Azavea Redistricting.
   - type: 'grid'
     layout: 'big-small'
     visual:
@@ -152,8 +150,8 @@ sections:
     desc: |
       I’ve also since been the primary designer for Azavea’s print and apparel. This has meant representing our brand in fresh, inventive ways for internal and external recognition:
       - **Employee gifts.** I’ve had the chance to apply Azavea’s brand to custom apparel for both adult Azaveans _and_ their children.
-      - **Internal awards and incentives.** I've designed end-of-year award plaques and custom [challenge coins](https://en.wikipedia.org/wiki/Challenge_coin) for my colleagues. These coins are handed out monthly, and awarded to people who participate in talks (creatively named the “Talk Award” coins) or write engaging blogs (also simply called the ”Blog Award” coins). 
-      - **Print collateral, such as business development proposal templates.** These are used by my colleagues to send to clients, and requires some instruction content. They were painstakingly _(painstakingly)_ created in Microsoft Word. 
+      - **Internal awards and incentives.** This has included a broad range of projects, including end-of-year award plaques and custom [challenge coins](https://en.wikipedia.org/wiki/Challenge_coin) for my colleagues. The coins are handed out monthly, and awarded to people who participate in talks (creatively named the “Talk Award” coins) or write engaging blogs (also simply called the ”Blog Award” coins). 
+      - **Print collateral, such as business development proposal templates.** The latter are used by my colleagues to send to clients, and required some instruction content. They were also painstakingly _(painstakingly)_ created in Microsoft Word. 
   - type: 'grid'
     layout: 'side-by-side'
     visual:
@@ -170,5 +168,5 @@ sections:
     layout: 'text-only'
     title: 'Results'
     desc: |
-      All told, this work has been a massive effort completed over four years. Some of the early Branding Guide work has been hugely valuable in communicating changes and sharing assets with my colleagues, and is also regularly used for onboarding and sharing outside of the company for PR and partnerships. This is an ongoing effort, but designers at Azavea now have access to a clearer set of branding assets, guidelines, and patterns. 
+      All told, this work has been a massive effort completed over four years. Some of the early Branding Guide work has been hugely valuable in communicating changes and sharing assets with my colleagues, and is also regularly used for onboarding and sharing outside of the company for PR and partnerships. This is an ongoing effort, but rewarding in that designers and employees at Azavea now have access to a clearer set of branding assets, guidelines, and patterns. 
 ---
