@@ -33,7 +33,7 @@ sections:
     layout: 'text-visual'
     title: 'Opportunities'
     desc: |
-        Azavea is a primarily engineering-focused company and had not developed a strong visual brand identity over its 20 years in business. Assets were scattered across drives and out-of-date wikis while branded microsites and landing pages all varied wildly in treatment. Employees also frequently didn’t know where to locate assets or mission statements. 
+        Azavea is a primarily engineering-focused company and had not developed a strong visual brand identity over its 20 years in business. Assets were scattered across drives and out-of-date wikis while branded microsites and landing pages all varied in treatment. Employees also frequently didn’t know where to locate assets or mission statements. 
 
         Even though Azavea didn’t have a strong _visual_ brand identity, the overall brand has always been crystal clear: Azavea does brilliant, cutting edge work in geospatial, and has strong values that affect every aspect of the business, from how it chooses projects to the compost buckets in the kitchen.  
     visual:
