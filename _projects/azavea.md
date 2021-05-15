@@ -33,9 +33,9 @@ sections:
     layout: 'text-visual'
     title: 'Opportunities'
     desc: |
-        Azavea is a primarily engineering-focused company and had not developed a strong visual brand identity over its 20 years in business. Assets were scattered across drives and out-of-date wikis while branded microsites and landing pages all varied in treatment. Employees also frequently didn’t know where to locate assets or mission statements. 
+        When I started, Azavea’s branding and design assets were scattered across drives and out-of-date wikis while branded microsites and landing pages all varied in treatment. Employees also frequently didn’t know where to locate assets or mission statements. 
 
-        Even though Azavea didn’t have a strong _visual_ brand identity, the overall brand has always been crystal clear: Azavea does brilliant, cutting edge work in geospatial, and has strong values that affect every aspect of the business, from how it chooses projects to the compost buckets in the kitchen.  
+        The company’s overall brand identity has always been strong and crystal clear: Azavea does brilliant, cutting edge work in geospatial, and has values that affect every aspect of the business, from how it chooses projects to the compost buckets in the kitchen.  
     visual:
       type: 'image'
       image: 'azavea/azavea_intro_01.jpg'
@@ -46,7 +46,7 @@ sections:
     desc: |
       When I started, the company had a simple guide detailing use of its logo. However, it only covered logo usage guidelines and was in a PDF in the company’s shared drive. 
 
-      I took on the mantle of creating a [digital branding guide and digital toolkit](https://branding.azavea.com/) in order to establish and maintain shareable brand assets and visuals. I created a digital version rather than update the PDF so that I could expand the existing guidelines, allow the guide to be more easily accessible/shareable to people in and outside of the company, and more easily collaborate cross-functionally on updates.
+      I took on the mantle of creating a [digital branding guide and digital toolkit](https://branding.azavea.com/) in order to establish and maintain shareable brand assets and visuals. Creating a digital branding guide allowed me to more easily expand the existing guidelines, create a more accessible/shareable guide for people in and outside of the company, and collaborate cross-functionally on updates.
     visual:
       type: 'image'
       image: 'azavea/azavea_brand_03.jpg'
