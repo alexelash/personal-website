@@ -17,9 +17,9 @@ image-credit: Photo taken by [Reverie Films](https://reveriefilms.co.uk/)
 body: |
     Technology has a huge impact on people’s daily lives, and I am motivated to use it as a tool for good. Since graduating from Tyler School of Art with a Bachelor’s degree in Graphic and Interactive Design, I have had the opportunity to work on many projects with this goal in mind.
 
-    As a user experience designer with a broad range of skills, I have real-world experience with many aspects of product development. From user research, brand design, wireframing workflows, front-end polish, and product marketing, I’ve had the opportunity to contribute to many aspects of a product launch. 
+    As an experience designer with a broad range of skills, I have real-world experience with many aspects of product development. From user research, brand design, wireframing workflows, front-end polish, and product marketing, I’ve had the opportunity to contribute to many aspects of a product launch. 
 
-    Currently I work remotely with some incredible folks at [Azavea](https://azavea.com) as a UX and Marketing Designer. In my free time, I have co-organized and co-taught low-cost classes for women of color in tech; taught an Interactive class at my alma mater; helped organize the Philly-based LadyHacks hackathon in 2015 and 2016; and made posters for local non-profit [ProjectMEOW](http://projectmeow.org/). 
+    Currently I work remotely with some incredible folks at [Administrate](https://www.getadministrate.com) as a Branding Designer. In my free time, I have co-organized and co-taught low-cost classes for women in tech; taught an Interactive class at my alma mater; helped organize the Philly-based LadyHacks hackathon in 2015 and 2016; and made posters for local non-profit [ProjectMEOW](http://projectmeow.org/). 
 
-    When I’m not working, I am a nomad living on the road, currently based in Tbilisi, Georgia. In my spare time I love to draw, play ultimate, cook, and tell my cat what a good boy he is.
+    In my spare time I love to draw, play Ultimate, cook, and tell my cat what a good boy he is.
 ---

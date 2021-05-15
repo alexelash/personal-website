@@ -14,10 +14,16 @@ cta: true
 sections:
   - title: Experience
     examples:
+      - title: Branding Designer
+        company: Administrate
+        url: https://www.getadministrate.com
+        dates: May 2021 - Present
+        desc: |
+          Administrate is a Training Management Platform designed to help enterprises and corporations streamline learning and development through a cloud-based, configurable software platform.
       - title: User Experience Designer & Marketing Lead
         company: Azavea
         url: https://www.azavea.com/
-        dates: June 2017 - Present
+        dates: June 2017 - May 2021
         desc: |
           Azavea is a B Corporation that creates civic geospatial software and data analytics for the web. Our mission is to advance the state of the art in geospatial technology and apply it for civic, social, and environmental impact. 
 
