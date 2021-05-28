@@ -1,7 +1,7 @@
 ---
 layout: profile
 title: Profile
-seo_description: "Design, front-end development, and marketing strategy for mission-driven organizations."
+seo_description: "Design, front-end development, and branding for mission-driven organizations."
 permalink: "/about"
 page_class: p-about
 
@@ -19,7 +19,7 @@ body: |
 
     As an experience designer with a broad range of skills, I have real-world experience with many aspects of product development. From user research, brand design, wireframing workflows, front-end polish, and product marketing, I’ve had the opportunity to contribute to many aspects of a product launch. 
 
-    Currently I work remotely with some incredible folks at [Administrate](https://www.getadministrate.com) as a Branding Designer. In my free time, I have co-organized and co-taught low-cost classes for women in tech; taught an Interactive class at my alma mater; helped organize the Philly-based LadyHacks hackathon in 2015 and 2016; and made posters for local non-profit [ProjectMEOW](http://projectmeow.org/). 
+    Currently I work remotely with the folks at [Administrate](https://www.getadministrate.com) as a Brand Designer. In my free time, I have co-organized and co-taught low-cost classes for women in tech; taught an Interactive class at my alma mater; helped organize the Philly-based LadyHacks hackathon in 2015 and 2016; and made posters for local non-profit [ProjectMEOW](http://projectmeow.org/). 
 
     In my spare time I love to draw, play Ultimate, cook, and tell my cat what a good boy he is.
 ---

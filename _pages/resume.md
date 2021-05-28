@@ -14,28 +14,30 @@ cta: true
 sections:
   - title: Experience
     examples:
-      - title: Branding Designer
+      - title: Brand Designer
         company: Administrate
         url: https://www.getadministrate.com
         dates: May 2021 - Present
         desc: |
-          Administrate is a Training Management Platform designed to help enterprises and corporations streamline learning and development through a cloud-based, configurable software platform.
+          Administrate is an Edinburgh-based start-up that builds a cloud-based training management platform. Their software is designed to help enterprises and corporations streamline their learning and development through configurable, easy-to-use software.
+
+          As Brand Designer, I work with the Marketing Team on developing branded visual content across our marketing channels. I also leverage my past experience as a front-end web developer and user experience designer to improve how customers and potential customers interact with our brand digitally.
       - title: User Experience Designer & Marketing Lead
         company: Azavea
         url: https://www.azavea.com/
         dates: June 2017 - May 2021
         desc: |
-          Azavea is a B Corporation that creates civic geospatial software and data analytics for the web. Our mission is to advance the state of the art in geospatial technology and apply it for civic, social, and environmental impact. 
+          Azavea is a B Corporation that creates civic geospatial software and data analytics for the web. Their mission is to advance the state of the art in geospatial technology and apply it for civic, social, and environmental impact. 
 
-          At Azavea, my responsibilities include:
+          At Azavea, my responsibilities included:
 
-          - Work with my team, developers, and project managers to design websites and web applications from a user-centric point of view. I work on a project from conception all the way through production.
-          - Produce sitemaps, wireframes, coded prototypes, and pixel-perfect designs.
-          - Conduct user research, frequently in the form of usability tests and user interviews.
-          - Develop and/or tweak production-ready code. Primarily using HTML, CSS/SASS, and Javascript or React with an eye on accessibility and semantic markup.
-          - Maintain and design marketing websites for products and company microsites.
-          - Lead logo design and branding for existing and new products.
-          - Lead the design of marketing and internal collateral.
+          - Worked with my team, developers, and project managers to design websites and web applications from a user-centric point of view. I worked on projects from conception all the way through production.
+          - Produced sitemaps, wireframes, coded prototypes, and pixel-perfect designs.
+          - Conducted user research, frequently in the form of usability tests and user interviews.
+          - Developed and/or tweak production-ready code. Primarily using HTML, CSS/SASS, and Javascript or React with an eye on accessibility and semantic markup.
+          - Maintained and designed marketing websites for products and company microsites.
+          - Led logo design and branding for existing and new products.
+          - Led the design of marketing and internal collateral.
       - title: User Experience & User Interface Designer
         company: Nuix
         url: https://www.nuix.com/
