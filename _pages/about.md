@@ -19,7 +19,7 @@ body: |
 
     I’m a designer with an insatiable curiousity about the mediums and topics I work in. From user research, brand design, wireframing workflows, front-end polish, and product marketing, I’ve had the opportunity to contribute to many aspects of a product launch. 
 
-    Currently I am the Creative Director at [Administrate](https://www.getadministrate.com). In my free time, I have co-organized and co-taught low-cost classes for women in tech; taught an Interactive class at my alma mater; helped organize the Philly-based LadyHacks hackathon in 2015 and 2016; and made posters for local non-profit [ProjectMEOW](http://projectmeow.org/). 
+    Currently I am the Creative Director at [Administrate](https://www.getadministrate.com). Though I'm a Philly girl, I fell in love with Scotland while traveling Europe in 2019 and have decided to make Edinburgh my home. In my free time, I have co-organized and co-taught low-cost classes for women in tech; taught an Interactive class at my alma mater; helped organize the Philly-based LadyHacks hackathon in 2015 and 2016; and made posters for local non-profit [ProjectMEOW](http://projectmeow.org/). 
 
     In my spare time I love to draw, play Ultimate, cook, and tell my cat what a good boy he is.
 ---
