@@ -2,7 +2,7 @@
 layout: project
 category: marketing
 casestudy: true
-years: '2017-present'
+years: '2017-2021'
 
 title: 'Azavea'
 seo_description: 'Brand management, marketing, and web design & development for a professional services firm that creates custom geospatial software for good.'

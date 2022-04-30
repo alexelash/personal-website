@@ -2,26 +2,31 @@
 layout: resume
 title: Résumé
 seo_description:
-  'Multidisciplinary designer with seven years of professional experience and
-  demonstrated proficiency as a frontend web developer and product designer.'
+  'Multidisciplinary designer with eight years of professional experience.'
 permalink: '/resume'
 page_class: p-resume
 js_dependencies: hide-show.js
 
 heading: Résumé
-intro: Multidisciplinary designer with 7+ years of professional experience
+intro: Multidisciplinary designer with 8+ years of professional experience
 cta: true
 sections:
   - title: Experience
     examples:
-      - title: Brand Designer
+      - title: Creative Director
         company: Administrate
         url: https://www.getadministrate.com
         dates: May 2021 - Present
         desc: |
-          Administrate is an Edinburgh-based start-up that builds a cloud-based training management platform. Their software is designed to help enterprises and corporations streamline their learning and development through configurable, easy-to-use software.
+          Administrate is a training operations platform that serves as a cloud-based, configurable learning tech infrastructure solution for enterprise training teams.
 
-          As Brand Designer, I work with the Marketing Team on developing branded visual content across our marketing channels. I also leverage my past experience as a front-end web developer and user experience designer to improve how customers and potential customers interact with our brand digitally.
+          As Creative Director, I collaborate with teammembers across the company to further develop Administrate's brand. Working with our Marketing Team, I also leverage my past experience as a front-end web developer and user experience designer to improve how customers and potential customers interact with our brand through digital channels.
+
+          At Administrate, recent accomplishments have included:
+
+          - Establishing new visual identity principles for our company, documented in an extensive set of brand guidelines and shared with our company and stakeholders.
+          - Redesigning our flagship marketing website to align with the new visual identity, as well as significantly improving the user experience across the website. Improvements to form design on conversion-focused pages, such as utilization of labels over placeholder labels and social proofing located closer to the form, has shown a considerable increase in conversion rates and ease-of-use.
+          - Developed production-ready code for landing pages and our marketing website for key marketing initiatives and campaigns, such as our Annual Report.
       - title: User Experience Designer & Marketing Lead
         company: Azavea
         url: https://www.azavea.com/

@@ -62,15 +62,13 @@ sections:
       image: 'districtbuilder/districtbuilder_final_logo_01.jpg'
       image-alt: 'DistrictBuilder full logo.'
   - type: 'default'
-    layout: 'text-only' 
+    layout: 'text-visual'
     desc: |
       All told, I made several key changes to the logo:
       ## Introduced blue and red into the mark
       Though political gerrymandering is a huge concern in redistricting, it is not the only consideration. Additionally, DistrictBuilder is currently only built for use in the United States but it is possible to expand its use to other countries that undergo the redistricting process. As a result, the original design team appears to decided against using U.S. flag colors in the logomark. 
 
-      However, I felt strongly that this decision appears to hurt the brand more than it helps, as the colors lacked meaning. People tend to associate politics with redistricting and the census, and though DistrictBuilder is not politically aligned with either party, I felt that we could get this across through our messaging rather than the logo itself. 
-
-      I also made the argument that if DistrictBuilder expands to other countries, we could change out the colors and create a sub-brand:
+      However, I felt strongly that this decision appears to hurt the brand more than it helps, as the colors lacked meaning. People tend to associate politics with redistricting and the census, and though this is not all that redistricting is about, I felt that we could get this across through our messaging rather than the logo itself. I also developed a brand architecture that could take in differen countries, should DistrictBuilder expand past use in the United States:
     visual:
       type: 'image'
       image: 'districtbuilder/districtbuilder_brand_01.jpg'
@@ -89,7 +87,7 @@ sections:
     layout: 'text-visual'
     desc: |
       ## New typeface and color palette
-      Finally, used the [New Frank typeface](https://newlyn.com/fonts/new-frank/) for the logotype. New Frank has a large font family and has an understated design that I felt would offer DistrictBuilder more refinement than its previous logotype. I also developed a fuller color scheme for UI and collateral applications.
+      Finally, I choose the [New Frank typeface](https://newlyn.com/fonts/new-frank/) for the logotype. New Frank has a large font family and has an understated design that I felt would offer DistrictBuilder more refinement than its previous logotype. I also developed a fuller color scheme for UI and collateral applications.
   - type: 'grid'
     layout: 'small-small-big'
     visual:
