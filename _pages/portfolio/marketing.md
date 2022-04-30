@@ -9,7 +9,7 @@ seo_description: 'A collection of case studies containing branding and identity 
 
 js_dependencies: card-click.js
 
-intro: 'Marketing. Brand identity. Web design.'
+intro: 'Brand identity. Marketing. Web design.'
 description: 'Branding and identity work for SaaS products and companies.'
 
 cta:
