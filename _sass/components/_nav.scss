@@ -1,7 +1,7 @@
 /*------------------------------------*\
     #NAVIGATION
 \*------------------------------------*/
-$nav-height: 5rem;
+$nav-height: 7rem;
 
 .c-nav {
     width: 100%;
@@ -15,7 +15,6 @@ $nav-height: 5rem;
     &__inner {
         display: flex;
         border-bottom: 1px solid $color-gray;
-        min-height: $nav-height;
         align-items: center;
 
         @media screen and (max-width: $bp-med) {
@@ -28,6 +27,7 @@ $nav-height: 5rem;
         }
 
         @media screen and (min-width: $bp-med) {
+            min-height: $nav-height;
             position: relative;
             justify-content: space-between;
             margin: 0 auto;
@@ -87,6 +87,7 @@ $nav-height: 5rem;
 
         @media screen and (min-width: $bp-med) {
             padding: $pad-normal 0;
+            height: 7rem;
         }
     }
 
@@ -117,7 +118,7 @@ $nav-height: 5rem;
                 @media screen and (min-width: $bp-med) {
                     top: calc(-35% - 3px);
                     height: calc(6.5rem + 6px);
-                    width: calc(5rem + 6px);
+                    width: calc(7rem + 6px);
                 }
             }
 
@@ -141,8 +142,8 @@ $nav-height: 5rem;
 
                 @media screen and (min-width: $bp-med) {
                     top: 2px;
-                    height: calc(5rem + 4px);
-                    width: calc(5rem + 4px);
+                    height: calc(7rem + 4px);
+                    width: calc(7rem + 4px);
                 }
             }
         }
@@ -160,8 +161,8 @@ $nav-height: 5rem;
             }
 
             @media screen and (min-width: $bp-med) {
-                height: 5rem;
-                width: 5rem;
+                height: 7rem;
+                width: 7rem;
                 top: 0.25rem;
             }
         }
@@ -175,7 +176,7 @@ $nav-height: 5rem;
         }
 
         @media screen and (min-width: $bp-med) {
-            margin-left: calc(1rem + 5rem);
+            margin-left: calc(1rem + 7rem);
         }
     }
 
@@ -191,6 +192,10 @@ $nav-height: 5rem;
         font-weight: $font-weight-normal;
         text-transform: uppercase;
         margin-bottom: $pad-compact;
+
+        @media screen and (min-width: $bp-med) {
+            font-size: $font-size-large-2;
+        }
     }
 
     &__role {
