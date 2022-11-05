@@ -27,7 +27,7 @@ sections:
           - Establishing new visual identity principles for our company, documented in an extensive set of brand guidelines and shared with our company and stakeholders.
           - Redesigning our flagship marketing website to align with the new visual identity, as well as significantly improving the user experience across the website. Improvements to form design on conversion-focused pages, such as utilization of labels over placeholder labels and social proofing located closer to the form, has shown a considerable increase in conversion rates and ease-of-use.
           - Developed production-ready code for landing pages and our marketing website for key marketing initiatives and campaigns, such as our Annual Report.
-      - title: User Experience Designer & Marketing Lead
+      - title: UX Designer & Marketing Lead
         company: Azavea
         url: https://www.azavea.com/
         dates: June 2017 - May 2021
@@ -43,7 +43,7 @@ sections:
           - Maintained and designed marketing websites for products and company microsites.
           - Led logo design and branding for existing and new products.
           - Led the design of marketing and internal collateral.
-      - title: User Experience & User Interface Designer
+      - title: UX/UI Designer
         company: Nuix
         url: https://www.nuix.com/
         dates: Jan 2016 - May 2017
@@ -58,7 +58,7 @@ sections:
           - UX on the graph-based portion of our new cybersecurity software which required directly interfacing with UK-based colleagues, designing wireframes and high-fidelities alongside developers, and documenting features in Confluence for QA and those outside of the scrum team.
           - Improving the UI/UX of a pre-existing e-Discovery web application.
           - Providing visual quality assurance throughout sprints where needed.
-      - title: Designer and Web Developer
+      - title: Designer & Web Developer
         company: Dyad Communications
         url: http://www.dyadcom.com/
         dates: Sept 2013 - Jan 2016

@@ -7,7 +7,7 @@ permalink: '/'
 page_class: p-work
 js_dependencies: card-click.js
 
-intro: 'Brand and experience designer based in Scotland.'
+intro: 'Brand & experience designer in Scotland.'
 description: 'Hi there! I’m Alex, Creative Director at Administrate and Philadelphian now living in Edinburgh, Scotland.'
 link:
     text: 'See selected work'

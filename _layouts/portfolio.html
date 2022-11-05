@@ -26,10 +26,8 @@
 
         <div class="main-container" role="main">
             <div class="intro">
-                {% if page.heading %}
-                <h2 class="intro__heading">{{ page.heading }}</h2>
-                {% endif %} {% if page.intro %}
-                <p class="intro__blurb">{{ page.intro }}</p>
+                {% if page.intro %}
+                <h1 class="intro__blurb">{{ page.intro }}</h1>
                 {% endif %} {% if page.description %}
                 <p class="intro__desc">{{ page.description }}</p>
                 {% endif %} {% if page.link %}

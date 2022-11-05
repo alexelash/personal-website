@@ -71,13 +71,12 @@
 
     &__title {
         font-size: $font-size-large-2;
-        font-weight: $font-weight-thin;
+        font-weight: $font-weight-bold;
         margin-bottom: $pad-medium;
 
         @media screen and (max-width: $bp-med) {
-            font-weight: $font-weight-light;
             font-size: $font-size-large;
-            margin-bottom: 0.5rem;
+            margin-bottom: $pad-normal;
         }
     }
 

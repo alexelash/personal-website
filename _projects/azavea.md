@@ -84,7 +84,7 @@ sections:
     desc: |
         Throughout the process of building this digital toolkit, it quickly became clear that there was considerable inconsistency in how branded content was handled. For example, there were many typefaces in use across Azavea’s web and print materials. In order to create an identifiable visual language for Azavea, I made sure to establish additional design rules.
 
-        ## Pattern
+        ### Pattern
         Since Azavea’s work is typically geospatial in nature, I introduced topographic patterns to our brand-kit. These add visual punch and texture to our web and print materials, while hinting to the nature of our work.
   - type: 'grid'
     layout: 'side-by-side'
@@ -97,7 +97,7 @@ sections:
   - type: 'default'
     layout: 'text-visual'
     desc: |
-        ## Typography
+        ### Typography
         Prior to my involvement, websites and print materials all used different typefaces. I audited our web and print materials to identity fonts currently in use, and researched potential alternative options for our typeface. Ultimately, I landed on [New Hero.](https://newlyn.com/fonts/new-hero/)
 
         New Hero boasts a large font family, which I knew would give us a lot of flexibility over the ensuing years. It has a geometric style that feels modern and also a bit of quirky personality that keeps our content from looking too corporate. The foundry’s description that New Hero is “dedicated to civic duty” is also a particularly relevant tie-in to our mission statement, which is to create software for “positive civic, social, and environmental impact”. 

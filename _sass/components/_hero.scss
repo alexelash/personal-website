@@ -147,7 +147,7 @@
     }
 
     &__title {
-        font-weight: $font-weight-light;
+        font-weight: $font-weight-bold;
         font-size: $font-size-xxl;
         margin-bottom: 0.75rem;
 
@@ -181,15 +181,12 @@
         font-family: $font-family-primary;
         font-weight: $font-weight-normal;
         font-size: $font-size-large;
-        text-transform: uppercase;
-        letter-spacing: 1px;
         line-height: 1.5;
         margin-bottom: $pad-medium;
         color: $color-gray-medium;
         margin-bottom: $pad-comfortable;
 
         @media screen and (max-width: $bp-med) {
-            font-weight: $font-weight-normal;
             font-size: $font-size-sm-2;
         }
     }
@@ -206,7 +203,6 @@
 
     &__metadata {
         position: relative;
-        color: $color-gray-medium;
 
         > div:first-child {
             margin-bottom: $pad-comfortable;
@@ -223,8 +219,8 @@
 
     &__roles-title,
     &__organization-title {
-        font-size: $font-size-sm-2;
-        font-weight: $font-weight-normal;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-bold;
         text-transform: uppercase;
         letter-spacing: 1px;
     }

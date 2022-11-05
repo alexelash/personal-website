@@ -19,7 +19,7 @@
         }
 
         &__blurb {
-            font-size: 5.25vw;
+            font-size: 5.45vw;
             max-width: $l-max-width;
             background: linear-gradient(
                 to right,
@@ -39,6 +39,7 @@
             }
 
             p {
+                font-weight: $font-weight-bold;
                 line-height: 1.2;
                 font-size: inherit;
                 font-style: inherit;

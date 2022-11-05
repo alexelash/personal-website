@@ -188,9 +188,8 @@ $nav-height: 7rem;
 
     &__name {
         color: $color-gray-darkest;
-        font-size: $font-size-large;
-        font-weight: $font-weight-normal;
-        text-transform: uppercase;
+        font-size: $font-size-med-2;
+        font-weight: $font-weight-bold;
         margin-bottom: $pad-compact;
 
         @media screen and (min-width: $bp-med) {
@@ -342,11 +341,11 @@ $nav-height: 7rem;
      */
     &__link {
         padding: 1em;
-        font-family: $font-family-primary;
+        font-family: $font-family-secondary;
         font-weight: $font-weight-normal;
         color: $color-black;
         text-transform: uppercase;
-        font-size: $font-size-med;
+        font-size: $font-size-sm;
         display: block;
         border-radius: $border-radius;
 

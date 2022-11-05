@@ -44,9 +44,9 @@ h3 {
  * Small heading
  */
 .heading--sm {
-    font-family: $font-family-secondary;
-    font-weight: $font-weight-normal;
-    font-size: $font-size-sm-2;
+    font-family: $font-family-primary;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-sm;
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 1.5;
@@ -58,8 +58,8 @@ h3 {
  * Small heading with underline
  */
 .heading--special-sm {
-    font-family: $font-family-secondary;
-    font-weight: $font-weight-normal;
+    font-family: $font-family-primary;
+    font-weight: $font-weight-bold;
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 1px;

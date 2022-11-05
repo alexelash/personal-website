@@ -196,13 +196,13 @@
         }
 
         &__title {
-            font-size: $font-size-large-2;
-            font-weight: $font-weight-light;
+            font-size: $font-size-med;
+            font-weight: $font-weight-bold;
             margin: 0;
 
             @media screen and (min-width: $bp-med) {
-                font-size: $font-size-xl;
-                font-weight: $font-weight-thin;
+                font-size: $font-size-large-2;
+                font-weight: $font-weight-bold;
             }
         }
 
@@ -227,11 +227,11 @@
             color: $color-gray-medium;
             font-family: $font-family-primary;
             font-weight: $font-weight-normal;
-            font-size: $font-size-med-2;
+            font-size: $font-size-med;
             margin-bottom: $pad-small;
 
             @media screen and (min-width: $bp-med) {
-                font-size: $font-size-large;
+                font-size: $font-size-med-2;
                 line-height: 1.65;
                 margin-bottom: $pad-normal;
             }

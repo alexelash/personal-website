@@ -33,9 +33,9 @@ layout_type: project
                 <!-- Text only layout -->
                 {% if section.layout == "text-only" %}
                     <div class="section__text-container">
-                        <h4 class="section__title">
+                        <h2 class="section__title">
                             {{ section.title }}
-                        </h4>
+                        </h2>
                         <div class="section__text">
                             {{ section.desc | markdownify }}
                         </div> 
@@ -69,9 +69,9 @@ layout_type: project
                 {% if section.layout == "text-visual" %}
                     <div class="section__text-container">
                         {% if section.title %}
-                        <h4 class="section__title">
+                        <h2 class="section__title">
                             {{ section.title }}
-                        </h4>
+                        </h2>
                         {% endif %}
 
                         <div class="section__text">
@@ -129,9 +129,9 @@ layout_type: project
                     </div>  
                     <div class="section__text-container">
                         {% if section.title %}
-                        <h4 class="section__title">
+                        <h2 class="section__title">
                             {{ section.title }}
-                        </h4>    
+                        </h2>    
                         {% endif %}
 
                         <div class="section__text">

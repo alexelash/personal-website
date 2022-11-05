@@ -123,12 +123,11 @@ $sidebar-offset: 200px;
         &__title {
             text-align: left;
             color: $color-gray-dark;
-            font-weight: $font-weight-normal;
-            font-size: $font-size-large;
+            font-weight: $font-weight-bold;
+            font-size: $font-size-med-2;
             margin-bottom: 0;
 
             @media screen and (min-width: $bp-med) {
-                font-weight: $font-weight-light;
                 font-size: $font-size-large-2;
             }
         }
