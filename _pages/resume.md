@@ -2,13 +2,14 @@
 layout: resume
 title: Résumé
 seo_description:
-  'Multidisciplinary designer with eight years of professional experience.'
+  'Designer with nine years of professional experience as a designer, design leader, and web developer.'
 permalink: '/resume'
 page_class: p-resume
 js_dependencies: hide-show.js
 
 heading: Résumé
-intro: Multidisciplinary designer with 8+ years of professional experience
+intro: |
+  Design leader with 9 years of professional experience.
 cta: true
 sections:
   - title: Experience

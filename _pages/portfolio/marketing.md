@@ -12,11 +12,5 @@ js_dependencies: card-click.js
 intro: 'Brand identity. Marketing. Web design.'
 description: 'Branding and identity work for SaaS products and companies.'
 
-cta:
-    body:
-        'This website contains a limited collection of projects I have designed
-        and often contributed code to over the years. Let me know if you’re
-        interested in learning more about my work.'
-    button-text: 'Shoot me an email'
 work-intro: 'Selected work'
 ---

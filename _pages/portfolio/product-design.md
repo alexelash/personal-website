@@ -11,11 +11,4 @@ js_dependencies: card-click.js
 
 intro: 'Discovery. Product design. Visual design.'
 description: 'A limited collection of web app design case studies.'
-
-cta:
-    body:
-        'This website contains a limited collection of projects I have designed
-        and often contributed code to over the years. Let me know if you’re
-        interested in learning more about my work.'
-    button-text: 'Shoot me an email'
 ---
