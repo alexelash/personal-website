@@ -11,7 +11,7 @@ featured-image: 'azavea-groundwork/groundwork_logo.png'
 featured-alt: 'GroundWork logo'
 featured-bg: '#fbfbfb'
 project-url: 'https://groundwork.azavea.com/'
-excerpt: 'Identity, website'
+excerpt: 'Logo, identity, website'
 hero:
   title: 'GroundWork'
   tagline: 'Labeling for satellite imagery'

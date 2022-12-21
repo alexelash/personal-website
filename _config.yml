@@ -43,6 +43,7 @@ collections:
   projects:
     output: true
     order:
+      - administrate.md
       - azavea.md
       - azavea-groundwork.md
       - cicero.md
