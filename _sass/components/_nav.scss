@@ -40,14 +40,14 @@ $nav-height: 7rem;
         align-items: center;
         font-weight: $font-weight-normal;
 
-        circle {
-            transition: fill 0.15s;
+        circle#BKG {
+            transition: all 0.25s ease;
         }
 
         &:hover,
         &:focus {
-            circle {
-                fill: darken($color-secondary, 10%);
+            circle#BKG {
+                fill: lighten($color-secondary, 10%);
             }
         }
 
