@@ -57,7 +57,7 @@ $nav-height: 7rem;
         }
 
         &:focus:not(:focus-visible) {
-            circle {
+            circle#BKG {
                 fill: $color-secondary;
             }
 
@@ -67,8 +67,8 @@ $nav-height: 7rem;
         }
 
         &:focus-visible {
-            circle {
-                fill: darken($color-secondary, 10%);
+            circle#BKG {
+                fill: lighten($color-secondary, 10%);
             }
 
             .c-nav__info-container {
