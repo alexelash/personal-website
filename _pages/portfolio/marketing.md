@@ -4,7 +4,7 @@ category: marketing
 page_class: l-portfolio
 permalink: '/portfolio/marketing'
 
-title: 'Portfolio — Branding and Marketing Design'
+title: 'Portfolio — Brand and Marketing Design'
 seo_description: 'A collection of case studies containing branding and identity work for products and companies.'
 
 js_dependencies: card-click.js

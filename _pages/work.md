@@ -2,7 +2,7 @@
 layout: work
 title: 'Creative Director'
 seo_description:
-    'I am a digital designer, with experience as a creative director, user experience designer, and front-end web developer.'
+    'I am a Creative director with a background in digital design, user experience, and front-end web development.'
 permalink: '/'
 page_class: p-work
 js_dependencies: card-click.js
@@ -13,7 +13,6 @@ link:
     text: 'See selected work'
     url: '/portfolio/marketing'
     icon: 'fa-long-arrow-alt-right'
-work-intro: 'See selected work'
 
 
 ---

@@ -58,7 +58,7 @@
                 >
                     See casestudy
                 </a>
-                {% else %}
+                {% elsif project.project-url == null %}
                 <em>Coming soon</em>
                 {% endif %} {% if project.project-url %}
                 <a class="project__link" href="{{ project.project-url }}">

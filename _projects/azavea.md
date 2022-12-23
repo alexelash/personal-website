@@ -17,7 +17,7 @@ hero:
   title: 'Azavea'
   tagline: 'A purpose-driven professional services firm'
   desc: |
-    Marketing design and strategy for a Philly-based agency that creates custom geospatial software for good.
+    Marketing design and strategy for a BCorp that creates bespoke geospatial software for good.
   image: 'azavea/azavea-branding-guide_hero.png'
   image-alt: 'Screenshot of Branding Guide page.'
   image-size: 'cropped'

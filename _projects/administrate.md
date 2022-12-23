@@ -17,7 +17,7 @@ hero:
   title: 'Administrate'
   tagline: 'An L&D SaaS product'
   desc: |
-    New visual identity and web design for a training operations platform.
+    Brand and marketing design for a training operations SaaS product.
   image: 'administrate/coming-soon.png'
   image-alt: 'Coming Soon.'
   roles: 'Brand management, marketing, web design & development'

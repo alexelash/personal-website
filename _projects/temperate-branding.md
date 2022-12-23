@@ -19,7 +19,7 @@ excerpt: Logo, identity, website
 hero:
   title: 'Temperate'
   tagline: 'A climate change companion'
-  desc:  'Logo, branding identity, and marketing design for a decision-support tool for climate adaptation planners.'
+  desc:  'Brand and marketing design for a decision-support tool for climate adaptation planners.'
   image: 'azavea-temperate/temperate_RGB_centered.png'
   image-alt: 'Temperate logo.'
   roles: 'Branding, UX/UI design, Front-end development, Marketing website'
