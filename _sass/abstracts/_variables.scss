@@ -45,6 +45,7 @@ $color-primary: #1f6135;
 $color-secondary: #f74100;
 $color-peach: #ffdab9;
 $color-muted-lilac: #b59da4;
+$color-muted-lilac-dark: #896771;
 
 /**
  * Neutral Colors
@@ -58,6 +59,8 @@ $color-gray-medium: #8a8a8a;
 $color-gray-dark: #4f4f4f;
 $color-gray-darkest: #282828;
 $color-black: #000;
+
+$color-gray-fade: linear-gradient( to bottom, rgba($color-gray, 0), $color-gray, rgba($color-gray, 0));
 
 /**
  * Utility Colors
@@ -196,8 +199,8 @@ $link-color-hover: $color-black;
 $link-underline-color: $color-gray-dark;
 $link-underline-color-hover: lighten($link-color, 0.5);
 
-$button-background: $color-gray;
-$button-background-hover: $color-gray-dark;
+$button-background: rgba($color-gray, 0.5);
+$button-background-hover: $color-gray;
 $button-color: $color-gray-dark;
 $button-border: $color-gray-dark;
 

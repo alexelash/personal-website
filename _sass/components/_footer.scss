@@ -9,8 +9,11 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    padding: 1rem 0;
     margin: auto auto 0;
+
+    @media all and (min-width: $bp-med) {
+        padding: $pad-normal $pad-large-2;
+    }
 
     &__social-block {
         margin: 0 auto;

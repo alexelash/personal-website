@@ -12,7 +12,6 @@ description: 'Hi there! I’m Alex, Creative Director at Administrate and Philad
 link:
     text: 'See selected work'
     url: '/portfolio/marketing'
-    icon: 'fa-long-arrow-alt-right'
 
 
 ---

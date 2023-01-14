@@ -3,6 +3,7 @@
         display: flex;
         flex-direction: column;
         max-width: none;
+        text-align: center;
 
         @media screen and (min-width: $bp-xl) {
             padding-left: $pad-large-2;
@@ -20,13 +21,13 @@
 
         &__blurb {
             font-size: 5.45vw;
-            max-width: $l-max-width;
+            margin: 0 auto;
             background: linear-gradient(
                 to right,
-                #f74201,
-                #b59da4,
-                #f74201,
-                #b59da4
+                $color-secondary,
+                $color-muted-lilac,
+                $color-secondary,
+                $color-muted-lilac
             );
             background-size: 300%;
             background-repeat: repeat;
@@ -36,6 +37,24 @@
 
             @media screen and (max-width: $bp-med) {
                 font-size: $font-size-large-2;
+            }
+
+            @media screen and (min-width: $bp-med) {
+                max-width: 72vw;
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                width: 2px;
+                height: 8rem;
+                background: $color-gray-fade;
+                margin: $pad-large 0 $pad-large 50%;
+
+                @media screen and (max-width: $bp-med) {
+                    height: 3rem;
+                    margin: $pad-small 0 $pad-compact 50%;
+                }
             }
 
             p {
@@ -80,7 +99,13 @@
         }
 
         &__desc {
-            max-width: $l-max-width-narrow;
+            margin: 0 auto;
+
+            @media screen and (min-width: $bp-med) {
+                font-size: $font-size-large;
+                line-height: 1.5;
+                max-width: $l-max-width-narrow;
+            }
         }
     }
 }

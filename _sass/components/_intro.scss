@@ -62,18 +62,14 @@
     }
 
     &__link {
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        display: inline-block;
-        font-size: $font-size-sm-2;
-        margin-top: $pad-comfortable;
+        margin-top: 1rem;
 
-        &::after {
-            border: none;
+        @media screen and (min-width: $bp-med) {
+            margin-top: 2rem;
         }
     }
 
     &__link-icon {
-        color: $link-icon-color;
+        color: $color-gray;
     }
 }
