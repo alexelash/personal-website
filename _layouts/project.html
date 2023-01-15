@@ -47,16 +47,14 @@ layout_type: project
                     <div class="section__visual-container" 
                         style="background-color: {{ section.visual.bg }};">
                         {% if section.visual.type == "image" %}
-                            {% for image in include.visual %}
-                                {% include project-visual.html
-                                    type=section.visual.type
-                                    image=section.visual.image
-                                    image-alt=section.visual.image-alt
-                                    caption=section.visual.caption %}
-                            {% endfor %}
+                            {% include project-visual.html
+                                type=section.visual.type
+                                image=section.visual.image
+                                image-alt=section.visual.image-alt
+                                caption=section.visual.caption %}
                         {% elsif section.visual.type == "slider" %}
                             {% include project-slider.html
-                                slides=section.visual.slides %}
+                                slides=section.slides %}
                         {% elsif section.visual.type == "video" %}
                             {% include project-video.html
                                 path=section.visual.path

@@ -36,7 +36,7 @@ sections:
       DistrictBuilder is a free and open source app that allows advocacy organizations, journalists, and concerned citizens to redraw districts in a user-friendly web application, thereby allowing them to make informed suggestions to politicians. As a part of the product redesign, I worked on a refresh of the existing brand, which had been designed during the first launch and was showing its age.
     visual:
       type: 'image'
-      image: 'districtbuilder/districtbuilder_final_logo_03.jpg'
+      image: 'districtbuilder/districtbuilder_old_logo_03.jpg'
       image-alt: "Old DistrictBuilder logo."
       caption: 'The old DistrictBuilder logo.'
   - type: 'default'

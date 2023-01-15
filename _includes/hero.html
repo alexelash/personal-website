@@ -40,12 +40,17 @@
                             <h3 class="hero__organization-title">
                                 Organization
                             </h3>
+                            {% if page.hero.organization.url %}
                             <a
                                 href="{{ page.hero.organization.url }}"
-                                class="hero__organization-name"
                             >
+                            {% endif %}
+                            <span class="hero__organization-name">
                                 {{ page.hero.organization.name }}
+                            </span>
+                            {% if page.hero.organization.url %}
                             </a>
+                            {% endif %}
                         </div>
                         {% endif %}
                     </div>

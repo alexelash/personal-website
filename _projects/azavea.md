@@ -11,6 +11,7 @@ featured-image: 'azavea/azavea_white_solo.png'
 featured-alt: 'Azavea logo.'
 featured-bg: '#26333d'
 
+project-url: 'https://www.azavea.com/'
 excerpt: 'Marketing, web design & development, brand management'
 
 hero:
