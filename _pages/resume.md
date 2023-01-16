@@ -25,9 +25,11 @@ sections:
 
           At Administrate, recent accomplishments have included:
 
-          - Establishing new visual identity principles for our company, documented in an extensive set of brand guidelines and shared with our company and stakeholders.
-          - Redesigning our flagship marketing website to align with the new visual identity, as well as significantly improving the user experience across the website. Improvements to form design on conversion-focused pages, such as utilization of labels over placeholder labels and social proofing located closer to the form, has shown a considerable increase in conversion rates and ease-of-use.
-          - Developed production-ready code for landing pages and our marketing website for key marketing initiatives and campaigns, such as our Annual Report.
+          - Established new visual identity principles for our company, documented in an extensive set of brand guidelines and shared with our company and stakeholders.
+          - Redesigned our flagship marketing website to align with the new visual identity, as well as significantly improving the user experience across the website. Improvements to form design on conversion-focused pages, such as utilization of labels over placeholder labels and social proofing located closer to the form, has shown a considerable increase in conversion rates and ease-of-use.
+          - Led and executed in-house redesign of company logo, visual identity, and brand architecture strategy. Engaged Senior Leadership Team in workshops to clarify our brand personality and coordinated execution across all functions of the business.
+          - Manage globally located full-time employees and independent contractors, ranging from junior to mid-level specialists in Web Production, Web Development, Design, Video Production, and Social Media. 
+          - Developed production-ready code for landing pages and our marketing website for key marketing initiatives and campaigns.
       - title: UX Designer & Marketing Lead
         company: Azavea
         url: https://www.azavea.com/
