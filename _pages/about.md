@@ -7,10 +7,10 @@ page_class: p-about
 
 heading: Hey there!
 intro: I’m Alex Lash — a designer and creative director focused on brand.
-image: ./assets/images/headshot_2023.jpg
-image-alt: Alex Lash in a sweater smiling in front of a graffitied wall.
+image: ./assets/images/full-june2023-greenery.jpg
+image-alt: Alex Lash in a collared, floral shirt smiling with trees in the background.
 cta: 
-    body: "I’m always happy to meet new folks, whether it’s about getting a job in tech or [sharing tips on how to be a digital nomad.](https://technical.ly/philly/2020/12/21/digital-nomad-remote-work/) Feel free to drop me a line!"
+    body: "I’m always happy to meet new folks, especially in my adopted city of Edinburgh! Feel free to drop me a line!"
     button-text: "Email me"
 body: |
    For nine years, I've worked at the intersection of design and technology. As the Creative Director at [Administrate](https://www.getadministrate.com), I work with a talented team of marketers, copywriters, and developers. I lead the Brand Experience Team and work with my colleagues to develop high-converting, creative ads and marketing campaigns; a performant and delightful web experience; and competitive visual identity and brand.  

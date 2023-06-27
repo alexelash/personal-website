@@ -24,3 +24,19 @@ figcaption {
 .lazy.loaded {
     opacity: 1;
 }
+
+.desktop-only {
+    display: none;
+
+    @media all and (min-width: $bp-med) {
+        display: block;
+    }
+}
+
+.mobile-only {
+    display: none;
+
+    @media all and (max-width: $bp-med) {
+        display: block;
+    }
+}

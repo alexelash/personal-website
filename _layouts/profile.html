@@ -20,11 +20,16 @@
     <div class="main-container" role="main">
         <div class="intro">
             <div class="intro__inner">
-                <h1 class="intro__heading heading--special-sm">
-                    {{ page.heading }}
-                </h1>
-
                 <div class="intro__content">
+                    <h1 class="intro__heading heading--special-sm">
+                        {{ page.heading }}
+                    </h1>
+                    <figure class="intro__figure-container mobile-only">
+                        <div class="intro__image-container">
+                            <img class="intro__image lazy" data-src="{{ page.image }}" alt="{{ page.image-alt }}">
+                            {% if page.image-credit %}<figcaption class="intro__image-caption">{{ page.image-credit | markdownify }}</figcaption>{% endif %}
+                        </div>
+                    </figure>
                     <p class="intro__blurb">
                         {{ page.intro }}
                     </p>
@@ -32,7 +37,7 @@
                         {{ page.body | markdownify }}
                     </div>
                 </div>
-                <figure class="intro__figure-container">
+                <figure class="intro__figure-container desktop-only">
                     <div class="intro__image-container">
                         <img class="intro__image lazy" data-src="{{ page.image }}" alt="{{ page.image-alt }}">
                         {% if page.image-credit %}<figcaption class="intro__image-caption">{{ page.image-credit | markdownify }}</figcaption>{% endif %}
