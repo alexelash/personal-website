@@ -2,6 +2,8 @@
 layout: project
 category: marketing
 years: 2018
+redirect_to: '/work'
+draft: true
 
 title:  "Register to vote, then vote"
 seo_description: "Pro bono t-shirt design encouraging folks to vote."

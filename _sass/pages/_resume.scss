@@ -2,12 +2,11 @@ $sidebar-width: 180px;
 $sidebar-offset: 200px;
 
 .p-resume {
-    [role='main'] {
-        display: flex;
-        flex-direction: column;
-    }
+    display: flex;
+    flex-direction: column;
 
     .intro {
+        max-width: $l-max-width;
         &__inner {
             text-align: center;
         }
@@ -186,7 +185,7 @@ $sidebar-offset: 200px;
         widows: 2;
     }
 
-    body.p-resume {
+    .p-resume [role='main'] {
         color: #000;
         background: #fff;
 

@@ -1,21 +1,8 @@
-<!DOCTYPE html>
-<html>
 {% include head.html %}
-  <body 
-	{% if page.page_class %} 
-		class="{{- page.page_class }} {{ layout.page_class -}}" 
-	{% endif %}>
-	
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZB33M6"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-
-	{% include nav.html %}
-
-	<div class="main-container" role="main">
-		<!-- page content -->
+<div class="main-container {% if page.page_class %} {{- page.page_class }} {{ layout.page_class -}}{% endif %}" data-barba="container" data-barba-namespace="{{ page.barba-namespace }}">
+    {% include nav.html %}
+    <div role="main" class="content">
 		{{ content }}
-		<!-- page content -->
-	</div>
+    </div> <!-- Main / Content -->
+</div> <!-- Main Container -->
 {% include footer.html %}

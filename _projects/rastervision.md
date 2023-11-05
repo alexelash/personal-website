@@ -3,6 +3,8 @@ layout: project
 category: marketing
 casestudy: true
 years: 2018
+redirect_to: '/work'
+draft: true
 
 title: 'Raster Vision'
 seo_description:

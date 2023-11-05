@@ -126,6 +126,4 @@ sections:
     layout: 'text-only'
     desc: |
       Check out the final product by creating a [free account](https://temperate.io/) or learn more about the branding process from [the blog post I wrote for Azavea.](https://www.azavea.com/blog/2018/12/18/temperate-design-process/)
-
-      Or, check out [the Product Design case study](/projects/temperate/) for this project.
 ---

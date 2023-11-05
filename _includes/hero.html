@@ -7,59 +7,7 @@
 {% endcapture %} {% endif %}
 
 <div class="hero">
-    <div class="hero__inner">
-        <div class="hero__text-block">
-            <div class="hero__text">
-                <div class="hero__intro">
-                    <header class="hero__title-container">
-                        <h1 class="hero__title">{{ page.hero.title }}</h1>
-                        {{ link }}
-                    </header>
-                    <h2 class="hero__subtitle">
-                        {% if page.nda != true %} {{ page.hero.tagline }} {%
-                        endif %}
-                    </h2>
-
-                    <div class="hero__blurb">
-                        {{ page.hero.desc | markdownify }}
-                    </div>
-                </div>
-                {% if page.hero.roles or page.hero.organization %}
-                <div class="hero__metadata">
-                    <div class="hero__metadata-inner">
-                        {% if page.hero.roles %}
-                        <div class="hero__roles">
-                            <h3 class="hero__roles-title">Contributions</h3>
-                            <div class="hero__roles-list">
-                                {% if page.hero.roles %} {{ page.hero.roles }}
-                                {% endif %}
-                            </div>
-                        </div>
-                        {% endif %} {% if page.hero.organization %}
-                        <div class="hero__organization">
-                            <h3 class="hero__organization-title">
-                                Organization
-                            </h3>
-                            {% if page.hero.organization.url %}
-                            <a
-                                href="{{ page.hero.organization.url }}"
-                            >
-                            {% endif %}
-                            <span class="hero__organization-name">
-                                {{ page.hero.organization.name }}
-                            </span>
-                            {% if page.hero.organization.url %}
-                            </a>
-                            {% endif %}
-                        </div>
-                        {% endif %}
-                    </div>
-                </div>
-                {% endif %}
-            </div>
-        </div>
-
-        {% assign baseimage = page.hero.image %} {% assign imageending =
+    <div class="hero__inner">{% assign baseimage = page.hero.image %} {% assign imageending =
         baseimage | split: '.' | last %} {% assign size = baseimage | size |
         minus: 4 %}
         <div class="hero__image-block">
@@ -91,7 +39,50 @@
                     />
                 </picture>
             </div>
-            <div class="hero__image-bg"></div>
+        </div>
+        <div class="hero__text-block">
+            <div class="hero__text">
+                <div class="hero__intro">
+                    {% if page.hero.desc %}
+                    <h1 class="hero__subtitle">
+                        {{ page.hero.desc }} {{ link }}
+                    </h1>
+                    {% else %}
+                    <h1 class="hero__subtitle">
+                        {{ page.hero.title }}
+                        {{ link }}
+                    </h1>
+                    {% endif %}
+                </div>
+                {% if page.hero.roles %}
+                <div class="hero__roles">
+                    <h3 class="hero__roles-title">Contributions</h3>
+                    <div class="hero__roles-list">
+                        {% if page.hero.roles %} {{ page.hero.roles }}
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %} 
+
+                {% if page.hero.organization %}
+                <div class="hero__organization">
+                    <h3 class="hero__organization-title">
+                        Organization
+                    </h3>
+                    {% if page.hero.organization.url %}
+                    <a
+                        href="{{ page.hero.organization.url }}"
+                    >
+                    {% endif %}
+                    <span class="hero__organization-name">
+                        {{ page.hero.organization.name }}
+                    </span>
+                    {% if page.hero.organization.url %}
+                    </a>
+                    {% endif %}
+                </div>
+            {% endif %}
+            </div>
         </div>
     </div>
 </div>

@@ -6,98 +6,37 @@
  * 1) Block containing headline, description text, that serves as a primary content area
  */
 .hero {
-    border-top: 1px solid $color-gray;
-    margin-top: -1px;
-
-    @media screen and (min-width: $bp-med) {
-        margin-top: -17px;
+    @media all and (min-width: $bp-med) {
+        margin-top: -($pad-large-2);
+        margin-bottom: $pad-large-2;
     }
 
     &__inner {
         display: flex;
         flex-direction: column;
         position: relative;
-
-        @media screen and (min-width: $bp-large-2) {
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-    }
-
-    &__text-block {
-        background: $color-white;
-        z-index: 0;
-    }
-
-    &__text-block,
-    &__image-block {
-        @media screen and (min-width: $bp-large-2) {
-            flex: 0 0 50%;
-        }
     }
 
     &__image-block {
-        flex: 1;
         width: 100%;
-        min-height: 100%;
         position: relative;
-        z-index: 1;
 
-        @media screen and (max-width: $bp-large-2) {
-            order: 1;
+        @media all and (min-width: $bp-med) {
+            min-height: 600px;
+            height: 60vh;
         }
     }
 
     &__image-container {
-        width: 80%;
-        height: auto;
-        top: 50%;
-        margin-left: -5%;
-        position: absolute;
         overflow: hidden;
-        border-radius: $border-radius-big;
-        transform: translateY(-50%);
-        box-shadow: 0 0 10px 4px rgba($color-gray-medium, 0.2);
+        position: relative;
+        width: 100%;
+        height: 100%;
 
         &::after {
             content: '';
             display: block;
-            padding-bottom: 70%;
-        }
-
-        @media screen and (max-width: $bp-large-2) {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            margin-left: 0;
-            border-radius: 0;
-            transform: none;
-            box-shadow: none;
-
-            &::after {
-                padding-bottom: 55%;
-            }
-        }
-    }
-
-    &__image-bg {
-        @media screen and (min-width: $bp-large-2) {
-            background-image: url(../assets/images/diagonal-lines.svg);
-            background-size: 0.75rem;
-            width: 80%;
-            height: auto;
-            top: 55%;
-            position: absolute;
-            overflow: hidden;
-            border-radius: $border-radius-big;
-            transform: translateY(-50%);
-            z-index: -1;
-
-            &::after {
-                content: '';
-                display: block;
-                padding-bottom: 70%;
-            }
+            padding-bottom: 60%;
         }
     }
 
@@ -120,24 +59,23 @@
     }
 
     &__text-block {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: $pad-large-2 * 2 $pad-large-2;
+        padding: $pad-large 0;
+        max-width: $l-max-width;
+        border-bottom: 1px solid $h1-border-color;
+        margin: 0 auto;
 
         @media screen and (max-width: $bp-large-2) {
-            order: 2;
-            padding: $pad-large $pad-comfortable;
-        }
-
-        @media screen and (min-width: $bp-med) {
-            min-height: 600px;
+            padding: $pad-medium 0;
         }
     }
 
     &__text {
-        max-width: 35rem;
+        @media screen and (min-width: $bp-large) {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            column-gap: $pad-large-2;
+            align-items: start;
+        }
     }
 
     &__title-container {
@@ -160,7 +98,7 @@
     &__project-url-container {
         font-size: $font-size-med-2;
         margin-left: $pad-medium;
-        display: block;
+        display: inline-block;
     }
 
     &__project-link {
@@ -181,10 +119,10 @@
         font-family: $font-family-primary;
         font-weight: $font-weight-normal;
         font-size: $font-size-large;
-        line-height: 1.5;
         margin-bottom: $pad-medium;
+        line-height: 1.4;
         color: $color-gray-medium;
-        margin-bottom: $pad-comfortable;
+        margin-bottom: 0;
 
         @media screen and (max-width: $bp-med) {
             font-size: $font-size-sm-2;
@@ -199,21 +137,14 @@
         p {
             font-size: inherit;
         }
-    }
 
-    &__metadata {
-        position: relative;
-
-        > div:first-child {
-            margin-bottom: $pad-comfortable;
+        @media screen and (min-width: $bp-large) {
+            grid-column: 1 / span 2;
         }
     }
 
-    &__metadata-inner {
-        margin: 0 auto;
-    }
-
-    &__roles {
+    &__roles,
+    &__organization  {
         margin-bottom: $pad-normal;
     }
 

@@ -10,4 +10,5 @@ featured-size: 'cropped'
 project-url: 'https://www.covidcaremap.org/'
 excerpt: 'Website design for map application'
 draft: true
+redirect_to: '/work'
 ---

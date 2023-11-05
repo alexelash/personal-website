@@ -1,11 +1,9 @@
 .p-about {
-    [role='main'] {
-        display: flex;
-        flex-direction: column;
-    }
+    display: flex;
+    flex-direction: column;
 
-    .cta {
-        margin-top: auto;
+    .content {
+        max-width: $l-max-width;
     }
 
     .intro {

@@ -1,13 +1,10 @@
 .l-portfolio {
-    [role='main'] {
-        display: flex;
-        flex-direction: column;
-        max-width: none;
+    display: flex;
+    flex-direction: column;
 
-        @media screen and (min-width: $bp-xl) {
-            padding-left: $pad-large-2;
-            padding-right: $pad-large-2;
-        }
+    @media screen and (min-width: $bp-xl) {
+        padding-left: $pad-large-2;
+        padding-right: $pad-large-2;
     }
 
     .intro {
@@ -37,12 +34,13 @@
             margin: $pad-large auto 0;
         }
     }
+}
 
-    .project-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
 
     .project {
         max-width: $l-max-width;
@@ -52,7 +50,7 @@
         border-radius: $border-radius-big;
         border: 1px solid $color-gray-light;
         padding: $pad-normal;
-        margin: 0 auto $pad-normal;
+        margin: $pad-normal auto $pad-normal;
         position: relative;
 
         @media screen and (min-width: $bp-large) {

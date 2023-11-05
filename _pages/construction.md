@@ -3,6 +3,9 @@ layout: default
 title: Under construction
 permalink: "/construction"
 page_class: p-construction
+draft: true
+redirect_to:
+  - /
 ---
 # Oh hey, cool of you to stop by
 I’m Alex Lash, a designer based in Philly and currently 

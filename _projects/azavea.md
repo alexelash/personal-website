@@ -23,6 +23,9 @@ hero:
   image-alt: 'Screenshot of Branding Guide page.'
   image-size: 'cropped'
   roles: 'Brand management, marketing, web design & development'
+  organization:
+    name: Azavea
+    url: 'https://www.azavea.com/'
 
 sections:
   - type: 'default'

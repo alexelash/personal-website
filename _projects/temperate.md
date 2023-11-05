@@ -3,6 +3,8 @@ layout: project
 casestudy: true
 years: 2018
 category: product
+redirect_to: '/work'
+draft: true
 
 title: 'Temperate'
 seo_description:

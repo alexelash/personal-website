@@ -2,6 +2,8 @@
 layout: project
 category: marketing
 years: 2020
+draft: true
+redirect_to: '/work'
 
 title: 'Cicero'
 seo_description: 'Logo and brand design for a SaaS product that provides address-to-district matching at all levels of government.'

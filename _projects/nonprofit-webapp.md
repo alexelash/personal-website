@@ -8,6 +8,7 @@ seo_description:
   'Design audit, UX research, UX/UI design, and front-end development for a web
   application.'
 nda: true
+redirect_to: '/work'
 
 years: 2020
 featured-image: 'nda-webapp/nda-web-app_hero.png'

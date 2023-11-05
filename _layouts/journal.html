@@ -1,30 +1,17 @@
-<!DOCTYPE html>
-<html>
 {% include head.html %}
-  <body 
-    {% if page.page_class %} 
-        class="{{- page.page_class }} {{ layout.page_class -}}" 
-    {% endif %}>
-    
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZB33M6"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
+<div class="main-container {% if page.page_class %} {{- page.page_class }} {{ layout.page_class -}}{% endif %}" data-barba="container" data-barba-namespace="{{ page.barba-namespace }}">
     {% include nav.html %}
-        
-    <header class="c-hero c-hero--pattern">
-        <div class="c-hero__inner">
-            <h2 class="c-hero__heading">
-                {{ page.heading }}
-            </h2>
-            <div class="c-hero__blurb">
-                {{ page.intro | markdownify }}
+    <div role="main" class="content">
+        <header class="c-hero c-hero--pattern">
+            <div class="c-hero__inner">
+                <h2 class="c-hero__heading">
+                    {{ page.heading }}
+                </h2>
+                <div class="c-hero__blurb">
+                    {{ page.intro | markdownify }}
+                </div>
             </div>
-        </div>
-    </header>
-
-    <div class="main-container" role="main">
+        </header>
         <div class="p-journal__list-container">
             {% for post in site.posts %}
                 <article class="article__list-item">
@@ -38,7 +25,6 @@
                         <img class="article__image" src="{{ post.image }}" alt="{{ post.image-alt }}">
                     </figure>
                     {% endif %}
-                    
                     <div class="article__text">
                         <div class="article__date">
                             {{ post.date  | date: "%D" }}
@@ -62,6 +48,6 @@
                 </article>
             {% endfor %}
         </div>
-
-    </div>
+    </div> <!-- Main / Content -->
+</div> <!-- Main Container -->
 {% include footer.html %}

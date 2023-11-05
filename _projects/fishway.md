@@ -3,6 +3,7 @@ layout: project
 category: product
 casestudy: true
 years: '2019'
+redirect_to: '/work'
 
 title: 'Fishway'
 seo_description: 'UX/UI, front-end development, and animation for a Fairmount Waterworks educational application.'

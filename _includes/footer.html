@@ -3,8 +3,15 @@
             &copy; {{ 'now' | date: "%Y" }}  Alex Lash — Limited collection of projects. Let me know if you’re interested in learning more about my work.
         </small>
     </footer>
+
+    <!-- vanilla-lazyload -->
+    <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.7.0/intersection-observer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.0/dist/lazyload.min.js"></script> 
+    <script src="{{ site.baseurl }}/assets/javascript/vanilla-lazyload.js"></script>
+    <!-- end vanilla-lazyload -->
     
     <script src="{{ site.baseurl }}/assets/javascript/mobile-menu.js"></script>
+    <script src="{{ site.baseurl }}/assets/javascript/custom-barba.js"></script>
     
     {% if page.js_dependencies %}
         {% for dependency in page.js_dependencies %}
@@ -12,15 +19,11 @@
         {% endfor %}
     {% endif %}
 
+    <script src="{{ site.baseurl }}/assets/javascript/hide-show.js"></script>
+
     {% if layout.layout_type == "project" %}
         <script src="{{ site.baseurl }}/assets/javascript/glide.min.js"></script>
         <script src="{{ site.baseurl }}/assets/javascript/custom-glide.js"></script>
     {% endif %}
-
-    <!-- vanilla-lazyload -->
-    <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.7.0/intersection-observer.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.0/dist/lazyload.min.js"></script> 
-    <script src="{{ site.baseurl }}/assets/javascript/vanilla-lazyload.js"></script>
-    <!-- end vanilla-lazyload -->
   </body>
 </html>

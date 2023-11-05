@@ -1,23 +1,7 @@
-<!DOCTYPE html>
-<html>
 {% include head.html %}
-  <body 
-    {% if page.page_class %} 
-        class="{{- page.page_class }} {{ layout.page_class -}}" 
-    {% endif %}>
-
-    <!-- Facebook Developers -->
-  <!--   <script>window.fbAsyncInit=function(){FB.init({appId:'233560987946486',xfbml:true,version:'v7.0'});FB.AppEvents.logPageView();};(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;} js=d.createElement(s);js.id=id;js.src="https://connect.facebook.net/en_US/sdk.js";fjs.parentNode.insertBefore(js,fjs);}(document,'script','facebook-jssdk'));</script> -->
-    <!-- Facebook Developers -->
-    
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZB33M6"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
+<div class="main-container {% if page.page_class %} {{- page.page_class }} {{ layout.page_class -}} {% endif %}" data-barba="container" data-barba-namespace="{{ page.barba-namespace }}">
     {% include nav.html %}
-
-    <div class="main-container" role="main">
+    <div role="main" class="content">
         <div class="intro">
             <div class="intro__inner">
                 <div class="intro__content">
@@ -35,6 +19,13 @@
                     </p>
                     <div class="intro__text">
                         {{ page.body | markdownify }}
+
+                        {% if page.cta %}
+                            {% include cta.html 
+                                title=page.cta.title
+                                body=page.cta.body
+                                button-text=page.cta.button-text %}
+                        {% endif %}
                     </div>
                 </div>
                 <figure class="intro__figure-container desktop-only">
@@ -45,14 +36,6 @@
                 </figure>
             </div>
         </div>
-
-        {% if page.cta %}
-            {% include cta.html 
-                title=page.cta.title
-                body=page.cta.body
-                button-text=page.cta.button-text %}
-        {% endif %}
-
         {% if page.things-intro %}
         <div class="about-block">
             <div class="about-block__intro">
@@ -61,40 +44,10 @@
             {% for thing in page.things %}
             <div class="about-block__block">
                 <h3 class="about-block__title heading--sm">{{ thing.heading }}</h3>
-                {% if thing.type != "doodles" %}
-                <ul id="{{ thing.heading | replace: ' ', '-' | downcase }}" class="about-block__list">
-                    {% for subthing in thing.subthings %}
-                        <li class="about-block__list-item">
-                            {% if subthing.attr %}
-                            <a href={{subthing.attr}} class="about-block__attr">
-                            {% endif %}
-                            <h4 class="about-block__subtitle">
-                                {{ subthing.title }}
-                            </h4>
-                            <p class="about-block__desc">
-                                {{ subthing.desc }}
-                            </p>
-                            {% if subthing.attr %}
-                            </a>
-                            {% endif %}
-                        </li>
-                    {% endfor %}
-                </ul>
-
-                {% else %}
-                    <ul id="insta-feed" class="insta-feed">
-                    {% for subthing in thing.subthings %}
-                        <li class="insta-feed__list-item">
-                            <a class="insta-feed__link" href="{{ subthing.post-url }}">
-                                <img class="insta-feed__image" src="{{ subthing.post-image }}" alt="{{ subthing.post-alt }}">
-                            </a>
-                        </li>
-                    {% endfor %}
-                    </ul>
-                {% endif %}
             </div>
             {% endfor %}
         </div>
         {% endif %}
-    </div>
+    </div> <!-- Main / Content -->
+</div> <!-- Main Container -->
 {% include footer.html %}

@@ -2,7 +2,10 @@
 layout: portfolio
 category: marketing
 page_class: l-portfolio
-permalink: '/portfolio/marketing'
+permalink: '/work'
+redirect_from:
+  - /portfolio/marketing/
+  - /portfolio/product-design
 
 title: 'Portfolio — Brand and Marketing Design'
 seo_description: 'A collection of case studies containing branding and identity work for products and companies.'

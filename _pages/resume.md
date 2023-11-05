@@ -5,11 +5,11 @@ seo_description:
   'Designer with nine years of professional experience as a designer, design leader, and web developer.'
 permalink: '/resume'
 page_class: p-resume
-js_dependencies: hide-show.js
+barba-namespace: resume
 
 heading: Résumé
 intro: |
-  Design leader with 9 years of professional experience.
+  Creative Director with 9 years professional experience in UX & web design
 cta: true
 sections:
   - title: Experience
@@ -25,12 +25,11 @@ sections:
 
           At Administrate, recent accomplishments have included:
 
-          - Established new visual identity principles for our company, documented in an extensive set of brand guidelines and shared with our company and stakeholders.
-          - Redesigned our flagship marketing website to align with the new visual identity, as well as significantly improving the user experience across the website. Improvements to form design on conversion-focused pages, such as utilization of labels over placeholder labels and social proofing located closer to the form, has shown a considerable increase in conversion rates and ease-of-use.
           - Led and executed in-house redesign of company logo, visual identity, and brand architecture strategy. Engaged Senior Leadership Team in workshops to clarify our brand personality and coordinated execution across all functions of the business.
+          - Art direct and design landing pages, trade shows, paid ads, social media, and email marketing. 
+          - Lead and execute design for the user experience and visual design of marketing website and landing pages.
           - Manage globally located full-time employees and independent contractors, ranging from junior to mid-level specialists in Web Production, Web Development, Design, Video Production, and Social Media. 
-          - Developed production-ready code for landing pages and our marketing website for key marketing initiatives and campaigns.
-      - title: UX Designer & Marketing Lead
+      - title: Marketing Lead & UX Designer
         company: Azavea
         url: https://www.azavea.com/
         dates: June 2017 - May 2021
@@ -94,13 +93,13 @@ sections:
     examples:
       - title: Design
         excerpt: |
-          Product design • Discovery • Usability testing • User interviews • Wireframing • Photoshop • Illustrator • InDesign • AfterEffects • Premiere • Adobe Spark • Sketch • Abstract • Marvel • Branding • Web design • Illustration • Social media • Graphic design
-      - title: Software Development
-        excerpt: |
-          HTML • CSS/SASS • Jekyll • Javascript • React • Styled Components • PHP • React • Git • GitHub
+          Brand Identity • Web design • Graphic & Print Design • Trade Show Design • Figma • Photoshop • Illustrator • InDesign • AfterEffects • Premiere • Illustration • Social media • Discovery • A/B testing
       - title: Professional
         excerpt: |
-          Microsoft Word • Microsoft Excel • G Suite • Miro • Jira • Confluence
+          Performance Marketing • B2B Marketing • Monday.com • Google Tag Manager/Analytics • Microsoft Word • Microsoft Excel • G Suite • Miro • Atlassian
+      - title: Software Development
+        excerpt: |
+          HTML • CSS/SASS • Javascript • PHP • Git • GitHub
   - title: Community
     examples:
       - title: 'Curriculum Teammember'

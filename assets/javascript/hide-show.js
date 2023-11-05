@@ -10,6 +10,8 @@
         toggle.onclick = () => {
             let expanded = toggle.getAttribute('aria-expanded') === 'true' || false
 
+        console.log(toggle);
+
             toggle.setAttribute('aria-expanded', !expanded)
             target.hidden = expanded    
         }

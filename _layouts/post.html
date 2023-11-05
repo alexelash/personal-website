@@ -1,33 +1,20 @@
-<!DOCTYPE html>
-<html>
 {% include head.html %}
-  <body 
-	{% if page.page_class %} 
-		class="{{- page.page_class }} {{ layout.page_class -}}" 
-	{% endif %}>
-    
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZB33M6"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-	{% include nav.html %}
-	
-	<header class="c-hero">
-        <div class="c-hero__inner l-container--narrow">
-            <h2 class="c-hero__heading">
-                {{ page.title }}
-            </h2>
-            <p class="c-hero__blurb">
-                {{ page.intro }}
-            </p>
-        </div>
-    </header>
-
-	<div class="main-container l-container--narrow" role="main">
-		<!-- page content -->
-		{{ content }}
-		<!-- page content -->
+<div class="main-container {% if page.page_class %} {{- page.page_class }} {{ layout.page_class -}}{% endif %}" data-barba="container" data-barba-namespace="post">
+    {% include nav.html %}
+    <div role="main" class="content">  
+        <header class="c-hero">
+            <div class="c-hero__inner l-container--narrow">
+                <h2 class="c-hero__heading">
+                    {{ page.title }}
+                </h2>
+                <p class="c-hero__blurb">
+                    {{ page.intro }}
+                </p>
+            </div>
+        </header>
+        <!-- page content -->
+        {{ content }}
+        <!-- page content -->
         <div class="cta">
             <div class="cta__inner">
                 <p class="cta__blurb">
@@ -38,5 +25,6 @@
                 </a> 
             </div>
         </div>
-	</div>
+    </div> <!-- Main / Content -->
+</div> <!-- Main Container -->
 {% include footer.html %}
