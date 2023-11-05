@@ -2,6 +2,8 @@
 ---
 
 (function() {
+    var lazyLoadInstance = new LazyLoad();
+    
     const jsFiles = [
         'assets/javascript/card-click.js',
         'assets/javascript/glide.min.js',
@@ -21,6 +23,9 @@
                     scriptEle.src = item;
                     data.next.container.appendChild(scriptEle);
                 })
+            },
+            enter(data) {
+                lazyLoadInstance.update();
             }
         }],
         requestError: (trigger, action, url, response) => {
