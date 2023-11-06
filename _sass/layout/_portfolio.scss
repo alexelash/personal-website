@@ -1,85 +1,36 @@
-.l-portfolio {
-    display: flex;
-    flex-direction: column;
-
-    @media screen and (min-width: $bp-xl) {
-        padding-left: $pad-large-2;
-        padding-right: $pad-large-2;
-    }
-
-    .intro {
-        text-align: center;
-        margin: 0 auto $pad-normal;
-        max-width: $l-max-width;
-
-        @media screen and (min-width: $bp-med) {
-            margin: 0 auto $pad-large-2;
-        }
-
-        &__blurb {
-            margin: 0 auto;
-            color: $color-muted-lilac;
-        }
-
-        &__desc {
-            max-width: $l-max-width-narrow;
-            margin: 0 auto;
-        }
-    }
-
-    .content {
-        max-width: $l-max-width-mid;
-
-        @media all and (min-width: $bp-large) {
-            margin: $pad-large auto 0;
-        }
-    }
-}
-
 .project-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     text-align: left;
+    margin: 0 auto;
+    
+    @media screen and (min-width: $bp-large) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 
     .project {
-        max-width: $l-max-width;
-        flex: 0 0 100%;
         border-radius: $border-radius-big;
-        background: $color-white;
-        border-radius: $border-radius-big;
-        border: 1px solid $color-gray-light;
         padding: $pad-normal;
-        margin: $pad-normal auto $pad-normal;
         position: relative;
 
         @media screen and (min-width: $bp-large) {
-            display: flex;
-            align-items: center;
-
-            .project__featured-image-container {
-                margin-right: $pad-large;
-                flex: 0 0 50%;
-            }
-
-            .project--has-casestudy {
-                &:hover,
-                &:focus {
-                    transform: scale(1.02);
-                    box-shadow: 0 0 10px 4px rgba($color-gray-medium, 0.2);
-                }
-
-                // Hover styles
-                .project__button {
-                    color: $color-white;
-                    background: $button-background-hover;
-                }
-            }
+            flex: 0 0 50%;
         }
 
         &--has-casestudy {
+            .project__featured-image {
+                transform: scale(1) translate(-50%, -50%);
+                transition: transform 0.05s ease-out;
+            }
+
             &:hover,
             &:focus {
+                .project__featured-image {
+                    transform: scale(1.04) translate(-50%, -50%);
+                    transition: transform 0.15s ease-in;
+                }
+
                 // Hover styles
                 .project__button {
                     color: $color-white;
@@ -91,20 +42,12 @@
         &__featured-image-container {
             border-radius: $border-radius-big;
             border: 1px solid $color-gray-light;
-            width: 100%;
             position: relative;
-            overflow: hidden;
-            transform: scale(1);
-            transition: transform 0.2s ease-in;
-
-            @media screen and (min-width: $bp-med) {
-                height: 100%;
-            }
 
             &:after {
                 content: '';
                 display: block;
-                padding-bottom: 65%;
+                padding-bottom: 50%;
             }
         }
 
@@ -130,11 +73,6 @@
             }
         }
 
-        &__button {
-            margin-top: $pad-medium;
-            margin-right: $pad-normal;
-        }
-
         &__link {
             display: inline-block;
             padding: $pad-small;
@@ -144,9 +82,7 @@
             text-transform: uppercase;
 
             @media screen and (max-width: $bp-med) {
-                margin: $pad-normal auto 0;
-                display: block;
-                text-align: center;
+                margin-left: -$pad-small;
             }
 
             &::after {
@@ -187,20 +123,27 @@
         }
 
         &__header {
-            display: flex;
-            justify-content: space-between;
             margin-bottom: $pad-small;
-            align-items: center;
+
+            @media screen and (min-width: $bp-xxxl) {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+            }
         }
 
         &__title {
-            font-size: $font-size-med;
+            font-size: $font-size-med-2;
             font-weight: $font-weight-bold;
             margin: 0;
 
             @media screen and (min-width: $bp-med) {
                 font-size: $font-size-large-2;
                 font-weight: $font-weight-bold;
+            }
+
+            @media screen and (min-width: $bp-xxxl) {
+                margin-right: $pad-comfortable;
             }
         }
 
@@ -231,13 +174,8 @@
             @media screen and (min-width: $bp-med) {
                 font-size: $font-size-med-2;
                 line-height: 1.65;
-                margin-bottom: $pad-normal;
+                margin-bottom: 0;
             }
-        }
-
-        &__desc p {
-            font-size: $font-size-sm-2;
-            margin-bottom: $pad-normal;
         }
     }
 

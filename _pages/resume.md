@@ -8,9 +8,6 @@ page_class: p-resume
 barba-namespace: resume
 
 heading: Résumé
-intro: |
-  Creative Director with 9 years professional experience in UX & web design
-cta: true
 sections:
   - title: Experience
     examples:

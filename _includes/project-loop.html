@@ -40,34 +40,26 @@
         <div class="project__text-container">
             <header class="project__header">
                 <h2 class="project__title">{{ project.title }}</h2>
+                <div class="project__excerpt">
+                    {{ project.excerpt | markdownify }}
+                </div>
                 {% if project.years %}<p class="project__years">{{ project.years }}</p>{% endif %}
             </header>
-            <div class="project__excerpt">
-                {{ project.excerpt | markdownify }}
-            </div>
-
-            <div class="project__desc">
-                {{ project.hero.desc | markdownify }}
-            </div>
 
             <footer class="project__links">
                 {% if project.casestudy %}
                 <a
-                    class="c-btn project__button project__button--casestudy"
+                    class="project__link project__button--casestudy"
                     href="{{ project.url }}"
                 >
                     See casestudy
-                </a>
-                {% elsif project.project-url == null %}
-                <em>Coming soon</em>
-                {% endif %} {% if project.project-url %}
-                <a class="project__link" href="{{ project.project-url }}">
-                    Website
                     <i
-                        class="project__link-icon fas fa-link"
+                        class="project__link-icon fas fa-arrow-right"
                         aria-hidden="true"
                     ></i>
                 </a>
+                {% elsif project.project-url == null %}
+                <em>Coming soon</em>
                 {% endif %}
             </footer>
         </div>

@@ -2,18 +2,26 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-
-    .intro {
-        margin: 0 auto $pad-normal;
+    
+    .content {
+        padding: $pad-large $pad-small 0;
 
         @media screen and (min-width: $bp-med) {
-            margin: 0 0 $pad-large-2;
+            padding: $pad-large-2 $pad-normal 0;
         }
 
         @media screen and (min-width: $bp-xl) {
-            padding-left: $pad-large-2;
-            padding-right: $pad-large-2;
-            margin: 0;
+            padding: $pad-large-2 $pad-normal 0;
+        }
+    }
+
+    .intro {
+        margin: 0 auto $pad-normal;
+        max-width: $l-max-width-narrow;
+
+        @media screen and (min-width: $bp-med) {
+            margin: 0 auto $pad-large-2;
+            max-width: none;
         }
 
         &__blurb {

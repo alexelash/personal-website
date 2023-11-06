@@ -47,7 +47,6 @@ $nav-height: 4rem;
         cursor: pointer;
         display: flex;
         align-items: center;
-        font-weight: $font-weight-normal;
 
         &:focus .c-nav__info-container {
             box-shadow: 0 0 0 2px rgba(blue, 0.3);
@@ -90,7 +89,7 @@ $nav-height: 4rem;
     &__name {
         color: $color-gray-darkest;
         font-size: $font-size-med-2;
-        font-weight: $font-weight-light;
+        font-weight: $font-weight-bold;
         margin-bottom: $pad-compact;
     }
 
