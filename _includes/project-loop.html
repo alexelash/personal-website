@@ -40,7 +40,7 @@
         <div class="project__text-container">
             <header class="project__header">
                 <h2 class="project__title">{{ project.title }}</h2>
-                <p class="project__years">{{ project.years }}</p>
+                {% if project.years %}<p class="project__years">{{ project.years }}</p>{% endif %}
             </header>
             <div class="project__excerpt">
                 {{ project.excerpt | markdownify }}

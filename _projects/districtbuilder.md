@@ -2,7 +2,6 @@
 layout: project
 category: marketing
 casestudy: true
-years: 2020
 
 title: 'DistrictBuilder'
 seo_description: 'Logo, identity, and marketing design for a free, open source redistricting tool.'

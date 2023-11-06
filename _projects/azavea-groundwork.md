@@ -6,7 +6,6 @@ category: marketing
 title: 'GroundWork'
 seo_description:
   'Branding and website design for a satellite imagery annotation tool.'
-years: 2020
 featured-image: 'azavea-groundwork/groundwork_logo.png'
 featured-alt: 'GroundWork logo'
 featured-bg: '#fbfbfb'

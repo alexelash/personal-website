@@ -1,7 +1,6 @@
 ---
 layout: project
 casestudy: true
-years: 2022
 category: marketing
 barba-namespace: project
 

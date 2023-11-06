@@ -1,7 +1,6 @@
 ---
 layout: project
 casestudy: true
-years: 2018
 category: marketing
 
 title: 'Temperate'

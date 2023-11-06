@@ -7,16 +7,17 @@ page_class: p-about
 barba-namespace: about
 
 heading: Hey there!
-intro: I’m Alex Lash — a designer with a passion for people and tech.
+intro: I’m Alex Lash — a designer located in Edinburgh, Scotland with a passion for people and tech.
 image: ./assets/images/full-june2023-greenery.jpg
 image-alt: Alex Lash in a collared, floral shirt smiling with trees in the background.
 cta: 
     body: "Always happy to speak with new folks, drop me a line!"
     button-text: "Email me"
 body: |
-   Over my career, I've worked at the intersection of design and technology. As the Creative Director at [Administrate](https://www.getadministrate.com), I’ve had the privilege of working with a talented team of marketers, copywriters, and developers. People management is something I genuinely enjoy, and I take pride in guiding the Brand Experience Team to collaboratively create high-converting, imaginative advertisements and marketing campaigns, a web experience that's both performant and delightful, and a competitive visual identity and brand.
+   I've worked at the intersection of design and technology for nearly a decade. With extensive experience in creative leadership, I've had the opportunity to collaborate with accomplished professionals in the fields of marketing, copywriting, and development. Guiding and mentoring teams has been a fulfilling aspect of my journey. I take great pride in fostering collaboration to produce distinct brand identities, high-converting ads, marketing campaigns, and inclusive aand performant digital experiences.
 
-    Although I'll always have a soft spot for my hometown of Philly, my heart found a new home in Scotland during my travels, where I've happily settled in Edinburgh. In my free time, I have co-organized and co-taught low-cost classes for women in tech; taught an Interactive class at my alma mater; helped organize hackathons; and worked for local non-profits. 
+   Over my career, I also stayed actively involved in my community through co-organizing and co-teaching affordable tech classes, teaching an Interactive course at my alma mater, participating in hackathon events, and supporting local non-profit organizations with pro bono work. 
 
-    In my spare time I love to draw, play guitar, cook, and tell my cat what a good boy he is.
+   I've been fortunate to work with a diverse array of clients and industries united by a common purpose: unique, beautiful design and impactful tech that prioritizes inclusivity, upholds a human-centered approach, and promotes sustainability.
+
 ---
