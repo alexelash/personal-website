@@ -20,17 +20,62 @@
         views: [{
             namespace: 'work',
             beforeEnter(data) {
-                // console.log('work page');
+                var customWorkTimeline = anime.timeline();
+                
+                customWorkTimeline.add({
+                    targets: '.content',
+                    translateY: [50, 0],
+                    opacity: [0, 1],
+                    duration: 1500
+                })
+                .add({
+                    targets: '.intro__desc',
+                    translateY: [50, 0],
+                    opacity: [0, 1],
+                    duration: 750
+                }, '-=1000')
+                .add({
+                    targets: '.project',
+                    translateY: [250, 0],
+                    opacity: [0, 1],
+                    delay: anime.stagger(100)
+                });
             }
         }, {
             namespace: 'about',
             beforeEnter(data) {
-                // console.log('about page');
+                var customAboutTimeline = anime.timeline();
+                
+                customAboutTimeline.add({
+                    targets: '.content',
+                    translateY: [50, 0],
+                    opacity: [0, 1],
+                    duration: 1500
+                })
+                .add({
+                    targets: '.intro__content > *',
+                    translateY: [10, 0],
+                    opacity: [0, 1],
+                    delay: anime.stagger(250)
+                }, '-=1000');
             }
         }, {
             namespace: 'resume',
             beforeEnter(data) {
-                // console.log('resume page');
+                var customResumeTimeline = anime.timeline();
+                
+                customResumeTimeline.add({
+                    targets: '.content',
+                    translateY: [50, 0],
+                    opacity: [0, 1],
+                    duration: 750
+                })
+                .add({
+                    targets: '.example, .section-title',
+                    translateY: [10, 0],
+                    opacity: [0, 1],
+                    delay: anime.stagger(250)
+                });
             }
         }],
         transitions: [{
