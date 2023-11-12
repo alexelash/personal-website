@@ -12,7 +12,7 @@ redirect_from:
   - /portfolio/marketing/
   - /portfolio/product-design/
 
-intro: 'Brand & experience designer in Scotland.'
+intro: 'Creative director & digital designer.'
 description: 'Selected work'
 
 ---

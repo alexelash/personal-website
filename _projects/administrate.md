@@ -28,7 +28,7 @@ sections:
     layout: 'text-only'
     title: 'Background'
     desc: |
-      Administrate is on a mission to transform corporate learning technology infrastructure, catering to enterprises seeking cutting-edge training solutions. We initiated a logo redesign in 2022, aimed at harmonizing the company’s visual identity with our messaging and brand personality. The goal was to develop a brand identity that could solidify our position as an innovative company in our space.
+      Administrate is on a mission to transform corporate learning technology infrastructure, catering to enterprises seeking cutting-edge training solutions. We initiated a logo redesign in 2022, aimed at harmonizing the company’s visual identity with our messaging and brand personality. Another goal was to develop a brand identity that could solidify our position as an innovative company in our space.
   - type: 'default'
     layout: 'visual-only'
     visual:
@@ -39,7 +39,7 @@ sections:
   - type: 'default'
     layout: 'text-only'
     desc: |
-      In addition to building best-in-its-class software, Administrate has strong values and a mission to develop an organization that has people and community at its center. Decisions around visual and written expressions of the brand aimed to be faithful to company culture.
+      In addition to building best-in-its-class software, Administrate has strong values and has an organization with people and community at its center. Decisions around visual and written expressions of the brand aimed to be faithful to company culture.
   - type: 'default'
     layout: 'text-only'
     title: 'Logo'
@@ -57,7 +57,7 @@ sections:
     desc: |
       The three stems of the abstracted “A” in the logomark shoot up and to the right, meeting in the center and symbolizing how Administrate unifies disparate systems, functions, and tools in enterprise training.
 
-      The logotype was based off of the typeface Söhne, but was customized to connect it to the mark visually. It is a “solid, confident” typeface with close spacing, low contrast, and humanist qualities. Söhne was intentially chosen for the wordmark in order to temper the daring, and excitable tones of our logomark with competence and clarity.
+      The logotype was based off of the typeface Söhne, but was customized to connect it to the mark visually. It is a “solid, confident” typeface with close spacing, low contrast, and humanist qualities. Söhne was intentially chosen to temper the daring and excitable tones of our logomark.
   - type: 'default'
     layout: 'visual-only'
     visual:
@@ -107,9 +107,7 @@ sections:
   - type: 'default'
     layout: 'text-only'
     desc: |
-      This project underscored the importance of comprehensive research, a clear creative vision, early and frequent involvement of leadership, and rigorous implementation. 
-
-      Though I was the designer driving the development of the new brand identity, I would be remiss in not mentioning the crucial brand strategy and messaging work that had been already been developed in Marketing. The visual work here aimed to authentically capture the brand personality and values of the company.
+      This project underscored the importance of comprehensive research, a clear creative vision, early and frequent involvement of leadership, and rigorous implementation. The visual work here aimed to authentically capture the brand personality and values of the company.
   - type: 'grid'
     layout: 'side-by-side'
     caption: 'Additional applications of the new visual identity.'
