@@ -7,9 +7,10 @@ $nav-height: 4rem;
     width: 100%;
     z-index: 1;
     padding: 0 $pad-normal;
+    background-color: $color-white;
 
     @media all and (min-width: $bp-med) {
-        padding: $pad-normal $pad-large-2 0;
+        padding: 0 $pad-large-2;
     }
 
     &__inner {
@@ -17,16 +18,6 @@ $nav-height: 4rem;
         align-items: center;
         min-height: $nav-height;
         position: relative;
-
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: -2px;
-            z-index: -1;
-            width: 100%;
-            height: 2px;
-            background: $color-gray-light;
-        }
 
         @media screen and (max-width: $bp-med) {
             flex-wrap: wrap;

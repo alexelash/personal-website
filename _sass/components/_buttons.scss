@@ -7,21 +7,22 @@
  * 2) Remove box-shadow that's globally applied to links
  */
 .c-btn {
-    font: 0.85rem/1.5 $font-family-primary;
+    font-size: $font-size-sm;
+    font-family: $font-family-primary;
     display: inline-block;
     background: $button-background;
     border: 2px solid transparent;
     border-radius: $border-radius-big;
     cursor: pointer;
     color: $button-color;
-    line-height: 1;
+    line-height: $line-height-compact;
     font-weight: $font-weight-bold;
-    padding: 0.65rem 1rem;
+    padding: $pad-medium $pad-normal;
     box-shadow: none; /* 2 */
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
-    transition: all $fade-quick ease-out;
+    transition: all $anim-quick ease-out;
     position: relative;
 
     @media all and (max-width: $bp-small-3) {
@@ -120,7 +121,7 @@
     height: 16px;
     fill: $color-gray-dark;
     position: relative;
-    transition: fill $fade-quick $anim-ease;
+    transition: fill $anim-quick $anim-ease;
 
     /*
      * Button icon within button hover
@@ -159,7 +160,7 @@
     padding: 0;
     cursor: pointer;
     border-radius: $border-radius;
-    transition: background $fade-quick $anim-ease;
+    transition: background $anim-quick $anim-ease;
     position: relative;
     outline: none;
 

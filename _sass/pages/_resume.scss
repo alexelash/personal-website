@@ -46,10 +46,6 @@ $sidebar-offset: 200px;
 
     .content {
         max-width: $l-max-width-mid;
-
-        @media screen and (min-width: $bp-large) {
-            margin: $pad-large auto 0;
-        }
     }
 
     .section {
@@ -111,10 +107,17 @@ $sidebar-offset: 200px;
                     @include focus-outline();
                 }
             }
+            svg rect:first-child {
+                transform: rotate(0);
+                transform-origin: center center;
+                transition: $anim-quick $anim-ease;
+            }
 
             &[aria-expanded='true'] {
                 svg rect:first-child {
                     transform: rotate(90deg);
+                    transform-origin: center center;
+                    transition: $anim-med $anim-ease;
                 }
             }
         }
@@ -132,10 +135,10 @@ $sidebar-offset: 200px;
         }
 
         &__desc-button {
-            height: 24px;
-            width: 24px;
+            height: 32px;
+            width: 32px;
             border-radius: 100%;
-            transition: background $fade-quick;
+            transition: background $anim-quick $anim-ease;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -175,6 +178,18 @@ $sidebar-offset: 200px;
             font-weight: $font-weight-normal;
             font-size: $font-size-sm-2;
             margin-top: $pad-normal;
+            max-height: 100%;
+            opacity: 1;
+            transform-origin: top;
+            transition: max-height $anim-long, 
+                         opacity $anim-long;
+
+            &.-js-desc-hidden {
+                max-height: 0;
+                opacity: 0;
+                transition: max-height $anim-long, 
+                             opacity $anim-long;
+            }
         }
     }
 }
@@ -185,7 +200,7 @@ $sidebar-offset: 200px;
         widows: 2;
     }
 
-    .p-resume [role='main'] {
+    .p-resume {
         color: #000;
         background: #fff;
 

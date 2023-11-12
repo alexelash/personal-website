@@ -2,6 +2,7 @@
 <div class="main-container {% if page.page_class %} {{- page.page_class }} {{ layout.page_class -}} {% endif %}" data-barba="container" data-barba-namespace="{{ page.barba-namespace }}">
     {% include nav.html %}
     <div role="main" class="content">
+        {% if page.intro %}
 		<div class="intro">
             <div class="intro__inner">
                 <div class="intro__content">
@@ -11,6 +12,7 @@
                 </div>
             </div>
         </div> <!-- Intro -->
+        {% endif %}
 
         <div class="resume-container">
             {% for section in page.sections %}
@@ -62,7 +64,7 @@
                         </header>
 
                         {% if example.desc %}
-                        <div hidden class="example__desc-container -js-toggle-content">
+                        <div hidden class="example__desc-container -js-toggle-content -js-desc-hidden">
                             {{ example.desc | markdownify }}
                         </div>
                         {% elsif example.excerpt %}

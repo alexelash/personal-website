@@ -13,6 +13,14 @@
         baseimage | split: '.' | last %} {% assign size = baseimage | size |
         minus: 4 %}
 
+        <header class="project__header">
+            <h2 class="project__title">{{ project.title }}</h2>
+            <div class="project__excerpt">
+                {{ project.excerpt | markdownify }}
+            </div>
+            {% if project.years %}<p class="project__years">{{ project.years }}</p>{% endif %}
+        </header>
+
         <div
             class="project__featured-image-container"
             style="background-color: {{ project.featured-bg }};"
@@ -35,33 +43,20 @@
                     class="lazy"
                 />
             </picture>
-        </div>
-
-        <div class="project__text-container">
-            <header class="project__header">
-                <h2 class="project__title">{{ project.title }}</h2>
-                <div class="project__excerpt">
-                    {{ project.excerpt | markdownify }}
-                </div>
-                {% if project.years %}<p class="project__years">{{ project.years }}</p>{% endif %}
-            </header>
-
-            <footer class="project__links">
-                {% if project.casestudy %}
-                <a
-                    class="project__link project__button--casestudy"
-                    href="{{ project.url }}"
-                >
-                    See casestudy
-                    <i
-                        class="project__link-icon fas fa-arrow-right"
-                        aria-hidden="true"
-                    ></i>
-                </a>
-                {% elsif project.project-url == null %}
-                <em>Coming soon</em>
-                {% endif %}
-            </footer>
+            {% if project.casestudy %}
+            <a
+                class="project__link project__button project__button--casestudy"
+                href="{{ project.url }}"
+            >
+                See casestudy
+                <i
+                    class="project__link-icon fas fa-arrow-right"
+                    aria-hidden="true"
+                ></i>
+            </a>
+            {% elsif project.project-url == null %}
+            <em>Coming soon</em>
+            {% endif %}
         </div>
     </article>
     {% endif %} {% endfor %}

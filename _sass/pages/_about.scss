@@ -10,6 +10,10 @@
         &__blurb {
             font-size: $font-size-large;
             font-weight: $font-weight-bold;
+
+            @media screen and (min-width: $bp-med) {
+                font-size: $font-size-large-2;
+            }
         }
 
         &__inner {

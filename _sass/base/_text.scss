@@ -51,9 +51,9 @@ code {
 	display: inline-block;
 	background: $color-gray-lightest;
 	border: 1px solid $color-gray-light;
-	padding: .2rem .5rem;
-    line-height: 1.2;
-    font-size: .85rem;
+	padding: $pad-small $pad-medium;
+    line-height: $line-height-medium;
+    font-size: $font-size-sm;
 }
 
 /**
@@ -63,7 +63,7 @@ pre {
 	background: $color-gray-lightest;
 	border: 1px solid $color-gray-light;
 	font-size: $font-size-med;
-	padding: 1rem;
+	padding: $pad-normal;
     overflow-x: auto;
 
 	/**

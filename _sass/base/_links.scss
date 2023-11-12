@@ -10,7 +10,7 @@ a {
     font-weight: $font-weight-semibold;
     text-decoration: none;
     outline: 0;
-    transition: color $fade-med ease-out, box-shadow $fade-quick ease-out;
+    transition: color $anim-med ease-out, box-shadow $anim-quick ease-out;
     position: relative;
   
     &::after {
@@ -22,8 +22,8 @@ a {
         right: 0;
         bottom: -0.2rem;
         left: 0;
-        transition: border-color $fade-med ease-in,
-                    color $fade-med ease-in;
+        transition: border-color $anim-med ease-in,
+                    color $anim-med ease-in;
     }
 
     &:hover, &:focus {

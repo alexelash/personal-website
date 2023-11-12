@@ -8,9 +8,13 @@
  * COLORS
  * Brand Colors...............Globally-available variables and config
  * Neutral Colors.............Grayscale colors, including white and black
+ * Utility Colors..............Utility colors are colors used to provide feedback, such as alert messages, form validation, etc.
  *
  * TYPOGRAPHY
  * Font Families..............The fonts used in the design system
+ * Font Sizing................Set font sizes
+ * Font Weights...............Set font weights
+ * Line Heights...............Set Line heights
  * Sizing.....................Font sizing
  *
  * LAYOUT
@@ -111,6 +115,15 @@ $font-weight-semibold: 600;
 $font-weight-bold: 700;
 $font-weight-black: 800;
 
+/**
+ * Line Heights
+ */
+$line-height-small: 0.9;
+$line-height-compact: 1;
+$line-height-medium: 1.2;
+$line-height-comfortable: 1.35;
+$line-height-large: 1.5;
+$line-height-large-2: 1.65;
 /*------------------------------------*\
     #LAYOUT
 \*------------------------------------*/
@@ -161,9 +174,10 @@ $border-radius-big: 4px;
 /**
  * Transition Speed
  */
-$fade-quick: 0.15s;
-$fade-med: 0.2s;
-$fade-long: 0.4s;
+$anim-quickest: 0.05s;
+$anim-quick: 0.15s;
+$anim-med: 0.2s;
+$anim-long: 0.4s;
 $anim-ease: ease-in-out;
 $anim-fast: 0.25s;
 
