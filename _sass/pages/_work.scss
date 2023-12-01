@@ -30,15 +30,19 @@
             background: linear-gradient(
                 to right,
                 $color-secondary,
-                $color-muted-lilac,
+                #511730,
+                #E0D68A,
                 $color-secondary,
-                $color-muted-lilac
+                #511730,
+                #E0D68A
             );
-            background-size: 300%;
+            background-size: 600%;
             background-repeat: repeat;
+            background-clip: text;
             -webkit-background-clip: text;
+            text-fill-color: text;
             -webkit-text-fill-color: transparent;
-            animation: gradientAnimation 4s linear infinite;
+            animation: gradientAnimation 4s linear infinite alternate;
 
             @media screen and (max-width: $bp-med) {
                 font-size: $font-size-large-2;
@@ -46,20 +50,6 @@
 
             @media screen and (min-width: $bp-med) {
                 max-width: 72vw;
-            }
-
-            &::after {
-                content: "";
-                display: block;
-                width: 2px;
-                height: 8rem;
-                background: $color-gray-fade;
-                margin: $pad-large 0 $pad-large 50%;
-
-                @media screen and (max-width: $bp-med) {
-                    height: 3rem;
-                    margin: $pad-small 0 $pad-compact 50%;
-                }
             }
 
             p {

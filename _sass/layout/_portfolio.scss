@@ -21,21 +21,25 @@
         &--has-casestudy {
             .project__featured-image {
                 transform: scale(1) translate(-50%, -50%);
-                transform-origin: center center;
+                left: 50%;
+                top: 50%;
+                transform-origin: center;
+                position: absolute;
                 transition: transform $anim-quick $anim-ease;
+            }
+
+            .project__link {
+                transition: opacity $anim-quick $anim-ease;
             }
 
             &:hover,
             &:focus {
                 .project__featured-image {
-                    transform: scale(1.04) translate(-50%, -50%);
-                    transform-origin: center center;
-                    transition: transform $anim-quickest $anim-ease;
+                    transform: scale(1.25) translate(-40%, -40%);
                 }
                 .project__link {
                     @media screen and (min-width: $bp-med) {
                         opacity: 1;
-                        transition: opacity $anim-quick $anim-ease;
                     }
                 }
             }
@@ -70,16 +74,25 @@
         &__link {
             display: block;
             position: absolute;
-            right: 0;
-            bottom: 0;
+            height: 2.5rem;
+            width: 2.5rem;
+            right: 1rem;
+            bottom: 1rem;
             padding: $pad-medium $pad-normal;
-            border-radius: $border-radius-big 0 0 0;
+            border-radius: 100%;
             font-size: $font-size-sm;
             letter-spacing: 1px;
             text-transform: uppercase;
             color: $color-white;
             background: rgba($color-white, 0.1);
             opacity: 0;
+
+            > svg {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
 
             @media screen and (max-width: $bp-med) {
                 margin-left: -$pad-small;
@@ -123,7 +136,7 @@
         }
 
         &__header {
-            margin-bottom: $pad-small;
+            margin: $pad-medium 0;
 
             @media screen and (min-width: $bp-xxxl) {
                 display: flex;

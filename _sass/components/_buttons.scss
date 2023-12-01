@@ -36,6 +36,12 @@
     &:hover,
     &:focus {
         background: $button-background-hover;
+        color: $button-color-hover;
+    }
+
+    &:active {
+        background: darken($button-background-hover, 0.1);
+        color: $button-color-hover;
     }
 
     &:focus {

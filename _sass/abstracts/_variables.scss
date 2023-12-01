@@ -214,9 +214,10 @@ $link-color-hover: $color-black;
 $link-underline-color: $color-gray-dark;
 $link-underline-color-hover: lighten($link-color, 0.5);
 
-$button-background: rgba($color-gray, 0.5);
-$button-background-hover: $color-gray;
+$button-background: $color-gray;
+$button-background-hover: $color-muted-lilac-dark;
 $button-color: $color-gray-dark;
+$button-color-hover: $color-white;
 $button-border: $color-gray-dark;
 
 $h1-border-color: $color-gray;
