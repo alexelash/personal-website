@@ -26,7 +26,7 @@
                     targets: '.intro__blurb',
                     keyframes: [
                         {opacity: 0, delay: 150},
-                        {translateY: 20},
+                        {translateY: 15},
                         {filter: 'grayscale(1)'},
                         {opacity: .1, delay: 150},
                         {translateY: 0},

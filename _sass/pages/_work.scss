@@ -27,22 +27,19 @@
         &__blurb {
             font-size: 5.45vw;
             margin: 0 auto;
+            opacity: 0;
             background: linear-gradient(
                 to right,
-                $color-secondary,
-                #511730,
-                #E0D68A,
-                $color-secondary,
-                #511730,
+                #DD9787,
+                #8A4FFF,
                 #E0D68A
             );
-            background-size: 600%;
-            background-repeat: repeat;
+            background-size: 400% 400%;
             background-clip: text;
             -webkit-background-clip: text;
             text-fill-color: text;
             -webkit-text-fill-color: transparent;
-            animation: gradientAnimation 4s linear infinite alternate;
+            animation: gradientAnimation 15s ease infinite;
 
             @media screen and (max-width: $bp-med) {
                 font-size: $font-size-large-2;
