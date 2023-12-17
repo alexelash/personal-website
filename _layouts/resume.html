@@ -27,7 +27,7 @@
                     {% if example.visibility != "hidden" %}
                     <article class="example">
                         <header class="example__header">
-                            {% if example.desc %}<button class="example__title-container c-btn--text -js-toggle" aria-expanded="false">{% endif %}    
+                            {% if example.desc %}<button class="example__title-container c-btn--text -js-toggle" aria-label="Toggle {{ example.title }} at {{ example.company }} Description" aria-expanded="false">{% endif %}    
                                 <h3 class="example__title">
                                     {% if example.title-url %}<a href="{{ example.title-url }}">{% endif %}
                                     {{ example.title }}
