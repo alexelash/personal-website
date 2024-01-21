@@ -15,7 +15,6 @@
     ]
 
     barba.init({
-        debug: true,
         cacheFirstPage: true,
         views: [{
             namespace: 'work',
