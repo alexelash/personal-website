@@ -239,9 +239,11 @@ $nav-height: 4rem;
             display: none;
         }
 
-        &:hover {
-            color: $color-black;
-            background: radial-gradient(circle at center, $color-gray-lightest, transparent);
+        &:not(&--is-active) {
+            &:hover {
+                color: $color-black;
+                background: radial-gradient(circle at center, $color-gray-lightest, transparent);
+            }
         }
 
         &:focus {
@@ -270,14 +272,16 @@ $nav-height: 4rem;
                 display: block;
             }
 
-            &:hover {
-                background: radial-gradient(circle at center, $color-gray-lightest, transparent);
-                
-                &::after {
-                    display: block;
-                    border-color: $color-gray;
-                    transform: scaleX(100%);
-                    width: 100%;
+            &:not(&--is-active) {
+                &:hover {
+                    background: radial-gradient(circle at center, $color-gray-lightest, transparent);
+                    
+                    &::after {
+                        display: block;
+                        border-color: $color-gray;
+                        transform: scaleX(100%);
+                        width: 100%;
+                    }
                 }
             }
 

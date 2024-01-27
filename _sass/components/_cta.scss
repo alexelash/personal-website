@@ -13,7 +13,19 @@
         bottom: 0;
         left: 0;
         z-index: -2;
-        opacity: 0.65;
+        opacity: 0.45;
+    }
+
+    &::before {
+        content: '';
+        background: rgba($color-muted-lilac, 0.15);
+        background-size: 100%;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        bottom: -10px;
+        left: -10px;
+        z-index: -3;
     }
 
     &__inner {
@@ -58,10 +70,23 @@
 
     &__btn {
         width: 100%;
+        background: $color-muted-lilac-dark;
+        color: $color-gray-lightest;
+
+        &:hover,
+        &:focus {
+            background: darken($color-muted-lilac-dark, 25%);
+            color: $color-gray-lightest;
+        }
+
+        &:active {
+            background: darken($color-muted-lilac-dark, 45%);
+            color: $color-gray-lightest;
+        }
 
         @media screen and (min-width: $bp-med) {
             width: auto;
-            flex: 1 0 200px;
+            flex: 1 0 auto;
             margin-left: $pad-normal;
         }
     }

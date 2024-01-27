@@ -36,12 +36,12 @@ hr {
  */
 ::-moz-selection {
     color: black;
-    background: $color-gray-light; /* Gecko Browsers */
+    background: rgba($color-peach, 0.75); /* Gecko Browsers */
 }
 ::selection {
     color: black;
     -webkit-text-fill-color: black;
-    background: $color-gray-light; /* WebKit/Blink Browsers */
+    background: rgba($color-peach, 0.75); /* WebKit/Blink Browsers */
 }
 
 /**
