@@ -72,7 +72,7 @@
     &__title {
         font-size: $font-size-large-2;
         font-weight: $font-weight-bold;
-        margin-bottom: $pad-medium;
+        margin-bottom: $pad-comfortable;
 
         @media screen and (max-width: $bp-med) {
             font-size: $font-size-large;
@@ -82,7 +82,7 @@
 
     &__title,
     &__text {
-        max-width: $l-max-width-mid;
+        max-width: $l-max-width-narrow;
     }
 
     &__visual-container {
@@ -97,8 +97,8 @@
 \*------------------------------------*/
 
 .section-header {
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
+    margin-bottom: $pad-normal;
+    padding-bottom: $pad-medium;
     border-bottom: 1px solid $color-gray-lightest;
 }
 

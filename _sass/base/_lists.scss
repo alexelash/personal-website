@@ -19,13 +19,15 @@ ul {
 }
 
 ul li {
-    margin-left: 0.75rem;
-    text-indent: -0.75rem;
-    margin-bottom: $pad-small;
+    margin-left: 1rem;
+    text-indent: -1.35rem;
+    margin-bottom: $pad-normal;
 
     &::before {
         content: '•' ' ';
-        color: $color-gray-medium;
+        margin-bottom: -4px;
+        font-size: $font-size-large-2;
+        color: $color-muted-lilac-dark;
     }
 }
 
@@ -34,14 +36,15 @@ ol {
 }
 
 ol li {
-  counter-increment: custom-counter;
-  margin-left: 1.25rem;
-  text-indent: -1.25rem;
+    counter-increment: custom-counter;
+    margin-left: 1.25rem;
+    margin-bottom: $pad-normal;
+    text-indent: -1.25rem;
 }
 
 ol li::before {
-  content: counter(custom-counter) '. ';
-  color: $color-gray-medium;
+    content: counter(custom-counter) '. ';
+    color: $color-muted-lilac-dark;
 }
 
 /**

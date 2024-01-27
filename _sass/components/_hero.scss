@@ -125,7 +125,8 @@
         margin-bottom: 0;
 
         @media screen and (max-width: $bp-med) {
-            font-size: $font-size-sm-2;
+            font-size: $font-size-large;
+            margin-bottom: $pad-normal;
         }
     }
 

@@ -3,7 +3,11 @@ $section-highlight-color: $color-white;
 .p-project {
     .section {
         display: flex;
-        padding: $pad-normal 0.7rem;
+        padding: $pad-normal 0;
+
+        @media all and (min-width: $bp-med) {
+            padding: $pad-normal 0.7rem;
+        }
     }
 
     .caption-container {
