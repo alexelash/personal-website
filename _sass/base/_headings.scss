@@ -6,6 +6,7 @@
  * Heading 1 base styles
  */
 h1 {
+    font-family: $font-family-primary;
     font-size: $font-size-xl;
     font-weight: $font-weight-bold;
     line-height: $line-height-compact;
@@ -20,6 +21,7 @@ h1 {
  * Heading 2 base styles
  */
 h2 {
+    font-family: $font-family-primary;
     font-size: $font-size-large;
     font-weight: $font-weight-bold;
     line-height: $line-height-medium;
@@ -32,6 +34,7 @@ h2 {
  * Heading 3 base styles
  */
 h3 {
+    font-family: $font-family-primary;
     font-size: $font-size-med-2;
     font-weight: $font-weight-bold;
     line-height: $line-height-comfortable;

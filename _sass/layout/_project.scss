@@ -21,11 +21,13 @@ $section-highlight-color: $color-white;
 
     .caption {
         &__title {
-            font-size: $font-size-sm-2;
+            font-size: $font-size-sm;
+            font-weight: $font-weight-normal;
         }
 
         &__text {
             font-size: $font-size-sm;
+            font-weight: $font-weight-normal;
         }
     }
 }

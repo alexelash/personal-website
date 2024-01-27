@@ -15,7 +15,8 @@
 
     &__image-caption {
         font-family: $font-family-secondary;
-        font-size: $font-size-tiny;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-normal;
         position: absolute;
         bottom: 0;
         left: 0;
