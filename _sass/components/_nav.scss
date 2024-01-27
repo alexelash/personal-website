@@ -7,7 +7,6 @@ $nav-height: 4rem;
     width: 100%;
     z-index: 1;
     padding: 0 $pad-normal;
-    background-color: $color-white;
 
     @media all and (min-width: $bp-med) {
         padding: 0 $pad-large-2;
@@ -79,7 +78,7 @@ $nav-height: 4rem;
 
     &__name {
         color: $color-gray-darkest;
-        font-size: $font-size-med-2;
+        font-size: $font-size-large;
         font-weight: $font-weight-bold;
         margin-bottom: $pad-compact;
     }
@@ -230,7 +229,7 @@ $nav-height: 4rem;
         padding: 1em;
         font-family: $font-family-secondary;
         font-weight: $font-weight-normal;
-        color: $color-black;
+        color: $color-gray-medium;
         text-transform: uppercase;
         font-size: $font-size-sm;
         display: block;
@@ -241,7 +240,8 @@ $nav-height: 4rem;
         }
 
         &:hover {
-            color: $color-primary;
+            color: $color-black;
+            background: radial-gradient(circle at center, $color-gray-lightest, transparent);
         }
 
         &:focus {
@@ -257,7 +257,8 @@ $nav-height: 4rem;
         }
 
         &--is-active {
-            color: $color-primary;
+            color: $color-black;
+            background: radial-gradient(circle at top 100% left 50%, $color-white, transparent)
         }
 
         @media all and (min-width: $bp-med) {
@@ -265,14 +266,25 @@ $nav-height: 4rem;
             height: 100%;
             align-items: center;
 
-            &--is-active {
-                &:after {
-                    content: '';
+            &::after {
+                display: block;
+            }
+
+            &:hover {
+                background: radial-gradient(circle at center, $color-gray-lightest, transparent);
+                
+                &::after {
                     display: block;
-                    height: 2px;
+                    border-color: $color-gray;
+                    transform: scaleX(100%);
                     width: 100%;
-                    z-index: 1;
-                    bottom: 0;
+                }
+            }
+
+            &--is-active {
+                &::after {
+                    transform: scaleX(100%);
+                    width: 100%;
                 }
             }
         }

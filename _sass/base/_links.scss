@@ -10,7 +10,7 @@ a {
     font-weight: $font-weight-semibold;
     text-decoration: none;
     outline: 0;
-    transition: color $anim-med ease-out, box-shadow $anim-quick ease-out;
+    transition: color $anim-med ease-out, background $anim-quickest ease-out, box-shadow $anim-quick ease-out;
     position: relative;
   
     &::after {
@@ -22,8 +22,12 @@ a {
         right: 0;
         bottom: -0.2rem;
         left: 0;
+        width: 0;
+        transform: scaleX(0);
+        transform-origin: center;
         transition: border-color $anim-med ease-in,
-                    color $anim-med ease-in;
+                    color $anim-med ease-in,
+                    transform $anim-fast ease-in;
     }
 
     &:hover, &:focus {
