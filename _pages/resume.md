@@ -42,6 +42,13 @@ sections:
           - Maintained and designed marketing websites for products and company microsites.
           - Led logo design and branding for existing and new products.
           - Led the design of marketing and internal collateral.
+      - title: Adjunct Lecturer
+        company: Temple University, Tyler School of Art
+        url: https://tyler.temple.edu/
+        dates: Aug 2018 - Dec 2018
+        desc: |
+          - Created project-based curriculum for Fall Semester “Interactive Design” course for Tyler School of Art BFA Program.
+          - Taught Junior, Senior and Grad students web design and HTML, CSS, and jQuery web development skills.
       - title: UX/UI Designer
         company: Nuix
         url: https://www.nuix.com/
@@ -79,10 +86,6 @@ sections:
         visibility: hidden
   - title: Education
     examples:
-      - title: Adjunct Professor
-        company: Temple University, Tyler School of Art
-        url: https://tyler.temple.edu/
-        dates: Aug 2018 - Dec 2018
       - title: Temple University, Tyler School of Art
         company: BFA Graphic and Interactive Design
         dates: Graduated May 2013

@@ -79,7 +79,7 @@ sections:
         image-alt: 'Administrate University and Administrate Learning Campus logo lockups.'
   - type: 'default'
     layout: 'text-only'
-    title: 'Color'
+    title: 'Color Palette'
     desc: |
       One of the most notable changes of the new brand identity was shifting from using blue as a primary brand color to purple. Our Core Purple brand color highlights our role as the changemaker in our industry and differentiates Administrate from competitors. 
 
@@ -94,7 +94,7 @@ sections:
         image-alt: 'Screenshot of the full brand and grayscale palette as well as the UI palette semantic colors.'
   - type: 'default'
     layout: 'text-only'
-    title: 'Implementation'
+    title: 'Documentation & Implementation'
     desc: |
       A detailed set of brand guidelines were developed in order to communicate the changes to our company and partners.
   - type: 'default'

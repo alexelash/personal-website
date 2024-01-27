@@ -20,13 +20,13 @@ ul {
 
 ul li {
     margin-left: 1rem;
-    text-indent: -1.35rem;
+    text-indent: -0.7rem;
     margin-bottom: $pad-normal;
 
     &::before {
         content: '•' ' ';
-        margin-bottom: -4px;
-        font-size: $font-size-large-2;
+        // margin-bottom: -4px;
+        // font-size: $font-size-large-2;
         color: $color-muted-lilac-dark;
     }
 }
@@ -37,9 +37,9 @@ ol {
 
 ol li {
     counter-increment: custom-counter;
-    margin-left: 1.25rem;
+    margin-left: 1rem;
     margin-bottom: $pad-normal;
-    text-indent: -1.25rem;
+    text-indent: -1rem;
 }
 
 ol li::before {

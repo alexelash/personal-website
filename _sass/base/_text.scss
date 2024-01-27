@@ -14,11 +14,18 @@ p {
  * Blockquote base styles
  */
 blockquote {
-    font-style: italic;
-    border-left: 1px solid $color-gray-darkest;
+    font-style: normal;
+    font-weight: $font-weight-light;
+    font-size: $font-size-med-2;
+    border-left: 3px solid $color-muted-lilac;
     color: $color-gray-dark;
 	padding-left: 1rem;
 	margin-bottom: $space;
+}
+
+cite {
+    font-style: normal;
+    font-size: $font-size-sm;
 }
 
 /**

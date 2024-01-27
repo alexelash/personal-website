@@ -124,6 +124,7 @@ $sidebar-offset: 200px;
 
         &__title {
             text-align: left;
+            font-family: $font-family-primary;
             color: $color-gray-dark;
             font-weight: $font-weight-bold;
             font-size: $font-size-med-2;
@@ -151,7 +152,7 @@ $sidebar-offset: 200px;
         }
 
         &__metadata {
-            font-family: $font-family-secondary;
+            font-family: $font-family-primary;
             margin: $pad-small 0 $pad-medium;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -162,6 +163,9 @@ $sidebar-offset: 200px;
             display: inline-block;
             font-weight: $font-weight-normal;
             font-size: $font-size-sm;
+        }
+
+        &__company {
         }
 
         &__excerpt-container {
