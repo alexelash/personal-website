@@ -16,7 +16,7 @@ sections:
         url: https://www.getadministrate.com
         dates: May 2021 - Present
         desc: |
-          Administrate is a training operations platform that serves as a cloud-based, configurable learning tech infrastructure solution for enterprise training teams.
+          Administrate is Training Management Software (TMS) that serves as learning tech infrastructure for enterprise training.
 
           As Creative Director, I collaborate with teammembers across the company to further develop Administrate's brand. Working with our Marketing Team, I also leverage my past experience as a front-end web developer and user experience designer to improve how customers and potential customers interact with our brand through digital channels.
 
@@ -25,7 +25,7 @@ sections:
           - Led and executed in-house redesign of company logo, visual identity, and brand architecture strategy. Engaged Senior Leadership Team in workshops to clarify our brand personality and coordinated execution across all functions of the business.
           - Art direct and design landing pages, trade shows, paid ads, social media, and email marketing. 
           - Lead and execute design for the user experience and visual design of marketing website and landing pages.
-          - Manage globally located full-time employees and independent contractors, ranging from junior to mid-level specialists in Web Production, Web Development, Design, Video Production, and Social Media. 
+          - Manage globally located full-time employees and independent contractors, ranging from junior to mid-level specialists in Organic Growth, Web Production, Web Development, Design, Video Production, and Social Media. 
       - title: Marketing Lead & UX Designer
         company: Azavea
         url: https://www.azavea.com/
@@ -102,6 +102,14 @@ sections:
           HTML • CSS/SASS • Javascript • PHP • Git • GitHub
   - title: Community
     examples:
+      - title: 'Digital Inclusion Volunteer'
+        company: 'Simon Community Scotland'
+        dates: '2025 – present'
+        url: 'https://www.simonscotland.org/'
+        desc: |
+          Simon Community Scotland provides support with and for people affected by homelessness. Through their Edinburgh and Glasgow hubs, they provide information, advice, care, support, accommodation, and homes. 
+
+          I am a volunteer with the Digital Inclusion program, through which I help people get connected through devices, data, and/or support. Our goal is to help people get and stay connected to their communities, families, and responsibilities digitally. 
       - title: 'Curriculum Teammember'
         company: 'Philly Tech Sistas'
         dates: '2019'
