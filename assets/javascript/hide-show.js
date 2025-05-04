@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 ---
 ---
 
-=======
->>>>>>> 1e314041af8dcaa6af378f7c377cb21a798c178b
 (function() {
     const toggle = document.querySelectorAll('.-js-toggle')
 
