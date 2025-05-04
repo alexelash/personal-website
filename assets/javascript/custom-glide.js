@@ -1,5 +1,6 @@
 ---
 ---
+
 (function() {
     const glides = document.querySelectorAll(".glide");
 
