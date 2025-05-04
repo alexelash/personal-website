@@ -105,11 +105,9 @@ sections:
       - title: 'Digital Inclusion Volunteer'
         company: 'Simon Community Scotland'
         dates: '2025 – present'
-        url: 'https://www.simonscotland.org/'
+        url: 'https://www.simonscotland.org'
         desc: |
-          Simon Community Scotland provides support with and for people affected by homelessness. Through their Edinburgh and Glasgow hubs, they provide information, advice, care, support, accommodation, and homes. 
-
-          I am a volunteer with the Digital Inclusion program, through which I help people get connected through devices, data, and/or support. Our goal is to help people get and stay connected to their communities, families, and responsibilities digitally. 
+          Simon Community Scotland provides support with and for people affected by homelessness. Through their Edinburgh and Glasgow hubs, they provide information, advice, care, support, accommodation, and homes. I am a volunteer with the Digital Inclusion program, through which I help people get connected through devices, data, and/or support. Our goal is to help people get and stay connected to their communities, families, and responsibilities digitally. 
       - title: 'Curriculum Teammember'
         company: 'Philly Tech Sistas'
         dates: '2019'
