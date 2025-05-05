@@ -1,6 +1,6 @@
 ---
 layout: resume
-title: Résumé
+title: Resume
 seo_description:
   'Designer with nine years of professional experience as a designer, design leader, and web developer.'
 permalink: '/resume'
