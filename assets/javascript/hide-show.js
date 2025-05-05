@@ -1,6 +1,3 @@
----
----
-
 (function() {
     const toggle = document.querySelectorAll('.-js-toggle')
 
