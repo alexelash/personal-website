@@ -1,6 +1,3 @@
----
----
-
 (function() {
     var navButton = document.querySelector('.c-nav__trigger');
 

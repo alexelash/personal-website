@@ -1,6 +1,3 @@
----
----
-
 (function() {
     // Accessible Card click
     // Adapted from https://inclusive-components.design/cards/
