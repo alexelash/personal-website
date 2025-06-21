@@ -31,7 +31,7 @@ sections:
         url: https://www.azavea.com/
         dates: June 2017 - May 2021
         desc: |
-          Azavea was a B Corporation that developed geospatial software and data analytics for the web. Their mission was to advance the state of the art in geospatial technology and apply it for civic, social, and environmental impact. 
+          Azavea was a B Corporation that developed geospatial software and data analytics for the web. Their mission was to apply state-of-the-art geospatial technology for civic, social, and environmental impact. 
 
           At Azavea, my responsibilities included:
 
