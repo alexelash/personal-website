@@ -1,30 +1,28 @@
 /*------------------------------------*\
     #NAVIGATION
 \*------------------------------------*/
-$nav-height: 4rem;
-
 .c-nav {
     width: 100%;
     z-index: 1;
-    padding: 0 $pad-normal;
+    padding: $pad-normal $pad-normal 0;
+    background: linear-gradient(to bottom, $color-secondary, $color-peach, $color-gray-light 15px);
 
     @media all and (min-width: $bp-med) {
-        padding: 0 $pad-large-2;
+        padding: $pad-normal $pad-large-2 0;
     }
 
     &__inner {
         display: flex;
         align-items: center;
-        min-height: $nav-height;
         position: relative;
 
         @media screen and (max-width: $bp-med) {
             flex-wrap: wrap;
-            padding: 1rem 0;
+            padding: $pad-normal 0;
         }
 
         @media screen and (max-width: $bp-small) {
-            padding: 1.25rem 0;
+            padding: $pad-comfortable 0;
         }
 
         @media screen and (min-width: $bp-med) {
@@ -38,24 +36,6 @@ $nav-height: 4rem;
         display: flex;
         align-items: center;
 
-        &:focus .c-nav__info-container {
-            box-shadow: 0 0 0 2px rgba(blue, 0.3);
-            border-radius: $border-radius-big;
-        }
-
-        &:focus:not(:focus-visible) {
-            .c-nav__info-container {
-                box-shadow: none;
-            }
-        }
-
-        &:focus-visible {
-            .c-nav__info-container {
-                box-shadow: 0 0 0 2px rgba(blue, 0.3);
-                border-radius: $border-radius-big;
-            }
-        }
-
         &::after {
             display: none;
         }
@@ -63,37 +43,28 @@ $nav-height: 4rem;
         @media screen and (max-width: $bp-med) {
             flex: 0 0 87%;
         }
-
-        @media screen and (min-width: $bp-med) {
-            padding: $pad-normal 0;
-            height: $nav-height;
-        }
     }
 
     &__name,
     &__role {
         font-family: $font-family-primary;
-        display: block;
+
+        @media screen and (min-width: $bp-med) {
+            padding: $pad-compact 0;
+        }
     }
 
     &__name {
         color: $color-gray-darkest;
-        font-size: $font-size-large;
-        font-weight: $font-weight-bold;
-        margin-bottom: $pad-compact;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-normal;
     }
 
     &__role {
         font-family: $font-family-secondary;
         font-size: $font-size-sm;
-        color: $color-gray-dark;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-
-        @media screen and (max-width: $bp-large) {
-            display: none;
-            font-size: $font-size-med;
-        }
+        color: $color-gray-medium;
+        opacity: 0.7;
 
         @media screen and (max-width: $bp-large-2) {
             font-size: $font-size-sm-2;
@@ -199,8 +170,7 @@ $nav-height: 4rem;
 
         @media all and (min-width: $bp-med) {
             display: flex;
-            height: $nav-height;
-            margin-right: $pad-comfortable;
+            margin-right: $pad-compact;
         }
 
         @media all and (max-width: $bp-med) {
@@ -226,11 +196,11 @@ $nav-height: 4rem;
      * Nav link
      */
     &__link {
-        padding: 1em;
+        padding: $pad-compact 0;
+        margin: 0 $pad-medium;
         font-family: $font-family-secondary;
         font-weight: $font-weight-normal;
         color: $color-gray-medium;
-        text-transform: uppercase;
         font-size: $font-size-sm;
         display: block;
         border-radius: $border-radius;
@@ -260,7 +230,6 @@ $nav-height: 4rem;
 
         &--is-active {
             color: $color-black;
-            background: radial-gradient(circle at top 100% left 50%, $color-white, transparent)
         }
 
         @media all and (min-width: $bp-med) {
