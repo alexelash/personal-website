@@ -2,7 +2,7 @@
 layout: resume
 title: Resume
 seo_description:
-  'Designer with nine years of professional experience as a designer, design leader, and web developer.'
+  'Designer with over a decade of professional experience as a designer, design leader, and web developer.'
 permalink: '/resume'
 page_class: p-resume
 barba-namespace: resume
@@ -16,7 +16,7 @@ sections:
         url: https://www.getadministrate.com
         dates: May 2021 - Present
         desc: |
-          Administrate is Training Management Software (TMS) that serves as learning tech infrastructure for enterprise training.
+          Administrate is a Training Management System (TMS) that enables large-scale enterprises to conduct in-person training.
 
           As Creative Director, I collaborate with teammembers across the company to further develop Administrate's brand. Working with our Marketing Team, I also leverage my past experience as a front-end web developer and user experience designer to improve how customers and potential customers interact with our brand through digital channels.
 
