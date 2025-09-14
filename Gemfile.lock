@@ -47,6 +47,7 @@ GEM
       net-http (>= 0.5.0)
     faraday-retry (2.3.2)
       faraday (~> 2.0)
+    ffi (1.17.2-arm64-darwin)
     ffi (1.17.2-x86_64-darwin)
     ffi (1.17.2-x86_64-linux-gnu)
     forwardable-extended (2.6.0)
@@ -276,6 +277,7 @@ GEM
     webrick (1.9.1)
 
 PLATFORMS
+  arm64-darwin-24
   x86_64-darwin-24
   x86_64-linux
 
