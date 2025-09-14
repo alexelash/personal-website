@@ -6,6 +6,7 @@
  * Heading 1 base styles
  */
 h1 {
+    color: $heading-color;
     font-family: $font-family-primary;
     font-size: $font-size-xl;
     font-weight: $font-weight-bold;
@@ -21,6 +22,7 @@ h1 {
  * Heading 2 base styles
  */
 h2 {
+    color: $heading-color;
     font-family: $font-family-primary;
     font-size: $font-size-large;
     font-weight: $font-weight-bold;
@@ -34,6 +36,7 @@ h2 {
  * Heading 3 base styles
  */
 h3 {
+    color: $heading-color;
     font-family: $font-family-primary;
     font-size: $font-size-med-2;
     font-weight: $font-weight-bold;
@@ -47,12 +50,10 @@ h3 {
  * Small heading
  */
 .heading--sm {
+    color: $heading-color;
     font-family: $font-family-primary;
-    font-weight: $font-weight-bold;
+    font-weight: $font-weight-normal;
     font-size: $font-size-sm;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: $line-height-large;
     margin-bottom: 0.85rem;
     position: relative;
 }
@@ -61,6 +62,7 @@ h3 {
  * Small heading with underline
  */
 .heading--special-sm {
+    color: $heading-color;
     font-family: $font-family-primary;
     font-weight: $font-weight-bold;
     font-size: $font-size-sm;

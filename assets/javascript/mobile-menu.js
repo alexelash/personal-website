@@ -5,11 +5,18 @@
         let expanded = this.getAttribute('aria-expanded') === 'true' || false;
         this.setAttribute('aria-expanded', !expanded);
         let menu = this.parentElement.nextElementSibling;
+        let page = document.querySelector('body');
     
-        if (menu.classList.contains('-js-mobile-nav-visible')) {
-              menu.classList.remove('-js-mobile-nav-visible');
+        if (menu.classList.contains('-js-is-visible')) {
+              menu.classList.remove('-js-is-visible');
         } else {
-              menu.classList.add('-js-mobile-nav-visible');
+              menu.classList.add('-js-is-visible');
+        }
+
+        if (page.classList.contains('-js-mobile-nav-visible')) {
+              page.classList.remove('-js-mobile-nav-visible');
+        } else {
+              page.classList.add('-js-mobile-nav-visible');
         }
     });
 })()

@@ -5,19 +5,22 @@
         <div class="intro">
             <div class="intro__inner">
                 <div class="intro__content">
+                    {% if page.heading %}
                     <h1 class="intro__heading heading--sm">
                         {{ page.heading }}
                     </h1>
+                    {% endif %}
                     <figure class="intro__figure-container mobile-only">
                         <div class="intro__image-container">
                             <img class="intro__image lazy" data-src="{{ page.image }}" alt="{{ page.image-alt }}">
                             {% if page.image-credit %}<figcaption class="intro__image-caption">{{ page.image-credit | markdownify }}</figcaption>{% endif %}
                         </div>
                     </figure>
-                    <p class="intro__blurb">
-                        {{ page.intro }}
-                    </p>
                     <div class="intro__text">
+                        {% if page.intro %}
+                            <p class="intro__blurb">{{ page.intro }}</p>
+                        {% endif %}
+                        
                         {{ page.body | markdownify }}
 
                         {% if page.cta %}

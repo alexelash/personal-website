@@ -52,10 +52,7 @@
         </div>
 
         <header class="project__header">
-            <h2 class="project__title">{{ project.title }}</h2>
-            <div class="project__excerpt">
-                {{ project.excerpt | markdownify }}
-            </div>
+            <h2 class="project__title">{{ project.title }}</h2><span class="project__excerpt">{{ project.excerpt }}</span>
             {% if project.years %}<p class="project__years">{{ project.years }}</p>{% endif %}
         </header>
     </article>

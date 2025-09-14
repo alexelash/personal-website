@@ -20,7 +20,7 @@
         max-width: $l-max-width-narrow;
 
         @media screen and (min-width: $bp-med) {
-            margin: 0 auto $pad-large-2;
+            margin: 0 auto $pad-normal;
             max-width: none;
         }
 
@@ -94,7 +94,7 @@
             margin: 0 auto;
 
             @media screen and (min-width: $bp-med) {
-                font-size: $font-size-med-2;
+                font-size: $font-size-sm;
                 font-family: $font-family-primary;
                 line-height: 1.5;
                 max-width: $l-max-width-narrow;
