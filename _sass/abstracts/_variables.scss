@@ -204,7 +204,8 @@ $bp-xxxl: 90em;
 \*------------------------------------*/
 $nav-height: 1rem;
 $body-background: $color-gray-light;
-$body-color: $color-gray-dark;
+$heading-color: $color-gray-dark;
+$body-color: rgba($heading-color, 0.5);
 $body-outline-color: $color-gray;
 $body-font: $font-weight-light 110%/1.65 $font-family-secondary;
 

@@ -133,7 +133,7 @@
          * Navigation Active State
          * 1) Triggered when Menu Button is clicked
          */
-        &.-js-mobile-nav-visible {
+        &.-js-is-visible {
             @media screen and (max-width: $bp-med) {
                 display: block;
                 flex: 1 0 100%;

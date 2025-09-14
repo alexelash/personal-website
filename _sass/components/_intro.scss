@@ -48,17 +48,7 @@
 
     &__blurb {
         font-family: $font-family-primary;
-        font-weight: $font-weight-bold;
-        font-size: $font-size-large;
         line-height: 1.35;
-
-        @media screen and (min-width: $bp-med) {
-            font-size: $font-size-large-2;
-        }
-
-        @media screen and (min-width: $bp-large-2) {
-            font-size: $font-size-xxl;
-        }
     }
 
     &__link {

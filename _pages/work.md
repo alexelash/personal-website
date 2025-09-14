@@ -12,7 +12,7 @@ redirect_from:
   - /portfolio/marketing/
   - /portfolio/product-design/
 
-intro: 'Creative director & digital designer.'
+intro: 'Digital, Print, & Experience Design'
 description: 'Selected work'
 
 ---
