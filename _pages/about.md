@@ -14,8 +14,8 @@ cta:
     body: "Always happy to speak with new folks, drop me a line!"
     button-text: "Email me"
 body: |
-   I've worked somewhere at the intersection of design and technology for over a decade. During that time, I have had the opportunity to work across a variety of business sectors. Guiding and mentoring members of my team, both formally and informally, has been one of the most fulfilling aspects of my career.
+   My creative home is the sweet spot where design meets logistics. I'm the kind of designer who color-codes project timelines and gets a rush from a perfectly executed launch. Detail-obsessed and passionate about creating work that _does_ good as much as it _looks_ good.
 
-   Staying connected to my local community is important to me. Over the years, I've taught affordable tech classes, fostered cats, and supported non-profit organizations with volunteer work. 
+   Now a Creative Director at a tech company, I have over a decade of experience working at the intersection of design and technology across diverse business sectors. Mentoring teammates (formally and informally) has been one of the most fulfilling aspects of my career, but community work keeps me grounded. Over the years I've used my free time to teach affordable coding and design classes, foster cats, and support local nonprofits with volunteer work.
 
 ---
