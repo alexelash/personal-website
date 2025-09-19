@@ -20,14 +20,12 @@ ul {
 
 ul li {
     margin-left: 1rem;
-    text-indent: -0.7rem;
+    text-indent: -1rem;
     margin-bottom: $pad-normal;
 
     &::before {
         content: '•' ' ';
-        // margin-bottom: -4px;
-        // font-size: $font-size-large-2;
-        color: $color-muted-lilac-dark;
+        margin-right: 4px;
     }
 }
 

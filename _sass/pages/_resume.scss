@@ -1,5 +1,5 @@
-$sidebar-width: 180px;
-$sidebar-offset: 200px;
+$sidebar-width: 100px;
+$sidebar-offset: 120px;
 
 .p-resume {
     display: flex;
@@ -45,7 +45,7 @@ $sidebar-offset: 200px;
     }
 
     .content {
-        max-width: $l-max-width-mid;
+        max-width: $l-max-width-narrow;
     }
 
     .section {
@@ -53,13 +53,14 @@ $sidebar-offset: 200px;
     }
 
     .section-title {
+
         @media screen and (max-width: $bp-large) {
             margin-top: $pad-large-2;
         }
 
         @media screen and (min-width: $bp-large) {
             position: absolute;
-            top: 18px;
+            top: 7px;
             left: 0;
             width: $sidebar-width;
             text-align: right;
@@ -78,15 +79,34 @@ $sidebar-offset: 200px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: relative;
 
             &:focus {
                 box-shadow: none;
             }
 
             &:hover,
-            &:focus {
-                .example__desc-button {
-                    background: $color-gray-light;
+            &:active {
+              text-decoration-line: underline;
+              text-decoration-style: dotted;
+              text-underline-offset: 3px;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: -5px;
+                    right: -5px;
+                    bottom: -5px;
+                    left: -5px;
+                    background: rgba($color-gray, 0.5);
+                    z-index: -1;
+                }
+            }
+
+            &:active {
+                &::after {
+                    background: rgba($color-gray, 0.35);
                 }
             }
 
@@ -126,18 +146,11 @@ $sidebar-offset: 200px;
             text-align: left;
             font-family: $font-family-primary;
             color: $color-gray-dark;
-            font-weight: $font-weight-bold;
-            font-size: $font-size-med-2;
+            font-weight: $font-weight-normal;
             margin-bottom: 0;
-
-            @media screen and (min-width: $bp-med) {
-                font-size: $font-size-large-2;
-            }
         }
 
         &__desc-button {
-            height: 32px;
-            width: 32px;
             border-radius: 100%;
             transition: background $anim-quick $anim-ease;
             display: flex;
@@ -154,8 +167,6 @@ $sidebar-offset: 200px;
         &__metadata {
             font-family: $font-family-primary;
             margin: $pad-small 0 $pad-medium;
-            text-transform: uppercase;
-            letter-spacing: 1px;
         }
 
         &__company,
@@ -165,12 +176,22 @@ $sidebar-offset: 200px;
             font-size: $font-size-sm;
         }
 
-        &__company {
+        &__company a {
+            font-weight: $font-weight-normal;
+
+            &:hover {
+              text-decoration-line: underline;
+              text-decoration-style: dotted;
+              text-underline-offset: 2px;
+            }
+
+            &:active {
+              opacity: 0.75;
+            }
         }
 
         &__excerpt-container {
-            font-weight: $font-weight-normal;
-            font-size: $font-size-sm-2;
+            font-size: $font-size-sm;
         }
 
         &__metadata-divider {
@@ -180,7 +201,6 @@ $sidebar-offset: 200px;
 
         &__desc-container {
             font-weight: $font-weight-normal;
-            font-size: $font-size-sm-2;
             margin-top: $pad-normal;
             max-height: 100%;
             opacity: 1;
