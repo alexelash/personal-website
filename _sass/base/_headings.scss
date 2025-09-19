@@ -42,7 +42,7 @@ h3 {
     font-weight: $font-weight-bold;
     line-height: $line-height-comfortable;
     display: block;
-    margin-bottom: 0.5rem !important;
+    margin-bottom: 0.5rem;
     word-wrap: break-word;
 }
 
@@ -50,7 +50,7 @@ h3 {
  * Small heading
  */
 .heading--sm {
-    color: $heading-color;
+    color: $body-color;
     font-family: $font-family-primary;
     font-weight: $font-weight-normal;
     font-size: $font-size-sm;
