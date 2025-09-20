@@ -1,11 +1,67 @@
 /*------------------------------------*\
     #NAVIGATION
 \*------------------------------------*/
+body.-js-mobile-nav-visible {
+    @media screen and (max-width: $bp-med)  {
+        overflow-y: hidden;
+
+        .c-nav {
+            background: linear-gradient(to bottom, $color-secondary, $color-secondary, $color-secondary 100%);
+            height: 100vh;
+
+            &__inner {
+                height: 100%;
+            }
+
+            &__list-container {
+                height: 100% !IMPORTANT;
+                padding-top: 0;
+                align-content: center;
+                padding-bottom: 30%;
+            }
+
+            &__trigger-container {
+                height: auto;
+            }
+            
+            &__name {
+                color: $color-white;
+            }
+            
+            &__role {
+                color: rgba($color-white, 0.65);
+            }
+
+            &__link {
+                color: $color-white;
+                font-weight: $font-weight-light;
+                font-size: $font-size-large-2;
+
+                &:hover,
+                &:active {
+                    color: rgba($color-white, 0.5);
+                }
+            }
+            
+            &__menu-icon {
+                fill: $color-white;
+
+                &:hover,
+                &:active {
+                    fill: rgba($color-white, 0.5);
+                }
+            }
+        }
+    }
+}
+
 .c-nav {
     width: 100%;
     z-index: 1;
     padding: $pad-normal $pad-normal 0;
     background: linear-gradient(to bottom, $color-secondary, $color-peach, $color-gray-light 15px);
+    transition: background $anim-longest $anim-ease, 
+                height $anim-longest $anim-ease;
 
     @media all and (min-width: $bp-med) {
         padding: $pad-normal $pad-large-2 0;
@@ -127,15 +183,19 @@
      * Nav List container
      */
     &__list-container {
-        display: none;
 
         /**
          * Navigation Active State
          * 1) Triggered when Menu Button is clicked
          */
-        &.-js-is-visible {
-            @media screen and (max-width: $bp-med) {
+        @media screen and (max-width: $bp-med) {
+            display: none;
+            opacity: 0;
+            transition: opacity 3s ease-in;
+
+            &.-js-is-visible {
                 display: block;
+                opacity: 1;
                 flex: 1 0 100%;
                 padding-top: $pad-normal;
             }
@@ -188,7 +248,7 @@
         margin-bottom: 0;
 
         &::before {
-            display: none !important;
+            display: none !IMPORTANT;
         }
     }
 
@@ -204,6 +264,8 @@
         font-size: $font-size-sm;
         display: block;
         border-radius: $border-radius;
+        transition: background $anim-long $anim-ease,
+                    color $anim-fast $anim-ease;
 
         &::after {
             display: none;
@@ -240,6 +302,7 @@
             &::after {
                 display: block;
             }
+
 
             &:not(&--is-active) {
                 &:hover {
