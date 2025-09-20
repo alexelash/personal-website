@@ -288,8 +288,8 @@ $sidebar-offset: 120px;
             }
 
             &__desc-container {
-                display: block !important;
-                visibility: visible !important;
+                display: block !IMPORTANT;
+                visibility: visible !IMPORTANT;
                 margin-top: 5px;
                 font-size: 11px;
 

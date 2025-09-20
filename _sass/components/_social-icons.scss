@@ -47,7 +47,7 @@
         margin: $pad-compact;
 
         &::before {
-            display: none !important;
+            display: none !IMPORTANT;
         }
 
         @media all and (max-width: $bp-med) {
