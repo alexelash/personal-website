@@ -63,7 +63,7 @@
         margin-bottom: 0;
         
         &::before {
-            display: none!important;
+            display: none !IMPORTANT;
         }
     }
 
@@ -92,7 +92,7 @@
             margin-bottom: 0;
             
             &::before {
-                display: none!important;
+                display: none !IMPORTANT;
             }
 
             &:first-child {

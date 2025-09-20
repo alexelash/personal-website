@@ -9,8 +9,8 @@
 
 .u-is-hidden,
 [hidden] {
-    display: none !important;
-    visibility: hidden !important;
+    display: none !IMPORTANT;
+    visibility: hidden !IMPORTANT;
 }
 
 /**
@@ -18,7 +18,7 @@
  * 1) Completely remove from the flow but leave available to screen readers.
  */
 .u-is-vishidden {
-    position: absolute !important;
+    position: absolute !IMPORTANT;
     overflow: hidden;
     width: 1px;
     height: 1px;

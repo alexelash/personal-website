@@ -1,3 +1,7 @@
+/*------------------------------------*\
+    #SOCIAL ICONS IN NAVIGATION
+\*------------------------------------*/
+
 .social-icons {
     display: flex;
 
@@ -43,12 +47,23 @@
         margin: $pad-compact;
 
         &::before {
-            display: none !important;
+            display: none !IMPORTANT;
         }
 
         @media all and (max-width: $bp-med) {
             font-size: $font-size-large-2;
             margin: 0.5rem;
+        }
+    }
+}
+
+@media all and (max-width: $bp-med) {
+    .social-icons__link {
+        color: rgba($color-white, 0.5);
+
+        &:hover,
+        &:active {
+            color: rgba($color-white, 0.85);
         }
     }
 }

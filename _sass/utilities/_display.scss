@@ -7,7 +7,7 @@
  * 1) Add display block by overriding
  */
 .u-display-block {
-    display: block !important;
+    display: block !IMPORTANT;
 }
 
 /**
@@ -16,5 +16,5 @@
  *    to the bottom of an element
  */
 .u-margin-bottom-double {
-    margin-bottom: 2rem !important;
+    margin-bottom: 2rem !IMPORTANT;
 }
