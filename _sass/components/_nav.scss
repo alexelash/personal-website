@@ -36,10 +36,25 @@ body.-js-mobile-nav-visible {
                 color: $color-white;
                 font-weight: $font-weight-light;
                 font-size: $font-size-large-2;
+                line-height: $line-height-compact;
+                padding: $pad-normal 0;
 
-                &:hover,
-                &:active {
-                    color: rgba($color-white, 0.5);
+                &:not(&--is-active) {
+                    &:hover {
+                        color: $color-secondary;
+                    }
+                }
+
+                &--is-active {
+                    display: inline-block;
+
+                    &::after {
+                        display: block;
+                        border-color: $color-white;
+                        transform: scaleX(100%);
+                        width: 100%;
+                        bottom: $pad-medium;
+                    }
                 }
             }
             
