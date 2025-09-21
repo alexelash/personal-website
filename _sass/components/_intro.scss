@@ -51,6 +51,10 @@
         line-height: 1.35;
     }
 
+    &__lead {
+        color: $heading-color;
+    }
+
     &__link {
         margin-top: 1rem;
 
@@ -61,5 +65,12 @@
 
     &__link-icon {
         color: $color-gray;
+    }
+
+    &__desc {
+        margin: 0 auto;
+        font-size: $font-size-sm;
+        line-height: 1.5;
+        max-width: $l-max-width-narrow;
     }
 }

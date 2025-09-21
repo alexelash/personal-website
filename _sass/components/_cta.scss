@@ -39,7 +39,7 @@
     }
 
     &__title {
-        font-family: $font-family-primary;
+        font-family: $font-family-secondary;
         font-size: $font-size-large;
         font-weight: $font-weight-normal;
         margin-bottom: $pad-compact;
@@ -61,7 +61,7 @@
         }
 
         p {
-            font-family: $font-family-primary;
+            font-family: $font-family-secondary;
             line-height: 1.65;
             font-size: $font-size-med-2;
             margin-bottom: 0;

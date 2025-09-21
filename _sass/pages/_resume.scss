@@ -144,7 +144,7 @@ $sidebar-offset: 120px;
 
         &__title {
             text-align: left;
-            font-family: $font-family-primary;
+            font-family: $font-family-secondary;
             color: $color-gray-dark;
             font-weight: $font-weight-normal;
             margin-bottom: 0;
@@ -165,7 +165,7 @@ $sidebar-offset: 120px;
         }
 
         &__metadata {
-            font-family: $font-family-primary;
+            font-family: $font-family-secondary;
             margin: $pad-small 0 $pad-medium;
         }
 
