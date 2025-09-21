@@ -9,7 +9,7 @@
             <div class="intro__blurb">{{ page.intro | markdownify }}</div>
             {% endif %} {% if page.description %}
             <p class="intro__desc">{{ page.description }}</p>
-            {% endif %} {% if page.link %}
+            {% endif %}{% if page.link %}
             <a class="intro__link c-btn" href="{{ page.link.url }}">
                 {% if page.link.icon-before %}
                 <i class="intro__link-icon fas {{ page.link.icon-before }}"></i>
