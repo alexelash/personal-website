@@ -103,7 +103,7 @@ body.-js-mobile-nav-visible {
 
     &__name,
     &__role {
-        font-family: $font-family-primary;
+        font-family: $font-family-secondary;
 
         @media screen and (min-width: $bp-med) {
             padding: $pad-compact 0;

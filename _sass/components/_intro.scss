@@ -51,6 +51,10 @@
         line-height: 1.35;
     }
 
+    &__lead {
+        color: $heading-color;
+    }
+
     &__link {
         margin-top: 1rem;
 

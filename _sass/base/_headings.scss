@@ -7,7 +7,7 @@
  */
 h1 {
     color: $heading-color;
-    font-family: $font-family-primary;
+    font-family: $font-family-secondary;
     font-size: $font-size-xl;
     font-weight: $font-weight-bold;
     line-height: $line-height-compact;
@@ -23,7 +23,7 @@ h1 {
  */
 h2 {
     color: $heading-color;
-    font-family: $font-family-primary;
+    font-family: $font-family-secondary;
     font-size: $font-size-large;
     font-weight: $font-weight-bold;
     line-height: $line-height-medium;
@@ -37,7 +37,7 @@ h2 {
  */
 h3 {
     color: $heading-color;
-    font-family: $font-family-primary;
+    font-family: $font-family-secondary;
     font-size: $font-size-med-2;
     font-weight: $font-weight-bold;
     line-height: $line-height-comfortable;
@@ -51,7 +51,7 @@ h3 {
  */
 .heading--sm {
     color: $body-color;
-    font-family: $font-family-primary;
+    font-family: $font-family-secondary;
     font-weight: $font-weight-normal;
     font-size: $font-size-sm;
     margin-bottom: 0.85rem;
@@ -63,7 +63,7 @@ h3 {
  */
 .heading--special-sm {
     color: $heading-color;
-    font-family: $font-family-primary;
+    font-family: $font-family-secondary;
     font-weight: $font-weight-bold;
     font-size: $font-size-sm;
     text-transform: uppercase;

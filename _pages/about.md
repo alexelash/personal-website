@@ -11,7 +11,7 @@ cta:
     body: "Always happy to speak with new folks, drop me a line!"
     button-text: "Email me"
 body: |
-   <span class='intro__blurb'>I’m Alex, a Creative Director based in Edinburgh.</span> My happy place is where design meets logistics. I'm the kind of designer who color-codes project timelines and gets a genuine rush from nailing a launch. I'm also passionate about design that _does_ good as much as it _looks_ good.
+   <span class='intro__lead'>I’m Alex, a Creative Director based in Edinburgh.</span> My happy place is where design meets logistics. I'm the kind of designer who color-codes project timelines and gets a genuine rush from nailing a launch. I'm also passionate about design that _does_ good as much as it _looks_ good.
 
    Now a Creative Director at a software company, I have over a decade of experience working at the intersection of design and technology across diverse business sectors. Growing with and supporting my team has been one of the most fulfilling aspects of my career, while community work keeps me grounded. 
 
