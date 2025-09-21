@@ -42,7 +42,7 @@
             animation: gradientAnimation 15s ease infinite;
 
             @media screen and (max-width: $bp-med) {
-                font-size: $font-size-large-2;
+                font-size: $font-size-xl;
             }
 
             @media screen and (min-width: $bp-med) {
@@ -87,17 +87,6 @@
                 &::after {
                     display: none;
                 }
-            }
-        }
-
-        &__desc {
-            margin: 0 auto;
-
-            @media screen and (min-width: $bp-med) {
-                font-size: $font-size-sm;
-                font-family: $font-family-secondary;
-                line-height: 1.5;
-                max-width: $l-max-width-narrow;
             }
         }
     }

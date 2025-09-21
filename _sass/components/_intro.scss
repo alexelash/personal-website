@@ -66,4 +66,11 @@
     &__link-icon {
         color: $color-gray;
     }
+
+    &__desc {
+        margin: 0 auto;
+        font-size: $font-size-sm;
+        line-height: 1.5;
+        max-width: $l-max-width-narrow;
+    }
 }

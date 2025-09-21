@@ -73,25 +73,12 @@
 
         &__link {
             display: block;
-            position: absolute;
-            height: 2.5rem;
-            width: 2.5rem;
-            right: 1rem;
-            bottom: 1rem;
-            padding: $pad-medium $pad-normal;
-            border-radius: 100%;
             font-size: $font-size-sm;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: $color-white;
-            background: rgba($color-white, 0.1);
+            font-weight: $font-weight-normal;
             opacity: 0;
 
-            > svg {
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
+            @media screen and (min-width: $bp-med) {
+                margin-left: auto;
             }
 
             @media screen and (max-width: $bp-med) {
@@ -138,6 +125,8 @@
         &__header {
             margin: $pad-medium 0 $pad-comfortable;
             line-height: $line-height-medium;
+            display: flex;
+            align-items: baseline;
         }
 
         &__title {

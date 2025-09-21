@@ -54,12 +54,6 @@
                 opacity: 1;
             }
         }
-
-        &:active {
-            &::after {
-                background: $color-white;
-            }
-        }
     }
 
     &__button-text {
@@ -68,10 +62,6 @@
             justify-content: space-between;
             align-items: baseline;
         }
-    }
-
-    &__button-icon {
-        color: $color-gray-medium;
     }
 
     &__image-container {
