@@ -1,5 +1,5 @@
 (function() {
-    const toggle = document.querySelectorAll('.-js-toggle')
+    const toggle = document.querySelectorAll('.-js-toggle');
 
     Array.prototype.forEach.call(toggle, toggle => {
         let target = toggle.parentElement.nextElementSibling
@@ -10,6 +10,7 @@
             target.hidden = expanded;
             const reflow = target.offsetHeight;
             target.classList.toggle("-js-desc-hidden");
+            document.querySelectorAll('body').classList.toggle("-js-mobile-nav-visible");
         }
     })
 })()
