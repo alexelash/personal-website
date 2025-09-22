@@ -99,6 +99,7 @@
                     scriptEle.src = item;
                     data.next.container.appendChild(scriptEle);
                 })
+                document.querySelector('body').classList.removeClass('-js-mobile-nav-visible');
             },
             enter(data) {
                 lazyLoadInstance.update();
