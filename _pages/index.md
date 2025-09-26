@@ -12,7 +12,7 @@ redirect_from:
   - /portfolio/marketing/
   - /portfolio/product-design/
 
-intro: 'Digital, Print, & Experience Design'
+intro: 'Digital, Print, and Experience Design'
 description: 'Selected work'
 
 ---
