@@ -39,6 +39,9 @@
 
     &__heading {
         order: 1;
+        font-size: $font-size-sm-2;
+        margin-bottom: $pad-comfortable;
+        font-weight: normal;
 
         @media all and (min-width: $bp-large) {
             order: auto;

@@ -1,54 +1,15 @@
 .cta {
     position: relative;
-    margin-bottom: $pad-comfortable;
-    padding: $pad-large;
-
-    &::after {
-        content: '';
-        background-image: url(../assets/images/bank-note.svg);
-        background-size: 5rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -2;
-        opacity: 0.45;
-    }
-
-    &::before {
-        content: '';
-        background: rgba($color-muted-lilac, 0.15);
-        background-size: 100%;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        bottom: -10px;
-        left: -10px;
-        z-index: -3;
-    }
+    margin: $pad-comfortable 0;
 
     &__inner {
         z-index: 2;
-
-        @media screen and (min-width: $bp-med) {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
     }
 
     &__title {
-        font-family: $font-family-secondary;
-        font-size: $font-size-large;
+        font-size: $font-size-sm-2;
         font-weight: $font-weight-normal;
         margin-bottom: $pad-compact;
-
-        @media screen and (max-width: $bp-med) {
-            max-width: 25rem;
-            margin: 0 auto $pad-small;
-            text-align: center;
-        }
     }
 
     &__blurb {

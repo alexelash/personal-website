@@ -8,8 +8,8 @@ barba-namespace: about
 image: ./assets/images/alex-lash-headshot-2025.jpg
 image-alt: Alex Lash sitting on a chair in a t-shirt and jeans.
 cta: 
-    body: "Always happy to speak with new folks, drop me a line!"
-    button-text: "Email me"
+    title: "Contact"
+    body: "<a href='mailto:hello@alexlashdesign.com'>hello@alexlashdesign.com</a>"
 body: |
    <span class='intro__lead'>I’m Alex, a Creative Director based in Edinburgh.</span> My happy place is where design meets logistics. I'm the kind of designer who color-codes project timelines and gets a genuine rush from nailing a launch. I'm also passionate about design that _does_ good as much as it _looks_ good.
 

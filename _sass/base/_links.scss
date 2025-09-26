@@ -6,28 +6,15 @@
  * Link base styles
  */
 a {
-    color: $link-color;
-    font-weight: $font-weight-semibold;
-    text-decoration: none;
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-style: dotted;
     outline: 0;
     transition: color $anim-med ease-out, background $anim-quickest ease-out, box-shadow $anim-quick ease-out;
     position: relative;
-  
-    &::after {
-        content: "";
-        height: 1px;
-        border-bottom: 1px dotted $link-underline-color;
-        border-color: $link-underline-color;
-        position: absolute;
-        right: 0;
-        bottom: -0.2rem;
-        left: 0;
-        width: 0;
-        transform: scaleX(0);
-        transform-origin: center;
-        transition: border-color $anim-med ease-in,
-                    color $anim-med ease-in,
-                    transform $anim-fast ease-in;
+
+    &:hover {
+        text-decoration-color: $color-black;
     }
 
     &:hover, &:focus {
