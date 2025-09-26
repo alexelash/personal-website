@@ -50,9 +50,12 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           #cache-version: 1 # Increment this number if you need to re-download cached gems
       - name: Build with Jekyll
-        run: bundle exec jekyll build
+        uses: actions/jekyll-build-pages@v1
         env:
           JEKYLL_ENV: production
+        with:
+          source: ./
+          destination: ./_site
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
