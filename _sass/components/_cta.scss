@@ -16,9 +16,7 @@
         margin-bottom: 0;
 
         @media screen and (max-width: $bp-med) {
-            max-width: 20rem;
             margin: 0 auto $pad-normal;
-            text-align: center;
         }
 
         p {

@@ -6,11 +6,15 @@
                 {{ include.title }}
             </h2>
             {% endif %}
-            {% if include.body %}
             <div class="cta__blurb">
+            {% if include.body %}
                 {{ include.body | markdownify }}
-            </div>
             {% endif %}
+
+            {% if include.time %}
+                <p>(Psst, <span id="-js-cta-timezone-time">my timezone is GMT</span>)</p>
+            {% endif %}
+            </div>
         </div>
         {% if include.button-text %}
         <a href="{% if include.button-link %}{{ include.button-link }}{% else %}mailto:{{ site.email }}{% endif %}" class="c-btn cta__btn">
