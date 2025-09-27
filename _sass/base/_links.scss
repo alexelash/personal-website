@@ -7,17 +7,13 @@
  */
 a {
     color: inherit;
-    text-decoration: underline;
-    text-decoration-style: dotted;
+    text-decoration: none;
     outline: 0;
     transition: color $anim-med ease-out, background $anim-quickest ease-out, box-shadow $anim-quick ease-out;
     position: relative;
 
-    &:hover {
-        text-decoration-color: $color-black;
-    }
-
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         color: $link-color-hover;
 
         &::after {
@@ -46,6 +42,21 @@ a {
 
         &::after {
           border-color: $link-underline-color-hover;
+        }
+    }
+}
+
+/**
+ * Main content links
+ */
+.content {
+    a {
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        text-decoration-thickness: 1px;
+
+        &:hover {
+            text-decoration-color: $color-black;
         }
     }
 }
