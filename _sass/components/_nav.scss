@@ -38,6 +38,7 @@ body.-js-mobile-nav-visible {
                 font-size: $font-size-large-2;
                 line-height: $line-height-compact;
                 padding: $pad-normal 0;
+                position: relative;
 
                 &:not(&--is-active) {
                     &:hover {
@@ -283,7 +284,13 @@ body.-js-mobile-nav-visible {
                     color $anim-fast $anim-ease;
 
         &::after {
-            display: none;
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 1px;
+            border-bottom: 1px dashed transparent;
         }
 
         &:not(&--is-active) {
@@ -307,6 +314,10 @@ body.-js-mobile-nav-visible {
 
         &--is-active {
             color: $color-black;
+
+            &::after {
+                border-color: $color-black;
+            }
         }
 
         @media all and (min-width: $bp-med) {

@@ -6,7 +6,7 @@
             <div class="intro__inner">
                 <div class="intro__content">
                     {% if page.heading %}
-                    <h1 class="intro__heading heading--sm">
+                    <h1 class="intro__heading">
                         {{ page.heading }}
                     </h1>
                     {% endif %}
@@ -27,6 +27,7 @@
                             {% include cta.html 
                                 title=page.cta.title
                                 body=page.cta.body
+                                time=page.cta.time
                                 button-text=page.cta.button-text %}
                         {% endif %}
                     </div>
