@@ -87,9 +87,10 @@ $sidebar-offset: 120px;
 
             &:hover,
             &:active {
-              text-decoration-line: underline;
-              text-decoration-style: dotted;
-              text-underline-offset: 3px;
+                text-decoration-line: underline;
+                text-decoration-style: dashed;
+                text-decoration-thickness: 1px;
+                text-underline-offset: 3px;
 
                 &::after {
                     content: "";
@@ -178,16 +179,6 @@ $sidebar-offset: 120px;
 
         &__company a {
             font-weight: $font-weight-normal;
-
-            &:hover {
-              text-decoration-line: underline;
-              text-decoration-style: dotted;
-              text-underline-offset: 2px;
-            }
-
-            &:active {
-              opacity: 0.75;
-            }
         }
 
         &__excerpt-container {
