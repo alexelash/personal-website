@@ -21,7 +21,7 @@
         bottom: 0;
         left: 0;
         background: $color-black;
-        color: $color-gray-lightest;
+        color: $color-neutral-100;
         padding: $pad-normal $pad-medium 0;
         border-radius: 0 6px 0 0;
 
@@ -30,10 +30,10 @@
         }
 
         a {
-            color: $color-gray;
+            color: $color-neutral-300;
 
             &::after {
-                border-color: $color-gray-medium;
+                border-color: $color-neutral-600;
             }
         }
     }
@@ -70,7 +70,7 @@
     &__date {
         font-family: $font-family-secondary;
         font-size: $font-size-sm-2;
-        color: $color-gray-medium;
+        color: $color-neutral-600;
 
         @media all and (max-width: $bp-med) {
             margin: $pad-comfortable 0 0;

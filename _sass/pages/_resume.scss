@@ -53,6 +53,7 @@ $sidebar-offset: 120px;
     }
 
     .section-title {
+        color: $heading-color;
 
         @media screen and (max-width: $bp-large) {
             margin-top: $pad-large-2;
@@ -90,24 +91,29 @@ $sidebar-offset: 120px;
                 text-decoration-line: underline;
                 text-decoration-style: dashed;
                 text-decoration-thickness: 1px;
-                text-underline-offset: 3px;
+                text-underline-offset: 5px;
 
-                &::after {
-                    content: "";
-                    display: block;
-                    position: absolute;
-                    top: -5px;
-                    right: -5px;
-                    bottom: -5px;
-                    left: -5px;
-                    background: rgba($color-gray, 0.5);
-                    z-index: -1;
+                .example__desc-button {
+                    position: relative;
+                    
+                    &::after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: -5px;
+                        right: -5px;
+                        bottom: -5px;
+                        left: -5px;
+                        border-radius: $border-radius;
+                        background: $color-neutral-300;
+                        z-index: -1;
+                    }
                 }
             }
 
             &:active {
                 &::after {
-                    background: rgba($color-gray, 0.35);
+                    background: rgba($color-neutral, 0.35);
                 }
             }
 
@@ -146,7 +152,7 @@ $sidebar-offset: 120px;
         &__title {
             text-align: left;
             font-family: $font-family-secondary;
-            color: $color-gray-dark;
+            color: $color-neutral-700;
             font-weight: $font-weight-normal;
             margin-bottom: 0;
         }
@@ -162,7 +168,7 @@ $sidebar-offset: 120px;
         &__plus-icon {
             width: 16px;
             height: 16px;
-            fill: $color-gray-darkest;
+            fill: $color-neutral-900;
         }
 
         &__metadata {
@@ -187,7 +193,7 @@ $sidebar-offset: 120px;
 
         &__metadata-divider {
             font-size: $font-size-sm;
-            color: $color-gray-medium;
+            color: $color-neutral-600;
         }
 
         &__desc-container {

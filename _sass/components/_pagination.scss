@@ -9,16 +9,15 @@
  * Page header title
  */
 .c-pagination {
-    border-top: 1px solid $color-gray;
+    border-top: 1px solid $color-neutral-400;
     margin: $pad-comfortable auto;
     padding: $pad-normal 0;
     max-width: $l-max-width;
 
     &__section-title {
-        font-size: $font-size-sm-2;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-weight: $font-weight-semibold;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-normal;
+        margin-bottom: $pad-comfortable;
     }
 
     &__buttons-container {
@@ -35,23 +34,25 @@
 
     @media screen and (min-width: $bp-large) {
         &__button--previous {
-            margin-right: $pad-normal;
+            margin-right: $pad-compact;
         }
 
         &__button--next {
-            margin-left: $pad-normal;
+            margin-left: $pad-compact;
         }
     }
 
     &__button {
-        color: $color-gray-medium;
+        color: $color-neutral-600;
         position: relative;
         margin-bottom: $pad-large;
         display: block;
 
         &:hover {
+
             .c-pagination__action-text {
                 opacity: 1;
+                text-decoration: none !IMPORTANT;
             }
         }
     }
@@ -61,12 +62,13 @@
             display: flex;
             justify-content: space-between;
             align-items: baseline;
+            margin-top: $pad-small;
         }
     }
 
     &__image-container {
         border-radius: $border-radius-big;
-        border: 1px solid $color-gray-light;
+        border: 1px solid $color-neutral-200;
         position: relative;
         overflow: hidden;
         flex: 0 0 auto;
@@ -76,7 +78,7 @@
             margin-bottom: $pad-normal;
         }
 
-        &:after {
+        &::after {
             content: '';
             display: block;
             padding-bottom: 50%;
@@ -98,16 +100,15 @@
     }
 
     &__title {
-        font-size: $font-size-large;
-        font-weight: $font-weight-bold;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-normal;
         padding-bottom: 0; 
     }
 
     &__action-text {
         font-size: $font-size-sm;
-        font-weight: $font-weight-semibold;
-        text-transform: uppercase;
-        letter-spacing: 1px;
+        font-weight: $font-weight-normal;
+        color: $body-color;
         transition: opacity $anim-fast ease-out;
         
         @media screen and (min-width: $bp-med ) {

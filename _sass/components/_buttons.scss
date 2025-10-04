@@ -125,7 +125,7 @@
 .c-btn__icon {
     width: 16px;
     height: 16px;
-    fill: $color-gray-dark;
+    fill: $color-neutral-700;
     position: relative;
     transition: fill $anim-quick $anim-ease;
 
@@ -134,7 +134,7 @@
      */
     .c-btn:hover &,
     .c-btn:focus & {
-        fill: $color-gray-darkest;
+        fill: $color-neutral-900;
     }
 
     .c-btn:focus:not(:focus-visible) & {

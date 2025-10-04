@@ -20,7 +20,7 @@ hero:
     Brand and marketing design for a training operations SaaS product.
   image: 'administrate/administrate_inverted_solo.png'
   image-alt: 'Administrate logo.'
-  roles: 'Brand identity and Creative Direction'
+  roles: 'Brand identity & management'
   organization:
     name: Administrate
 sections:
@@ -28,7 +28,7 @@ sections:
     layout: 'text-only'
     title: 'Background'
     desc: |
-      Administrate is on a mission to transform corporate learning technology infrastructure, catering to enterprises seeking cutting-edge training solutions. We initiated a logo redesign in 2022, aimed at harmonizing the company’s visual identity with our messaging and brand personality. Another goal was to develop a brand identity that could solidify our position as an innovative company in our space.
+      Administrate is a Training Management System for in-house L&D enterprise teams and corporate training providers. In 2022, the company had well out-grown its visual identity, and needed to visually identity itself as a challenger brand in the HR software space. 
   - type: 'default'
     layout: 'visual-only'
     visual:
@@ -39,12 +39,12 @@ sections:
   - type: 'default'
     layout: 'text-only'
     desc: |
-      In addition to building best-in-its-class software, Administrate has strong values and has an organization with people and community at its center. Decisions around visual and written expressions of the brand aimed to be faithful to company culture.
+      In addition to building best-in-its-class software, Administrate has strong values and has an organization with people and community at its center. Visual and written expressions of the brand needed to be faithful to company culture.
   - type: 'default'
     layout: 'text-only'
     title: 'Logo'
     desc: |
-      The new logo is a combination trademark with an asymmetrical symbol based on the first letter of our brand name. The sleek, abstract representation of the letter “A” emphasizes our commitment to progress and marks a significant departure from our old emblem, which was more static and set in the primary brand typeface, Inter.
+      The new logo is a combination trademark with an asymmetrical symbol based on the first letter of the brand name. The sleek, abstract representation of the letter “A” emphasizes the company's commitment to progress and marks a significant departure from our old emblem, which was a static letter set in the primary brand typeface, Inter.
   - type: 'default'
     layout: 'visual-only'
     visual:
@@ -55,9 +55,9 @@ sections:
   - type: 'default'
     layout: 'text-only'
     desc: |
-      The three stems of the abstracted “A” in the logomark shoot up and to the right, meeting in the center and symbolizing how Administrate unifies disparate systems, functions, and tools in enterprise training.
+      The three stems of the abstracted “A” in the logomark shoot up and to the right, meeting in the center and symbolizing how Administrate unifies training systems, functions, and tools.
 
-      The logotype was based off of the typeface Söhne, but was customized to connect it to the mark visually. It is a “solid, confident” typeface with close spacing, low contrast, and humanist qualities. Söhne was intentially chosen to temper the daring and excitable tones of our logomark.
+      The logotype uses Söhne, with some subtle customizations. Söhne's tight spacing, low contrast, and humanist qualities temper the bolder logomark.
   - type: 'default'
     layout: 'visual-only'
     visual:
@@ -69,7 +69,7 @@ sections:
     layout: 'text-only'
     title: 'Brand Architecture'
     desc: |
-      Prioritizing developing recognizability in our market with the new mark, we also determined that a branded house approach was our best path forward for subbrands and products. 
+      Prioritizing developing recognizability in our market with the new mark, we also moved forward with a branded house approach for subbrands and products. 
   - type: 'grid'
     layout: 'side-by-side'
     visual:
@@ -123,5 +123,5 @@ sections:
   - type: 'default'
     layout: 'text-only'
     desc: |
-      We announced these changes to the company, and I got to work on a roll-out plan across our various brand touchpoints. Detailed guidelines and instructions played a pivotal role in ensuring consistency and adoption. I worked with the Administrate team to help prioritize key needs, and updated email signatures, social media templates, advertisements, swag, trade show booth assets, and much more.
+      Detailed guidelines and instructions played a pivotal role in ensuring consistency and adoption. I worked with the Administrate team to help prioritize key needs, and updated email signatures, social media templates, advertisements, swag, trade show booth assets.
 ---

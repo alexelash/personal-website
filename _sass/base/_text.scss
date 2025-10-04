@@ -18,7 +18,7 @@ blockquote {
     font-weight: $font-weight-light;
     font-size: $font-size-med-2;
     border-left: 3px solid $color-muted-lilac;
-    color: $color-gray-dark;
+    color: $color-neutral-700;
 	padding-left: 1rem;
 	margin-bottom: $space;
 }
@@ -34,7 +34,7 @@ cite {
 hr {
 	border: 0;
     height: 1px;
-    background: $color-gray-light;
+    background: $color-neutral-200;
     margin: 1rem 0;
 }
 
@@ -43,12 +43,12 @@ hr {
  */
 ::-moz-selection {
     color: black;
-    background: rgba($color-peach, 0.75); /* Gecko Browsers */
+    background: rgba($color-tertiary, 0.75); /* Gecko Browsers */
 }
 ::selection {
     color: black;
     -webkit-text-fill-color: black;
-    background: rgba($color-peach, 0.75); /* WebKit/Blink Browsers */
+    background: rgba($color-tertiary, 0.75); /* WebKit/Blink Browsers */
 }
 
 /**
@@ -56,8 +56,8 @@ hr {
  */
 code {
 	display: inline-block;
-	background: $color-gray-lightest;
-	border: 1px solid $color-gray-light;
+	background: $color-neutral-100;
+	border: 1px solid $color-neutral-200;
 	padding: $pad-small $pad-medium;
     line-height: $line-height-medium;
     font-size: $font-size-sm;
@@ -67,8 +67,8 @@ code {
  * Preformatted text base styles
  */
 pre {
-	background: $color-gray-lightest;
-	border: 1px solid $color-gray-light;
+	background: $color-neutral-100;
+	border: 1px solid $color-neutral-200;
 	font-size: $font-size-med;
 	padding: $pad-normal;
     overflow-x: auto;

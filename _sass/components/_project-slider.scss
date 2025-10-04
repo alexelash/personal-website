@@ -9,11 +9,11 @@
 }
 
 .glide {
-    background: $color-gray;
+    background: $color-neutral-300;
 
     &__arrow-icon {
         font-size: $font-size-large-2;
-        color: $color-gray-medium;
+        color: $color-neutral-600;
         transition: color .15s;
     }
     
@@ -24,7 +24,7 @@
         &:hover,
         &:focus {
             .glide__arrow-icon {
-                color: $color-primary;
+                color: $color-secondary;
             }
         }
 
@@ -36,13 +36,13 @@
             box-shadow: none;
 
             .glide__arrow-icon {
-                color: $color-gray-medium;
+                color: $color-neutral-600;
             }
         }
 
         &:focus-visible {
             .glide__arrow-icon {
-                color: $color-primary;
+                color: $color-secondary;
             }
 
             @include focus-outline();
@@ -54,7 +54,7 @@
     }
 
     &__bullet {
-        background: $color-gray;
+        background: $color-neutral-300;
         box-shadow: none;
         transition: background 0.15s;
         width: 0.65rem;
@@ -90,7 +90,7 @@
 
         &:hover,
         &:focus {
-            background: $color-gray;
+            background: $color-neutral-300;
             border: 2px solid transparent;
         }
 
@@ -100,12 +100,12 @@
         }
 
         &:focus-visible {
-            background: $color-gray;
+            background: $color-neutral-300;
             border: 2px solid transparent;
         }
 
         &--active {
-            background: $color-peach;
+            background: $color-tertiary;
             border: 2px solid transparent;
             
             &:focus {
@@ -121,7 +121,7 @@
             }
             
             &::after {
-                border-color: $color-peach;
+                border-color: $color-tertiary;
                 top: -110%;
                 right: -110%;
                 bottom: -110%;
