@@ -16,7 +16,7 @@ featured-alt: 'Screenshot of Temperate dashboard.'
 featured-bg: '#283D3B'
 featured-size: 'cropped'
 
-project-url: 'https://temperate.io/'
+project-url: 'https://web.archive.org/web/20230608174833/https://temperate.io/'
 excerpt: Product design and front-end
 
 hero:
@@ -30,7 +30,7 @@ hero:
   roles: 'UX/UI design, visual design, Front-end development'
   organization:
     name: Azavea
-    url: 'https://www.azavea.com/'
+    url: 'https://web.archive.org/web/20211230080958/https://www.azavea.com/'
 sections:
   - type: 'default'
     layout: 'text-only'
@@ -125,7 +125,7 @@ sections:
   - type: 'default'
     layout: 'text-only'
     desc: |
-      The product has won additional grants and partnerships since its launch. It is one of the projects I’m most proud of having had the chance to work on at Azavea. Check out the final product by creating a [free account.](https://temperate.io/) You can also learn more about the process of designing the product in [the 1st part of a 2-part blog post](https://www.azavea.com/blog/2018/12/07/problem-solving-by-asking-questions/) I wrote for Azavea.
+      The product has won additional grants and partnerships since its launch. It is one of the projects I’m most proud of having had the chance to work on at Azavea. Check out the final product by creating a [free account.](https://web.archive.org/web/20230608174833/https://temperate.io/) You can also learn more about the process of designing the product in [two blog](https://web.archive.org/web/20241201204751/https://www.azavea.com/blog/2018/12/07/problem-solving-by-asking-questions/) [posts](https://web.archive.org/web/20241114183944/https://www.azavea.com/blog/2018/12/18/temperate-design-process/) I wrote for Azavea.
 
       Or, check out [the Branding case study](/projects/temperate-branding/) for this project.
 ---
