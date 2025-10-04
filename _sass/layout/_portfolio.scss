@@ -43,10 +43,10 @@
                         content: "";
                         position: absolute;
                         right: 0;
-                        bottom: 0;
+                        bottom: -2px;
                         left: 0;
                         height: 1px;
-                        border-bottom: 1px dashed $color-black;
+                        border-bottom: 1px dashed $link-underline-color-hover;
                     }
                 }
 
@@ -63,7 +63,7 @@
 
         &__featured-image-container {
             border-radius: $border-radius-big;
-            border: 1px solid $color-gray-light;
+            border: 1px solid $color-neutral-200;
             position: relative;
 
             &::after {

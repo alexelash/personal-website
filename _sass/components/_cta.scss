@@ -30,17 +30,17 @@
     &__btn {
         width: 100%;
         background: $color-muted-lilac-dark;
-        color: $color-gray-lightest;
+        color: $color-neutral-100;
 
         &:hover,
         &:focus {
             background: darken($color-muted-lilac-dark, 25%);
-            color: $color-gray-lightest;
+            color: $color-neutral-100;
         }
 
         &:active {
             background: darken($color-muted-lilac-dark, 45%);
-            color: $color-gray-lightest;
+            color: $color-neutral-100;
         }
 
         @media screen and (min-width: $bp-med) {

@@ -55,9 +55,10 @@ a {
         text-decoration-style: dashed;
         text-decoration-thickness: 1px;
         text-underline-offset: 4px;
+        text-decoration-color: $link-underline-color;
 
         &:hover {
-            text-decoration-color: $color-black;
+            text-decoration-color: $link-underline-color-hover;
         }
     }
 }

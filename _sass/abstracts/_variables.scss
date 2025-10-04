@@ -44,9 +44,39 @@
  * 1) Main identifiable colors involved in creating the UI
  *    Feel free to add your brand's color palette here.
  */
-$color-primary: #1f6135;
-$color-secondary: #f74100;
-$color-peach: #ffdab9;
+$color-primary: #f74100;
+$color-primary-100: #FEE7CB;
+$color-primary-200: #FEC898;
+$color-primary-300: #FCA265;
+$color-primary-400: #FA7D3E;
+$color-primary-500: #f74100;
+$color-primary-600: #D42900;
+$color-primary-700: #B11500;
+$color-primary-800: #8F0700;
+$color-primary-900: #760001;
+
+$color-secondary: #1f6135;
+$color-secondary-100: #ECF4EC;
+$color-secondary-200: #CAE9CB;
+$color-secondary-300: #B9DFBE;
+$color-secondary-400: #6EBA80;
+$color-secondary-500: #1f6135;
+$color-secondary-600: #092F19;
+$color-secondary-700: #072517;
+$color-secondary-800: #051D14;
+$color-secondary-900: #041813;
+
+$color-tertiary: #C6C013;
+$color-tertiary-100: #FBFAEF;
+$color-tertiary-200: #F7F6CA;
+$color-tertiary-300: #F3F2BC;
+$color-tertiary-400: #E6E269;
+$color-tertiary-500: #C6C013;
+$color-tertiary-600: #605C05;
+$color-tertiary-700: #4C4904;
+$color-tertiary-800: #3B3803;
+$color-tertiary-900: #323002;
+
 $color-muted-lilac: #b59da4;
 $color-muted-lilac-dark: #896771;
 
@@ -54,16 +84,21 @@ $color-muted-lilac-dark: #896771;
  * Neutral Colors
  * 1) Neutral colors are grayscale values used throughout the application
  */
-$color-white: #fff;
-$color-gray-lightest: #f3f3f3;
-$color-gray-light: #e5e5e5;
-$color-gray: #d2d2d2;
-$color-gray-medium: #6e6e6e;
-$color-gray-dark: #4f4f4f;
-$color-gray-darkest: #282828;
-$color-black: #000;
 
-$color-gray-fade: linear-gradient( to bottom, rgba($color-gray, 0), $color-gray, rgba($color-gray, 0));
+$color-neutral: #7F7F7F;
+$color-white: #fff;
+$color-neutral-100: #f3f3f3;
+$color-neutral-200: #E0E0E0;
+$color-neutral-300: #D6D6D6;
+$color-neutral-400: #A5A5A5;
+$color-neutral-500: #7F7F7F;
+$color-neutral-600: #595959;
+$color-neutral-700: #3D3D3D;
+$color-neutral-800: #292929;
+$color-neutral-900: #141414;
+$color-black: #0A0A0A;
+
+$color-neutral-fade: linear-gradient( to bottom, rgba($color-neutral, 0), $color-neutral, rgba($color-neutral, 0));
 
 /**
  * Utility Colors
@@ -204,24 +239,24 @@ $bp-xxxl: 90em;
     #COMPONENTS
 \*------------------------------------*/
 $nav-height: 1rem;
-$body-background: $color-gray-light;
-$heading-color: $color-gray-dark;
+$body-background: $color-neutral-200;
+$heading-color: $color-neutral-700;
 $body-color: rgba($heading-color, 0.5);
-$body-outline-color: $color-gray;
+$body-outline-color: $color-neutral;
 $body-font: $font-weight-light 110%/1.65 $font-family-secondary;
 
-$link-color: $color-gray-dark;
-$link-icon-color: $color-gray-medium;
-$link-color-hover: $color-black;
-$link-underline-color: $color-gray-dark;
+$link-color: $color-neutral-700;
+$link-icon-color: $color-neutral-500;
+$link-color-hover: $color-neutral-900;
+$link-underline-color: $color-neutral-600;
 $link-underline-color-hover: lighten($link-color, 0.5);
 
-$button-background: $color-gray;
+$button-background: $color-neutral;
 $button-background-hover: $color-muted-lilac-dark;
-$button-color: $color-gray-dark;
+$button-color: $color-neutral-700;
 $button-color-hover: $color-white;
-$button-border: $color-gray-dark;
+$button-border: $color-neutral-700;
 
-$h1-border-color: $color-gray;
+$h1-border-color: $color-neutral;
 
-$social-icon-fill: $color-gray-medium;
+$social-icon-fill: $color-neutral-600;

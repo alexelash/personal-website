@@ -1,13 +1,21 @@
 /*------------------------------------*\
     #NAVIGATION
 \*------------------------------------*/
-body.-js-mobile-nav-visible {
+$nav-height: 70px;
+
+.-js-mobile-nav-visible {
     @media screen and (max-width: $bp-med)  {
         overflow-y: hidden;
 
         .c-nav {
-            background: linear-gradient(to bottom, $color-secondary, $color-secondary, $color-secondary 100%);
             height: 100vh;
+            background-size: 100% 100%;
+
+            &::after {
+                mask: none;
+                -webkit-mask: none;
+                background: transparent;
+            }
 
             &__inner {
                 height: 100%;
@@ -75,9 +83,27 @@ body.-js-mobile-nav-visible {
     width: 100%;
     z-index: 1;
     padding: 0 $pad-normal 0;
-    background: linear-gradient(to bottom, $color-secondary, $color-peach, $color-gray-light 15px);
-    transition: background $anim-longest $anim-ease, 
-                height $anim-longest $anim-ease;
+    background: linear-gradient(to bottom, $color-primary 100%);
+    background-size: 0% 0%;
+    position: relative;
+    height: $nav-height;
+    transition: background-size $anim-longest $anim-ease 1s,
+                height 0 $anim-ease;
+
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to bottom, $color-primary 2.5%, $color-primary-300 15%, $body-background 30px);
+        mask: url(https://assets.codepen.io/339955/caret-down.svg) top/10px 17px repeat-x,
+              url(https://assets.codepen.io/339955/rect.svg) top/auto calc(100% - 63px) repeat-x;
+        -webkit-mask: url(https://assets.codepen.io/339955/caret-down.svg) top/10px 17px repeat-x,
+                      url(https://assets.codepen.io/339955/rect.svg) top/auto calc(100% - 63px) repeat-x;
+    }
 
     @media all and (min-width: $bp-med) {
         padding: $pad-normal $pad-large-2 0;
@@ -90,7 +116,7 @@ body.-js-mobile-nav-visible {
 
         @media screen and (max-width: $bp-med) {
             flex-wrap: wrap;
-            padding: $pad-normal 0;
+            padding: $pad-normal 0 0;
         }
 
         @media screen and (max-width: $bp-small) {
@@ -120,6 +146,7 @@ body.-js-mobile-nav-visible {
     &__name,
     &__role {
         font-family: $font-family-secondary;
+        transition: color $anim-longest $anim-ease;
 
         @media screen and (min-width: $bp-med) {
             padding: $pad-compact 0;
@@ -127,7 +154,7 @@ body.-js-mobile-nav-visible {
     }
 
     &__name {
-        color: $color-gray-darkest;
+        color: $color-neutral-900;
         font-size: $font-size-sm;
         font-weight: $font-weight-normal;
     }
@@ -135,7 +162,7 @@ body.-js-mobile-nav-visible {
     &__role {
         font-family: $font-family-secondary;
         font-size: $font-size-sm;
-        color: $color-gray-medium;
+        color: $color-neutral-600;
         opacity: 0.7;
 
         @media screen and (max-width: $bp-large-2) {
@@ -163,12 +190,12 @@ body.-js-mobile-nav-visible {
         transition: all $anim-fast ease;
 
         &--is-active {
-            color: $color-gray-dark;
+            color: $color-neutral-700;
         }
 
         &:hover,
         &:focus {
-            color: $color-gray-dark;
+            color: $color-neutral-700;
         }
 
         &:focus {
@@ -176,7 +203,7 @@ body.-js-mobile-nav-visible {
         }
 
         &:focus:not(:focus-visible) {
-            color: $color-gray-dark;
+            color: $color-neutral-700;
             box-shadow: none;
         }
 
@@ -272,14 +299,15 @@ body.-js-mobile-nav-visible {
      * Nav link
      */
     &__link {
-        padding: $pad-compact 0;
+        padding: $pad-compact 0 0;
         margin: 0 $pad-medium;
         font-family: $font-family-secondary;
         font-weight: $font-weight-normal;
-        color: $color-gray-medium;
+        color: $color-neutral-600;
         font-size: $font-size-sm;
         display: block;
         border-radius: $border-radius;
+        background: radial-gradient(circle at center, transparent, transparent);
         transition: background $anim-long $anim-ease,
                     color $anim-fast $anim-ease;
 
@@ -291,12 +319,14 @@ body.-js-mobile-nav-visible {
             bottom: 0;
             height: 1px;
             border-bottom: 1px dashed transparent;
+            transition: border-color $anim-long $anim-ease,
+                        opacity $anim-med $anim-ease;
         }
 
         &:not(&--is-active) {
             &:hover {
-                color: $color-black;
-                background: radial-gradient(circle at center, $color-gray-lightest, transparent);
+                border-color: $link-underline-color-hover;
+                background: radial-gradient(circle at center, $color-neutral-100, transparent);
             }
         }
 
@@ -314,9 +344,11 @@ body.-js-mobile-nav-visible {
 
         &--is-active {
             color: $color-black;
+            cursor: default;
 
             &::after {
-                border-color: $color-black;
+                border-color: $link-underline-color-hover;
+                opacity: 1;
             }
         }
 
@@ -332,13 +364,13 @@ body.-js-mobile-nav-visible {
 
             &:not(&--is-active) {
                 &:hover {
-                    background: radial-gradient(circle at center, $color-gray-lightest, transparent);
+                    background: radial-gradient(circle at center, $color-neutral-100, transparent);
                     
                     &::after {
                         display: block;
-                        border-color: $color-gray;
+                        opacity: 1;
+                        border-color: $color-neutral-400;
                         transform: scaleX(100%);
-                        width: 100%;
                     }
                 }
             }
@@ -346,7 +378,7 @@ body.-js-mobile-nav-visible {
             &--is-active {
                 &::after {
                     transform: scaleX(100%);
-                    width: 100%;
+                    opacity: 1;
                 }
             }
         }

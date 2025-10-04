@@ -20,7 +20,7 @@ hero:
     Brand and marketing design for a training operations SaaS product.
   image: 'administrate/administrate_inverted_solo.png'
   image-alt: 'Administrate logo.'
-  roles: 'Brand identity and Creative Direction'
+  roles: 'Brand identity & management'
   organization:
     name: Administrate
 sections:

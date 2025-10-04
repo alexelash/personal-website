@@ -17,17 +17,17 @@
     display: block;
     padding: 1rem 1rem 0.5rem;
     line-height: 1;
-    color: $color-gray-dark;
+    color: $color-neutral-700;
 
     &:hover, &:focus {
-        color: $color-gray-darkest;
+        color: $color-neutral-900;
     }
 
     &:focus:not(:focus-visible) {
-        color: $color-gray-dark;
+        color: $color-neutral-700;
     }
 
     &:focus-visible {
-        color: $color-gray-darkest;
+        color: $color-neutral-900;
     }
 }

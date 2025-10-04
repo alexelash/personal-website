@@ -58,8 +58,8 @@
         bottom: -20%;
     }
 
-    &__text-block {
-        padding: $pad-large 0;
+    &__text-container {
+        padding: $pad-normal 0;
         max-width: $l-max-width;
         border-bottom: 1px solid $h1-border-color;
         margin: 0 auto;
@@ -74,7 +74,7 @@
             display: grid;
             grid-template-columns: 1.5fr 1fr 1fr;
             column-gap: $pad-large-2;
-            align-items: start;
+            align-items: baseline;
         }
     }
 
@@ -102,12 +102,12 @@
     }
 
     &__project-link {
-        color: $color-gray-medium;
+        color: $color-neutral-600;
         padding: $pad-medium;
         border-radius: 100%;
 
         &:hover {
-            background: $color-gray-light;
+            background: $color-neutral-200;
         }
 
         &::after {
@@ -117,11 +117,11 @@
 
     &__subtitle {
         font-family: $font-family-secondary;
-        font-weight: $font-weight-normal;
+        font-weight: $font-weight-light;
         font-size: $font-size-large;
         margin-bottom: $pad-medium;
         line-height: 1.4;
-        color: $color-gray-medium;
+        color: $color-neutral-600;
         margin-bottom: 0;
 
         @media screen and (max-width: $bp-med) {
@@ -146,35 +146,28 @@
 
     &__roles,
     &__organization  {
-        margin-bottom: $pad-normal;
-        font-weight: $font-weight-normal;
+        @media screen and (max-width: $bp-med) {
+            margin-bottom: $pad-small;
+        }
+    }
+
+    &__roles-title,
+    &__roles-list,
+    &__organization-title,
+    &__organization-name {
+        display: inline-block;
+        width: 100%;
     }
 
     &__roles-title,
     &__organization-title {
         font-size: $font-size-sm;
-        font-weight: $font-weight-bold;
-        text-transform: uppercase;
-        letter-spacing: 1px;
+        font-weight: $font-weight-normal;
     }
 
-    &__roles-list {
-        font-family: $font-family-secondary;
-        font-size: $font-size-sm;
-        display: block;
-    }
-
-    &__roles-title {
-        display: inline;
-    }
-
-    &__organization-title {
-        margin-right: 0.2rem;
-        margin-bottom: 0 !IMPORTANT;
-    }
-
+    &__roles-list,
     &__organization-name {
-        font-family: $font-family-secondary;
-        font-size: $font-size-sm;
+        font-size: $font-size-med-2;
+        font-weight: $font-weight-light;
     }
 }

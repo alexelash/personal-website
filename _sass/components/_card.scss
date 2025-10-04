@@ -12,17 +12,17 @@
     position: relative;
     display: flex;
     padding: 1.5rem 1rem 1rem 1rem;
-    border: 1px solid $color-gray-light;
+    border: 1px solid $color-neutral-200;
 }
 
 /**
 * Card Footer
 */
 .c-card__header {
-    background: $color-gray-lightest;
+    background: $color-neutral-100;
     margin: -1.5rem -1rem 1rem -1rem;
     padding: 1rem 1.5rem 1rem 1.5rem;
-    border-bottom: 1px solid $color-gray-lightest;
+    border-bottom: 1px solid $color-neutral-100;
 }
 
 /**
@@ -39,7 +39,7 @@
     display: flex;
     align-items: center;
     font-size: $font-size-large;
-    color: $color-gray-dark;
+    color: $color-neutral-700;
     margin: 0;
 }
 
@@ -48,10 +48,10 @@
  * Card Footer
  */
 .c-card__footer {
-    background: $color-gray-lightest;
+    background: $color-neutral-100;
     margin: 1rem -1rem -1rem -1rem;
     padding: 1rem 1.5rem 1rem 1.5rem;
-    border-top: 1px solid $color-gray-light;
+    border-top: 1px solid $color-neutral-200;
 }
 
 /**
