@@ -11,13 +11,13 @@
 
     @media all and (min-width: $bp-med) {
         padding: $pad-large-2;
+        margin: 0 auto;
     }
 
     @media all and (min-width: ( $l-max-width + $pad-large-2*2 ) ) {
         padding: $pad-large-2 0 $pad-large-2;
         width: 100%;
         max-width: none;
-        margin: 0 auto;
         flex: 1 auto;
     }
 

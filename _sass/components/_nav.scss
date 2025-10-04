@@ -2,6 +2,7 @@
     #NAVIGATION
 \*------------------------------------*/
 $nav-height: 70px;
+$nav-trigger-width: 36px;
 
 .-js-mobile-nav-visible {
     @media screen and (max-width: $bp-med)  {
@@ -30,6 +31,7 @@ $nav-height: 70px;
 
             &__trigger-container {
                 height: auto;
+                width: $nav-trigger-width;
             }
             
             &__name {
@@ -50,7 +52,11 @@ $nav-height: 70px;
 
                 &:not(&--is-active) {
                     &:hover {
-                        color: $color-secondary;
+                        color: $color-primary;
+
+                        &::after {
+                            border-color: transparent;
+                        }
                     }
                 }
 
@@ -139,14 +145,14 @@ $nav-height: 70px;
         }
 
         @media screen and (max-width: $bp-med) {
-            flex: 0 0 87%;
+            flex: 0 0 calc(100% - #{$nav-trigger-width});
         }
     }
 
     &__name,
     &__role {
         font-family: $font-family-secondary;
-        transition: color $anim-longest $anim-ease;
+        transition: color $anim-quick $anim-ease;
 
         @media screen and (min-width: $bp-med) {
             padding: $pad-compact 0;
@@ -178,7 +184,6 @@ $nav-height: 70px;
         @media screen and (max-width: $bp-med) {
             display: block;
             text-align: right;
-            flex: 0 0 10%;
         }
     }
 
@@ -187,7 +192,7 @@ $nav-height: 70px;
         border-radius: 100%;
         padding: $pad-medium;
         line-height: 0;
-        transition: all $anim-fast ease;
+        transition: color $anim-quick $anim-ease;
 
         &--is-active {
             color: $color-neutral-700;
