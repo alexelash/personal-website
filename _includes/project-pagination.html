@@ -31,10 +31,10 @@
   {% endfor %}
 
   <div class="c-pagination {% if prev and next %}c-pagination--both{% endif %}">
-    <h3 class="c-pagination__section-title">Next Up</h3>
+    <h3 class="c-pagination__section-title">Other projects</h3>
     <div class="c-pagination__buttons-container">
       {% if prev %}
-        <a href="{{ prev.url }}" class="c-pagination__button c-pagination__button--previous" title="{{ prev.title }}">
+        <a href="{{ prev.url }}" class="c-pagination__button c-pagination__button--previous" title="{{ prev.title }}" aria-label="Click to see {{ prev.title }} project">
 
           {% if prev.featured-bg %}
             {% assign baseimage = prev.featured-image %}
@@ -59,15 +59,15 @@
               {{ prev.title }}
             </div>
             <div class="c-pagination__action-text">
-              View project
-              <i class="c-pagination__button-icon  fas fa-arrow-right" aria-hidden="true"></i>
+              Previous project
+              <i class="project__link-icon fas fa-angles-right" aria-hidden="true"></i>
             </div>
           </div>
         </a>
       {% endif %}
 
       {% if next %}
-        <a href="{{ next.url }}" class="c-pagination__button c-pagination__button--next" title="{{ next.title }}">
+        <a href="{{ next.url }}" class="c-pagination__button c-pagination__button--next" title="{{ next.title }}" aria-label="Click to see {{ next.title }} project">
 
           {% if next.featured-bg %}
             {% assign baseimage = next.featured-image %}
@@ -92,8 +92,8 @@
               {{ next.title }}
             </div>
             <div class="c-pagination__action-text">
-              View project
-              <i class="c-pagination__button-icon  fas fa-arrow-right" aria-hidden="true"></i>
+              Next project
+              <i class="project__link-icon fas fa-angles-right" aria-hidden="true"></i>
             </div>
           </div>
         </a>
