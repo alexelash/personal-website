@@ -22,7 +22,7 @@
         position: relative;
 
         @media all and (min-width: $bp-med) {
-            min-height: 600px;
+            min-height: 300px;
             height: 60vh;
         }
     }
@@ -61,7 +61,7 @@
     &__text-container {
         padding: $pad-normal 0;
         max-width: $l-max-width;
-        border-bottom: 1px solid $h1-border-color;
+        border-bottom: 1px solid $color-neutral-400;
         margin: 0 auto;
 
         @media screen and (max-width: $bp-large-2) {
