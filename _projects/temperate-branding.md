@@ -12,7 +12,7 @@ featured-image: 'azavea-temperate/temperate_RGB_centered.png'
 featured-alt: 'Temperate logo.'
 featured-bg: '#ffffff'
 
-project-url: 'https://temperate.io/'
+project-url: 'https://web.archive.org/web/20230608174833/https://temperate.io/'
 excerpt: Logo, identity, website
 
 hero:
@@ -24,7 +24,7 @@ hero:
   roles: 'Branding, UX/UI design, Front-end development, Marketing website'
   organization:
     name: Azavea
-    url: 'https://www.azavea.com/'
+    url: 'https://web.archive.org/web/20211230080958/https://www.azavea.com/'
 sections:
   - type: 'default'
     layout: 'text-only'
@@ -124,5 +124,6 @@ sections:
   - type: 'default'
     layout: 'text-only'
     desc: |
-      Check out the final product by creating a [free account](https://temperate.io/) or learn more about the branding process from [the blog post I wrote for Azavea.](https://www.azavea.com/blog/2018/12/18/temperate-design-process/)
+      Check out the final product by creating a [free account.](https://web.archive.org/web/20230608174833/https://temperate.io/) or learn more about the branding process from a [blog post](https://web.archive.org/web/20241114183944/https://www.azavea.com/blog/2018/12/18/temperate-design-process/) I wrote for Azavea.
+
 ---

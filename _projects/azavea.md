@@ -10,7 +10,7 @@ featured-image: 'azavea/azavea_white_solo.png'
 featured-alt: 'Azavea logo.'
 featured-bg: '#26333d'
 
-project-url: 'https://www.azavea.com/'
+project-url: 'https://branding.azavea.com/'
 excerpt: 'Marketing, web design & development, brand management'
 
 hero:
@@ -24,14 +24,14 @@ hero:
   roles: 'Brand management, marketing, web design & development'
   organization:
     name: Azavea
-    url: 'https://www.azavea.com/'
+    url: 'https://web.archive.org/web/20211230080958/https://www.azavea.com/'
 
 sections:
   - type: 'default'
     layout: 'text-only'
     title: 'Background'
     desc: |
-        Azavea is a [B-Corp](https://bcorporation.net/directory/azavea) that builds cutting-edge software for a broad range of clients, including non-profits, government agencies, cities, museums, and more. When I started as a User Experience Designer at Azavea in 2017, only a quarter of my time was devoted to expanding Azavea’s brand identity in both the virtual and physical world. 
+        Azavea is a [B-Corp](https://www.bcorporation.net/) that builds cutting-edge software for a broad range of clients, including non-profits, government agencies, cities, museums, and more. When I started as a User Experience Designer at Azavea in 2017, only a quarter of my time was devoted to expanding Azavea’s brand identity in both the virtual and physical world. 
   - type: 'default'
     layout: 'text-visual'
     title: 'Opportunities'

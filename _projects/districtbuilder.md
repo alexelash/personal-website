@@ -24,7 +24,7 @@ hero:
   roles: 'Logo, identity, marketing strategy, website design and development'
   organization:
     name: Azavea
-    url: 'https://www.azavea.com/'
+    url: 'https://web.archive.org/web/20211230080958/https://www.azavea.com/'
 sections:
   - type: 'default'
     layout: 'text-visual'
