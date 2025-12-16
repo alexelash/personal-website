@@ -4,7 +4,7 @@ casestudy: true
 category: marketing
 barba-namespace: project
 
-title: "Administrate"
+title: "Administrate Rebrand"
 seo_description: "Creative direction, brand management, marketing, and web design for a training operations SaaS company."
 
 featured-image: "administrate/administrate_inverted_solo.png"

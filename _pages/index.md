@@ -20,6 +20,6 @@ redirect_from:
   - /projects/fishway/
   - /projects/temperate/
 
-intro: "Digital, Print, & Experience Design"
+intro: "Digital, print, and experience design"
 description: "Selected work"
 ---

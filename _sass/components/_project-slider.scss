@@ -3,157 +3,158 @@
 \*------------------------------------*/
 
 .project-slider {
-    line-height: 0;
-    border-radius: $border-radius-big;
-    margin-bottom: 4rem;
+  line-height: 0;
+  border-radius: $border-radius-lg;
+  margin-bottom: 4rem;
 }
 
 .glide {
-    background: $color-neutral-300;
+  background: $color-neutral-300;
 
-    &__arrow-icon {
-        font-size: $font-size-large-2;
+  &__arrow-icon {
+    font-size: $font-size-large-2;
+    color: $color-neutral-600;
+    transition: color 0.15s;
+  }
+
+  &__arrow {
+    border: none;
+    box-shadow: none;
+
+    &:hover,
+    &:focus {
+      .glide__arrow-icon {
+        color: $color-secondary;
+      }
+    }
+
+    &:focus {
+      @include focus-outline();
+    }
+
+    &:focus:not(:focus-visible) {
+      box-shadow: none;
+
+      .glide__arrow-icon {
         color: $color-neutral-600;
-        transition: color .15s;
+      }
     }
-    
-    &__arrow {
-        border: none;
+
+    &:focus-visible {
+      .glide__arrow-icon {
+        color: $color-secondary;
+      }
+
+      @include focus-outline();
+    }
+  }
+
+  &__bullets {
+    bottom: -2rem;
+  }
+
+  &__bullet {
+    background: $color-neutral-300;
+    box-shadow: none;
+    transition: background 0.15s;
+    width: 0.65rem;
+    height: 0.65rem;
+    position: relative;
+    margin: 0 1.5rem;
+
+    &::before {
+      content: "";
+      display: block;
+      top: -120%;
+      right: -120%;
+      bottom: -120%;
+      left: -120%;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      border-radius: 100%;
+      border: 1px solid transparent;
+      pointer-events: none;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transition: border-color 0.25s, top 0.25s, right 0.25s, bottom 0.25s,
+        left 0.25s;
+      transform-origin: center;
+      pointer-events: none;
+    }
+
+    &:hover,
+    &:focus {
+      background: $color-neutral-300;
+      border: 2px solid transparent;
+    }
+
+    &:focus:not(:focus-visible) {
+      background: $color-secondary;
+      border: none;
+    }
+
+    &:focus-visible {
+      background: $color-neutral-300;
+      border: 2px solid transparent;
+    }
+
+    &--active {
+      background: $color-tertiary;
+      border: 2px solid transparent;
+
+      &:focus {
+        @include focus-outline();
+      }
+
+      &:focus:not(:focus-visible) {
         box-shadow: none;
+      }
 
-        &:hover,
-        &:focus {
-            .glide__arrow-icon {
-                color: $color-secondary;
-            }
-        }
+      &:focus-visible {
+        @include focus-outline();
+      }
 
-        &:focus {
-            @include focus-outline();
-        }
-
-        &:focus:not(:focus-visible) {
-            box-shadow: none;
-
-            .glide__arrow-icon {
-                color: $color-neutral-600;
-            }
-        }
-
-        &:focus-visible {
-            .glide__arrow-icon {
-                color: $color-secondary;
-            }
-
-            @include focus-outline();
-        }
+      &::after {
+        border-color: $color-tertiary;
+        top: -110%;
+        right: -110%;
+        bottom: -110%;
+        left: -110%;
+      }
     }
-
-    &__bullets {
-        bottom: -2rem;
-    }
-
-    &__bullet {
-        background: $color-neutral-300;
-        box-shadow: none;
-        transition: background 0.15s;
-        width: 0.65rem;
-        height: 0.65rem;
-        position: relative;
-        margin: 0 1.5rem;
-
-        &::before {
-            content: "";
-            display: block;
-            top: -120%;
-            right: -120%;
-            bottom: -120%;
-            left: -120%;
-        }
-            
-        &::after {
-            content: "";
-            display: block;
-            border-radius: 100%;
-            border: 1px solid transparent;
-            pointer-events: none;
-            z-index: -1;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            transition: border-color 0.25s, top 0.25s, right 0.25s, bottom 0.25s, left 0.25s;
-            transform-origin: center;
-            pointer-events: none;
-        }
-
-        &:hover,
-        &:focus {
-            background: $color-neutral-300;
-            border: 2px solid transparent;
-        }
-
-        &:focus:not(:focus-visible) {
-            background: $color-secondary;
-            border: none;
-        }
-
-        &:focus-visible {
-            background: $color-neutral-300;
-            border: 2px solid transparent;
-        }
-
-        &--active {
-            background: $color-tertiary;
-            border: 2px solid transparent;
-            
-            &:focus {
-                @include focus-outline();
-            }
-
-            &:focus:not(:focus-visible) {
-                box-shadow: none;
-            }
-
-            &:focus-visible {
-                @include focus-outline();
-            }
-            
-            &::after {
-                border-color: $color-tertiary;
-                top: -110%;
-                right: -110%;
-                bottom: -110%;
-                left: -110%;
-            }
-        }
-    }
+  }
 }
 
 .project-slideshow {
-    border-radius: $border-radius-big;
+  border-radius: $border-radius-lg;
 
-   .glide__slides {
-        @media screen and (max-width: 700px) {
-            display: block;
-        }
-   }
-
-    &__slide {
-        width: 100%;
-        display: block;
-        margin-left: 0;
-        text-indent: initial;
-        margin-bottom: 0;
-        line-height: 0;
-        
-        &::before {
-            display: none !IMPORTANT;
-        }
-
-        img {
-            width: 100%;
-        }
+  .glide__slides {
+    @media screen and (max-width: 700px) {
+      display: block;
     }
+  }
+
+  &__slide {
+    width: 100%;
+    display: block;
+    margin-left: 0;
+    text-indent: initial;
+    margin-bottom: 0;
+    line-height: 0;
+
+    &::before {
+      display: none !important;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
 }

@@ -9,110 +9,108 @@
  * Page header title
  */
 .c-pagination {
-    border-top: 1px solid $color-neutral-400;
-    margin: $pad-comfortable auto;
-    padding: $pad-normal 0;
-    max-width: $l-max-width;
+  border-top: 1px solid $color-neutral-400;
+  margin: $pad-comfortable auto;
+  padding: $pad-normal 0;
+  max-width: $l-max-width;
 
-    &__section-title {
-        font-size: $font-size-sm;
-        font-weight: $font-weight-normal;
-        margin-bottom: $pad-comfortable;
-    }
+  &__section-title {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-normal;
+    margin-bottom: $pad-comfortable;
+  }
 
-    &__buttons-container {
-        @media screen and (min-width: $bp-large) {
-            display: flex;
-            align-items: flex-start;
-
-            > .c-pagination__button {
-                flex: 0 0 50%;
-            }
-        }
-    }
-
-
+  &__buttons-container {
     @media screen and (min-width: $bp-large) {
-        &__button--previous {
-            margin-right: $pad-compact;
-        }
+      display: flex;
+      align-items: flex-start;
 
-        &__button--next {
-            margin-left: $pad-compact;
-        }
+      > .c-pagination__button {
+        flex: 0 0 50%;
+      }
+    }
+  }
+
+  @media screen and (min-width: $bp-large) {
+    &__button--previous {
+      margin-right: $pad-compact;
     }
 
-    &__button {
-        color: $color-neutral-600;
-        position: relative;
-        margin-bottom: $pad-large;
-        display: block;
+    &__button--next {
+      margin-left: $pad-compact;
+    }
+  }
 
-        &:hover {
+  &__button {
+    color: $color-neutral-600;
+    position: relative;
+    margin-bottom: $pad-large;
+    display: block;
 
-            .c-pagination__action-text {
-                opacity: 1;
-                text-decoration: none !IMPORTANT;
-            }
-        }
+    &:hover {
+      .c-pagination__action-text {
+        opacity: 1;
+        text-decoration: none !important;
+      }
+    }
+  }
+
+  &__button-text {
+    @media screen and (min-width: $bp-med) {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-top: $pad-small;
+    }
+  }
+
+  &__image-container {
+    border-radius: $border-radius-lg;
+    border: 1px solid $color-neutral-200;
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 auto;
+    position: relative;
+
+    @media screen and (max-width: $bp-med) {
+      margin-bottom: $pad-normal;
     }
 
-    &__button-text {
-        @media screen and (min-width: $bp-med) {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-top: $pad-small;
-        }
+    &::after {
+      content: "";
+      display: block;
+      padding-bottom: 50%;
     }
+  }
 
-    &__image-container {
-        border-radius: $border-radius-big;
-        border: 1px solid $color-neutral-200;
-        position: relative;
-        overflow: hidden;
-        flex: 0 0 auto;
-        position: relative;
+  &__image {
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
 
-        @media screen and (max-width: $bp-med ) {
-            margin-bottom: $pad-normal;
-        }
+  &__image--cropped {
+    width: 100%;
+    left: 60%;
+    bottom: -20%;
+  }
 
-        &::after {
-            content: '';
-            display: block;
-            padding-bottom: 50%;
-        }
+  &__title {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-normal;
+    padding-bottom: 0;
+  }
+
+  &__action-text {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-normal;
+    color: $body-color;
+    transition: opacity $anim-fast ease-out;
+
+    @media screen and (min-width: $bp-med) {
+      opacity: 0;
     }
-
-    &__image {
-        display: block;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        position: absolute;
-    }
-
-    &__image--cropped {
-        width: 100%;
-        left: 60%;
-        bottom: -20%;
-    }
-
-    &__title {
-        font-size: $font-size-sm;
-        font-weight: $font-weight-normal;
-        padding-bottom: 0; 
-    }
-
-    &__action-text {
-        font-size: $font-size-sm;
-        font-weight: $font-weight-normal;
-        color: $body-color;
-        transition: opacity $anim-fast ease-out;
-        
-        @media screen and (min-width: $bp-med ) {
-            opacity: 0;
-        }
-    }
+  }
 }

@@ -1,30 +1,38 @@
 {% include head.html %}
-<div class="main-container {% if page.page_class %} {{- page.page_class }} {{ layout.page_class -}}{% endif %}" data-barba="container" data-barba-namespace="post">
-    {% include nav.html %}
-    <div role="main" class="content">  
-        <header class="c-hero">
-            <div class="c-hero__inner l-container--narrow">
-                <h2 class="c-hero__heading">
-                    {{ page.title }}
-                </h2>
-                <p class="c-hero__blurb">
-                    {{ page.intro }}
-                </p>
-            </div>
-        </header>
-        <!-- page content -->
-        {{ content }}
-        <!-- page content -->
-        <div class="cta">
-            <div class="cta__inner">
-                <p class="cta__blurb">
-                    Let me know if you’re interested in working together.
-                </p>
-                <a href="mailto:alexandralash@gmail.com" class="c-btn cta__btn">
-                    All the emails!
-                </a> 
-            </div>
-        </div>
-    </div> <!-- Main / Content -->
-</div> <!-- Main Container -->
-{% include footer.html %}
+<div
+  class="main-container {% if page.page_class %} {{- page.page_class }} {{ layout.page_class -}}{% endif %}"
+  data-barba="container"
+  data-barba-namespace="post"
+>
+  {% include nav.html %}
+  <div
+    role="main"
+    class="content"
+  >
+    <header class="c-hero">
+      <div class="c-hero__inner l-container--narrow">
+        <h2 class="c-hero__heading">{{ page.title }}</h2>
+        <p class="c-hero__blurb">{{ page.intro }}</p>
+      </div>
+    </header>
+    <!-- page content -->
+    {{ content }}
+    <!-- page content -->
+    <div class="cta">
+      <div class="cta__inner">
+        <p class="cta__blurb">
+          Let me know if you’re interested in working together.
+        </p>
+        <a
+          href="mailto:alexandralash@gmail.com"
+          class="c-btn cta__btn"
+        >
+          All the emails!
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Main / Content -->
+  {% include footer.html %}
+</div>
+<!-- Main Container -->

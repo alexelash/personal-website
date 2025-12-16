@@ -26,10 +26,6 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
-
-
-
-
 /*------------------------------------*\
    #BASE
 \*------------------------------------*/
@@ -45,20 +41,10 @@
 @import "base/tables";
 @import "base/text";
 
-
-
-
-
 /*------------------------------------*\
    #LAYOUT
 \*------------------------------------*/
 @import "layout/layout";
-@import "layout/project";
-@import "layout/portfolio";
-
-
-
-
 
 /*------------------------------------*\
    #COMPONENTS
@@ -91,20 +77,13 @@
 @import "components/text-passage";
 @import "components/tile";
 
-
-
-
-
 /*------------------------------------*\
    #PAGES
 \*------------------------------------*/
 @import "pages/about";
 @import "pages/resume";
 @import "pages/work";
-
-
-
-
+@import "pages/project-single";
 
 /*------------------------------------*\
    #UTILITIES

@@ -1,93 +1,295 @@
 .p-work {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(in hsl to top right, #dd9787, #8a4fff, #e0d68a);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  color: $color-neutral-100;
+
+  .c-nav {
+    &__trigger--is-active,
+    &__trigger:hover,
+    &__trigger:focus,
+    &__trigger:focus:not(:focus-visible) {
+      background: rgba($color-white, 0.1);
+    }
+
+    &__name {
+      color: $heading-color-inverted;
+    }
+
+    &__role {
+      color: $body-color-inverted;
+    }
+
+    &__link,
+    &__link:not(.c-nav__link--is-active):hover {
+      color: $link-color-inverted;
+    }
+
+    &__link--is-active::after {
+      border-color: $link-underline-color-hover-inverted;
+    }
+
+    &__menu-icon {
+      fill: $link-icon-color-inverted;
+
+      &:hover,
+      &:active {
+        fill: rgba($link-icon-color-inverted, 0.5);
+      }
+    }
+
+    &__link--is-active {
+      &:hover {
+        color: $link-color-hover-inverted;
+      }
+
+      &:hover::after {
+        border-color: $link-underline-color-hover-inverted;
+      }
+    }
+
+    .social-icons__link {
+      color: $social-icon-fill-inverted;
+    }
+  }
+
+  .content {
+    padding: $pad-large $pad-small 0;
+
+    @media screen and (min-width: $bp-med) {
+      padding: $pad-large-2 $pad-large-2 0;
+    }
+  }
+
+  .intro {
+    max-width: $l-max-width-narrow;
+
+    @media screen and (min-width: $bp-med) {
+      margin-bottom: $pad-normal;
+      max-width: none;
+    }
+
+    &__blurb {
+      font-size: 5.45vw;
+      opacity: 0;
+      max-width: 72vw;
+
+      @media screen and (max-width: $bp-med) {
+        font-size: $font-size-xl;
+      }
+
+      p {
+        font-weight: $font-weight-bold;
+        line-height: 1.2;
+        font-size: inherit;
+        font-style: inherit;
+        font-family: inherit;
+        -webkit-background-clip: inherit;
+        -webkit-text-fill-color: inherit;
+        animation: none;
+      }
+
+      a {
+        font-weight: inherit;
+        color: $color-black;
+        -webkit-background-clip: initial;
+        -webkit-text-fill-color: initial;
+        transition: color 0.2s ease-in;
+        animation: none;
+        padding-bottom: 0.5rem;
+        text-shadow: -6px -6px $body-background, -6px 6px $body-background,
+          6px -6px $body-background, 6px 6px $body-background;
+        background-size: 1px 1em;
+        box-shadow: inset 0 -0.175em $body-background,
+          inset 0 -0.2em $color-black;
+        display: inline;
+
+        &:hover,
+        &:focus {
+          color: $color-neutral-700;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.project-container {
+  text-align: left;
+  margin: 0 auto;
+
+  @media screen and (min-width: $bp-large) {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    
-    .content {
-        padding: $pad-large $pad-small 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 
-        @media screen and (min-width: $bp-med) {
-            padding: $pad-large-2 $pad-normal 0;
-        }
+  .project {
+    border-radius: $border-radius-lg;
+    padding: $pad-small;
+    position: relative;
 
-        @media screen and (min-width: $bp-xl) {
-            padding: $pad-large-2 $pad-normal 0;
-        }
+    @media screen and (min-width: $bp-large) {
+      flex: 0 0 50%;
     }
 
-    .intro {
-        margin: 0 auto $pad-normal;
-        max-width: $l-max-width-narrow;
+    &--has-casestudy {
+      .project__featured-image {
+        transform: scale(1) translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        transform-origin: center;
+        position: absolute;
+        transition: transform $anim-quick $anim-ease;
+      }
 
-        @media screen and (min-width: $bp-med) {
-            margin: 0 auto $pad-normal;
-            max-width: none;
+      .project__link {
+        text-decoration: none;
+        transition: opacity $anim-quick $anim-ease;
+        white-space: nowrap;
+      }
+
+      &:hover,
+      &:focus {
+        .project__title {
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: -2px;
+            left: 0;
+            height: 1px;
+            border-bottom: 1px dashed $link-underline-color-hover;
+          }
         }
 
-        &__blurb {
-            font-size: 5.45vw;
-            margin: 0 auto;
-            opacity: 0;
-            background: linear-gradient(
-                to right,
-                #DD9787,
-                #8A4FFF,
-                #E0D68A
-            );
-            background-size: 400% 400%;
-            background-clip: text;
-            -webkit-background-clip: text;
-            text-fill-color: text;
-            -webkit-text-fill-color: transparent;
-            animation: gradientAnimation 15s ease infinite;
-
-            @media screen and (max-width: $bp-med) {
-                font-size: $font-size-xl;
-            }
-
-            @media screen and (min-width: $bp-med) {
-                max-width: 72vw;
-            }
-
-            p {
-                font-weight: $font-weight-bold;
-                line-height: 1.2;
-                font-size: inherit;
-                font-style: inherit;
-                font-family: inherit;
-                -webkit-background-clip: inherit;
-                -webkit-text-fill-color: inherit;
-                animation: none;
-            }
-
-            a {
-                font-weight: inherit;
-                color: $color-black;
-                -webkit-background-clip: initial;
-                -webkit-text-fill-color: initial;
-                transition: color 0.2s ease-in;
-                animation: none;
-                padding-bottom: 0.5rem;
-                text-shadow:
-                    -6px -6px $body-background,
-                    -6px 6px $body-background,
-                    6px -6px $body-background,
-                    6px 6px $body-background;
-                background-size: 1px 1em;
-                box-shadow:
-                  inset 0 -0.175em $body-background,
-                  inset 0 -0.2em $color-black;
-                display: inline;
-
-                &:hover, 
-                &:focus {
-                    color: $color-neutral-700;
-                }
-
-                &::after {
-                    display: none;
-                }
-            }
+        .project__featured-image {
+          transform: scale(1.25) translate(-40%, -40%);
         }
+        .project__link {
+          @media screen and (min-width: $bp-med) {
+            opacity: 1;
+          }
+        }
+      }
     }
+
+    &__featured-image-container {
+      border-radius: $border-radius-lg;
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        padding-bottom: 50%;
+      }
+    }
+
+    &__featured-image {
+      display: block;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+    }
+
+    &__featured-image--cropped {
+      width: 100%;
+      left: 60%;
+      bottom: -20%;
+    }
+
+    &__link {
+      display: block;
+      font-size: $font-size-sm;
+      opacity: 0;
+
+      @media screen and (min-width: $bp-med) {
+        margin-left: auto;
+      }
+
+      @media screen and (max-width: $bp-med) {
+        margin-left: -$pad-small;
+      }
+
+      &::after {
+        border: none;
+      }
+
+      &:focus {
+        @include focus-outline();
+      }
+
+      &:focus:not(:focus-visible) {
+        box-shadow: none;
+      }
+
+      &:focus-visible {
+        @include focus-outline();
+      }
+    }
+
+    &__link-divider {
+      color: $link-icon-color;
+      padding: $pad-small;
+    }
+
+    &__link-icon {
+      font-size: $font-size-sm;
+    }
+
+    &__text-container {
+      display: block;
+      line-height: $line-height-compact;
+    }
+
+    &__header {
+      margin: $pad-medium 0 $pad-comfortable;
+      line-height: $line-height-medium;
+      display: flex;
+      align-items: baseline;
+    }
+
+    &__title {
+      display: inline;
+      font-size: $font-size-sm;
+      font-weight: $font-weight-normal;
+      margin: 0 $pad-compact 0 0;
+    }
+
+    &__years {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: $color-utility-success-light;
+      border-radius: $border-radius;
+      color: $color-utility-success;
+      padding: $pad-small $pad-medium;
+      font-size: $font-size-sm;
+      font-weight: $font-weight-semibold;
+      margin: 0;
+
+      @media screen and (max-width: $bp-med) {
+        font-size: $font-size-tiny;
+      }
+    }
+
+    &__excerpt {
+      font-size: $font-size-sm;
+      margin: 0 0 $pad-normal;
+    }
+  }
+
+  .cta {
+    max-width: $l-max-width;
+    margin: $pad-large auto 0;
+  }
 }

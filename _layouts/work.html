@@ -1,33 +1,42 @@
 {% include head.html %}
-<div class="main-container {% if page.page_class %} {{- page.page_class }} {{ layout.page_class -}} {% endif %}" data-barba="container" data-barba-namespace="work">
-    {% include nav.html %}
-    <div role="main" class="content">
-        <div class="intro">
-            {% if page.heading %}
-            <h2 class="intro__heading">{{ page.heading }}</h2>
-            {% endif %} {% if page.intro %}
-            <div class="intro__blurb">{{ page.intro | markdownify }}</div>
-            {% endif %} {% if page.description %}
-            <p class="intro__desc">{{ page.description }}</p>
-            {% endif %} {% if page.link %}
-            <a class="intro__link c-btn" href="{{ page.link.url }}">
-                {% if page.link.icon-before %}
-                <i class="intro__link-icon fas {{ page.link.icon-before }}"></i>
-                {% endif %}
-                {{ page.link.text }}
-                {% if page.link.icon-after %}
-                <i class="intro__link-icon fas {{ page.link.icon-after }}"></i>
-                {% endif %}
-            </a>
-            {% endif %}
-        </div>
+<div
+  class="main-container {% if page.page_class %} {{- page.page_class }} {{ layout.page_class -}} {% endif %}"
+  data-barba="container"
+  data-barba-namespace="work"
+>
+  {% include nav.html %}
+  <div
+    role="main"
+    class="content"
+  >
+    <div class="intro">
+      {% if page.heading %}
+      <h2 class="intro__heading">{{ page.heading }}</h2>
+      {% endif %} {% if page.intro %}
+      <div class="intro__blurb">{{ page.intro | markdownify }}</div>
+      {% endif %} {% if page.description %}
+      <p class="intro__desc">{{ page.description }}</p>
+      {% endif %} {% if page.link %}
+      <a
+        class="intro__link c-btn"
+        href="{{ page.link.url }}"
+      >
+        {% if page.link.icon-before %}
+        <i class="intro__link-icon fas {{ page.link.icon-before }}"></i>
+        {% endif %} {{ page.link.text }} {% if page.link.icon-after %}
+        <i class="intro__link-icon fas {{ page.link.icon-after }}"></i>
+        {% endif %}
+      </a>
+      {% endif %}
+    </div>
 
-        {% include project-loop.html category=page.category %} {% if
-        page.cta %} {% include cta.html title=page.cta.title
-        body=page.cta.body button-text=page.cta.button-text %} {% endif %}
-
-        {% if page.cta %} {% include cta.html title=page.cta.title
-        body=page.cta.body button-text=page.cta.button-text %} {% endif %}
-    </div> <!-- Main / Content -->
-</div> <!-- Main Container - -->
-{% include footer.html %}
+    {% include project-loop.html category=page.category %} {% if page.cta %} {%
+    include cta.html title=page.cta.title body=page.cta.body
+    button-text=page.cta.button-text %} {% endif %} {% if page.cta %} {% include
+    cta.html title=page.cta.title body=page.cta.body
+    button-text=page.cta.button-text %} {% endif %}
+  </div>
+  <!-- Main / Content -->
+  {% include footer.html %}
+</div>
+<!-- Main Container - -->
