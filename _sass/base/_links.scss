@@ -24,7 +24,7 @@ a {
 
   &:focus {
     @include focus-outline();
-    border-radius: $border-radius-lg;
+    border-radius: $border-radius-large;
   }
 
   &:focus:not(:focus-visible) {

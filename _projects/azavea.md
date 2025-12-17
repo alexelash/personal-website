@@ -4,28 +4,27 @@ category: marketing
 casestudy: true
 
 title: "Azavea"
-seo_description: "Brand management, marketing, and web design & development for a professional services firm that creates custom geospatial software for good."
+seo_description: "Brand management, marketing, web design and front-end development for a professional services firm that creates custom geospatial software for good."
 
 featured-image: "azavea/azavea_white_solo.png"
 featured-alt: "Azavea logo."
-featured-bg: "#26333d"
+featured-bg: "#4CA3DB"
 
 project-url: "https://branding.azavea.com/"
-excerpt: "Marketing, web design & development, brand management"
+excerpt: "Brand management, marketing, web design & front-end development"
 
 hero:
   title: "Azavea"
   tagline: "A purpose-driven professional services firm"
   desc: |
-    Marketing design and strategy for a BCorp that creates bespoke geospatial software for good.
-  image: "azavea/azavea-branding-guide_hero.png"
+    Brand management and strategy for Philly-based agency.
+  image: "azavea/azavea_branding_guide_hero.png"
   image-alt: "Screenshot of Branding Guide page."
   image-size: "cropped"
   roles: "Brand management, marketing, web design & development"
   organization:
     name: Azavea
     url: "https://web.archive.org/web/20211230080958/https://www.azavea.com/"
-
 sections:
   - type: "default"
     layout: "text-only"
@@ -41,7 +40,7 @@ sections:
       The company’s overall brand identity has always been strong and crystal clear: Azavea does brilliant, cutting edge work in geospatial, and has values that affect every aspect of the business, from how it chooses projects to the compost buckets in the kitchen.
     visual:
       type: "image"
-      image: "azavea/azavea_intro_01.jpg"
+      image: "azavea/azavea_intro.png"
       image-alt: "Azavea logo overtop of a topographic background."
   - type: "default"
     layout: "text-visual"
@@ -52,7 +51,7 @@ sections:
       I took on the mantle of creating a [digital branding guide and digital toolkit](https://branding.azavea.com/) in order to establish and maintain shareable brand assets and visuals. Creating a digital branding guide allowed me to more easily expand the existing guidelines, create a more accessible/shareable guide for people in and outside of the company, and collaborate cross-functionally on updates.
     visual:
       type: "image"
-      image: "azavea/azavea_brand_03.jpg"
+      image: "azavea/azavea_brand_guide_01.jpg"
       image-alt: "Screenshot of a webpage from the Branding Guide called Communications."
   - type: "default"
     layout: "text-only"
@@ -65,22 +64,21 @@ sections:
   - type: "grid"
     layout: "side-by-side"
     visual:
-      - image: "azavea/azavea_brand_01.jpg"
+      - image: "azavea/azavea_brand_guide_02.jpg"
         image-alt: "The primary colors in the Azavea brand, screenshot from the Branding Guide."
-      - image: "azavea/azavea_brand_02.jpg"
+      - image: "azavea/azavea_brand_guide_03.jpg"
         image-alt: "The secondary and neutral colors in the Azavea brand, screenshot from the Branding Guide."
-    caption: "Color palette that I developed for Azavea."
+      - image: "azavea/azavea_vis_lang_03.jpg"
+        image-alt: "Symbol and download option in branding guide."
+      - image: "azavea/azavea_vis_lang_04.jpg"
+        image-alt: "Minimum clearance instructions in branding guide."
+    caption: "Color palette developed for Azavea as well as instructions for employees."
   - type: "default"
     layout: "text-visual"
     desc: |
       The new digital toolkit includes elements from the original branding guide created by Azavea’s logo designer, but with ample options to download logo assets. Products and open-source libraries have their own page where a colleague can download logo assets, easily locate the website link, or copy/paste taglines and elevator pitches.
 
       The guide is also searchable, and contains a changelog so that I can share more details about additions and adjustments made to the guide over time.
-    visual:
-      type: image
-      image: "azavea/azavea_brand_04.jpg"
-      image-alt: "The primary colors in the Azavea brand, screenshot from the Branding Guide."
-      caption: "Screenshots from Azavea’s [digital branding guide and toolkit.](https://branding.azavea.com/)"
   - type: "default"
     layout: "text-only"
     title: "Establishing visual patterns and choosing a new typeface"
@@ -98,19 +96,13 @@ sections:
         image-alt: "Cut out portion of a screenshot showing the togographic background on a Subscribe Now banner on the Azavea website."
     caption: "Topographic patterns and an example of how they are applied in practice."
   - type: "default"
-    layout: "text-visual"
+    layout: "text-only"
     desc: |
       ### Typography
       Prior to my involvement, websites and print materials all used different typefaces. I audited our web and print materials to identity fonts currently in use, and researched potential alternative options for our typeface. Ultimately, I landed on [New Hero.](https://newlyn.com/fonts/new-hero/)
 
       New Hero boasts a large font family, which I knew would give us a lot of flexibility over the ensuing years. It has a geometric style that feels modern and also a bit of quirky personality that keeps our content from looking too corporate. The foundry’s description that New Hero is “dedicated to civic duty” is also a particularly relevant tie-in to our mission statement, which is to create software for “positive civic, social, and environmental impact”.
-    visual:
-      type: image
-      image: "azavea/azavea_vis_lang_04.jpg"
-      image-alt: "New Hero font family and a description of the typeface. Description reads: Crisp, clean geometric typeface with a distinct (though subtle) personality and a huge font family. This typeface will add friendliness to our highly technical content, while not losing the utilitarianism and dependability that our previous typeface offered."
-  - type: "default"
-    layout: "text-only"
-    desc: |
+
       I presented this option to our CEO, Design Team Lead, and Business Development professionals and began the process of replacing other typefaces in our marketing materials.
   - type: "default"
     layout: "text-only"
@@ -126,19 +118,20 @@ sections:
         image-alt: "Screenshot of the old Redistricting the Nation website."
       - image: "azavea/azavea_redistricting_website_01.jpg"
         image-alt: "Screenshot of the Redistricting microsite hero."
-    caption: "Old Redistricting the Nation website alongside the new [Redistricting microsite.](https://redistricting.azavea.com/)"
+    caption: "Left: Previous “Redistricting the Nation” website, right: revised [Redistricting microsite.](https://redistricting.azavea.com/)"
   - type: "default"
     layout: "text-only"
     desc: |
-      I addressed several key issues with the previous site, but most notably re-branded the it to more clearly align it with Azavea’s brand. Setting the primary domain name to be a subdomain of Azavea’s website: `redistricting.azavea.com`, I also designed the microsite to more clearly reference Azavea’s brand in color, typography, and style. This included replaced the previous custom logo (Redistricting the Nation) with a sub-brand called: Azavea Redistricting.
+      I addressed several key issues with the previous site, but most notably re-branded and redesigned the site to more clearly align with Azavea’s brand. Setting the primary domain name to be a subdomain of Azavea’s website: `redistricting.azavea.com`, the site uses Azavea’s brand colors, typography, and style. The previous custom name and logo (Redistricting the Nation) was also replaced.
+
+      For our company’s career website, I [art directed a photoshoot of my colleagues,](https://web.archive.org/web/20240810164954/https://careers.azavea.com/office/) working with an excellent local photographer to try and capture the weird, wonderful world of Azavea through shots of our Lunch and Learns, team meetings, wide variety of foliage, and art shows.
   - type: "grid"
     layout: "big-small"
     visual:
       - image: "azavea/azavea_careers_website_01.jpg"
-        image-alt: "Screenshot of the new renamed Azavea Careers website in mobile view."
+        image-alt: "Screenshot of the Azavea Careers website in desktop view."
       - image: "azavea/azavea_careers_website_02.jpg"
-        image-alt: "Screenshot of the new renamed Azavea Careers website in desktop view."
-    caption: "Home and Interviewing pages on the new [Careers site.](https://careers.azavea.com/)"
+        image-alt: "Screenshot of the Azavea Careers website on mobile devices."
   - type: "grid"
     layout: "side-by-side"
     visual:
@@ -146,7 +139,7 @@ sections:
         image-alt: "Screenshot of the new renamed Azavea Careers website in mobile view."
       - image: "azavea/azavea_som_website_01.jpg"
         image-alt: "Screenshot of the new renamed Azavea Careers website in desktop view."
-    caption: "Design applied to [Fellowship](https://fellowship.azavea.com/) and [Summer of Maps](https://www.summerofmaps.com/) microsites (design and development executed by [Matt Williams](https://mattwilliams.design/))"
+    caption: "Design applied to the careers website, [Fellowship](https://fellowship.azavea.com/), and [Summer of Maps](https://www.summerofmaps.com/) internship sites (design and development of the latter two were executed by [Matt Williams.)](https://mattwilliams.design/)"
   - type: "default"
     layout: "text-only"
     title: "Print and Apparel"
@@ -162,9 +155,9 @@ sections:
         image-alt: "Custom t-shirt design for Azavea."
       - image: "azavea/azavea_applied_02.jpg"
         image-alt: "Three custom-designed challenge coins. The first one shows the back, which is in full color and contains the Azavea mark. The second two are the Hot Streak Award and the First Time Blogger Award."
-      - image: "azavea/azavea_applied_04.jpg"
+      - image: "azavea/azavea_guide_01.jpg"
         image-alt: "Two pages from a redesign of Azavea’s proposals."
-      - image: "azavea/azavea_applied_03.jpg"
+      - image: "azavea/azavea_onesie_02.jpg"
         image-alt: "Baby onesie designs for Azavean babies."
     caption: "Various examples of the brand applied to print and apparel."
   - type: "default"

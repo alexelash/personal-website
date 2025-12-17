@@ -2,7 +2,7 @@
 layout: work
 category: marketing
 title: "Creative Director"
-seo_description: "I am a Creative director with a background in digital design, user experience, and front-end web development."
+seo_description: "I am a Creative Director with a background in user experience and front-end web development."
 permalink: "/"
 page_class: p-work
 js_dependencies: card-click.js
@@ -20,6 +20,6 @@ redirect_from:
   - /projects/fishway/
   - /projects/temperate/
 
-intro: "Digital, print, and experience design"
+intro: "Brand, experience, & web design"
 description: "Selected work"
 ---

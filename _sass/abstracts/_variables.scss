@@ -170,9 +170,10 @@ $line-height-large-2: 1.65;
 /**
  * Max Width
  */
-$l-max-width: 72rem;
-$l-max-width-mid: 55rem;
 $l-max-width-narrow: 42rem;
+$l-max-width-mid: 55rem;
+$l-max-width: 72rem;
+$l-max-width-large: 82rem;
 
 /*------------------------------------*\
     #SPACING
@@ -206,7 +207,7 @@ $space-bullet-offset: 1.6rem; /* 2 */
 $border-radius-xs: 2px;
 $border-radius-sm: 4px;
 $border-radius: 8px;
-$border-radius-lg: 16px;
+$border-radius-large: 16px;
 
 /*------------------------------------*\
     #ANIMATION

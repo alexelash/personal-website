@@ -1,7 +1,12 @@
 .p-work {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(in hsl to top right, #dd9787, #8a4fff, #e0d68a);
+  background: linear-gradient(
+    in hsl to top right,
+    hwb(0 20% 95%),
+    hwb(0 20% 98%),
+    #333333
+  );
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
   color: $color-neutral-100;
@@ -86,34 +91,12 @@
         font-size: inherit;
         font-style: inherit;
         font-family: inherit;
-        -webkit-background-clip: inherit;
-        -webkit-text-fill-color: inherit;
-        animation: none;
-      }
-
-      a {
-        font-weight: inherit;
-        color: $color-black;
-        -webkit-background-clip: initial;
-        -webkit-text-fill-color: initial;
-        transition: color 0.2s ease-in;
-        animation: none;
-        padding-bottom: 0.5rem;
-        text-shadow: -6px -6px $body-background, -6px 6px $body-background,
-          6px -6px $body-background, 6px 6px $body-background;
-        background-size: 1px 1em;
-        box-shadow: inset 0 -0.175em $body-background,
-          inset 0 -0.2em $color-black;
-        display: inline;
-
-        &:hover,
-        &:focus {
-          color: $color-neutral-700;
-        }
-
-        &::after {
-          display: none;
-        }
+        background-size: 400% 400%;
+        background: linear-gradient(in hsl to right, #dd9787, #8a4fff, #e0d68a);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
     }
   }
@@ -131,7 +114,7 @@
   }
 
   .project {
-    border-radius: $border-radius-lg;
+    border-radius: $border-radius-large;
     padding: $pad-small;
     position: relative;
 
@@ -167,12 +150,12 @@
             bottom: -2px;
             left: 0;
             height: 1px;
-            border-bottom: 1px dashed $link-underline-color-hover;
+            border-bottom: 1px dashed $link-underline-color-hover-inverted;
           }
         }
 
         .project__featured-image {
-          transform: scale(1.25) translate(-40%, -40%);
+          transform: scale(1.15) translate(-40%, -40%);
         }
         .project__link {
           @media screen and (min-width: $bp-med) {
@@ -183,7 +166,7 @@
     }
 
     &__featured-image-container {
-      border-radius: $border-radius-lg;
+      border-radius: $border-radius-large;
       position: relative;
 
       &::after {
