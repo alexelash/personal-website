@@ -1,64 +1,61 @@
 <div class="project-container">
-    {% assign category = {{ include.category }} %}
+  {% assign category = {{ include.category }} %} {% assign projects =
+  site.projects | where: "category", include.category %} {% for project in
+  projects %} {% if project.draft != true %}
+  <article
+    class="project {% if project.casestudy %} project--has-casestudy {% endif %}"
+  >
+    {% assign baseimage = project.featured-image %} {% assign imageending =
+    baseimage | split: '.' | last %} {% assign size = baseimage | size | minus:
+    4 %}
 
-    {% assign projects = site.projects | where: "category", include.category %} 
-
-    {% for project in projects %} 
-
-    {% if project.draft != true %}
-    <article
-        class="project {% if project.casestudy %} project--has-casestudy {% endif %}"
+    <div
+      class="project__featured-image-container"
+      style="background-color: {{ project.featured-bg }};"
     >
-        {% assign baseimage = project.featured-image %} {% assign imageending =
-        baseimage | split: '.' | last %} {% assign size = baseimage | size |
-        minus: 4 %}
+      <picture
+        class="project__featured-image {% if project.featured-size == 'cropped' %} project__featured-image--cropped {% endif %}"
+      >
+        <source
+          media="(max-width: 799px)"
+          data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.5x.{{ imageending }}"
+        />
+        <source
+          media="(min-width: 800px)"
+          data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.75x.{{ imageending }}"
+        />
+        <img
+          data-src="{{ site.baseurl }}/assets/images/projects/{{ baseimage }}"
+          src="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}_tiny.{{ imageending }}"
+          alt="{{ project.featured-alt }}"
+          class="lazy"
+        />
+      </picture>
+    </div>
 
-        <div
-            class="project__featured-image-container"
-            style="background-color: {{ project.featured-bg }};"
-        >
-            <picture
-                class="project__featured-image {% if project.featured-size == 'cropped' %} project__featured-image--cropped {% endif %}"
-            >
-                <source
-                    media="(max-width: 799px)"
-                    data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.5x.{{ imageending }}"
-                />
-                <source
-                    media="(min-width: 800px)"
-                    data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.75x.{{ imageending }}"
-                />
-                <img
-                    data-src="{{ site.baseurl }}/assets/images/projects/{{ baseimage }}"
-                    src="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}_tiny.{{ imageending }}"
-                    alt="{{ project.featured-alt }}"
-                    class="lazy"
-                />
-            </picture>
-        </div>
-
-        <header class="project__header">
-            <div class="project__text-container">
-                <h2 class="project__title">{{ project.title }}</h2>
-                <span class="project__excerpt">{{ project.excerpt }}</span>
-            </div>
-            {% if project.years %}<p class="project__years">{{ project.years }}</p>{% endif %}
-            {% if project.casestudy %}
-            <a
-                class="project__link project__button project__button--casestudy"
-                href="{{ project.url }}"
-                aria-label="Click to see {{ project.title }} project"
-            >
-                See project
-                <i
-                    class="project__link-icon fas fa-angles-right"
-                    aria-hidden="true"
-                ></i>
-            </a>
-            {% elsif project.project-url == null %}
-            <em>Coming soon</em>
-            {% endif %}
-        </header>
-    </article>
-    {% endif %} {% endfor %}
+    <header class="project__header">
+      <div class="project__text-container">
+        <h2 class="project__title">{{ project.title }}:</h2>
+        <span class="project__excerpt">{{ project.excerpt }}</span>
+      </div>
+      {% if project.years %}
+      <p class="project__years">{{ project.years }}</p>
+      {% endif %} {% if project.casestudy %}
+      <a
+        class="project__link project__button project__button--casestudy"
+        href="{{ project.url }}"
+        aria-label="Click to see {{ project.title }} project"
+      >
+        See project
+        <i
+          class="project__link-icon fas fa-angles-right"
+          aria-hidden="true"
+        ></i>
+      </a>
+      {% elsif project.project-url == null %}
+      <em>Coming soon</em>
+      {% endif %}
+    </header>
+  </article>
+  {% endif %} {% endfor %}
 </div>

@@ -15,9 +15,51 @@ layout_type: project
   >
     {% if page.hero %} {% include hero.html %} {% endif %}
     <div class="p-project c-{{ page.category }}">
-      {% for section in page.sections %}
-      <section
-        class="section 
+      <aside class="aside__block-container">
+        <div class="aside__block">
+          <div class="aside__heading">Project</div>
+          {% if page.hero.desc %}
+          <h1 class="aside__content">
+            {{ page.hero.title }}: {{ page.hero.desc }}
+          </h1>
+          {% else %}
+          <h1 class="aside__content">{{ page.hero.title }}</h1>
+          {% endif %}
+        </div>
+        {% if page.hero.roles %}
+        <div class="aside__block">
+          <div class="aside__heading">Contributions</div>
+          <div class="aside__content">
+            {% if page.hero.roles %} {{ page.hero.roles }} {% endif %}
+          </div>
+        </div>
+        {% endif %} {% if page.hero.organization %}
+        <div class="aside__block">
+          <div class="aside__heading">Organization</div>
+          <div class="aside__content">
+            {% if page.hero.organization.url %}
+            <a
+              title="{{ page.hero.organization.name }}"
+              href="{{ page.hero.organization.url }}"
+            >
+              {% endif %}
+              <span> {{ page.hero.organization.name }} </span>
+              {% if page.hero.organization.url %}
+            </a>
+            {% endif %}
+          </div>
+        </div>
+        {% endif %} {% if link %}
+        <div class="aside__block">
+          <div class="aside__heading">Links</div>
+          <div class="aside__content">{{ link }}</div>
+        </div>
+        {% endif %}
+      </aside>
+      <div class="section-container">
+        {% for section in page.sections %}
+        <section
+          class="section 
                 {% if section.type %}
                     section--{{ section.type }}
                 {% endif %}
@@ -25,89 +67,93 @@ layout_type: project
                     section--{{ section.layout }}
                 {% endif %}
                 "
-      >
-        <!-- Text only layout -->
-        {% if section.layout == "text-only" %}
-        <div class="section__text-container">
-          <h2 class="section__title">{{ section.title }}</h2>
-          <div class="section__text">{{ section.desc | markdownify }}</div>
-        </div>
-        {% endif %}
-
-        <!-- Visual only layout -->
-        {% if section.layout == "visual-only" %}
-        <div
-          class="section__visual-container"
-          style="background-color: {{ section.visual.bg }};"
         >
-          {% if section.visual.type == "image" %} {% include project-visual.html
-          type=section.visual.type image=section.visual.image
-          image-alt=section.visual.image-alt caption=section.visual.caption %}
-          {% elsif section.visual.type == "slider" %} {% include
-          project-slider.html slides=section.slides %} {% elsif
-          section.visual.type == "video" %} {% include project-video.html
-          path=section.visual.path caption=section.visual.caption %} {% endif %}
-        </div>
-        {% endif %}
-
-        <!-- Text and image layout -->
-        {% if section.layout == "text-visual" %}
-        <div class="section__text-container">
-          {% if section.title %}
-          <h2 class="section__title">{{ section.title }}</h2>
+          <!-- Text only layout -->
+          {% if section.layout == "text-only" %}
+          <div class="section__text-container">
+            <h2 class="section__title">{{ section.title }}</h2>
+            <div class="section__text">{{ section.desc | markdownify }}</div>
+          </div>
           {% endif %}
 
-          <div class="section__text">{{ section.desc | markdownify }}</div>
-        </div>
-        <div
-          class="section__visual-container"
-          style="background-color: {{ section.visual.bg }};"
-        >
-          {% if section.visual.type == "image" %} {% include project-visual.html
-          type=section.visual.type image=section.visual.image
-          image-alt=section.visual.image-alt caption=section.visual.caption %}
-          {% elsif section.visual.type == "slider" %} {% include
-          project-slider.html slides=section.slides %} {% elsif
-          section.visual.type == "video" %} {% include project-video.html
-          path=section.visual.path caption=section.visual.caption %} {% endif %}
-        </div>
-        {% endif %}
-
-        <!-- Image grid -->
-        {% if section.type == "grid" %}
-        <div
-          class="section__visual-container section__visual-container--{{ section.layout }}"
-          style="background-color: {{ section.visual.bg }};"
-        >
-          {% include project-grid.html images=section.visual
-          caption=section.caption %}
-        </div>
-        {% endif %}
-
-        <!-- Image and text layout -->
-        {% if section.layout == "visual-text" %}
-        <div
-          class="section__visual-container"
-          style="background-color: {{ section.visual.bg }};"
-        >
-          {% if section.visual.type == "image" %} {% include project-visual.html
-          type=section.visual.type image=section.visual.image
-          image-alt=section.visual.image-alt caption=section.visual.caption %}
-          {% elsif section.visual.type == "slider" %} {% include
-          project-slider.html slides=section.visual.slides %} {% elsif
-          section.visual.type == "video" %} {% include project-video.html
-          path=section.visual.path caption=section.visual.caption %} {% endif %}
-        </div>
-        <div class="section__text-container">
-          {% if section.title %}
-          <h2 class="section__title">{{ section.title }}</h2>
+          <!-- Visual only layout -->
+          {% if section.layout == "visual-only" %}
+          <div
+            class="section__visual-container"
+            style="background-color: {{ section.visual.bg }};"
+          >
+            {% if section.visual.type == "image" %} {% include
+            project-visual.html type=section.visual.type
+            image=section.visual.image image-alt=section.visual.image-alt
+            caption=section.visual.caption %} {% elsif section.visual.type ==
+            "slider" %} {% include project-slider.html slides=section.slides %}
+            {% elsif section.visual.type == "video" %} {% include
+            project-video.html path=section.visual.path
+            caption=section.visual.caption %} {% endif %}
+          </div>
           {% endif %}
 
-          <div class="section__text">{{ section.desc | markdownify }}</div>
-        </div>
-        {% endif %}
-      </section>
-      {% endfor %} {% include project-pagination.html %}
+          <!-- Text and image layout -->
+          {% if section.layout == "text-visual" %}
+          <div class="section__text-container">
+            {% if section.title %}
+            <h2 class="section__title">{{ section.title }}</h2>
+            {% endif %}
+
+            <div class="section__text">{{ section.desc | markdownify }}</div>
+          </div>
+          <div
+            class="section__visual-container"
+            style="background-color: {{ section.visual.bg }};"
+          >
+            {% if section.visual.type == "image" %} {% include
+            project-visual.html type=section.visual.type
+            image=section.visual.image image-alt=section.visual.image-alt
+            caption=section.visual.caption %} {% elsif section.visual.type ==
+            "slider" %} {% include project-slider.html slides=section.slides %}
+            {% elsif section.visual.type == "video" %} {% include
+            project-video.html path=section.visual.path
+            caption=section.visual.caption %} {% endif %}
+          </div>
+          {% endif %}
+
+          <!-- Image grid -->
+          {% if section.type == "grid" %}
+          <div
+            class="section__visual-container section__visual-container--{{ section.layout }}"
+            style="background-color: {{ section.visual.bg }};"
+          >
+            {% include project-grid.html images=section.visual
+            caption=section.caption %}
+          </div>
+          {% endif %}
+
+          <!-- Image and text layout -->
+          {% if section.layout == "visual-text" %}
+          <div
+            class="section__visual-container"
+            style="background-color: {{ section.visual.bg }};"
+          >
+            {% if section.visual.type == "image" %} {% include
+            project-visual.html type=section.visual.type
+            image=section.visual.image image-alt=section.visual.image-alt
+            caption=section.visual.caption %} {% elsif section.visual.type ==
+            "slider" %} {% include project-slider.html
+            slides=section.visual.slides %} {% elsif section.visual.type ==
+            "video" %} {% include project-video.html path=section.visual.path
+            caption=section.visual.caption %} {% endif %}
+          </div>
+          <div class="section__text-container">
+            {% if section.title %}
+            <h2 class="section__title">{{ section.title }}</h2>
+            {% endif %}
+
+            <div class="section__text">{{ section.desc | markdownify }}</div>
+          </div>
+          {% endif %}
+        </section>
+        {% endfor %} {% include project-pagination.html %}
+      </div>
     </div>
   </div>
   <!-- Main / Content -->

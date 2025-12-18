@@ -6,79 +6,79 @@
  * Paragraph base styles
  */
 p {
-    font: $body-font;
-	margin-bottom: $space;
+  font: $body-font;
+  margin-bottom: $space;
 }
 
 /**
  * Blockquote base styles
  */
 blockquote {
-    font-style: normal;
-    font-weight: $font-weight-light;
-    font-size: $font-size-med-2;
-    border-left: 3px solid $color-muted-lilac;
-    color: $color-neutral-700;
-	padding-left: 1rem;
-	margin-bottom: $space;
+  font-style: normal;
+  font-weight: $font-weight-light;
+  font-size: $font-size-med-2;
+  border-left: 3px solid $color-muted-lilac;
+  color: $color-neutral-700;
+  padding-left: 1rem;
+  margin-bottom: $space;
 }
 
 cite {
-    font-style: normal;
-    font-size: $font-size-sm;
+  font-style: normal;
+  font-size: $font-size-sm;
 }
 
 /**
  * Horizontal rule base styles
  */
 hr {
-	border: 0;
-    height: 1px;
-    background: $color-neutral-200;
-    margin: 1rem 0;
+  border: 0;
+  height: 1px;
+  background: $color-neutral-200;
+  margin: 1rem 0;
 }
 
 /**
  * Selection styles
  */
 ::-moz-selection {
-    color: black;
-    background: rgba($color-tertiary, 0.75); /* Gecko Browsers */
+  color: black;
+  background: rgba($color-tertiary, 0.75); /* Gecko Browsers */
 }
 ::selection {
-    color: black;
-    -webkit-text-fill-color: black;
-    background: rgba($color-tertiary, 0.75); /* WebKit/Blink Browsers */
+  color: black;
+  -webkit-text-fill-color: black;
+  background: rgba($color-tertiary, 0.75); /* WebKit/Blink Browsers */
 }
 
 /**
  * Code base styles
  */
 code {
-	display: inline-block;
-	background: $color-neutral-100;
-	border: 1px solid $color-neutral-200;
-	padding: $pad-small $pad-medium;
-    line-height: $line-height-medium;
-    font-size: $font-size-sm;
+  display: inline-block;
+  background: $color-neutral-100;
+  border: 1px solid $color-neutral-200;
+  padding: $pad-small $pad-medium;
+  line-height: $line-height-medium;
+  font-size: $font-size-sm;
 }
 
 /**
  * Preformatted text base styles
  */
 pre {
-	background: $color-neutral-100;
-	border: 1px solid $color-neutral-200;
-	font-size: $font-size-med;
-	padding: $pad-normal;
-    overflow-x: auto;
+  background: $color-neutral-100;
+  border: 1px solid $color-neutral-200;
+  font-size: $font-size-med;
+  padding: $pad-normal;
+  overflow-x: auto;
 
-	/**
+  /**
 	 * Remove border from code within preformatted text block
 	 */
-	code {
-		border: 0;
-	}
+  code {
+    border: 0;
+  }
 }
 
 /**
@@ -87,5 +87,16 @@ pre {
  */
 code[class*="language-"],
 pre[class*="language-"] {
-    font-family:monospace !IMPORTANT;
+  font-family: monospace !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }

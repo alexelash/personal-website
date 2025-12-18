@@ -1,6 +1,75 @@
 $section-highlight-color: $color-white;
 
 .p-project {
+  padding: $pad-normal 0;
+  max-width: $l-max-width;
+  margin: 0 auto;
+
+  @media screen and (max-width: $bp-large-2) {
+    padding: $pad-medium 0;
+  }
+
+  @media screen and (min-width: $bp-large) {
+    display: grid;
+    grid-template-columns: 1.25fr 1.25fr 1fr;
+    column-gap: $pad-large-2;
+    align-items: baseline;
+  }
+
+  .aside {
+    &__heading {
+      color: $heading-color;
+      font-family: $font-family-secondary;
+      font-weight: $font-weight-normal;
+      font-size: $font-size-sm;
+      margin-bottom: $pad-small;
+      line-height: 1.4;
+
+      @media screen and (max-width: $bp-med) {
+        font-size: $font-size-med;
+      }
+    }
+
+    &__content {
+      color: $body-color;
+      font-weight: $font-weight-light;
+      font-size: $font-size-med-2;
+      margin-bottom: $pad-normal;
+      line-height: 1.4;
+
+      p {
+        font-size: inherit;
+        line-height: inherit;
+        font-size: inherit;
+        margin-bottom: inherit;
+      }
+
+      @media screen and (min-width: $bp-large) {
+        grid-column: 1 / span 2;
+      }
+    }
+
+    &__project-url-container {
+      font-size: inherit;
+      display: inline;
+    }
+
+    &__project-link {
+      padding: 0;
+      border-radius: 100%;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .section-container {
+    @media screen and (min-width: $bp-large) {
+      grid-column: span 2;
+    }
+  }
+
   .section {
     display: flex;
     padding: $pad-normal 0;

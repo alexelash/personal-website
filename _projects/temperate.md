@@ -7,7 +7,7 @@ redirects_from:
 
 title: "Temperate"
 seo_description:
-  "Branding, UX/UI design, front-end development, and marketing design for a
+  "Brand, UX/UI, front-end development, and marketing design for a
   climate change decision-support SaaS product."
 
 featured-image: "azavea-temperate/temperate_RGB_centered.png"
@@ -20,7 +20,7 @@ excerpt: Logo, identity, website
 hero:
   title: "Temperate"
   tagline: "A climate change companion"
-  desc: "Brand and marketing design for a decision-support tool for climate adaptation planners."
+  desc: "A decision-support tool for climate adaptation planners."
   image: "azavea-temperate/temperate_RGB_centered.png"
   image-alt: "Temperate logo."
   roles: "Branding, UX/UI design, Front-end development, Marketing website"
@@ -32,36 +32,21 @@ sections:
     layout: "text-only"
     title: "Background"
     desc: |
-      Temperate is a decision-support tool for climate adaptation planners. The application guides practitioners through interpreting climate data and is aimed at users who may lack a climate background and need help understanding the process. Temperate help users develop a “vulnerability assessment” for their community and offers suggestions for how to take action based on a user’s location and particular community needs.
+      Temperate was a decision-support tool for climate adaptation planners. The application guided practitioners through interpreting climate data. It was primarily aimed at users who lack a climate background, but need to make critical decisions for their constituent's changing climate. Temperate guided users through the process of creating a “vulnerability assessment” for their community, suggesting how planners could take action.
 
-      Given our target userbase, I wanted to ensure that Temperate’s brand felt friendly and unintimidating.
-  - type: "default"
-    layout: "text-only"
-    title: "Branding research"
-    desc: |
+      Temperate’s brand is designed to be friendly and unintimidating.
+
+      ## Branding research
+
       Before touching a pencil, I researched tools already in the climate space. This allowed me to get a better sense of what would make Temperate stand apart from the already fairly crowded landscape of tools. I discovered several patterns: 
 
-      - Unsurprisingly, color is dominated by blue and green.
-      - Frequently the names of tools are fairly literal.  
-      - Imagery typically includes environmental symbols, like leaves, sun or water.
-      - Marketing efforts in the space tend to focus on data as opposed to user goals.
+      - Unsurprisingly, blue and green dominate palette choices.
+      - Tool names are typically very literal.  
+      - Symbolism included environmental symbols, like leaves, sun or water.
+      - Marketing efforts tended to focus on breadth of data available.
 
-      This research was crucial in allowing me to establish a benchmark against which to develop and evaluate our product’s brand.
-  - type: "default"
-    layout: "text-visual"
-    title: "Naming our product"
-    desc: |
-      Once I better understood what was already out there, I felt that we could make the new product stand out with a unique, conceptual name and logomark. Using dependable blues and greens would ground the brand identity, and make it feel like it belongs alongside other tools and organizations. The team worked on developing a name and solicited ideas from all corners of the office. 
+      Our team brainstormed name ideas, ultimately choosing to reflect the aspirational goal: to keep our world’s climate liveable, or temperate, for all of Earth’s creatures.
 
-      Ultimately, we chose to reflect climate adaptation planning’s loftiest aspirational goal: to keep our world’s climate liveable for all of Earth’s creatures.
-    visual:
-      type: "image"
-      caption: "Temperate climates lack extremes of temperate and precipitation."
-      image: "azavea-temperate/temperate_branding_04.jpg"
-      image-alt: "The word 'temperate' cutting out an image of coral reef."
-  - type: "default"
-    layout: "text-only"
-    desc: |
       We went with the name Temperate, inspired by geographically temperate climates. Temperate climates are those without extremes of temperature and precipitation (rain and snow), which made it a perfect analogy for the goal.
   - type: "default"
     layout: "text-visual"

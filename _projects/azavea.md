@@ -11,7 +11,7 @@ featured-alt: "Azavea logo."
 featured-bg: "#4CA3DB"
 
 project-url: "https://branding.azavea.com/"
-excerpt: "Brand management, marketing, web design & front-end development"
+excerpt: "Brand management, marketing, web design, front-end development"
 
 hero:
   title: "Azavea"
