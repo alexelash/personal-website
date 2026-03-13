@@ -3,67 +3,67 @@
 \*------------------------------------*/
 
 .social-icons {
-    display: flex;
+  display: flex;
+
+  @media all and (max-width: $bp-med) {
+    justify-content: center;
+  }
+
+  &__link {
+    color: $social-icon-fill;
+    transition: fill 0.15s ease-in;
+    padding: $pad-small;
+    border-radius: 100%;
+    transition: fill 0.15s;
+
+    &::after {
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+      color: $link-color;
+    }
+
+    &:focus {
+      @include focus-outline();
+    }
+
+    &:focus:not(:focus-visible) {
+      color: $social-icon-fill;
+      box-shadow: none;
+    }
+
+    &:focus-visible {
+      @include focus-outline();
+    }
+  }
+
+  &__icon {
+    font-size: $font-size-med;
+    margin-left: 0;
+    text-indent: initial;
+    margin-bottom: 0;
+    margin: $pad-compact;
+
+    &::before {
+      display: none !important;
+    }
 
     @media all and (max-width: $bp-med) {
-        justify-content: center;
+      font-size: $font-size-large-2;
+      margin: 0.5rem;
     }
-
-    &__link {
-        color: $social-icon-fill;
-        transition: fill 0.15s ease-in;
-        padding: $pad-small;
-        border-radius: $border-radius-big;
-        transition: fill 0.15s;
-
-        &::after {
-            display: none;
-        }
-
-        &:hover,
-        &:focus {
-            color: $link-color;
-        }
-
-        &:focus {
-            @include focus-outline();
-        }
-
-        &:focus:not(:focus-visible) {
-            color: $social-icon-fill;
-            box-shadow: none;
-        }
-
-        &:focus-visible {
-            @include focus-outline();
-        }
-    }
-
-    &__icon {
-        font-size: $font-size-med;
-        margin-left: 0;
-        text-indent: initial;
-        margin-bottom: 0;
-        margin: $pad-compact;
-
-        &::before {
-            display: none !IMPORTANT;
-        }
-
-        @media all and (max-width: $bp-med) {
-            font-size: $font-size-large-2;
-            margin: 0.5rem;
-        }
-    }
+  }
 }
 
 @media all and (max-width: $bp-med) {
-    .social-icons__link {
-        color: rgba($color-white, 0.5);
+  .social-icons__link {
+    color: rgba($color-white, 0.5);
 
-        &:hover,
-        &:active {
-            color: rgba($color-white, 0.85);
-        }
+    &:hover,
+    &:active {
+      color: rgba($color-white, 0.85);
     }
+  }
 }

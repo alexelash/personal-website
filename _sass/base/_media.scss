@@ -7,37 +7,39 @@
  * 1) Allows for images to flex with varying screen size
  */
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 figcaption {
-    font-size: $font-size-sm;
-    line-height: $line-height-medium;
-    font-weight: $font-weight-normal;
+  font-size: $font-size-sm;
+  line-height: $line-height-medium;
+  font-weight: $font-weight-normal;
+  margin: $pad-medium auto 0;
+  max-width: 72ch;
 }
 
 .lazy {
-    opacity: 0;
-    transition: opacity 0.25s;
+  opacity: 0;
+  transition: opacity 0.25s;
 }
 
 .lazy.loaded {
-    opacity: 1;
+  opacity: 1;
 }
 
 .desktop-only {
-    display: none;
+  display: none;
 
-    @media all and (min-width: $bp-med) {
-        display: block;
-    }
+  @media all and (min-width: $bp-med) {
+    display: block;
+  }
 }
 
 .mobile-only {
-    display: none;
+  display: none;
 
-    @media all and (max-width: $bp-med) {
-        display: block;
-    }
+  @media all and (max-width: $bp-med) {
+    display: block;
+  }
 }

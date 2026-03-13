@@ -1,11 +1,31 @@
-<figure class="project-video" style="background-color: {{ include.bg }};">
-    <video controls autoplay width="250">
-        <source src="{{ site.baseurl }}/assets/images/projects/{{ include.path }}"
-                type="video/mp4">
-        Sorry, your browser doesn't support embedded videos.
+<figure
+  class="project-video"
+  style="background-color: {{ include.bg }};"
+>
+  <a
+    href="{{ site.baseurl }}/assets/images/projects/{{ baseimage }}"
+    class="glightbox"
+    data-type="video"
+    data-effect="fade"
+    data-zoomable="false"
+    data-title="{% if include.caption %}{{ include.caption | markdownify }}{% endif %}"
+  >
+    <video
+      controls
+      autoplay
+      width="250"
+    >
+      <source
+        src="{{ site.baseurl }}/assets/images/projects/{{ include.path }}"
+        type="video/mp4"
+      />
+      Sorry, your browser doesn't support embedded videos.
     </video>
 
     {% if include.caption %}
-    <figcaption class="project-video__caption">{{ include.caption | markdownify }}</figcaption>
+    <figcaption class="project-video__caption">
+      {{ include.caption | markdownify }}
+    </figcaption>
     {% endif %}
+  </a>
 </figure>

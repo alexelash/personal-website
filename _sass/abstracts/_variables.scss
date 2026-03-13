@@ -45,36 +45,36 @@
  *    Feel free to add your brand's color palette here.
  */
 $color-primary: #f74100;
-$color-primary-100: #FEE7CB;
-$color-primary-200: #FEC898;
-$color-primary-300: #FCA265;
-$color-primary-400: #FA7D3E;
+$color-primary-100: #fee7cb;
+$color-primary-200: #fec898;
+$color-primary-300: #fca265;
+$color-primary-400: #fa7d3e;
 $color-primary-500: #f74100;
-$color-primary-600: #D42900;
-$color-primary-700: #B11500;
-$color-primary-800: #8F0700;
+$color-primary-600: #d42900;
+$color-primary-700: #b11500;
+$color-primary-800: #8f0700;
 $color-primary-900: #760001;
 
 $color-secondary: #1f6135;
-$color-secondary-100: #ECF4EC;
-$color-secondary-200: #CAE9CB;
-$color-secondary-300: #B9DFBE;
-$color-secondary-400: #6EBA80;
+$color-secondary-100: #ecf4ec;
+$color-secondary-200: #cae9cb;
+$color-secondary-300: #b9dfbe;
+$color-secondary-400: #6eba80;
 $color-secondary-500: #1f6135;
-$color-secondary-600: #092F19;
+$color-secondary-600: #092f19;
 $color-secondary-700: #072517;
-$color-secondary-800: #051D14;
+$color-secondary-800: #051d14;
 $color-secondary-900: #041813;
 
-$color-tertiary: #C6C013;
-$color-tertiary-100: #FBFAEF;
-$color-tertiary-200: #F7F6CA;
-$color-tertiary-300: #F3F2BC;
-$color-tertiary-400: #E6E269;
-$color-tertiary-500: #C6C013;
-$color-tertiary-600: #605C05;
-$color-tertiary-700: #4C4904;
-$color-tertiary-800: #3B3803;
+$color-tertiary: #c6c013;
+$color-tertiary-100: #fbfaef;
+$color-tertiary-200: #f7f6ca;
+$color-tertiary-300: #f3f2bc;
+$color-tertiary-400: #e6e269;
+$color-tertiary-500: #c6c013;
+$color-tertiary-600: #605c05;
+$color-tertiary-700: #4c4904;
+$color-tertiary-800: #3b3803;
 $color-tertiary-900: #323002;
 
 $color-muted-lilac: #b59da4;
@@ -85,20 +85,25 @@ $color-muted-lilac-dark: #896771;
  * 1) Neutral colors are grayscale values used throughout the application
  */
 
-$color-neutral: #7F7F7F;
+$color-neutral: #7f7f7f;
 $color-white: #fff;
 $color-neutral-100: #f3f3f3;
-$color-neutral-200: #E0E0E0;
-$color-neutral-300: #D6D6D6;
-$color-neutral-400: #A5A5A5;
-$color-neutral-500: #7F7F7F;
+$color-neutral-200: #e0e0e0;
+$color-neutral-300: #d6d6d6;
+$color-neutral-400: #a5a5a5;
+$color-neutral-500: #7f7f7f;
 $color-neutral-600: #595959;
-$color-neutral-700: #3D3D3D;
+$color-neutral-700: #3d3d3d;
 $color-neutral-800: #292929;
 $color-neutral-900: #141414;
-$color-black: #0A0A0A;
+$color-black: #0a0a0a;
 
-$color-neutral-fade: linear-gradient( to bottom, rgba($color-neutral, 0), $color-neutral, rgba($color-neutral, 0));
+$color-neutral-fade: linear-gradient(
+  to bottom,
+  rgba($color-neutral, 0),
+  $color-neutral,
+  rgba($color-neutral, 0)
+);
 
 /**
  * Utility Colors
@@ -121,10 +126,9 @@ $color-utility-warning-light: #fffecf;
 /**
  * Font Family
  */
-$font-family-primary: 'Decimal A', 'Decimal B',
-    sans-serif;
-$font-family-secondary: 'Ringside Regular SSm A', 'Ringside Regular SSm B',
-    'Arial', sans-serif;
+$font-family-primary: "Decimal A", "Decimal B", sans-serif;
+$font-family-secondary: "Ringside Regular SSm A", "Ringside Regular SSm B",
+  "Arial", sans-serif;
 
 /**
  * Font Sizing
@@ -166,9 +170,10 @@ $line-height-large-2: 1.65;
 /**
  * Max Width
  */
-$l-max-width: 72rem;
-$l-max-width-mid: 55rem;
 $l-max-width-narrow: 42rem;
+$l-max-width-mid: 55rem;
+$l-max-width: 72rem;
+$l-max-width-large: 82rem;
 
 /*------------------------------------*\
     #SPACING
@@ -199,8 +204,10 @@ $space-bullet-offset: 1.6rem; /* 2 */
 /**
  * Border variables
  */
-$border-radius: 2px;
-$border-radius-big: 4px;
+$border-radius-xs: 2px;
+$border-radius-sm: 4px;
+$border-radius: 8px;
+$border-radius-large: 16px;
 
 /*------------------------------------*\
     #ANIMATION
@@ -240,16 +247,24 @@ $bp-xxxl: 90em;
 \*------------------------------------*/
 $nav-height: 1rem;
 $body-background: $color-neutral-200;
+
 $heading-color: $color-neutral-700;
 $body-color: $color-neutral;
 $body-outline-color: $color-neutral;
-$body-font: $font-weight-light 110%/1.65 $font-family-secondary;
-
+$body-font: $font-weight-light 1.25rem/1.45 $font-family-secondary;
 $link-color: $color-neutral-700;
 $link-icon-color: $color-neutral-500;
 $link-color-hover: $color-neutral-900;
 $link-underline-color: $color-neutral-600;
 $link-underline-color-hover: lighten($link-color, 0.5);
+
+$heading-color-inverted: rgba($color-white, 0.95);
+$body-color-inverted: rgba($color-white, 0.65);
+$link-color-inverted: rgba($color-white, 0.95);
+$link-icon-color-inverted: rgba($color-white, 0.65);
+$link-color-hover-inverted: rgba($color-white, 0.5);
+$link-underline-color-inverted: $color-white;
+$link-underline-color-hover-inverted: lighten($link-color-inverted, 0.65);
 
 $button-background: $color-neutral;
 $button-background-hover: $color-muted-lilac-dark;
@@ -260,3 +275,5 @@ $button-border: $color-neutral-700;
 $h1-border-color: $color-neutral;
 
 $social-icon-fill: $color-neutral-600;
+
+$social-icon-fill-inverted: rgba($color-white, 0.65);

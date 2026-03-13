@@ -6,90 +6,76 @@
  * Section block that helps chunk related items together
  */
 .section {
-    /**
+  /**
      * Stacked content
      */
-    &--stacked {
-        flex-direction: column;
-        align-items: center;
+  &--stacked {
+    flex-direction: column;
+    align-items: center;
 
-        &:first-child {
-            margin-bottom: $pad-normal;
-        }
+    &:first-child {
+      margin-bottom: $pad-normal;
     }
+  }
 
-    /**
+  /**
      * Side-by-side content
      */
-    &--default {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        max-width: 100%;
-    }
+  &--default {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+  }
 
-    /**
+  /**
      * Text-only sections
      */
-    &--text-only & {
-        &__text-container {
-            margin: 0 auto;
-        }
+  &--text-only & {
+    &__text-container {
+      margin: 0 auto;
     }
+  }
 
-    /**
+  /**
      * Text first, then the visual
      */
-    &--text-visual & {
-        &__text-container {
-            margin-bottom: $pad-normal;
-        }
+  &--text-visual & {
+    &__text-container {
+      margin-bottom: $pad-normal;
     }
+  }
 
-    /**
+  /**
      * Visual first, then the text
      */
-    &--visual-text & {
-        &__visual-container {
-            margin-bottom: $pad-normal;
-        }
-    }
-
-    &__text-container {
-        p,
-        ul,
-        ol,
-        li {
-            font: $body-font;
-        }
-
-        li {
-            font: $body-font;
-            margin-bottom: $pad-medium;
-        }
-    }
-
-    &__title {
-        font-size: $font-size-large-2;
-        font-weight: $font-weight-bold;
-        margin-bottom: $pad-comfortable;
-
-        @media screen and (max-width: $bp-med) {
-            font-size: $font-size-large;
-            margin-bottom: $pad-normal;
-        }
-    }
-
-    &__title,
-    &__text {
-        max-width: $l-max-width-narrow;
-    }
-
+  &--visual-text & {
     &__visual-container {
-        width: 100%;
-        max-width: $l-max-width;
-        margin: 0 auto;
+      margin-bottom: $pad-normal;
     }
+  }
+
+  &__title {
+    font-size: $font-size-large-2;
+    font-weight: $font-weight-light;
+    margin-bottom: $pad-comfortable;
+
+    @media screen and (max-width: $bp-med) {
+      font-size: $font-size-large;
+      margin-bottom: $pad-normal;
+    }
+  }
+
+  &__title,
+  &__text {
+    max-width: $l-max-width-narrow;
+  }
+
+  &__visual-container {
+    width: 100%;
+    max-width: $l-max-width;
+    margin: 0 auto;
+  }
 }
 
 /*------------------------------------*\
@@ -97,16 +83,16 @@
 \*------------------------------------*/
 
 .section-header {
-    margin-bottom: $pad-normal;
-    padding-bottom: $pad-medium;
-    border-bottom: 1px solid $color-neutral-100;
+  margin-bottom: $pad-normal;
+  padding-bottom: $pad-medium;
+  border-bottom: 1px solid $color-neutral-100;
 }
 
 .section-header__title {
-    font-size: $font-size-large;
+  font-size: $font-size-large;
 }
 
 .section-header__desc {
-    font-size: $font-size-med;
-    margin-bottom: 0;
+  font-size: $font-size-med;
+  margin-bottom: 0;
 }

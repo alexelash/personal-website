@@ -6,28 +6,26 @@
  * 1) Navigation within the footer
  */
 .footer-nav {
-    display: flex;
-    font-size: $font-size-sm;
+  display: flex;
+  font-size: $font-size-sm;
 }
 
 /**
  * Footer navigation link
  */
 .footer-nav__link {
-    display: block;
-    padding: 1rem 1rem 0.5rem;
-    line-height: 1;
-    color: $color-neutral-700;
+  display: block;
+  padding: 1rem 1rem 0.5rem;
+  line-height: 1;
+  color: inherit;
 
-    &:hover, &:focus {
-        color: $color-neutral-900;
-    }
+  &:hover,
+  &:focus {
+    color: rgba($color-white, 0.8);
+    outline: none;
+  }
 
-    &:focus:not(:focus-visible) {
-        color: $color-neutral-700;
-    }
-
-    &:focus-visible {
-        color: $color-neutral-900;
-    }
+  &:focus-visible {
+    @include focus-outline();
+  }
 }

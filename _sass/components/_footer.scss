@@ -6,21 +6,24 @@
  * 1) Global block at the bottom of each page that contains a navigation and other information
  */
 .footer {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin: auto $pad-normal $pad-large-2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto $pad-normal $pad-large-2;
 
-    @media all and (min-width: $bp-med) {
-        padding: $pad-normal $pad-large-2;
-    }
+  @media all and (min-width: $bp-med) {
+    padding: $pad-normal $pad-large-2;
+  }
 
-    &__social-block {
-        margin: 0 auto;
-    }
+  &__social-block {
+    margin: 0 auto;
+  }
 
-    &__smallprint {
-        margin-top: $pad-comfortable;
-        color: $color-neutral-500;
-    }
+  &__smallprint {
+    margin-top: $pad-comfortable;
+  }
+}
+
+.p-work .footer {
+  color: $color-white;
 }

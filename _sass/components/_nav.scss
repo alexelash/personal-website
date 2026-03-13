@@ -5,387 +5,363 @@ $nav-height: 70px;
 $nav-trigger-width: 36px;
 
 .-js-mobile-nav-visible {
-    @media screen and (max-width: $bp-med)  {
-        overflow-y: hidden;
+  @media screen and (max-width: $bp-med) {
+    overflow-y: hidden;
 
-        .c-nav {
-            height: 100vh;
-            background-size: 100% 100%;
+    .c-nav {
+      height: 100vh;
+      background-size: 100% 100%;
+
+      &__name {
+        color: $heading-color-inverted;
+      }
+
+      &__role {
+        color: $body-color-inverted;
+      }
+
+      &::after {
+        mask: none;
+        -webkit-mask: none;
+        background: transparent;
+      }
+
+      &__inner {
+        height: 100%;
+      }
+
+      &__list-container {
+        height: 100% !important;
+        padding-top: 0;
+        align-content: center;
+        padding-bottom: 30%;
+      }
+
+      &__trigger-container {
+        height: auto;
+        width: $nav-trigger-width;
+      }
+      &__link {
+        color: $link-color-inverted;
+        font-weight: $font-weight-light;
+        font-size: $font-size-large-2;
+        line-height: $line-height-compact;
+        padding: $pad-normal 0;
+        position: relative;
+
+        &:not(&--is-active) {
+          &:hover {
+            color: $link-color-hover-inverted;
 
             &::after {
-                mask: none;
-                -webkit-mask: none;
-                background: transparent;
+              border-color: transparent;
             }
-
-            &__inner {
-                height: 100%;
-            }
-
-            &__list-container {
-                height: 100% !IMPORTANT;
-                padding-top: 0;
-                align-content: center;
-                padding-bottom: 30%;
-            }
-
-            &__trigger-container {
-                height: auto;
-                width: $nav-trigger-width;
-            }
-            
-            &__name {
-                color: $color-white;
-            }
-            
-            &__role {
-                color: rgba($color-white, 0.65);
-            }
-
-            &__link {
-                color: $color-white;
-                font-weight: $font-weight-light;
-                font-size: $font-size-large-2;
-                line-height: $line-height-compact;
-                padding: $pad-normal 0;
-                position: relative;
-
-                &:not(&--is-active) {
-                    &:hover {
-                        color: $color-primary;
-
-                        &::after {
-                            border-color: transparent;
-                        }
-                    }
-                }
-
-                &--is-active {
-                    display: inline-block;
-
-                    &::after {
-                        display: block;
-                        border-color: $color-white;
-                        transform: scaleX(100%);
-                        width: 100%;
-                        bottom: $pad-medium;
-                    }
-                }
-            }
-            
-            &__menu-icon {
-                fill: $color-white;
-
-                &:hover,
-                &:active {
-                    fill: rgba($color-white, 0.5);
-                }
-            }
+          }
         }
+
+        &--is-active {
+          display: inline-block;
+
+          &::after {
+            display: block;
+            border-color: $link-underline-color-hover-inverted;
+            transform: scaleX(100%);
+            width: 100%;
+            bottom: $pad-medium;
+          }
+        }
+      }
+
+      &__menu-icon {
+        fill: $link-icon-color-inverted;
+
+        &:hover,
+        &:active {
+          fill: rgba($link-icon-color-inverted, 0.5);
+        }
+      }
     }
+  }
 }
 
 .c-nav {
-    width: 100%;
-    z-index: 1;
-    padding: 0 $pad-normal 0;
-    background: linear-gradient(to bottom, $color-primary 100%);
-    background-size: 0% 0%;
+  width: 100%;
+  z-index: 1;
+  padding: 0 $pad-normal 0;
+  background: linear-gradient(to bottom, $color-primary 100%);
+  background-size: 0% 0%;
+  position: relative;
+  height: $nav-height;
+  transition: background-size $anim-longest $anim-ease 1s, height 0 $anim-ease;
+
+  @media all and (min-width: $bp-med) {
+    padding: $pad-normal $pad-large-2 0;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
     position: relative;
-    height: $nav-height;
-    transition: background-size $anim-longest $anim-ease 1s,
-                height 0 $anim-ease;
+
+    @media screen and (max-width: $bp-med) {
+      flex-wrap: wrap;
+      padding: $pad-normal 0 0;
+    }
+
+    @media screen and (max-width: $bp-small) {
+      padding: $pad-comfortable 0;
+    }
+
+    @media screen and (min-width: $bp-med) {
+      justify-content: space-between;
+      margin: 0 auto;
+    }
+  }
+
+  &__logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 
     &::after {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: linear-gradient(to bottom, $color-primary 2.5%, $color-primary-300 15%, $body-background 30px);
-        mask: url(https://assets.codepen.io/339955/caret-down.svg) top/10px 17px repeat-x,
-              url(https://assets.codepen.io/339955/rect.svg) top/auto calc(100% - 63px) repeat-x;
-        -webkit-mask: url(https://assets.codepen.io/339955/caret-down.svg) top/10px 17px repeat-x,
-                      url(https://assets.codepen.io/339955/rect.svg) top/auto calc(100% - 63px) repeat-x;
+      display: none;
     }
 
-    @media all and (min-width: $bp-med) {
-        padding: $pad-normal $pad-large-2 0;
+    @media screen and (max-width: $bp-med) {
+      flex: 0 0 calc(100% - #{$nav-trigger-width});
     }
+  }
 
-    &__inner {
-        display: flex;
-        align-items: center;
-        position: relative;
+  &__name,
+  &__role {
+    font-family: $font-family-secondary;
+    transition: color $anim-quick $anim-ease;
 
-        @media screen and (max-width: $bp-med) {
-            flex-wrap: wrap;
-            padding: $pad-normal 0 0;
-        }
-
-        @media screen and (max-width: $bp-small) {
-            padding: $pad-comfortable 0;
-        }
-
-        @media screen and (min-width: $bp-med) {
-            justify-content: space-between;
-            margin: 0 auto;
-        }
+    @media screen and (min-width: $bp-med) {
+      padding: $pad-compact 0;
     }
+  }
 
-    &__logo {
-        cursor: pointer;
-        display: flex;
-        align-items: center;
+  &__name {
+    color: $heading-color;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-normal;
+    margin: 0;
+  }
 
-        &::after {
-            display: none;
-        }
+  &__role {
+    font-family: $font-family-secondary;
+    font-size: $font-size-sm;
+    color: $body-color;
 
-        @media screen and (max-width: $bp-med) {
-            flex: 0 0 calc(100% - #{$nav-trigger-width});
-        }
+    @media screen and (max-width: $bp-large-2) {
+      font-size: $font-size-sm-2;
     }
+  }
 
-    &__name,
-    &__role {
-        font-family: $font-family-secondary;
-        transition: color $anim-quick $anim-ease;
-
-        @media screen and (min-width: $bp-med) {
-            padding: $pad-compact 0;
-        }
-    }
-
-    &__name {
-        color: $color-neutral-900;
-        font-size: $font-size-sm;
-        font-weight: $font-weight-normal;
-    }
-
-    &__role {
-        font-family: $font-family-secondary;
-        font-size: $font-size-sm;
-        color: $color-neutral-600;
-        opacity: 0.7;
-
-        @media screen and (max-width: $bp-large-2) {
-            font-size: $font-size-sm-2;
-        }
-    }
-
-    /**
+  /**
      * Navigation Trigger Button
      */
 
-    &__trigger-container {
-        @media screen and (max-width: $bp-med) {
-            display: block;
-            text-align: right;
-        }
+  &__trigger-container {
+    @media screen and (max-width: $bp-med) {
+      display: block;
+      text-align: right;
+    }
+  }
+
+  &__trigger {
+    background: transparent;
+    border-radius: 100%;
+    padding: $pad-medium;
+    line-height: 0;
+    transition: color $anim-quick $anim-ease;
+
+    &--is-active {
+      color: $link-color;
     }
 
-    &__trigger {
-        background: transparent;
-        border-radius: 100%;
-        padding: $pad-medium;
-        line-height: 0;
-        transition: color $anim-quick $anim-ease;
-
-        &--is-active {
-            color: $color-neutral-700;
-        }
-
-        &:hover,
-        &:focus {
-            color: $color-neutral-700;
-        }
-
-        &:focus {
-            @include focus-outline();
-        }
-
-        &:focus:not(:focus-visible) {
-            color: $color-neutral-700;
-            box-shadow: none;
-        }
-
-        &:focus-visible {
-            color: inherit;
-            @include focus-outline();
-        }
-
-        @media screen and (min-width: $bp-med) {
-            display: none;
-        }
+    &:hover,
+    &:focus {
+      color: $link-color;
     }
 
-    &__menu-icon {
-        width: 20px;
-        height: auto;
+    &:focus {
+      @include focus-outline();
     }
 
-    /**
+    &:focus:not(:focus-visible) {
+      color: $link-color;
+      box-shadow: none;
+    }
+
+    &:focus-visible {
+      color: inherit;
+      @include focus-outline();
+    }
+
+    @media screen and (min-width: $bp-med) {
+      display: none;
+    }
+  }
+
+  &__menu-icon {
+    width: 20px;
+    height: auto;
+  }
+
+  /**
      * Nav List container
      */
-    &__list-container {
-
-        /**
+  &__list-container {
+    /**
          * Navigation Active State
          * 1) Triggered when Menu Button is clicked
          */
-        @media screen and (max-width: $bp-med) {
-            display: none;
-            opacity: 0;
-            transition: opacity 3s ease-in;
+    @media screen and (max-width: $bp-med) {
+      display: none;
+      opacity: 0;
+      transition: opacity 3s ease-in;
 
-            &.-js-is-visible {
-                display: block;
-                opacity: 1;
-                flex: 1 0 100%;
-                padding-top: $pad-normal;
-            }
-        }
-
-        @media screen and (min-width: $bp-med) {
-            display: flex;
-            align-items: center;
-        }
+      &.-js-is-visible {
+        display: block;
+        opacity: 1;
+        flex: 1 0 100%;
+        padding-top: $pad-normal;
+      }
     }
 
-    /**
+    @media screen and (min-width: $bp-med) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  /**
      * Nav List
      * 1) This is the primary navigation list
      */
-    &__list {
-        display: block;
-        padding: 0;
+  &__list {
+    display: block;
+    padding: 0;
 
-        /**
+    /**
          * Nav list styling when parent nav is active
          */
-        .nav--is-active & {
-            display: block;
-            top: 48px;
-            left: 0;
+    .nav--is-active & {
+      display: block;
+      top: 48px;
+      left: 0;
 
-            @media all and (min-width: $bp-small) {
-                top: 0;
-            }
-        }
-
-        @media all and (min-width: $bp-med) {
-            display: flex;
-            margin-right: $pad-compact;
-        }
-
-        @media all and (max-width: $bp-med) {
-            text-align: center;
-        }
+      @media all and (min-width: $bp-small) {
+        top: 0;
+      }
     }
 
-    /**
+    @media all and (min-width: $bp-med) {
+      display: flex;
+      margin-right: $pad-compact;
+    }
+
+    @media all and (max-width: $bp-med) {
+      text-align: center;
+    }
+  }
+
+  /**
      * Nav list item
      */
-    &__item {
-        position: relative;
-        margin-left: 0;
-        text-indent: initial;
-        margin-bottom: 0;
+  &__item {
+    position: relative;
+    margin-left: 0;
+    text-indent: initial;
+    margin-bottom: 0;
 
-        &::before {
-            display: none !IMPORTANT;
-        }
+    &::before {
+      display: none !important;
     }
+  }
 
-    /**
+  /**
      * Nav link
      */
-    &__link {
-        padding: $pad-compact 0 0;
-        margin: 0 $pad-medium;
-        font-family: $font-family-secondary;
-        font-weight: $font-weight-normal;
-        color: $color-neutral-600;
-        font-size: $font-size-sm;
-        display: block;
-        border-radius: $border-radius;
-        background: radial-gradient(circle at center, transparent, transparent);
-        transition: background $anim-long $anim-ease,
-                    color $anim-fast $anim-ease;
+  &__link {
+    padding: $pad-compact 0 0;
+    margin: 0 $pad-medium;
+    font-family: $font-family-secondary;
+    font-weight: $font-weight-normal;
+    color: $link-color;
+    font-size: $font-size-sm;
+    display: block;
+    border-radius: $border-radius;
+    transition: background $anim-long $anim-ease, color $anim-fast $anim-ease;
 
-        &::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            height: 1px;
-            border-bottom: 1px dashed transparent;
-            transition: border-color $anim-long $anim-ease,
-                        opacity $anim-med $anim-ease;
-        }
-
-        &:not(&--is-active) {
-            &:hover {
-                border-color: $link-underline-color-hover;
-                background: radial-gradient(circle at center, $color-neutral-100, transparent);
-            }
-        }
-
-        &:focus {
-            @include focus-outline();
-        }
-
-        &:focus:not(:focus-visible) {
-            box-shadow: none;
-        }
-
-        &:focus-visible {
-            @include focus-outline();
-        }
-
-        &--is-active {
-            color: $color-black;
-            cursor: default;
-
-            &::after {
-                border-color: $link-underline-color-hover;
-                opacity: 1;
-            }
-        }
-
-        @media all and (min-width: $bp-med) {
-            display: flex;
-            height: 100%;
-            align-items: center;
-
-            &::after {
-                display: block;
-            }
-
-
-            &:not(&--is-active) {
-                &:hover {
-                    background: radial-gradient(circle at center, $color-neutral-100, transparent);
-                    
-                    &::after {
-                        display: block;
-                        opacity: 1;
-                        border-color: $color-neutral-400;
-                        transform: scaleX(100%);
-                    }
-                }
-            }
-
-            &--is-active {
-                &::after {
-                    transform: scaleX(100%);
-                    opacity: 1;
-                }
-            }
-        }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 1px;
+      border-bottom: 1px dashed transparent;
+      transition: border-color $anim-long $anim-ease,
+        opacity $anim-med $anim-ease;
     }
+
+    &:not(&--is-active) {
+      &:hover {
+        color: $link-color-hover;
+      }
+    }
+
+    &:focus {
+      @include focus-outline();
+    }
+
+    &:focus:not(:focus-visible) {
+      box-shadow: none;
+    }
+
+    &:focus-visible {
+      @include focus-outline();
+    }
+
+    &--is-active {
+      cursor: default;
+      pointer-events: none;
+
+      &::after {
+        border-color: $link-underline-color-hover;
+        opacity: 1;
+      }
+    }
+
+    @media all and (min-width: $bp-med) {
+      display: flex;
+      height: 100%;
+      align-items: center;
+
+      &::after {
+        display: block;
+      }
+
+      &:not(&--is-active) {
+        &:hover {
+          &::after {
+            display: block;
+            opacity: 1;
+            border-color: $link-underline-color-hover;
+            transform: scaleX(100%);
+          }
+        }
+      }
+
+      &--is-active {
+        &::after {
+          transform: scaleX(100%);
+          opacity: 1;
+        }
+      }
+    }
+  }
 }

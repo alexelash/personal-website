@@ -1,88 +1,51 @@
 {% if page.project-url %} {% capture link %}
 <span class="hero__project-url-container">
-    <a href="{{ page.project-url }}" class="hero__project-link">
-        <i class="project__link-icon fas fa-link" title="Go to website"></i>
-    </a>
+  <a
+    href="{{ page.project-url }}"
+    class="hero__project-link"
+  >
+    <span class="hero__project-link-text"> Visit project website </span>
+    <i
+      class="project__link-icon fas fa-link"
+      title="Go to website"
+    ></i>
+  </a>
 </span>
 {% endcapture %} {% endif %}
 
 <div class="hero">
-    <div class="hero__inner">{% assign baseimage = page.hero.image %} {% assign imageending =
-        baseimage | split: '.' | last %} {% assign size = baseimage | size |
-        minus: 4 %}
-        <div class="hero__image-block">
-            <div
-                class="hero__image-container"
-                style="background-color: 
+  <div class="hero__inner">
+    {% assign baseimage = page.hero.image %} {% assign imageending = baseimage |
+    split: '.' | last %} {% assign size = baseimage | size | minus: 4 %}
+    <div class="hero__image-block">
+      <div
+        class="hero__image-container"
+        style="background-color: 
                     {% if page.hero.image-bg %}
                         {{ page.hero.image-bg }}
                     {% else %}
                         {{ page.featured-bg }}
                     {% endif %};"
-            >
-                <picture
-                    class="hero__image {% if page.hero.image-size == 'cropped' %} hero__image--cropped {% endif %}"
-                >
-                    <source
-                        media="(max-width: 799px)"
-                        data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.5x.{{ imageending }}"
-                    />
-                    <source
-                        media="(min-width: 800px)"
-                        data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.75x.{{ imageending }}"
-                    />
-                    <img
-                        data-src="{{ site.baseurl }}/assets/images/projects/{{ baseimage }}"
-                        src="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}_tiny.{{ imageending }}"
-                        alt="{{ page.hero.image-alt }}"
-                        class="lazy"
-                    />
-                </picture>
-            </div>
-        </div>
-        <div class="hero__text-container">
-            <div class="hero__text">
-                <div class="hero__intro">
-                    {% if page.hero.desc %}
-                    <h1 class="hero__subtitle">
-                        {{ page.hero.desc }} {{ link }}
-                    </h1>
-                    {% else %}
-                    <h1 class="hero__subtitle">
-                        {{ page.hero.title }}
-                        {{ link }}
-                    </h1>
-                    {% endif %}
-                </div>
-                {% if page.hero.roles %}
-                <div class="hero__roles">
-                    <h3 class="hero__roles-title">Contributions</h3>
-                    <div class="hero__roles-list">
-                        {% if page.hero.roles %} {{ page.hero.roles }}
-                        {% endif %}
-                    </div>
-                </div>
-                {% endif %} 
-
-                {% if page.hero.organization %}
-                <div class="hero__organization">
-                    <h3 class="hero__organization-title">
-                        Organization
-                    </h3>
-                    {% if page.hero.organization.url %}
-                    <a
-                        href="{{ page.hero.organization.url }}"
-                    >
-                    {% endif %}
-                    <span class="hero__organization-name">
-                        {{ page.hero.organization.name }}
-                    </span>
-                    {% if page.hero.organization.url %}
-                    </a>
-                    {% endif %}
-                </div>
-            {% endif %}
-            </div>
-        </div>
+      >
+        <picture
+          class="hero__image {% if page.hero.image-size == 'cropped' %} hero__image--cropped {% endif %}"
+        >
+          <source
+            media="(max-width: 799px)"
+            data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.5x.{{ imageending }}"
+          />
+          <source
+            media="(min-width: 800px)"
+            data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.75x.{{ imageending }}"
+          />
+          <img
+            data-src="{{ site.baseurl }}/assets/images/projects/{{ baseimage }}"
+            src="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}_tiny.{{ imageending }}"
+            alt="{{ page.hero.image-alt }}"
+            class="lazy"
+          />
+        </picture>
+      </div>
     </div>
+  </div>
 </div>

@@ -6,52 +6,55 @@
  * 1) List base styles
  */
 
- /**
+/**
   * Remove list styles from unordered and ordered lists
   */
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
+  padding-bottom: $pad-comfortable;
 }
 
-ul {  
-    font: $body-font;
-    margin-bottom: $space;
+ul {
+  font: $body-font;
 }
 
 ul li {
-    margin-left: 1rem;
-    text-indent: -1rem;
-    margin-bottom: $pad-normal;
+  margin-left: 1rem;
+  text-indent: -1rem;
+  margin-bottom: $pad-small;
 
-    &::before {
-        content: '•' ' ';
-        margin-right: 4px;
-    }
+  &::before {
+    content: "•" " ";
+    margin-right: 4px;
+  }
 }
 
-ol {  
+strong {
+  font-weight: $font-weight-bold;
+}
+
+ol {
   counter-reset: custom-counter;
 }
 
 ol li {
-    counter-increment: custom-counter;
-    margin-left: 1rem;
-    margin-bottom: $pad-normal;
-    text-indent: -1rem;
+  counter-increment: custom-counter;
+  margin-left: 1.65rem;
+  text-indent: -1.65rem;
 }
 
 ol li::before {
-    content: counter(custom-counter) '. ';
-    color: $color-muted-lilac-dark;
+  content: counter(custom-counter) ". ";
 }
 
 /**
  * 2) Definition list base styles
  */
 
- /**
+/**
   * Remove default styling
   */
 dd {
-    margin-inline-start: 0;
+  margin-inline-start: 0;
 }

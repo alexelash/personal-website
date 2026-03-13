@@ -1,9 +1,3 @@
-    <footer class="footer">
-        <small class="footer__smallprint">
-            &copy; {{ 'now' | date: "%Y" }}  Alex Lash — Limited collection of projects.
-        </small>
-    </footer>
-
     <!-- vanilla-lazyload -->
     <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.7.0/intersection-observer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.0/dist/lazyload.min.js"></script> 
@@ -28,6 +22,11 @@
     {% if layout.layout_type == "project" %}
         <script src="{{ site.baseurl }}/assets/javascript/glide.min.js"></script>
         <script src="{{ site.baseurl }}/assets/javascript/custom-glide.js"></script>
+
+        <!-- glightbox.js -->
+        <script src="{{ site.baseurl }}/assets/javascript/glightbox.min.js"></script>
+        <script src="{{ site.baseurl }}/assets/javascript/custom-glightbox.js"></script>
+        <!-- glightbox.js -->
     {% endif %}
 
     {% if layout.layout_type == "profile" %}

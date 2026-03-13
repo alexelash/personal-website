@@ -1,9 +1,8 @@
 ---
 layout: resume
 title: Resume
-seo_description:
-  'Designer with over a decade of professional experience as a designer, design leader, and web developer.'
-permalink: '/resume'
+seo_description: "Designer with over a decade of professional experience as a designer, design leader, and web developer."
+permalink: "/resume"
 page_class: p-resume
 barba-namespace: resume
 
@@ -25,7 +24,7 @@ sections:
           - Led and executed in-house redesign of company logo, visual identity, and brand architecture strategy. Engaged Senior Leadership Team in workshops to clarify our brand personality and coordinated execution across all functions of the business.
           - Art direct and design landing pages, trade shows, paid ads, social media, and email marketing. 
           - Lead and execute design for the user experience and visual design of marketing website and landing pages.
-          - Manage globally located full-time employees and independent contractors, ranging from junior to mid-level specialists in Organic Growth, Web Production, Web Development, Design, Video Production, and Social Media. 
+          - Manage globally located full-time employees and independent contractors, ranging from junior to mid-level specialists in Organic Growth, Web Production, Web Development, Design, Video Production, and Social Media.
       - title: Marketing Lead & UX Designer
         company: Azavea
         url: https://www.azavea.com/
@@ -102,40 +101,40 @@ sections:
           HTML • CSS/SASS • Javascript • PHP • Git • GitHub
   - title: Community
     examples:
-      - title: 'Digital Inclusion Volunteer'
-        company: 'Simon Community Scotland'
-        dates: '2025 – present'
-        url: 'https://www.simonscotland.org'
+      - title: "Digital Inclusion Volunteer"
+        company: "Simon Community Scotland"
+        dates: "March 2025 – present"
+        url: "https://www.simonscotland.org"
         desc: |
-          Simon Community Scotland provides support with and for people affected by homelessness. Through their Edinburgh and Glasgow hubs, they provide information, advice, care, support, accommodation, and homes. I am a volunteer with the Digital Inclusion program, through which I help people get connected through devices, data, and/or support. Our goal is to help people get and stay connected to their communities, families, and responsibilities digitally. 
-      - title: 'Curriculum Teammember'
-        company: 'Philly Tech Sistas'
-        dates: '2019'
-        url: 'https://www.phillytechsistas.org/'
+          Simon Community Scotland provides support with and for people affected by homelessness. I volunteer with the Digital Inclusion program, and meet directly with people experiencing homelessness during the 4 hour drop-ins every Friday. While there, I help people get connected through devices, data, and/or technical support. The program goal is to help people get and stay connected to their communities, families, and responsibilities digitally.
+      - title: "Curriculum Teammember"
+        company: "Philly Tech Sistas"
+        dates: "2019"
+        url: "https://www.phillytechsistas.org/"
         desc: |
           Philly Tech Sistas provides programming workshops and professional development events for women of color. I joined the curriculum team for their first year of classes in 2019. On that team, provided input and feedback on courses created by other team-members, co-wrote the first part of the HTML and CSS course and co-taught the first iteration of the class.
-      - title: 'Twitter Manager'
-        company: 'ProjectMEOW'
-        dates: '2016 – 2017'
-        url: 'https://www.projectmeow.org/'
+      - title: "Twitter Manager"
+        company: "ProjectMEOW"
+        dates: "2016 – 2017"
+        url: "https://www.projectmeow.org/"
         desc: |
           Project MEOW is an all-volunteer, animal welfare group that helps residents humanely reduce their feral and stray cat populations. I worked with the organization as their Twitter Manager in 2016 and 2017 and worked with their Executive Director on a poster campaign.
-      - title: 'Co-organizer and Designer'
-        company: 'LadyHacks'
-        dates: '2016 – 2017'
+      - title: "Co-organizer and Designer"
+        company: "LadyHacks"
+        dates: "2016 – 2017"
         desc: |
           LadyHacks started in 2012 as Philadelphia's first hackathon for women. I was a co-organizer in 2016 and 2017. In addition to working with the rest of the team on planning and executing the event, I was responsible for designing and developing its identity and website.
-      - title: 'Teacher, TA, Volunteer'
-        company: 'Girl Develop It'
-        dates: '2015 – 2017'
+      - title: "Teacher, TA, Volunteer"
+        company: "Girl Develop It"
+        dates: "2015 – 2017"
         desc: |
           Teacher for “Intro to HTML/CSS” • TA for “Intro to User Experience” and “Intro to Writing SVG”
-      - title: 'Volunteer and Speaker'
-        company: 'ELA Conf'
-        dates: '2015 – 2017'
+      - title: "Volunteer and Speaker"
+        company: "ELA Conf"
+        dates: "2015 – 2017"
         desc: |
           ELA Conf was a safe, inclusive tech leadership conference and community for adult womxn, trans men, and genderqueer people to connect. I volunteered at the conference in 2015 and 2016, and also gave two talks, one about toxic workplaces at the 2017 conference and another called “Teaching with Illustrations” in 2015.
-      - title: 'Graphic Design Packaging Show Judge'
-        company: 'West Chester University'
-        dates: '2015'
+      - title: "Graphic Design Packaging Show Judge"
+        company: "West Chester University"
+        dates: "2015"
 ---

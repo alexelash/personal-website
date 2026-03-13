@@ -26,10 +26,6 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
-
-
-
-
 /*------------------------------------*\
    #BASE
 \*------------------------------------*/
@@ -45,20 +41,10 @@
 @import "base/tables";
 @import "base/text";
 
-
-
-
-
 /*------------------------------------*\
    #LAYOUT
 \*------------------------------------*/
 @import "layout/layout";
-@import "layout/project";
-@import "layout/portfolio";
-
-
-
-
 
 /*------------------------------------*\
    #COMPONENTS
@@ -66,14 +52,17 @@
 @import "components/about-block";
 @import "components/article";
 @import "components/badge";
+@import "components/banner";
 @import "components/breadcrumbs";
-@import "components/buttons";
 @import "components/button-group";
+@import "components/buttons";
 @import "components/card";
 @import "components/cta";
 @import "components/footer-nav";
 @import "components/footer";
 @import "components/header";
+@import "components/grid-nav";
+@import "components/gslide";
 @import "components/hero";
 @import "components/logo";
 @import "components/intro";
@@ -91,20 +80,13 @@
 @import "components/text-passage";
 @import "components/tile";
 
-
-
-
-
 /*------------------------------------*\
    #PAGES
 \*------------------------------------*/
 @import "pages/about";
 @import "pages/resume";
 @import "pages/work";
-
-
-
-
+@import "pages/project-single";
 
 /*------------------------------------*\
    #UTILITIES

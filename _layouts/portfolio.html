@@ -1,22 +1,35 @@
 {% include head.html %}
-<div class="main-container {% if page.page_class %} {{- page.page_class }} {{ layout.page_class -}} {% endif %}" data-barba="container" data-barba-namespace="work">
-    {% include nav.html %}
-    <div role="main" class="content">
-        <div class="intro">
-            {% if page.intro %}
-            <h1 class="intro__blurb">{{ page.intro }}</h1>
-            {% endif %} {% if page.description %}
-            <p class="intro__desc">{{ page.description }}</p>
-            {% endif %} {% if page.link %}
-            <a class="intro__link" href="{{ page.link.url }}">
-                {{ page.link.text }}
-                <i class="intro__link-icon fas {{ page.link.icon }}"></i>
-            </a>
-            {% endif %}
-        </div>
-        {% include project-loop.html category=page.category %} {% if
-        page.cta %} {% include cta.html title=page.cta.title
-        body=page.cta.body button-text=page.cta.button-text %} {% endif %}
-    </div> <!-- Main / Content -->
-</div> <!-- Main Container -->
+<div
+  class="main-container {% if page.page_class %} {{- page.page_class }} {{ layout.page_class -}} {% endif %}"
+  data-barba="container"
+  data-barba-namespace="work"
+>
+  {% include nav.html %}
+  <div
+    role="main"
+    class="content"
+  >
+    <div class="intro">
+      {% if page.intro %}
+      <h1 class="intro__blurb">{{ page.intro }}</h1>
+      {% endif %} {% if page.description %}
+      <p class="intro__desc">{{ page.description }}</p>
+      {% endif %} {% if page.link %}
+      <a
+        class="intro__link"
+        href="{{ page.link.url }}"
+      >
+        {{ page.link.text }}
+        <i class="intro__link-icon fas {{ page.link.icon }}"></i>
+      </a>
+      {% endif %}
+    </div>
+    {% include project-loop.html category=page.category %} {% if page.cta %} {%
+    include cta.html title=page.cta.title body=page.cta.body
+    button-text=page.cta.button-text %} {% endif %}
+  </div>
+  <!-- Main / Content -->
+  {% include footer-note.html %}
+</div>
+<!-- Main Container -->
 {% include footer.html %}

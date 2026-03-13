@@ -1,84 +1,113 @@
 {% include head.html %}
-<div class="main-container {% if page.page_class %} {{- page.page_class }} {{ layout.page_class -}} {% endif %}" data-barba="container" data-barba-namespace="{{ page.barba-namespace }}">
-    {% include nav.html %}
-    <div role="main" class="content">
-        {% if page.intro %}
-		<div class="intro">
-            <div class="intro__inner">
-                <div class="intro__content">
-                    <p class="intro__blurb">
-                        {{ page.intro }}
-                    </p>
+<div
+  class="main-container {% if page.page_class %} {{- page.page_class }} {{ layout.page_class -}} {% endif %}"
+  data-barba="container"
+  data-barba-namespace="{{ page.barba-namespace }}"
+>
+  {% include nav.html %}
+  <div
+    role="main"
+    class="content"
+  >
+    {% if page.intro %}
+    <div class="intro">
+      <div class="intro__inner">
+        <div class="intro__content">
+          <p class="intro__blurb">{{ page.intro }}</p>
+        </div>
+      </div>
+    </div>
+    <!-- Intro -->
+    {% endif %}
+
+    <div class="resume-container">
+      {% for section in page.sections %}
+      <section
+        class="section section--{{ section.title | downcase | replace: ' ', '-'}}"
+      >
+        <h2 class="section-title heading--sm">{{ section.title }}</h2>
+
+        <div class="section__examples">
+          {% for example in section.examples %} {% if example.visibility !=
+          "hidden" %}
+          <article class="example">
+            <header class="example__header">
+              {% if example.desc %}<button
+                class="example__title-container c-btn--text -js-toggle"
+                aria-label="Toggle {{ example.title }} at {{ example.company }} Description"
+                aria-expanded="false"
+              >
+                {% endif %}
+                <h3 class="example__title">
+                  {% if example.title-url %}<a href="{{ example.title-url }}"
+                    >{% endif %} {{ example.title }} {% if example.title-url
+                    %}</a
+                  >{% endif %}
+                </h3>
+                {% if example.desc %}
+                <div class="example__desc-button">
+                  <svg
+                    class="example__plus-icon"
+                    viewBox="0 0 11 11"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <rect
+                      class="vert"
+                      height="11"
+                      width="1"
+                      y="0"
+                      x="5"
+                    />
+                    <rect
+                      height="1"
+                      width="11"
+                      y="5"
+                      x="0"
+                    />
+                  </svg>
                 </div>
+                {% endif %} {% if example.desc %}</button
+              >{% endif %} {% if example.company or example.dates %}
+              <span class="example__metadata">
+                {% if example.company %}
+                <h4 class="example__company">
+                  {% if example.url %}<a href="{{ example.url }}"
+                    >{% endif %} {{ example.company }} {% if example.url %}</a
+                  >{% endif %}
+                </h4>
+                {% endif %}
+
+                <span class="example__metadata-divider">•</span>
+
+                {% if example.dates %}
+                <h5 class="example__dates">{{ example.dates }}</h5>
+                {% endif %} </span
+              >{% endif %}
+            </header>
+
+            {% if example.desc %}
+            <div
+              hidden
+              class="example__desc-container -js-toggle-content -js-desc-hidden"
+            >
+              {{ example.desc | markdownify }}
             </div>
-        </div> <!-- Intro -->
-        {% endif %}
-
-        <div class="resume-container">
-            {% for section in page.sections %}
-            <section class="section section--{{ section.title | downcase | replace: ' ', '-'}}">
-                <h2 class="section-title heading--sm">
-                    {{ section.title }}
-                </h2>
-                
-                <div class="section__examples">
-                    {% for example in section.examples %}
-                    
-                    {% if example.visibility != "hidden" %}
-                    <article class="example">
-                        <header class="example__header">
-                            {% if example.desc %}<button class="example__title-container c-btn--text -js-toggle" aria-label="Toggle {{ example.title }} at {{ example.company }} Description" aria-expanded="false">{% endif %}    
-                                <h3 class="example__title">
-                                    {% if example.title-url %}<a href="{{ example.title-url }}">{% endif %}
-                                    {{ example.title }}
-                                    {% if example.title-url %}</a>{% endif %}
-                                </h3>
-                                {% if example.desc %}
-                                <div class="example__desc-button">
-                                    <svg class="example__plus-icon" viewBox="0 0 11 11" aria-hidden="true" focusable="false">
-                                        <rect class="vert" height="11" width="1" y="0" x="5" />
-                                        <rect height="1" width="11" y="5" x="0" />
-                                    </svg>
-                                </div>
-                                {% endif %}
-                            {% if example.desc %}</button>{% endif %}  
-                            
-                            {% if example.company or example.dates %}
-                                <span class="example__metadata">
-                                {% if example.company %}
-                                <h4 class="example__company">
-                                    {% if example.url %}<a href="{{ example.url }}">{% endif %}
-                                    {{ example.company }}
-                                    {% if example.url %}</a>{% endif %}
-                                </h4>
-                                {% endif %}
-
-                                <span class="example__metadata-divider">•</span>
-
-                                {% if example.dates %}
-                                <h5 class="example__dates">
-                                    {{ example.dates }}
-                                </h5>
-                                {% endif %}
-                            </span>{% endif %}
-                        </header>
-
-                        {% if example.desc %}
-                        <div hidden class="example__desc-container -js-toggle-content -js-desc-hidden">
-                            {{ example.desc | markdownify }}
-                        </div>
-                        {% elsif example.excerpt %}
-                        <div class="example__excerpt-container">
-                            {{ example.excerpt | markdownify }}
-                        </div>
-                        {% endif %}
-                    </article>
-                    {% endif %}
-                    {% endfor %} 
-                </div>
-            </section>
-            {% endfor %}
-        </div> <!-- Resume Container -->
-    </div> <!-- Main / Content -->
-</div> <!-- Main Container -->
+            {% elsif example.excerpt %}
+            <div class="example__excerpt-container">
+              {{ example.excerpt | markdownify }}
+            </div>
+            {% endif %}
+          </article>
+          {% endif %} {% endfor %}
+        </div>
+      </section>
+      {% endfor %}
+    </div>
+    <!-- Resume Container -->
+  </div>
+  <!-- Main / Content -->
+  {% include footer-note.html %}
+</div>
+<!-- Main Container -->
 {% include footer.html %}

@@ -1,8 +1,18 @@
 {% include head.html %}
-<div class="main-container {% if page.page_class %} {{- page.page_class }} {{ layout.page_class -}}{% endif %}" data-barba="container" data-barba-namespace="{{ page.barba-namespace }}">
-    {% include nav.html %}
-    <div role="main" class="content">
-		{{ content }}
-    </div> <!-- Main / Content -->
-</div> <!-- Main Container -->
+<div
+  class="main-container {% if page.page_class %} {{- page.page_class }} {{ layout.page_class -}}{% endif %}"
+  data-barba="container"
+  data-barba-namespace="{{ page.barba-namespace }}"
+>
+  {% include nav.html %}
+  <div
+    role="main"
+    class="content"
+  >
+    {{ content }}
+  </div>
+  <!-- Main / Content -->
+  {% include footer-note.html %}
+</div>
+<!-- Main Container -->
 {% include footer.html %}
