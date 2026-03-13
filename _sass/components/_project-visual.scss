@@ -15,7 +15,8 @@
     font-size: $font-size-sm;
     font-weight: $font-weight-normal;
     text-align: center;
-    margin-top: $pad-medium;
+    margin: $pad-medium auto 0;
+    max-width: 72ch;
     p {
       font: inherit;
     }

@@ -22,13 +22,10 @@
   &:hover,
   &:focus {
     color: rgba($color-white, 0.8);
-  }
-
-  &:focus:not(:focus-visible) {
-    color: rgba($color-white, 0.8);
+    outline: none;
   }
 
   &:focus-visible {
-    color: rgba($color-white, 0.8);
+    @include focus-outline();
   }
 }

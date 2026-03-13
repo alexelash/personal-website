@@ -17,6 +17,13 @@ $section-highlight-color: $color-white;
   }
 
   .aside {
+    @media screen and (min-width: $bp-large) {
+      &__block-container {
+        position: sticky;
+        top: $pad-large;
+      }
+    }
+
     &__heading {
       color: $heading-color;
       font-family: $font-family-secondary;
@@ -36,6 +43,7 @@ $section-highlight-color: $color-white;
       font-size: $font-size-med-2;
       margin-bottom: $pad-normal;
       line-height: 1.4;
+      margin-top: 0;
 
       p {
         font-size: inherit;
@@ -72,16 +80,17 @@ $section-highlight-color: $color-white;
 
   .section {
     display: flex;
-    padding: $pad-normal 0;
+    padding: 0;
 
     @media all and (min-width: $bp-med) {
-      padding: $pad-normal 0.7rem;
+      padding: 0 0.7rem;
     }
   }
 
-  .caption-container {
-    margin-top: auto;
-    max-width: 25rem;
+  .caption-container,
+  figcaption {
+    margin: $pad-medium auto 0;
+    max-width: 72ch;
 
     @media screen and (max-width: 700px) {
       display: none;
@@ -89,14 +98,23 @@ $section-highlight-color: $color-white;
   }
 
   .caption {
-    &__title {
+    &__title,
+    &__text,
+    figcaption {
       font-size: $font-size-sm;
       font-weight: $font-weight-normal;
     }
+  }
 
-    &__text {
-      font-size: $font-size-sm;
-      font-weight: $font-weight-normal;
-    }
+  h2 {
+    margin-top: $pad-large;
+  }
+
+  img,
+  figure {
+    border-radius: $border-radius-large;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
   }
 }

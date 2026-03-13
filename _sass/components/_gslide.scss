@@ -1,0 +1,94 @@
+/*------------------------------------*\
+    #GLIGHTBOX OVERRIDES
+\*------------------------------------*/
+.glightbox-container {
+  .goverlay {
+    background: $color-neutral-900;
+    opacity: 95%;
+
+    @media screen and (max-height: 420px) {
+      background: $color-neutral-900;
+    }
+  }
+
+  .gslide {
+    padding: 1rem;
+    &-description {
+      background: transparent;
+      font-size: $font-size-sm;
+      color: $color-white;
+    }
+
+    &-title {
+      color: $color-white;
+      font-size: $font-size-sm;
+      max-width: $l-max-width-narrow;
+      text-align: center;
+      margin: 0.25rem auto;
+    }
+
+    &-media {
+      overflow: hidden;
+      border-radius: $border-radius-large;
+    }
+
+    img {
+      max-height: 95vh;
+      max-width: 90vw;
+    }
+  }
+
+  .desc-bottom {
+    img {
+      max-height: 75vh !important;
+    }
+  }
+
+  .gbtn {
+    position: absolute;
+    background: transparent;
+    height: 2.25rem;
+    width: 2.25rem;
+    border-radius: 100%;
+    background: rgba($color-neutral-900, 0.15);
+
+    & svg {
+      fill: $color-white;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
+
+    &.focused {
+      @include focus-outline();
+    }
+  }
+
+  .gclose {
+    top: 1rem;
+    right: 1rem;
+
+    & svg {
+      width: 18px;
+    }
+  }
+
+  .gnext,
+  .gprev {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .gprev {
+    left: 1rem;
+  }
+
+  .gnext {
+    right: 1rem;
+  }
+}

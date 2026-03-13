@@ -1,88 +1,90 @@
 .article {
+  position: relative;
+
+  &__image-container {
+    line-height: 0;
+    width: 100%;
     position: relative;
+    margin-bottom: $pad-large;
 
-    &__image-container {
-        line-height: 0;
-        width: 100%;
-        position: relative;
+    @media all and (min-width: $bp-med) {
+      position: absolute;
+      width: 22rem;
+      height: auto;
+    }
+  }
 
-        @media all and (min-width: $bp-med) {
-            position: absolute;
-            width: 22rem;
-            height: auto;
-        }
+  &__image-caption {
+    font-family: $font-family-secondary;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-normal;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: $color-black;
+    color: $color-neutral-100;
+    padding: $pad-normal $pad-medium 0;
+    border-radius: 0 6px 0 0;
+    margin: $pad-medium auto 0;
+    max-width: 72ch;
+
+    p {
+      font-size: inherit;
     }
 
-    &__image-caption {
-        font-family: $font-family-secondary;
-        font-size: $font-size-sm;
-        font-weight: $font-weight-normal;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background: $color-black;
-        color: $color-neutral-100;
-        padding: $pad-normal $pad-medium 0;
-        border-radius: 0 6px 0 0;
+    a {
+      color: $color-neutral-300;
 
-        p {
-            font-size: inherit;
-        }
+      &::after {
+        border-color: $color-neutral-600;
+      }
+    }
+  }
 
-        a {
-            color: $color-neutral-300;
+  &__image {
+    border-radius: $border-radius;
+  }
 
-            &::after {
-                border-color: $color-neutral-600;
-            }
-        }
+  &__text {
+    @media all and (min-width: $bp-med) {
+      margin-left: 24rem;
+    }
+  }
+
+  &__heading {
+    font-weight: $font-weight-black;
+    font-size: $font-size-med-2;
+    color: inherit;
+    line-height: $line-height-compact;
+    margin: $pad-compact 0 $pad-medium;
+    display: inline-block;
+
+    &::after {
+      display: none;
     }
 
-    &__image {
-        border-radius: $border-radius;
+    @media all and (min-width: $bp-med) {
+      font-size: $font-size-large-2;
+      margin: 0 0 $pad-normal;
     }
+  }
 
-    &__text {
+  &__date {
+    font-family: $font-family-secondary;
+    font-size: $font-size-sm-2;
+    color: $color-neutral-600;
 
-        @media all and (min-width: $bp-med) {
-            margin-left: 24rem;
-        }
+    @media all and (max-width: $bp-med) {
+      margin: $pad-comfortable 0 0;
     }
-    
-    &__heading {
-        font-weight: $font-weight-black;
-        font-size: $font-size-med-2;
-        color: inherit;
-        line-height: $line-height-compact;
-        margin: $pad-compact 0 $pad-medium;
-        display: inline-block;
+  }
 
-        &::after {
-            display: none;
-        }
+  &__footer {
+    display: flex;
+  }
 
-        @media all and (min-width: $bp-med) {
-            font-size: $font-size-large-2;
-            margin: 0 0 $pad-normal;
-        }
-    }
-
-    &__date {
-        font-family: $font-family-secondary;
-        font-size: $font-size-sm-2;
-        color: $color-neutral-600;
-
-        @media all and (max-width: $bp-med) {
-            margin: $pad-comfortable 0 0;
-        }
-    }
-
-    &__footer {
-        display: flex;
-    }
-
-    &__tags-container {
-        display: flex;
-        margin-left: $pad-small;
-    }
+  &__tags-container {
+    display: flex;
+    margin-left: $pad-small;
+  }
 }

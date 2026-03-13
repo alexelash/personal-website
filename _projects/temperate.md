@@ -15,7 +15,7 @@ featured-alt: "Temperate logo."
 featured-bg: "#ffffff"
 
 project-url: "https://web.archive.org/web/20230608174833/https://temperate.io/"
-excerpt: Logo, identity, website
+excerpt: Logo, identity, product UX/UI, website
 
 hero:
   title: "Temperate"

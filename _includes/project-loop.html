@@ -1,9 +1,9 @@
-<div class="project-container">
+<div class="project-container l-grid">
   {% assign category = {{ include.category }} %} {% assign projects =
   site.projects | where: "category", include.category %} {% for project in
   projects %} {% if project.draft != true %}
   <article
-    class="project {% if project.casestudy %} project--has-casestudy {% endif %}"
+    class="project l-grid__item {% if project.casestudy %} project--has-casestudy {% endif %}"
   >
     {% assign baseimage = project.featured-image %} {% assign imageending =
     baseimage | split: '.' | last %} {% assign size = baseimage | size | minus:

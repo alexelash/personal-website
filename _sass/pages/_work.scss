@@ -16,7 +16,7 @@
     &__trigger:hover,
     &__trigger:focus,
     &__trigger:focus:not(:focus-visible) {
-      background: rgba($color-white, 0.1);
+      @include focus-outline();
     }
 
     &__name {
@@ -106,21 +106,10 @@
   text-align: left;
   margin: 0 auto;
 
-  @media screen and (min-width: $bp-large) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
   .project {
     border-radius: $border-radius-large;
     padding: $pad-small;
     position: relative;
-
-    @media screen and (min-width: $bp-large) {
-      flex: 0 0 50%;
-    }
 
     &--has-casestudy {
       .project__featured-image {
@@ -155,7 +144,7 @@
         }
 
         .project__featured-image {
-          transform: scale(1.15) translate(-40%, -40%);
+          transform: scale(1.1) translate(-45%, -45%);
         }
         .project__link {
           @media screen and (min-width: $bp-med) {
@@ -168,6 +157,7 @@
     &__featured-image-container {
       border-radius: $border-radius-large;
       position: relative;
+      overflow: hidden;
 
       &::after {
         content: "";
@@ -185,9 +175,10 @@
     }
 
     &__featured-image--cropped {
+      height: auto;
       width: 100%;
-      left: 60%;
-      bottom: -20%;
+      left: 55% !important;
+      bottom: -30%;
     }
 
     &__link {
@@ -246,7 +237,7 @@
       font-size: $font-size-sm;
       font-weight: $font-weight-normal;
       color: inherit;
-      margin: 0 $pad-compact 0 0;
+      margin: 0;
     }
 
     &__years {

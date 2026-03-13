@@ -6,19 +6,19 @@
  * HTML base styles
  */
 html {
-	height: 100%;
+  height: 100%;
 }
 
 /**
  * Body base styles
  */
 body {
-	background: $body-background;
-	font: $body-font;
-	-webkit-text-size-adjust: 100%;
-	color: $body-color;
-	display: flex;
-	flex-direction: column;
-	height: auto;
-    min-height: 100vh;
+  background: $body-background;
+  font: $body-font;
+  -webkit-text-size-adjust: 100%;
+  color: $body-color;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 100vh;
 }

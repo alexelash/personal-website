@@ -33,6 +33,26 @@ layout_type: project
             {% if page.hero.roles %} {{ page.hero.roles }} {% endif %}
           </div>
         </div>
+        {% endif %} {% if page.hero.timeline %}
+        <div class="aside__block">
+          <div class="aside__heading">Timeline</div>
+          <div class="aside__content">
+            {% if page.hero.timeline %} {{ page.hero.timeline }} {% endif %}
+          </div>
+        </div>
+        {% endif %} {% if page.hero.impact %}
+        <div class="aside__block">
+          <div class="aside__heading">Impact</div>
+          <div class="aside__content">
+            {% if page.hero.impact %}
+            <ul class="aside__list">
+              {% for impact in page.hero.impact %}
+              <li class="aside__list-item">{{ impact }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </div>
+        </div>
         {% endif %} {% if page.hero.organization %}
         <div class="aside__block">
           <div class="aside__heading">Organization</div>
@@ -71,8 +91,11 @@ layout_type: project
           <!-- Text only layout -->
           {% if section.layout == "text-only" %}
           <div class="section__text-container">
+            {% if section.title %}
             <h2 class="section__title">{{ section.title }}</h2>
+            {% endif %} {% if section.desc %}
             <div class="section__text">{{ section.desc | markdownify }}</div>
+            {% endif %}
           </div>
           {% endif %}
 
@@ -86,8 +109,9 @@ layout_type: project
             project-visual.html type=section.visual.type
             image=section.visual.image image-alt=section.visual.image-alt
             caption=section.visual.caption %} {% elsif section.visual.type ==
-            "slider" %} {% include project-slider.html slides=section.slides %}
-            {% elsif section.visual.type == "video" %} {% include
+            "slider" %} {% include project-slider.html
+            slides=section.visual.slides caption=section.visual.caption %} {%
+            elsif section.visual.type == "video" %} {% include
             project-video.html path=section.visual.path
             caption=section.visual.caption %} {% endif %}
           </div>
@@ -157,6 +181,7 @@ layout_type: project
     </div>
   </div>
   <!-- Main / Content -->
-  {% include footer.html %}
+  {% include footer-note.html %}
 </div>
 <!-- Main Container -->
+{% include footer.html %}

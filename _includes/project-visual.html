@@ -1,15 +1,42 @@
-{% assign baseimage = include.image %}
-{% assign imageending = baseimage | split: '.' | last %}
-{% assign size = baseimage | size | minus: 4 %}
+{% assign baseimage = include.image %} {% assign imageending = baseimage |
+split: '.' | last %} {% assign size = baseimage | size | minus: 4 %}
 
-<figure class="project-visual" style="background-color: {{ include.bg }};">
+<figure
+  class="project-visual"
+  style="background-color: {{ include.bg }};"
+>
+  <a
+    href="{{ site.baseurl }}/assets/images/projects/{{ baseimage }}"
+    class="glightbox"
+    data-type="image"
+    data-effect="fade"
+    data-zoomable="false"
+    data-title="{% if include.caption %}{{ include.caption | markdownify }}{% endif %}"
+  >
     <picture class="project-visual__image">
-        <source media="(max-width: 799px)" data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.5x.{{ imageending }}">
-        <source media="(min-width: 799px) and (max-width: 1000px)" data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.75x.{{ imageending }}">
-        <source media="(min-width: 1000px)" data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage }}">
-        <img data-src="{{ site.baseurl }}/assets/images/projects/{{ baseimage }}" src="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}_tiny.{{ imageending }}" alt="{{ slide.image-alt }}" class="lazy">
+      <source
+        media="(max-width: 799px)"
+        data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.5x.{{ imageending }}"
+      />
+      <source
+        media="(min-width: 799px) and (max-width: 1000px)"
+        data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}@0.75x.{{ imageending }}"
+      />
+      <source
+        media="(min-width: 1000px)"
+        data-srcset="{{ site.baseurl }}/assets/images/projects/{{ baseimage }}"
+      />
+      <img
+        data-src="{{ site.baseurl }}/assets/images/projects/{{ baseimage }}"
+        src="{{ site.baseurl }}/assets/images/projects/{{ baseimage | slice: 0, size }}_tiny.{{ imageending }}"
+        alt="{{ slide.image-alt }}"
+        class="lazy"
+      />
     </picture>
-    {% if include.caption %}
-    <figcaption class="project-visual__image-caption">{{ include.caption | markdownify }}</figcaption>
-    {% endif %}
+  </a>
 </figure>
+{% if include.caption %}
+<figcaption class="project-visual__image-caption">
+  {{ include.caption | markdownify }}
+</figcaption>
+{% endif %}

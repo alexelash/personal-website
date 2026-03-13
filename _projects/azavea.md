@@ -6,7 +6,8 @@ casestudy: true
 title: "Azavea"
 seo_description: "Brand management, marketing, web design and front-end development for a professional services firm that creates custom geospatial software for good."
 
-featured-image: "azavea/azavea_white_solo.png"
+featured-image: "azavea/azavea_branding_guide_hero.png"
+featured-size: "cropped"
 featured-alt: "Azavea logo."
 featured-bg: "#4CA3DB"
 
@@ -104,10 +105,25 @@ sections:
       New Hero boasts a large font family, which I knew would give us a lot of flexibility over the ensuing years. It has a geometric style that feels modern and also a bit of quirky personality that keeps our content from looking too corporate. The foundry’s description that New Hero is “dedicated to civic duty” is also a particularly relevant tie-in to our mission statement, which is to create software for “positive civic, social, and environmental impact”.
 
       I presented this option to our CEO, Design Team Lead, and Business Development professionals and began the process of replacing other typefaces in our marketing materials.
+
+      ### Photography
+      I also [art directed a photoshoot of my colleagues.](https://web.archive.org/web/20240810164954/https://careers.azavea.com/office/) Working with an excellent local photographer, I provided him a shot list and provided real-time notes. We captured the weird, wonderful world of Azavea through shots of our Lunch and Learns, team meetings, wide variety of foliage, and art shows.
+  - type: "grid"
+    layout: "side-by-side"
+    visual:
+      - image: "azavea/azavea_photoshoot_01.jpg"
+        image-alt: "Screenshot of the old Redistricting the Nation website."
+      - image: "azavea/azavea_photoshoot_02.jpg"
+        image-alt: "Screenshot of the Redistricting microsite hero."
+      - image: "azavea/azavea_photoshoot_04.jpg"
+        image-alt: "Screenshot of the Redistricting microsite hero."
+      - image: "azavea/azavea_photoshoot_03.jpg"
+        image-alt: "Screenshot of the old Redistricting the Nation website."
+    caption: "Left: Previous “Redistricting the Nation” website, right: revised [Redistricting microsite.](https://redistricting.azavea.com/)"
   - type: "default"
     layout: "text-only"
-    title: "Microsites"
     desc: |
+      ### Microsites
       I have led the redesign of several key microsites for Azavea. One of my primary focuses has been on ensuring that Azavea websites feel as though they are a part of the same family. To this end, I have since applied a new set of visual principles and patterns to several branded microsites.
 
       For example, I redesigned a website called “Redistricting the Nation”. The website consistently got good traffic in search engines, but looked dated and had several broken interactive features. The CEO wanted to retain the website as a microsite so that we could continue to get traffic through this avenue.
@@ -123,8 +139,6 @@ sections:
     layout: "text-only"
     desc: |
       I addressed several key issues with the previous site, but most notably re-branded and redesigned the site to more clearly align with Azavea’s brand. Setting the primary domain name to be a subdomain of Azavea’s website: `redistricting.azavea.com`, the site uses Azavea’s brand colors, typography, and style. The previous custom name and logo (Redistricting the Nation) was also replaced.
-
-      For our company’s career website, I [art directed a photoshoot of my colleagues,](https://web.archive.org/web/20240810164954/https://careers.azavea.com/office/) working with an excellent local photographer to try and capture the weird, wonderful world of Azavea through shots of our Lunch and Learns, team meetings, wide variety of foliage, and art shows.
   - type: "grid"
     layout: "big-small"
     visual:

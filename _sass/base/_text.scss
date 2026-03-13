@@ -2,12 +2,92 @@
     #TEXT
 \*------------------------------------*/
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $heading-color;
+  font-weight: $font-weight-light;
+}
+
+h1 {
+  font-size: $font-size-xxl;
+  margin: $pad-large-2 0 $pad-large;
+
+  @media screen and (max-width: $bp-med) {
+    font-size: $font-size-xl;
+    margin: $pad-large 0 $pad-normal;
+  }
+}
+
+h2 {
+  font-size: $font-size-xl;
+  margin: $pad-large-2 0 $pad-comfortable;
+
+  @media screen and (max-width: $bp-med) {
+    font-size: $font-size-large-2;
+    margin: $pad-large 0 $pad-normal;
+  }
+}
+
+h3 {
+  font-size: $font-size-large-2;
+  margin: $pad-comfortable 0 $pad-medium;
+
+  @media screen and (max-width: $bp-med) {
+    font-size: $font-size-large;
+    margin: $pad-comfortable 0 $pad-medium;
+  }
+}
+
+h4 {
+  font-size: $font-size-large;
+  margin-bottom: $pad-comfortable;
+
+  @media screen and (max-width: $bp-med) {
+    font-size: $font-size-med-2;
+    margin: $pad-small 0 $pad-medium;
+  }
+}
+
+h5 {
+  font-size: $font-size-med-2;
+  margin-bottom: $pad-comfortable;
+
+  @media screen and (max-width: $bp-med) {
+    font-size: $font-size-med;
+    margin-bottom: $pad-normal;
+  }
+}
+
+h6 {
+  font-size: $font-size-med;
+  margin-bottom: $pad-comfortable;
+
+  @media screen and (max-width: $bp-med) {
+    font-size: $font-size-sm-2;
+    margin-bottom: $pad-normal;
+  }
+}
+
 /**
  * Paragraph base styles
  */
 p {
   font: $body-font;
   margin-bottom: $space;
+}
+
+ul,
+ol {
+  font: $body-font;
+}
+
+li {
+  font: inherit;
+  margin-bottom: $pad-medium;
 }
 
 /**
@@ -18,9 +98,8 @@ blockquote {
   font-weight: $font-weight-light;
   font-size: $font-size-med-2;
   border-left: 3px solid $color-muted-lilac;
-  color: $color-neutral-700;
   padding-left: 1rem;
-  margin-bottom: $space;
+  margin: $pad-comfortable auto $pad-large-2;
 }
 
 cite {

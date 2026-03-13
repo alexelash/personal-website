@@ -1,52 +1,57 @@
 .cta {
-    position: relative;
-    margin: $pad-comfortable 0;
+  position: relative;
+  margin: $pad-comfortable 0;
 
-    &__inner {
-        z-index: 2;
+  &__inner {
+    z-index: 2;
+  }
+
+  &__title {
+    font-size: $font-size-sm-2;
+    font-weight: $font-weight-normal;
+    margin-bottom: $pad-compact;
+  }
+
+  &__blurb {
+    margin-bottom: 0;
+
+    @media screen and (max-width: $bp-med) {
+      margin: 0 auto $pad-normal;
     }
 
-    &__title {
-        font-size: $font-size-sm-2;
-        font-weight: $font-weight-normal;
-        margin-bottom: $pad-compact;
+    p {
+      font-family: $font-family-secondary;
+      line-height: 1.65;
+      font-size: $font-size-med-2;
+      margin-bottom: 0;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    background: $color-muted-lilac-dark;
+    color: $color-neutral-100;
+
+    &:hover,
+    &:focus {
+      background: darken($color-muted-lilac-dark, 25%);
+      color: $color-neutral-100;
+      outline: none;
     }
 
-    &__blurb {
-        margin-bottom: 0;
-
-        @media screen and (max-width: $bp-med) {
-            margin: 0 auto $pad-normal;
-        }
-
-        p {
-            font-family: $font-family-secondary;
-            line-height: 1.65;
-            font-size: $font-size-med-2;
-            margin-bottom: 0;
-        }
+    &:focus-visible {
+      @include focus-outline();
     }
 
-    &__btn {
-        width: 100%;
-        background: $color-muted-lilac-dark;
-        color: $color-neutral-100;
-
-        &:hover,
-        &:focus {
-            background: darken($color-muted-lilac-dark, 25%);
-            color: $color-neutral-100;
-        }
-
-        &:active {
-            background: darken($color-muted-lilac-dark, 45%);
-            color: $color-neutral-100;
-        }
-
-        @media screen and (min-width: $bp-med) {
-            width: auto;
-            flex: 1 0 auto;
-            margin-left: $pad-normal;
-        }
+    &:active {
+      background: darken($color-muted-lilac-dark, 45%);
+      color: $color-neutral-100;
     }
+
+    @media screen and (min-width: $bp-med) {
+      width: auto;
+      flex: 1 0 auto;
+      margin-left: $pad-normal;
+    }
+  }
 }
