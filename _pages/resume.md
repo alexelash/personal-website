@@ -21,6 +21,7 @@ sections:
 
           At Administrate, recent accomplishments have included:
 
+          - Led and executed in-house rebuild of our company marketing website using Astro, Sanity CMS, and Claude Code. Established new site structure and used vibe coding strategies to complete project within six months. Early results demonstrate 45% site speed increase and savings of $1.25k annually.
           - Led and executed in-house redesign of company logo, visual identity, and brand architecture strategy. Engaged Senior Leadership Team in workshops to clarify our brand personality and coordinated execution across all functions of the business.
           - Art direct and design landing pages, trade shows, paid ads, social media, and email marketing. 
           - Lead and execute design for the user experience and visual design of marketing website and landing pages.
@@ -98,7 +99,7 @@ sections:
           Performance Marketing • B2B Marketing • Monday.com • Google Tag Manager/Analytics • Microsoft Word • Microsoft Excel • G Suite • Miro • Atlassian
       - title: Software Development
         excerpt: |
-          HTML • CSS/SASS • Javascript • PHP • Git • GitHub
+          Astro • Sanity CMS • Tailwind • Claude Code • HTML • CSS/SASS • Javascript • PHP • Git • GitHub
   - title: Community
     examples:
       - title: "Digital Inclusion Volunteer"
