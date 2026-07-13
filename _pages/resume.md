@@ -86,7 +86,7 @@ sections:
         visibility: hidden
   - title: Education
     examples:
-      - title: Temple University, Tyler School of Art
+      - title: Temple University
         company: BFA Graphic and Interactive Design
         dates: Graduated May 2013
   - title: Skills
