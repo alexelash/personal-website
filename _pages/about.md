@@ -13,9 +13,11 @@ cta:
   body: "<a href='mailto:hello@alexlashdesign.com'>hello@alexlashdesign.com</a>"
   time: true
 body: |
-  <span class='intro__lead'>I'm Alex, an Edinburgh-based Creative Director.</span> IMHO the best brands are uncovered, not invented. Like Michelangelo said about sculture: the statue is already in the marble and our job as designers is to chip away what doesn't belong. 
+  <span class='intro__lead'>I'm Alex, an Edinburgh-based Creative Director.</span> I think the best brands are uncovered, not invented. As Michelangelo said: the statue is already in the marble and our job as designers is to chip away what doesn't belong.
 
-  For over a decade now, I've built brands and design systems for organizations in B2B SaaS, civic tech, and cybersecurity. From leading rebrands to designing clearer tools, I'm most drawn to work that requires strategic thinking and hands-on craft... especially at companies where creative decisions have an immediate, tangible impact, and building a strong creative culture is valued just as much as shipping great work.
+  For over a decade now, I've built brands and design systems for organizations in B2B SaaS, civic tech, and cybersecurity. From leading rebrands to designing clearer tools, I'm most drawn to work that requires strategic thinking and hands-on craft. I thrive in companies where creative decisions have an immediate, tangible impact, and building a strong culture is valued just as much as shipping great work.
 
-  As Creative Director at a B2B SaaS company serving enterprise clients across North America, I lead brand and marketing design while managing a distributed team. In past roles, I've also taught university courses on interactive design and championed design systems alongside and for engineers. Outside of work, I have taught affordable coding classes, provided tech support to local nonprofits, and foster cats—work that keeps me connected to my community.
+  As Creative Director at a B2B SaaS company serving enterprise clients across North America, I lead brand and marketing design while managing a distributed team. In past roles, I've also taught university courses on interactive design and championed design systems alongside and for engineers. 
+
+  Outside of work, I've taught affordable coding classes and provided tech support to local nonprofits, and fostered cats.
 ---

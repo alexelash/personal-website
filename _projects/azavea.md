@@ -17,8 +17,7 @@ excerpt: "Brand management, marketing, web design, front-end development"
 hero:
   title: "Azavea"
   tagline: "A purpose-driven professional services firm"
-  desc: |
-    Brand management and strategy for Philly-based agency.
+  desc: "Brand management and strategy for Philly-based agency."
   image: "azavea/azavea_branding_guide_hero.png"
   image-alt: "Screenshot of Branding Guide page."
   image-size: "cropped"
@@ -112,14 +111,13 @@ sections:
     layout: "side-by-side"
     visual:
       - image: "azavea/azavea_photoshoot_01.jpg"
-        image-alt: "Screenshot of the old Redistricting the Nation website."
+        image-alt: "Art-drected photo of colleague in our office bike room."
       - image: "azavea/azavea_photoshoot_02.jpg"
-        image-alt: "Screenshot of the Redistricting microsite hero."
+        image-alt: "Screenshot of photos in use on the Careers microsite."
       - image: "azavea/azavea_photoshoot_04.jpg"
-        image-alt: "Screenshot of the Redistricting microsite hero."
+        image-alt: "Screenshot of photos in use on the Careers microsite."
       - image: "azavea/azavea_photoshoot_03.jpg"
-        image-alt: "Screenshot of the old Redistricting the Nation website."
-    caption: "Left: Previous “Redistricting the Nation” website, right: revised [Redistricting microsite.](https://redistricting.azavea.com/)"
+        image-alt: "Art-directed photo of company owner and colleagues in the open office plan."
   - type: "default"
     layout: "text-only"
     desc: |

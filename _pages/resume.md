@@ -21,7 +21,7 @@ sections:
 
           At Administrate, recent accomplishments have included:
 
-          - Led and executed in-house rebuild of our company marketing website using Astro, Sanity CMS, and Claude Code. Established new site structure and used vibe coding strategies to complete project within six months. Early results demonstrate 45% site speed increase and savings of $1.25k annually.
+          - Led and executed a full in-house rebuild of the Administrate marketing website using Astro, Sanity CMS, Tailwind, and Claude Code. Managed a web developer, defined the full CI and site architecture, and contributed production code. Project was delivered on time in six months with a 45% mobile speed increase and $1.25k in annual savings. Integrated API-based content automation enabling new pages to be spun up in minutes, and trained the team on the workflow. Post-launch SEO and technical audit by an external vendor returned a near-clean result.
           - Led and executed in-house redesign of company logo, visual identity, and brand architecture strategy. Engaged Senior Leadership Team in workshops to clarify our brand personality and coordinated execution across all functions of the business.
           - Art direct and design landing pages, trade shows, paid ads, social media, and email marketing. 
           - Lead and execute design for the user experience and visual design of marketing website and landing pages.
@@ -96,10 +96,10 @@ sections:
           Brand Identity • Web design • Graphic & Print Design • Trade Show Design • Figma • Photoshop • Illustrator • InDesign • AfterEffects • Premiere • Illustration • Social media • Discovery • A/B testing
       - title: Professional
         excerpt: |
-          Performance Marketing • B2B Marketing • Monday.com • Google Tag Manager/Analytics • Microsoft Word • Microsoft Excel • G Suite • Miro • Atlassian
+          Performance Marketing • B2B Marketing • Monday.com • Google Tag Manager/Analytics • Microsoft Word • G Suite • Miro • Atlassian
       - title: Software Development
         excerpt: |
-          Astro • Sanity CMS • Tailwind • Claude Code • HTML • CSS/SASS • Javascript • PHP • Git • GitHub
+          Astro • Sanity CMS • Tailwind • Claude Code •  HTML • CSS/SASS • Javascript • PHP • Git • GitHub
   - title: Community
     examples:
       - title: "Digital Inclusion Volunteer"

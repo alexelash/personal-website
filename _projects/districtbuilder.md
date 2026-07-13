@@ -16,8 +16,7 @@ excerpt: "Logo, identity, marketing strategy, website"
 hero:
   title: "DistrictBuilder"
   tagline: "Giving power back to the people"
-  desc: |
-    Brand and website for an open source redistricting tool.
+  desc: "Brand and website for an open source webapp."
   image: "districtbuilder/districtbuilder_hero.png"
   image-alt: "Screenshot of DistrictBuilder marketing website."
   image-size: "cropped"

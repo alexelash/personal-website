@@ -16,8 +16,7 @@ excerpt: "Logo, identity, website"
 hero:
   title: "GroundWork"
   tagline: "Labeling for satellite imagery"
-  desc: |
-    Brand identity and website design for the first AI annotation tool built with satellite imagery in mind.
+  desc: "Brand identity and website design for AI annotation tool."
   image: "azavea-groundwork/groundwork_hero.png"
   image-alt: "Screenshot of GroundWork homepage."
   image-bg: "#385149"

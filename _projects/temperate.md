@@ -20,7 +20,7 @@ excerpt: Logo, identity, product UX/UI, website
 hero:
   title: "Temperate"
   tagline: "A climate change companion"
-  desc: "A decision-support tool for climate adaptation planners."
+  desc: "Brand and product design for a climate app."
   image: "azavea-temperate/temperate_RGB_centered.png"
   image-alt: "Temperate logo."
   roles: "Branding, UX/UI design, Front-end development, Marketing website"

@@ -17,8 +17,7 @@ excerpt: "Logo and visual identity"
 hero:
   title: "Administrate"
   tagline: "An L&D SaaS product"
-  desc: |
-    Brand design and rollout elevating a corporate training SaaS product for North American enterprise markets.
+  desc: "Brand design and rollout for B2B SaaS company."
   image: "administrate/administrate_rebrand_hero.png"
   image-size: "cropped"
   image-alt: "Administrate logo."
