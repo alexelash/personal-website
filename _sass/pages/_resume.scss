@@ -50,6 +50,11 @@ $sidebar-offset: 120px;
 
   .section {
     position: relative;
+
+    @media screen and (min-width: $bp-large) {
+      display: flex;
+      align-items: baseline;
+    }
   }
 
   .section-title {
@@ -60,12 +65,9 @@ $sidebar-offset: 120px;
     }
 
     @media screen and (min-width: $bp-large) {
-      position: absolute;
-      top: 7px;
-      left: 0;
-      width: $sidebar-width;
+      flex: 0 0 $sidebar-width;
       text-align: right;
-      margin-top: 2.15rem !important;
+      margin-top: 0 !important;
     }
   }
 
@@ -73,14 +75,14 @@ $sidebar-offset: 120px;
     margin: 0 0 $pad-comfortable 0;
 
     @media screen and (min-width: $bp-large) {
-      margin: 0 0 0 $sidebar-offset;
+      margin: 0 0 0 24px;
     }
 
     &__title-container {
       width: 100%;
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: baseline;
       position: relative;
 
       &:focus {
@@ -155,7 +157,7 @@ $sidebar-offset: 120px;
       font-family: $font-family-secondary;
       color: $color-neutral-700;
       font-weight: $font-weight-normal;
-      margin-bottom: 0;
+      margin: 0 24px 0 0;
     }
 
     &__desc-button {
