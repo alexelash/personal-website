@@ -6,8 +6,9 @@ casestudy: true
 title: "DistrictBuilder"
 seo_description: "Logo, identity, and marketing design for a free, open source redistricting tool."
 
-featured-image: "districtbuilder/districtbuilder_RGB.png"
-featured-alt: "DistrictBuilder logo."
+featured-image: "districtbuilder/districtbuilder_hero.png"
+featured-image-alt: "Screenshot of DistrictBuilder marketing website."
+featured-size: "cropped"
 featured-bg: "#fff8ef"
 
 project-url: "https://www.districtbuilder.org/"

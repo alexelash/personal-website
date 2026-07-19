@@ -50,7 +50,7 @@ sections:
 
       **Editorial experience.** We were on WordPress Classic with no live editing and a painful page-building experience. The CMS regularly seized up on editors mid-workflow, sometimes losing us hours of work. Almost a decade of old content lingered on the site, including over 300 irrelevant redirects - all impossible to audit or clean up in any reasonable way.
 
-      **Technical debt.** Plugins were in varying states of neglect. Hosting, caching, and tag management were all spread across separate tools with no coherent system connecting them. Worse, there was no CI pipeline and migrating changes required an overwrought process using tags and terminal. Hosting, caching, and tag management spread across separate tools with no coherent system connecting them. The site ran on institutional knowledge more than good architecture.
+      **Technical debt.** Plugins were in varying states of neglect. Hosting, caching, and tag management were all spread across separate tools with no coherent system connecting them. Worse, migrating changes wasn't easily done required an unnecessarily complicated process using tags and terminal. Hosting, caching, and tag management spread across separate tools with no coherent system connecting them. The site ran on institutional knowledge more than good architecture.
 
   - type: "default"
     layout: "text-only"
@@ -167,13 +167,13 @@ sections:
 
       **Custom SEO with Graph Schemas.** Replaced Yoast with a bespoke SEO layer that generates structured data dynamically. Video indexing, meta information, and open graph tags are all handled in code, with schema types matched to the content being rendered.
 
-      **Design tokens and CI pipeline.** I set up design tokens for the full project and configured the GitHub Actions deployment pipeline. Clean, documented, and reproducible. No institutional knowledge required to deploy.
+      **Design tokens and CI pipeline.** I set up design tokens for the full project and configured the GitHub Actions deployment pipeline. Our process is now clean, documented, and reproducible. No institutional knowledge is required to deploy, and technically anyone can run a deployment using the Github UI.
 
   - type: "default"
     layout: "text-only"
     desc: |
       ## Results
-      The new site launched on time, six months after kickoff. Everything went way too smoothly – it was almost anticlimatic! Internally, the immediate reaction across the company was to comment on how fast everything now felt. But months later, we also have the data:
+      The new site launched on time, six months after kickoff. Everything went so smoothly that it was almost anticlimatic. Internally, the immediate reaction across the company was to comment on how fast everything now felt. But months later, we also have the data:
 
   - type: "grid"
     layout: "side-by-side"
@@ -193,7 +193,7 @@ sections:
     desc: |
       The improvement in CMS edit time also deserves a little context. 
 
-      Changes previously meant waiting on WordPress to load (one particularly long page became almost uneditable), navigating the Classic editor, clearing WPRocket then clearing Cloudflare in sequence, and waiting on the deployment dance. Now, launching a whole new page can take 15 minutes start to finish using Sanity's excellent API and a good script.
+      Changes previously meant waiting on WordPress to load (one particularly long page became almost uneditable), navigating the Classic editor, clearing WPRocket then clearing Cloudflare in sequence, and waiting on the deployment dance. Now, launching a whole new page can take 15 minutes start to finish using Sanity's API and a good script.
 
       Beyond the numbers, the project meant something harder to quantify: that a two-person in-house team working with the right tools and a clear process can deliver infrastructure work that most companies would hand to an agency. It was genuinely fun to roll up my sleeves and get to collaborate in this way, and the results speak for themselves.
 
